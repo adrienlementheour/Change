@@ -86,11 +86,15 @@ function noScroll(){
 }
 
 function setFirstStrong(){
-	var firstP = $('.content').find('p').eq(0);
-	var firstStrong = firstP.find('strong').eq(0);
-	var posStrong = firstStrong.closest('p').html().indexOf('<strong>');
-	if(posStrong === 0){
-		firstStrong.addClass('maj');
+	if ($('.content').find('p').length > 0) {
+		var firstP = $('.content').find('p').eq(0);
+		if (firstP.find('strong').length > 0) {
+			var firstStrong = firstP.find('strong').eq(0);
+			var posStrong = firstStrong.closest('p').html().indexOf('<strong>');
+			if(posStrong === 0){
+				firstStrong.addClass('maj');
+			}
+		}
 	}
 }
 
