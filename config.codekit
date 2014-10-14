@@ -194,6 +194,127 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/ref\/afflelou.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22571,
+		"inputAbbreviatedPath": "\/img\/ref\/afflelou.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/afflelou.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/aubert-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2800,
+		"inputAbbreviatedPath": "\/img\/ref\/aubert-logo.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/aubert-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/aubert.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19776,
+		"inputAbbreviatedPath": "\/img\/ref\/aubert.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/aubert.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/catimini.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19413,
+		"inputAbbreviatedPath": "\/img\/ref\/catimini.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/catimini.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/histoiredor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22637,
+		"inputAbbreviatedPath": "\/img\/ref\/histoiredor.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/histoiredor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/mansfield.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15299,
+		"inputAbbreviatedPath": "\/img\/ref\/mansfield.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/mansfield.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/onestep.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20204,
+		"inputAbbreviatedPath": "\/img\/ref\/onestep.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/onestep.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/rossignol.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18568,
+		"inputAbbreviatedPath": "\/img\/ref\/rossignol.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/rossignol.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/solaris.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17371,
+		"inputAbbreviatedPath": "\/img\/ref\/solaris.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/solaris.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/tartineetchocolat.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27184,
+		"inputAbbreviatedPath": "\/img\/ref\/tartineetchocolat.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/tartineetchocolat.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/z-generation.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20328,
+		"inputAbbreviatedPath": "\/img\/ref\/z-generation.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/z-generation.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -553,6 +674,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/logoChangeIE.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2606,
+		"inputAbbreviatedPath": "\/layoutImg\/logoChangeIE.png",
+		"outputAbbreviatedPath": "\/layoutImg\/logoChangeIE.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/logoChangeTxt.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -560,6 +692,17 @@
 		"initialSize": 5792,
 		"inputAbbreviatedPath": "\/layoutImg\/logoChangeTxt.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoChangeTxt.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/logoChangeTxtIE.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4345,
+		"inputAbbreviatedPath": "\/layoutImg\/logoChangeTxtIE.png",
+		"outputAbbreviatedPath": "\/layoutImg\/logoChangeTxtIE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -614,6 +757,15 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/mentions.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mentions.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/mstile-144x144.png": {
 		"fileType": 32768,
@@ -679,6 +831,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/references.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/references.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		}

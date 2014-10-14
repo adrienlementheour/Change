@@ -74,22 +74,33 @@ function scroll(){
 			$('#contact').addClass('up');
 			$('footer').addClass('contactUp');
 		}
+
+	}
+}
+
+function noScroll(){
+	if($("html").hasClass("lt-ie9")){
+		$('#contact').addClass('up upZ');
+		$('footer').addClass('contactUp');
 	}
 }
 
 function setFirstStrong(){
-	var firstStrong = $('.content').find('strong').eq(0);
+	var firstP = $('.content').find('p').eq(0);
+	var firstStrong = firstP.find('strong').eq(0);
 	var posStrong = firstStrong.closest('p').html().indexOf('<strong>');
 	if(posStrong === 0){
 		firstStrong.addClass('maj');
 	}
 }
 
+
 $(document).ready(function(){
-	
+
 	setSizeBugerMenu();
 	setBurgerMenu();
 	setFirstStrong();
+	noScroll();
 
 	$(document).scroll(function() {
 		scroll();
