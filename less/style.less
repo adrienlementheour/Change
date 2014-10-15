@@ -67,9 +67,9 @@
     font-family: 'proximaNovaIt';
     src: url('../fonts/proximaNovaIt/proximanova-regit-webfont.eot');
     src: url('../fonts/proximaNovaIt/proximanova-regit-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximaNovaIt/../fonts/proximaNovaIt/../fonts/proximaNovaIt/../fonts/proximaNovaIt/proximanova-regit-webfont.woff2') format('woff2'),
-         url('../fonts/proximaNovaIt/../fonts/proximaNovaIt/../fonts/proximaNovaIt/proximanova-regit-webfont.woff') format('woff'),
-         url('../fonts/proximaNovaIt/../fonts/proximaNovaIt/proximanova-regit-webfont.ttf') format('truetype'),
+         url('../fonts/proximaNovaIt/proximanova-regit-webfont.woff2') format('woff2'),
+         url('../fonts/proximaNovaIt/proximanova-regit-webfont.woff') format('woff'),
+         url('../fonts/proximaNovaIt/proximanova-regit-webfont.ttf') format('truetype'),
          url('../fonts/proximaNovaIt/proximanova-regit-webfont.svg#proxima_novaregular_italic') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -199,6 +199,21 @@
   text-rendering: optimizeLegibility;
 }
 
+.lienMenuActif(){
+  padding-top: 4px;
+  &:before{
+    height: 94px;
+    top: 4px;
+    background: @rouge;
+    border-radius: 5px;
+    .transition(height .1s ease-in-out);
+  }
+  &:after{
+    visibility: visible;
+    top: -1px;
+    .transition(top .1s ease-out .2s);
+  }
+}
 /* @group Boilerplate */
 
 html,
@@ -288,17 +303,30 @@ body{
   padding: 20px 0 60px;
   +footer{
     margin-top: 0;
-    &.contactUp{
+    /*&.contactUp{
       margin-top: 50px;
-    }
+    }*/
   }
 }
 
+.containerLeft{
+  display: inline-block;
+  vertical-align: bottom;
+  width: 585px;
+  margin: 0 4% 0 0;
+  padding: 0 0 60px;
+}
+.containerRight{
+  display: inline-block;
+  width: 425px;
+  padding: 0 0 60px;
+}
 
-h1, h2{
+
+h1, h2, .h1{
   margin: 0 0 0 -3px;
 }
-h1{
+h1, .h1{
   padding: 60px 0 0 0;
   .bariol(3em);
   color: @rouge;
@@ -313,7 +341,7 @@ h2{
 }
 
 h3{
-  margin: 0 0 0 -1px;
+  margin: 0 0 0 -1px; 
   padding: 10px 0 10px 0;
   .bariolBold(1.2em);
 }
@@ -334,11 +362,11 @@ ul+h2, ul+h3{
   margin-top: 15px;
 }
 
-p, li, strong, .maj{
+p, li, strong, b, .maj{
   line-height: 1.45em;
 }
 
-strong{
+strong, b{
   font-weight: normal;
   .proximaNovaBold(1em);
 }
@@ -349,7 +377,7 @@ strong{
   color: @grisFonceTexte;
 }
 
-a{
+a, .a{
   text-decoration: none;
   color: @bleuTexte;
   border-bottom: 1px solid @bleuClair;
@@ -389,12 +417,11 @@ blockquote{
   color: @rouge;
 }
 .bleu{
-  color: @bleu;
+  color: @bleuTexte;
 }
 .gris{
-  color: @grisTresClair;
+  color: @grisClair;
 }
-
 /* @end */
 
 /* @group header */
@@ -447,7 +474,7 @@ header{
         .lt-ie8 &{
           display: inline;
         }
-        strong{
+        b{
           text-transform: uppercase;
           letter-spacing: 1px;
           .proximaNovaBold(0.9em);
@@ -521,20 +548,7 @@ header{
           vertical-align: top;
           &.active, &.current-menu-item {
             a{
-              padding-top: 4px;
-              opacity: 1;
-              &:before{
-                height: 94px;
-                top: 5px;
-                background: @rouge;
-                border-radius: 5px;
-                .transition(height .1s ease-in-out);
-              }
-              &:after{
-                visibility: visible;
-                top: -1px;
-                .transition(top .1s ease-out .2s);
-              }
+              .lienMenuActif();
             }
           }
           a{
@@ -594,17 +608,8 @@ header{
               }
             }
             &:active{
-              padding-top: 4px;
-              &:before{
-                height: 94px;
-                top: 4px;
-                background: @rouge;
-                border-radius: 5px;
-              }
-              &:after{
-                visibility: visible;
-                top: -1px;
-              }
+              opacity: 1;
+              .lienMenuActif();
             }
             .lt-ie9 &{
               padding-left: 5px;
@@ -717,64 +722,48 @@ ul.social-small{
 #contact{
   background: @grisTresClairFond;
   overflow: hidden;
-  position: absolute;
+  /*position: absolute;
   width: 100%;
   z-index: -1;
-  top: 0;
+  top: 0;*/
   &.contactBlanc{
     background: @blanc;
   }
-  .transition(top 0.3s ease-out);
+  /*.transition(top 0.3s ease-out);
   &.up{
     top: -54px;
     .transition(top 0.3s ease-in 0);
   }
   &.upZ{
     z-index: 0;
-  }
+  }*/
   p{
     margin: 0;
-    line-height: 54px;
+    line-height: 61px;
     float: left;
   }
   .liens-contact{
     float: right;
     li{
       display: inline-block;
-      &:before{
-        display: none;
-      }
     }
-    a{
-      color: @grisFonce;
-      position: relative;
-      line-height: 54px;
-      .proximaNovaSBold(1em);
+    .icon-tel, .icon-mail{
       cursor: text;
-      border: 0;
-      .lt-ie9 &{
-        font-size: 0.9em;
-      }
-    }
-    .icon-tel:before, .icon-mail:before{
-      font-family: 'change';
-      width: 61px;
-      font-size: 4.3em;
-      position: absolute;
-      left: -72px;
-      color: @blanc;
-      background: @bleu;
-      cursor: default;
-      .lt-ie9 &{
-        width: 56px;
-        left: -62px;
+      line-height: 61px;
+      .proximaNovaSBold(1em);
+      &:before{
+        font-size: 4.3em;
+        width: 61px;
+        left: -72px;
+        cursor: default;
+        .lt-ie9 &{
+          width: 56px;
+          left: -62px;
+        }
       }
     }
     .icon-mail{
       margin: 0 0 0 100px;
-      &:before{
-        background: @rouge;
-      }
       .lt-ie9 &{
          margin: 0 0 0 78px;
       }
@@ -782,15 +771,70 @@ ul.social-small{
   }
 }
 
+.liens-contact{
+    &.btn-contact{
+      padding: 30px 0 0 130px;
+      li{
+        padding: 0 0 20px;
+      }
+      .icon-tel, .icon-mail{
+        height: 80px;
+        line-height: 30px;
+        padding: 20px 0 0;
+        &:before{
+          border-radius: 4px;
+          line-height: 100px;
+          top: 0;
+        }
+      }
+    }
+    li{
+      &:before{
+        display: none;
+      }
+    }
+    .icon-tel, .icon-mail{
+      color: @grisFonce;
+      position: relative;
+      border: 0;
+      display: block;
+      .bariol(1.7em);
+      .lt-ie9 &{
+        font-size: 0.9em;
+      }
+      &:before{
+        font-family: 'change';
+        width: 100px;
+        font-size: 4.2em;
+        position: absolute;
+        left: -130px;
+        color: @blanc;
+        background: @bleu;
+      }
+      >span{
+        display: block;
+        .proximaNovaIt(0.6em);
+        span{
+          .proximaNovaSBold(1em);
+        }
+      }
+    }
+    .icon-mail{
+      &:before{
+        background: @rouge;
+      }
+    }
+}
+
 footer{
   background: @grisFonce;
   margin: 120px 0 0;
   position: relative;
-  .transition(margin 0.3s ease-out);
+  /*.transition(margin 0.3s ease-out);
   &.contactUp{
     .transition(margin 0.3s ease-in);
     margin: 150px 0 0;
-  }
+  }*/
   .container{
     overflow: hidden;
   }
@@ -905,6 +949,10 @@ footer{
     color: @grisClair;
     border: 0;
     .proximaNova(0.8em);
+
+    &:hover, &:focus{
+      color: @blanc;
+    }
   }
   .copyright{
     color: #6d6d72;
@@ -979,6 +1027,36 @@ footer{
         .transition(all .2s ease-out);
       }
     }
+    .lt-ie9{
+      margin: 20px 18px;
+    }
+  }
+}
+
+.masqueMap{
+  height: 215px;
+  overflow: hidden;
+}
+#map {
+  width: 100%;
+  height: 240px;
+}
+.adresses{
+  margin: 30px 0 20px;
+  &:before{
+    content: ' ';
+    width: 77px;
+    height: 91px;
+    display: block;
+    float: left;
+    margin: 2px 30px 0 0;
+    background: url(../layoutImg/bgPin.png) no-repeat;
+  }
+  p, strong, b{
+    line-height: 1.35em;
+  }
+  .maj{
+    display: block;
   }
 }
 
@@ -1058,6 +1136,10 @@ footer{
     }
   }
 
+  .containerLeft, .containerRight{
+    display: block;
+  }
+
   header {
     #top-header{
       ul.social-small{
@@ -1089,8 +1171,12 @@ footer{
   }
 
   #contact{
+    p{
+      line-height: 56px;
+    }
     .liens-contact{
       .icon-tel, .icon-mail{
+        line-height: 56px;
         font-size: 0.9em;
         &:before{
           width: 56px;
@@ -1176,9 +1262,9 @@ footer{
   }
 
   #contact{
-    &.up{
+    /*&.up{
       top: -122px;
-    }
+    }*/
     .liens-contact{
       float: none;
       clear: both;
@@ -1190,7 +1276,6 @@ footer{
   }
 
   footer{
-    margin: 120px 0 0;
     .menu-footer a{
       font-size: 1em;
     }
@@ -1220,9 +1305,9 @@ footer{
 @media (max-width: 850px) {
 
   #contact{
-    &.up{
+    /*&.up{
       top: -122px;
-    }
+    }*/
     .liens-contact{
       float: none;
       clear: both;
@@ -1254,9 +1339,18 @@ footer{
       margin-top: 0;
     }
 
+    .containerLeft, .containerRight{
+      width: 100%;
+    }
+
     header {
-      .touch &{
+     .touch &{
         position: relative;
+        #bottom-header{
+          ul#menu-header{
+            position: fixed;
+          }
+        }
       }
       #top-header{
         .content-top-header{
@@ -1275,9 +1369,9 @@ footer{
 @media (max-width: 610px) {
   
   #contact{
-    &.up{
+    /*&.up{
       top: -183px;
-    }
+    }*/
     .liens-contact{
       li, a{
         display: block;
@@ -1289,7 +1383,6 @@ footer{
   }
 
   footer{
-    margin: 120px 0 0;
     .col-right{
       width: 45%;
       label{
@@ -1297,16 +1390,16 @@ footer{
         margin: 0 0 5px;
       }
     }
-    &.contactUp{
+    /*&.contactUp{
       margin: 260px 0 0;
-    }
+    }*/
   }
 
-  .largeContainer+footer{
+  /*.largeContainer+footer{
     &.contactUp{
       margin-top: 185px;
     }
-  }
+  }*/
 
 }
 
@@ -1329,24 +1422,24 @@ footer{
 @media (max-width: 480px) {
   
   #contact{
-    &.up{
+    /*&.up{
       top: -212px;
-    }
+    }*/
     p{
       line-height: 21px;
       float: none;
       margin: 20px 0;
-      strong{
+      b{
         display: block;
       }
     }
   }
 
-  .largeContainer+footer{
+  /*.largeContainer+footer{
     &.contactUp{
       margin-top: 210px;
     }
-  }
+  }*/
 
   #footer-bottom {
     nav, .copyright{
@@ -1377,9 +1470,27 @@ footer{
   header #top-header #blog-header{
     display: none;
   }
+
+  .ref{
+    padding: 0;
+    li{
+      margin: 20px 35px 20px 15px;
+    } 
+  }
+
 }
 
+@media (max-width: 320px) {
+  .container{
+    &.medium, &.small {
+      padding: 0 15px 0;
+    }
+  }
 
+  #contact .liens-contact .icon-mail {
+    margin: 10px 0 0 57px;
+  }
+}
 
 
 /* retina */

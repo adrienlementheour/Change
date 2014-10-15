@@ -112,6 +112,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/contact.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contact.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/libs\/ie6.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -205,6 +214,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/ref\/alain-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2454,
+		"inputAbbreviatedPath": "\/img\/ref\/alain-logo.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/alain-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/ref\/aubert-logo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -227,6 +247,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/ref\/catimini-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2729,
+		"inputAbbreviatedPath": "\/img\/ref\/catimini-logo.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/catimini-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/ref\/catimini.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -234,6 +265,17 @@
 		"initialSize": 19413,
 		"inputAbbreviatedPath": "\/img\/ref\/catimini.jpg",
 		"outputAbbreviatedPath": "\/img\/ref\/catimini.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/histoire-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3281,
+		"inputAbbreviatedPath": "\/img\/ref\/histoire-logo.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/histoire-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -249,13 +291,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/ref\/mansfield.jpg": {
+	"\/img\/ref\/manfield-logo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 15299,
-		"inputAbbreviatedPath": "\/img\/ref\/mansfield.jpg",
-		"outputAbbreviatedPath": "\/img\/ref\/mansfield.jpg",
+		"initialSize": 2730,
+		"inputAbbreviatedPath": "\/img\/ref\/manfield-logo.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/manfield-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/manfield.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8355,
+		"inputAbbreviatedPath": "\/img\/ref\/manfield.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/manfield.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -271,6 +324,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/ref\/rossignol-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3037,
+		"inputAbbreviatedPath": "\/img\/ref\/rossignol-logo.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/rossignol-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/ref\/rossignol.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -278,6 +342,17 @@
 		"initialSize": 18568,
 		"inputAbbreviatedPath": "\/img\/ref\/rossignol.jpg",
 		"outputAbbreviatedPath": "\/img\/ref\/rossignol.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/solaris-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2851,
+		"inputAbbreviatedPath": "\/img\/ref\/solaris-logo.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/solaris-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -311,6 +386,17 @@
 		"initialSize": 20328,
 		"inputAbbreviatedPath": "\/img\/ref\/z-generation.jpg",
 		"outputAbbreviatedPath": "\/img\/ref\/z-generation.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/z-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3098,
+		"inputAbbreviatedPath": "\/img\/ref\/z-logo.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/z-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -652,6 +738,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/layoutImg\/bgPin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5649,
+		"inputAbbreviatedPath": "\/layoutImg\/bgPin.png",
+		"outputAbbreviatedPath": "\/layoutImg\/bgPin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/logo-change.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -703,6 +800,17 @@
 		"initialSize": 4345,
 		"inputAbbreviatedPath": "\/layoutImg\/logoChangeTxtIE.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoChangeTxtIE.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/pin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2264,
+		"inputAbbreviatedPath": "\/layoutImg\/pin.png",
+		"outputAbbreviatedPath": "\/layoutImg\/pin.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

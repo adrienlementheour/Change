@@ -6,7 +6,7 @@
 	<head>
 		<meta http-equiv="Expires" content="0" />
 	  	<meta charset="utf-8">
-	  	<title>Change - Références</title>
+	  	<title>Change - Contact</title>
 	  	<meta name="description" content="">
 	  	<meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -41,7 +41,7 @@
 		<script src="js/libs/modernizr.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
-	<body>
+	<body class="contactPage">
 		<header id="header">
 			<div id="top-header">
 				<div class="container">
@@ -78,71 +78,81 @@
 			</div>
 		</header>
 
-		<div class="container first small content">
-			<h1>Ils nous font confiance</h1>
-			<p><b>Tous nos clients ont comme point commun d’avoir connu un brillant succès 
-			dès la création de leur marque.</b> Au fil du temps, ils ont su l’installer durablement 
-			et développer un réseau de magasins de qualité. Très tôt, ils ont choisi le e-commerce 
-			comme levier de croissance innovant parce qu’ils avaient perçu qu’il répondait déjà à une attente de leurs clients. </p>
-
-			<p>Aujourd’hui, ils nous confient leur projet cross-commerce car ils souhaitent intégrer rapidement et simplement leurs points de vente et leurs produits au cœur de leur stratégie digitale.</p>
-
-			<h2 class="maj">Voici quelques-unes de ces marques que nous sommes fiers de compter parmi nos plus fidèles clients :</h2>
-		</div>
-
-		<div class="largeContainer content">
-			<div class="container">
-				<ul class="ref">
+		<div class="container first medium content">
+			<h1>Contactez-nous</h1>
+			<div class="containerLeft">
+				<p><b>Votre activité e-commerce est en plein développement</b><br/> et vous souhaitez intégrer rapidement vos magasins et vos produits au cœur de votre stratégie digitale, nous sommes à votre disposition pour échanger avec vous.</p>
+				<ul class="liens-contact btn-contact">
 					<li>
-						<div class="logo"> <img src="img/ref/aubert-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/aubert.jpg" alt=""/></div>
+						<a class="icon-mail" href="contact.php?open=1">
+							contact@change-commerce.com
+							<span> ou <span class="a">échanger autour de mon projet</span></span>
+						</a>
 					</li>
 					<li>
-						<div class="logo"> <img src="img/ref/histoire-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/histoiredor.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/catimini-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/catimini.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/manfield-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/manfield.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/z-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/z-generation.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/alain-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/afflelou.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/rossignol-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/rossignol.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/solaris-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/solaris.jpg" alt=""/></div>
+						<a class="icon-tel" href="contact.php?open=1">
+							09 72 26 88 88
+							<span> ou <span class="a">un consultant vous rappelle</span></span>
+						</a> 
 					</li>
 				</ul>
+			</div>
+			<div class="containerRight">
+				<div class="masqueMap">
+					<div id="map"></div>
+				</div>
+				<div class="adresses">
+					<p>
+						<b class="maj">Paris</b>
+						16 bis avenue Parmentier 75011 Paris
+					</p>
+					<p>
+						<b class="maj">Strasbourg</b>
+						30 quai des Bateliers 67000 Strasbourg
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="largeContainer content contactMail">
+			<div class="container medium">
+				<h2 class="h1">Votre projet</h2>
+				<p class="maj">Merci de bien vouloir compléter le formulaire suivant</p>
+
+				<form method="POST" action="contact.php?open=1">
+					<fieldset class="col-left <? if ($erreurSite != '') { echo 'error-form'; }?>">
+						<label for="nom">Nom &#38; prénom</label>
+						<input type="text" id="nom" name="nom" value=" ">
+					</fieldset>
+					<fieldset class="col-right <? if ($erreurSite != '') { echo 'error-form'; }?>">
+						<label for="societe">Société</label>
+						<input type="text" id="societe" name="societe" value=" ">
+					</fieldset>
+					<fieldset class="col-left <? if ($erreurNom != '') { echo 'error-form'; }?>">
+						<label for="mail">Email <span>(pour vous répondre)</span></label>
+						<input type="email" name="mail" id="mail" value=" ">
+					</fieldset>
+					<fieldset class="col-right <? if ($erreurMail != '') { echo 'error-form'; }?>">
+						<label for="tel">Téléphone</label>
+						<input type="tel" name="tel" id="tel" value=" ">
+					</fieldset>
+					<fieldset>
+						<label for="message">Commentaires <span>(facultatif)</span></label> 
+						<textarea name="message" id="message" value=" "></textarea>
+					</fieldset>
+					<input type="submit" id="envoyer" name="submitted" value="Envoyer">
+				</form>
+
+			</div>
+		</div>
+
+		<div class="largeContainer content contactTel">
+			<div class="container medium">
+				<h2 class="h1">Un consultant vous rappelle</h2>
 			</div>
 		</div>
 
 		<footer>
-			<div id="contact" class="contactBlanc">
-				<div class="container medium">
-					<p><b>Envie d'en savoir plus ?</b> Parlons de votre projet !</p>
-					<ul class="liens-contact">
-						<li>
-							<a class="icon-tel" href="contacts?open=2">09 72 26 88 88</a> 
-						</li>
-						<li>
-							<a class="icon-mail" href="contacts?open=1">contact@change-commerce.com</a>
-						</li>
-					</ul>
-				</div>
-			</div>
 			<div class="container medium">
 				<div class="col-left">
 					<h2 class="footer-titre rouge">L'entreprise</h2>
@@ -201,6 +211,8 @@
 		<![endif]-->
 		<!-- jQuery -->
 		<script src="js/libs/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Map -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
 		<!-- Tweens -->
 		<script src="js/libs/greensock/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/libs/greensock/TimelineMax.min.js" type="text/javascript" charset="utf-8"></script>
