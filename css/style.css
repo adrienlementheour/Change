@@ -316,6 +316,118 @@ blockquote span {
   margin: 10px 0;
   color: #757581;
 }
+form {
+  width: 750px;
+  margin: 25px 0 0;
+}
+form label,
+form legend {
+  display: block;
+  font-family: 'proximaNovaSBold', sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #0c364e;
+  line-height: 30px;
+}
+form label.facultatif {
+  font-family: 'proximaNova', sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+form label span {
+  font-family: 'proximaNovaIt', sans-serif;
+  font-size: 0.75em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #54b8e7;
+}
+form fieldset {
+  display: inline-block;
+  margin: 0 48px 20px 0;
+}
+form fieldset.fieldBlock {
+  display: block;
+  margin-right: 0;
+}
+form fieldset.smallField {
+  width: 585px;
+  margin: 0;
+}
+form fieldset.rappel label {
+  display: inline;
+}
+form input,
+form textarea {
+  border: 0;
+  border-radius: 5px;
+  border: 3px solid #ffffff;
+  color: #0c364e;
+  padding: 5px;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+form input:focus,
+form textarea:focus {
+  outline: 0;
+  border-color: #54b8e7;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+form input {
+  height: 27px;
+  width: 224px;
+}
+form input[type="submit"] {
+  border: 0;
+  background: #54b8e7;
+  color: #ffffff;
+}
+form input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin: 0 5px 0 0;
+}
+form input.secondBox {
+  margin-left: 40px;
+}
+form textarea {
+  height: 150px;
+  width: 100%;
+}
+form #envoyer {
+  display: block;
+  font-family: 'bariolBold', sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  height: 60px;
+  padding: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+form #envoyer:hover,
+form #envoyer:focus {
+  padding: 5px;
+  border: 3px solid #54b8e7;
+  background: #ffffff;
+  color: #54b8e7;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .rouge {
   color: #f04a2f;
 }
@@ -894,22 +1006,18 @@ footer .menu-footer a:hover,
 footer .menu-footer a:focus {
   color: #d4d1cb;
 }
+footer form {
+  width: auto;
+  margin: 0;
+}
 footer form label {
   color: #ffffff;
-  font-family: 'proximaNovaSBold', sans-serif;
   font-size: 0.9em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  display: inline;
 }
 footer form input {
-  -webkit-border-radius: 5px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 5px;
-  -moz-background-clip: padding;
-  border-radius: 5px;
-  background-clip: padding-box;
   vertical-align: middle;
+  height: auto;
 }
 footer form #email {
   width: 140px;
@@ -928,7 +1036,6 @@ footer form #email {
   transition: border 0.2s ease-out;
 }
 footer form #email:focus {
-  outline: 0;
   border-color: #54b8e7;
   -webkit-transition: border 0.2s ease-in;
   -moz-transition: border 0.2s ease-in;
@@ -936,14 +1043,12 @@ footer form #email:focus {
   transition: border 0.2s ease-in;
 }
 footer form #bouton-ok {
+  width: auto;
   font-family: 'bariolBold', sans-serif;
   font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  color: #ffffff;
-  background: #54b8e7;
-  border: 0;
   padding: 3px 5px 4px;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;

@@ -65,10 +65,10 @@
 						<ul id="menu-header">
 							<li><a href="solution-cross-commerce" class="lien-menu-header" title="Solution"><span>Solution</span></a></li>
 							<li><a href="fonctionnalites" class="lien-menu-header" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
-							<li class="active"><a href="references " class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
+							<li><a href="references " class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
 							<li><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
 							<li><a href="qui-sommes-nous" class="lien-menu-header" title="Entreprise"><span>Entreprise</span></a></li>
-							<li><a href="contacts" class="lien-menu-header lien-contact" title="Contact"><span>Contact</span></a></li>
+							<li class="active"><a href="contacts" class="lien-menu-header lien-contact" title="Contact"><span>Contact</span></a></li>
 						</ul>
 						<div class="hamburger">
 							<a href="http://www.change-commerce.com" class="lien-menu-header symbole-burger" title="Déployer le menu">Menu <span class="symbole-burger"><span class="icon-burger1 b1"></span><span class="icon-burger2"></span><span class="icon-burger1 b3"></span></span></a>
@@ -120,27 +120,29 @@
 				<p class="maj">Merci de bien vouloir compléter le formulaire suivant</p>
 
 				<form method="POST" action="contact.php?open=1">
-					<fieldset class="col-left <? if ($erreurSite != '') { echo 'error-form'; }?>">
-						<label for="nom">Nom &#38; prénom</label>
-						<input type="text" id="nom" name="nom" value=" ">
+					<fieldset class="smallField">
+						<fieldset class="<? if ($erreurSite != '') { echo 'error-form'; }?>">
+							<label for="nom">Nom &#38; prénom</label>
+							<input type="text" id="nom" name="nom" value=" ">
+						</fieldset>
+						<fieldset class="<? if ($erreurSite != '') { echo 'error-form'; }?>">
+							<label for="societe">Société</label>
+							<input type="text" id="societe" name="societe" value=" ">
+						</fieldset>
+						<fieldset class="<? if ($erreurNom != '') { echo 'error-form'; }?>">
+							<label for="mail">Email <span>(pour vous répondre)</span></label>
+							<input type="email" name="mail" id="mail" value=" ">
+						</fieldset>
+						<fieldset class="<? if ($erreurMail != '') { echo 'error-form'; }?>">
+							<label for="tel">Téléphone</label>
+							<input type="tel" name="tel" id="tel" value=" ">
+						</fieldset>
 					</fieldset>
-					<fieldset class="col-right <? if ($erreurSite != '') { echo 'error-form'; }?>">
-						<label for="societe">Société</label>
-						<input type="text" id="societe" name="societe" value=" ">
-					</fieldset>
-					<fieldset class="col-left <? if ($erreurNom != '') { echo 'error-form'; }?>">
-						<label for="mail">Email <span>(pour vous répondre)</span></label>
-						<input type="email" name="mail" id="mail" value=" ">
-					</fieldset>
-					<fieldset class="col-right <? if ($erreurMail != '') { echo 'error-form'; }?>">
-						<label for="tel">Téléphone</label>
-						<input type="tel" name="tel" id="tel" value=" ">
-					</fieldset>
-					<fieldset>
-						<label for="message">Commentaires <span>(facultatif)</span></label> 
+					<fieldset class="fieldBlock">
+						<label for="message"class="facultatif">Commentaires <span>(facultatif)</span></label> 
 						<textarea name="message" id="message" value=" "></textarea>
 					</fieldset>
-					<input type="submit" id="envoyer" name="submitted" value="Envoyer">
+					<input class="maj" type="submit" id="envoyer" name="submitted" value="Valider">
 				</form>
 
 			</div>
@@ -149,6 +151,25 @@
 		<div class="largeContainer content contactTel">
 			<div class="container medium">
 				<h2 class="h1">Un consultant vous rappelle</h2>
+
+				<form method="POST" action="contact.php?open=2">
+					<fieldset class=" <? if ($erreurTelephone != '') { echo 'error-form'; }?>">
+						<label for="tel2">Numéro de téléphone</label>
+						<input type="tel" id="tel2" name="telephone" value=" ">
+					</fieldset>
+					<fieldset class=" <? if ($erreurNom2 != '') { echo 'error-form'; }?>">
+						<label for="nom2">Nom</label>
+						<input type="text" id="nom2" name="nom2" value=" ">
+					</fieldset>
+					<fieldset class="rappel">
+						<legend>Quand préférez-vous être rappelé ?</legend>
+						<input name="periodeAM" id="periodeAM" type="checkbox" />
+						<label for="periodeAM">Matin</label>
+						<input class="secondBox"  name="periodePM" id="periodePM" type="checkbox" />
+						<label for="periodePM">Après-midi</label>
+					</fieldset>
+					<input class="maj" type="submit" id="envoyer" name="submitted2" value="Valider">
+				</form>
 			</div>
 		</div>
 

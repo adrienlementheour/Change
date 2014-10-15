@@ -413,6 +413,91 @@ blockquote{
   }
 }
 
+form{
+  width: 750px;
+  margin: 25px 0 0;
+  label, legend{
+    display: block;
+    .proximaNovaSBold(1em);
+    color: @bleuFonce;
+    line-height: 30px;
+  }
+  label{
+    &.facultatif{
+      .proximaNova(1em);
+    }
+    span{
+      .proximaNovaIt(0.75em);
+      color: @bleu;
+    }
+  }
+  fieldset{
+    display: inline-block;
+    margin: 0 48px 20px 0;
+    &.fieldBlock{
+      display: block;
+      margin-right: 0;
+    }
+    &.smallField{
+      width: 585px;
+      margin: 0;
+    }
+    &.rappel{
+      label{
+        display: inline;
+      }
+    }
+  }
+  input, textarea{
+    border: 0;
+    border-radius: 5px;
+    border: 3px solid @blanc;
+    color: @bleuFonce;
+    padding: 5px;
+    .transition(border-color .3s ease-in-out);
+    &:focus{
+      outline: 0;
+      border-color: @bleu;
+      .transition(border-color .3s ease-in-out);
+    }
+  }
+  input{
+    height: 27px;
+    width: 224px;
+    &[type="submit"]{
+      border: 0;
+      background: @bleu;
+      color: @blanc;
+    }
+    &[type="checkbox"]{
+      width: auto;
+      height: auto;
+      margin: 0 5px 0 0;
+    }
+    &.secondBox{
+      margin-left: 40px;
+    }
+  }
+  textarea{
+    height: 150px;
+    width: 100%;
+  }
+  #envoyer{
+    display: block;
+    .bariolBold(1em);
+    height: 60px;
+    padding: 8px;
+    .transition(all .3s ease-in-out);
+    &:hover, &:focus{
+      padding: 5px;
+      border: 3px solid @bleu;
+      background: @blanc;
+      color: @bleu;
+      .transition(all .3s ease-in-out);
+    }
+  }
+}
+
 .rouge{
   color: @rouge;
 }
@@ -882,13 +967,16 @@ footer{
     }
   }
   form{
+    width: auto;
+    margin: 0;
     label{
       color: @blanc;
-      .proximaNovaSBold(0.9em);
+      font-size: 0.9em;
+      display: inline;
     }
     input{
-      .border-radius(5px);
       vertical-align: middle;
+      height: auto;
     }
     #email{
       width: 140px;
@@ -899,16 +987,13 @@ footer{
       color: @grisTresClair;
       .transition(border .2s ease-out);
       &:focus{
-        outline: 0;
         border-color: @bleu;
         .transition(border .2s ease-in);
       }
     }
     #bouton-ok{
+      width: auto;
       .bariolBold(0.9em);
-      color: @blanc;
-      background: @bleu;
-      border: 0;
       padding: 3px 5px 4px;
       .transition(all .2s ease-out);
       &:hover, &:focus{
