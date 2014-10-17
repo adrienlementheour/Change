@@ -1,3 +1,9 @@
+function setFooter(){
+	if ($(document).height() > $(window).height()) { 
+	   $('footer').css('position', 'relative'); 
+	}
+}
+
 function setBurgerMenu(){
 	$(".hamburger").find("a").click(function(){
 		if ($(this).parent('.hamburger').hasClass("burgerOn") ) {  
@@ -215,6 +221,7 @@ function openForm(){
 
 $(document).ready(function(){
 
+	setFooter();
 	setSizeBugerMenu();
 	setBurgerMenu();
 	setFirstStrong();
@@ -233,6 +240,7 @@ $(document).ready(function(){
 
 $( window ).resize(function() {
 
+	setFooter();
 	setSizeBugerMenu();
 	adjustBurgerMenu();
 

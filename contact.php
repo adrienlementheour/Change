@@ -38,7 +38,7 @@ $opened_tel = ($_GET['open']==="2");
  
  
 // MAIL DE DESTINATION //////////////////////////////////////
-$mailto = 'faustine@proximis.com';
+$mailto = 'faustine.marechalle@proximis.com';
  
  
  
@@ -188,7 +188,7 @@ if ( $submitted2 ) {
 					<nav class="content-top-header">
 						<div id="blog-header">
 							<p><b>En direct du blog :</b> <span>Shopping : simplifier les achats, la cl&eacute; de la r&eacute;ussite</span></p>
-							<a href="#" class="icon-blog-plus" title="Lire le blog"></a>
+							<a href="#" class="icon-plus" title="Lire le blog"></a>
 						</div>
 						<ul class="social-small">
 							<li><a href="#" class="lien-social icon-facebook" title="Change sur Facebook"></a></li>
@@ -224,13 +224,13 @@ if ( $submitted2 ) {
 				<p><b>Votre activité e-commerce est en plein développement</b><br/> et vous souhaitez intégrer rapidement vos magasins et vos produits au cœur de votre stratégie digitale, nous sommes à votre disposition pour échanger avec vous.</p>
 				<ul class="liens-contact btn-contact">
 					<li>
-						<a id="soumettre" class="icon-mail" href="contact.php?open=1">
+						<a id="soumettre" class="icon-mail fd-rouge" href="contact.php?open=1">
 							contact@change-commerce.com
 							<span> ou <span class="a">échanger autour de mon projet</span></span>
 						</a>
 					</li>
 					<li>
-						<a id="consultant" class="icon-tel" href="contact.php?open=2">
+						<a id="consultant" class="icon-tel fd-bleu" href="contact.php?open=2">
 							09 72 26 88 88
 							<span> ou <span class="a">un consultant vous rappelle</span></span>
 						</a> 
@@ -291,7 +291,7 @@ if ( $submitted2 ) {
 					</fieldset>
 					<fieldset class="fieldBlock">
 						<label for="message" class="facultatif">Commentaires <span>(facultatif)</span></label> 
-						<textarea name="message" id="message" value="<?php echo $message; ?>"></textarea>
+						<textarea name="message" id="message"><?php echo $message; ?></textarea>
 					</fieldset>
 					<input class="maj" type="submit" id="envoyer" name="submitted" value="Valider">
 				</form>

@@ -146,7 +146,7 @@
 .icon-twitter:before {
   content: "\f099";
 }
-.icon-blog-plus:before {
+.icon-plus:after {
   content: "\e601";
 }
 .icon-burger1:before {
@@ -160,6 +160,37 @@
 }
 .icon-tel:before {
   content: "\e602";
+}
+.icon-cloud:before {
+  content: "\e605";
+}
+.icon-cross:before {
+  content: "\e606";
+}
+.icon-plug:before {
+  content: "\e607";
+}
+.icon-tshirt:before {
+  content: "\e608";
+}
+.icon-cible:before {
+  content: "\e609";
+}
+.icon-euro:before {
+  content: "\e60a";
+}
+.icon-fleche:before {
+  content: "\e60b";
+}
+.icon-horloge:before {
+  content: "\e60c";
+}
+
+.fd-bleu:before{
+  background: @bleu;
+}
+.fd-rouge:before{
+  background: @rouge;
 }
 
 /* @group Mixins */
@@ -415,6 +446,11 @@ strong, b{
   color: @grisFonceTexte;
 }
 
+em{
+  font-style: normal;
+  .proximaNovaIt(1em);
+}
+
 a, .a{
   text-decoration: none;
   color: @bleuTexte;
@@ -427,6 +463,19 @@ a, .a{
   }
   &:active{
     opacity: 0.7;
+  }
+}
+
+.btn{
+  text-align: center;
+  a{
+    .proximaNovaSBold(1em);
+    position: relative;
+    span{
+      position: absolute;
+      font-size: 2.2em;
+      line-height: 25px;
+    }
   }
 }
 
@@ -518,10 +567,12 @@ form{
       color: @blanc;
     }
     &[type="checkbox"]{
-      width: auto;
-      height: auto;
+      width: 13px;
+      height: 13px;
+      background: @blanc;
       margin: 0 5px 0 0;
       cursor: pointer;
+      -webkit-appearance: checkbox;
     }
     &[type="tel"]{
       width: 140px;
@@ -607,7 +658,7 @@ header{
         margin: 0;
         line-height: 28px;
         font-size: 0.8em;
-        width: 500px;
+        width: 470px;
         .lt-ie8 &{
           display: inline;
         }
@@ -617,16 +668,12 @@ header{
           .proximaNovaBold(0.9em);
         }
       }
-      a.icon-blog-plus{
-        margin-left: 5px;
+      a.icon-plus{
         line-height: 27px;
         font-size: 1.8em;
         color: @grisFonce;
         &:hover, &:focus{
           color: @blanc;
-        }
-        .lt-ie8 &{
-          display: inline;
         }
       }
     }
@@ -948,7 +995,6 @@ ul.social-small{
         position: absolute;
         left: -130px;
         color: @blanc;
-        background: @bleu;
         text-align: center;
       }
       >span{
@@ -959,17 +1005,19 @@ ul.social-small{
         }
       }
     }
-    .icon-mail{
-      &:before{
-        background: @rouge;
-      }
-    }
 }
 
 footer{
   background: @grisFonce;
   margin: 120px 0 0;
-  position: relative;
+  position: fixed;
+    width: 100%;
+    bottom: 0;
+  /*&.bottom{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }*/
   /*.transition(margin 0.3s ease-out);
   &.contactUp{
     .transition(margin 0.3s ease-in);
@@ -1116,8 +1164,101 @@ footer{
 /* Page d'accueil */
 
 .home{
-  h1, h2, p, li{
-    text-align: center;
+  .first{
+    h1, h2, p, li{
+      text-align: center;
+    }
+    p{
+      width: 960px;
+      margin: 1em auto;
+    }
+  }
+  .home-ul{
+    overflow: hidden;
+    margin: 60px 0;
+    li{
+      float: left;
+      &:before{
+        display: none;
+      }
+      span{
+        &:before{
+          display: block;
+          color: @blanc;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .first-ul{
+    li{
+      width: 230px;
+      margin: 0 70px 0 0;
+      font-size: 0.85em;
+      &.liSmall{
+        width: 205px
+      }
+      &.liBig{
+        width: 245px;
+        margin: 0;
+      }
+      span{
+        &:before{
+          font-size: 11em;
+          width: 175px;
+          line-height: 175px;
+          margin: 0 auto;
+        }
+        &.icon-cloud:before{
+            font-size: 14em;
+        }
+        &.icon-tshirt:before{
+            font-size: 9em;
+        }
+      }
+      h3{
+        padding: 35px 0 0;
+      }
+    }
+  }
+  .last-ul{
+    li{
+      text-align: left;
+      width: 49%;
+      margin: 0 0 35px;
+      span{
+        &:before{
+          text-align: center;
+          float: left;
+          width: 93px;
+          line-height: 93px;
+          font-size: 4.5em;
+          margin: 0 35px 0 60px;
+        }
+        &.icon-horloge:before{
+            font-size: 5.5em;
+        }
+        &.icon-fleche:before{
+            font-size: 6em;
+        }
+        &.icon-cible:before{
+            font-size: 7em;
+        }
+      }
+      h3{
+        padding: 12px 0 0;
+      }
+      &.liRouge{
+        h3{
+          padding: 22px 0 0;
+        }
+      }
+    }
+    +h2{
+      width: 1025px;
+      border-top: 1px solid @grisTresClairFond;
+      margin: 0 auto;
+    }
   }
 }
 
