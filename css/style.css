@@ -38,6 +38,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'proximaNovaSBoldIt';
+  src: url('../fonts/proximaNovaSBoldIt/proximanova-semibolditalic-webfont.eot');
+  src: url('../fonts/proximaNovaSBoldIt/proximanova-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximaNovaSBoldIt/proximanova-semibolditalic-webfont.woff2') format('woff2'), url('../fonts/proximaNovaSBoldIt/proximanova-semibolditalic-webfont.woff') format('woff'), url('../fonts/proximaNovaSBoldIt/proximanova-semibolditalic-webfont.ttf') format('truetype'), url('../fonts/proximaNovaSBoldIt/proximanova-semibolditalic-webfont.svg#proxima_novasemibold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'proximaNovaBold';
   src: url('../fonts/proximaNovaBold/proximanova-bold-webfont.eot');
   src: url('../fonts/proximaNovaBold/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximaNovaBold/proximanova-bold-webfont.woff2') format('woff2'), url('../fonts/proximaNovaBold/proximanova-bold-webfont.woff') format('woff'), url('../fonts/proximaNovaBold/proximanova-bold-webfont.ttf') format('truetype'), url('../fonts/proximaNovaBold/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
@@ -172,6 +179,7 @@ body {
 .largeContainer {
   background: #efebe2;
   padding: 20px 0 60px;
+  width: 100%;
 }
 .largeContainer + footer {
   margin-top: 0;
@@ -205,7 +213,7 @@ h1,
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   color: #f04a2f;
-  line-height: 1.1em;
+  line-height: 0.8em;
 }
 h2 {
   padding: 25px 0 15px 0;
@@ -245,6 +253,28 @@ strong,
 b,
 .maj {
   line-height: 1.45em;
+}
+p.envoiReussi {
+  margin-top: -1em;
+}
+p.error {
+  padding: 10px 20px;
+  color: #f04a2f;
+  border: 2px dotted;
+  border-radius: 5px;
+  width: 460px;
+  font-family: 'proximaNovaSBold', sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+p.error span {
+  font-family: 'proximaNovaSBoldIt', sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 strong,
 b {
@@ -331,14 +361,18 @@ form legend {
   color: #0c364e;
   line-height: 30px;
 }
-form label.facultatif {
+form label.facultatif,
+form legend.facultatif,
+form label.labelBox,
+form legend.labelBox {
   font-family: 'proximaNova', sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-form label span {
+form label span,
+form legend span {
   font-family: 'proximaNovaIt', sans-serif;
   font-size: 0.75em;
   -webkit-font-smoothing: antialiased;
@@ -361,6 +395,15 @@ form fieldset.smallField {
 form fieldset.rappel label {
   display: inline;
 }
+form fieldset.error label {
+  color: #f04a2f;
+}
+form fieldset.error label span {
+  color: #f04a2f;
+}
+form fieldset.error input {
+  border-color: #f04a2f;
+}
 form input,
 form textarea {
   border: 0;
@@ -368,6 +411,7 @@ form textarea {
   border: 3px solid #ffffff;
   color: #0c364e;
   padding: 5px;
+  -webkit-appearance: none;
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   -o-transition: border-color 0.3s ease-in-out;
@@ -383,7 +427,7 @@ form textarea:focus {
   transition: border-color 0.3s ease-in-out;
 }
 form input {
-  height: 27px;
+  height: 22px;
   width: 224px;
 }
 form input[type="submit"] {
@@ -395,13 +439,17 @@ form input[type="checkbox"] {
   width: auto;
   height: auto;
   margin: 0 5px 0 0;
+  cursor: pointer;
+}
+form input[type="tel"] {
+  width: 140px;
 }
 form input.secondBox {
   margin-left: 40px;
 }
 form textarea {
   height: 150px;
-  width: 100%;
+  width: 98%;
 }
 form #envoyer {
   display: block;
@@ -849,7 +897,6 @@ ul.social-small li a.lien-social:focus {
 }
 #contact .liens-contact .icon-tel,
 #contact .liens-contact .icon-mail {
-  cursor: text;
   line-height: 61px;
   font-family: 'proximaNovaSBold', sans-serif;
   font-size: 1em;
@@ -859,10 +906,9 @@ ul.social-small li a.lien-social:focus {
 }
 #contact .liens-contact .icon-tel:before,
 #contact .liens-contact .icon-mail:before {
-  font-size: 4.3em;
+  font-size: 4.6rem;
   width: 61px;
   left: -72px;
-  cursor: default;
 }
 .lt-ie9 #contact .liens-contact .icon-tel:before,
 .lt-ie9 #contact .liens-contact .icon-mail:before {
@@ -886,12 +932,17 @@ ul.social-small li a.lien-social:focus {
   height: 80px;
   line-height: 30px;
   padding: 20px 0 0;
+  outline: 0;
 }
 .liens-contact.btn-contact .icon-tel:before,
 .liens-contact.btn-contact .icon-mail:before {
   border-radius: 4px;
   line-height: 100px;
   top: 0;
+}
+.lt-ie9 .liens-contact.btn-contact .icon-tel,
+.lt-ie9 .liens-contact.btn-contact .icon-mail {
+  font-size: 1.5em;
 }
 .liens-contact li:before {
   display: none;
@@ -916,11 +967,12 @@ ul.social-small li a.lien-social:focus {
 .liens-contact .icon-mail:before {
   font-family: 'change';
   width: 100px;
-  font-size: 4.2em;
+  font-size: 7.5rem;
   position: absolute;
   left: -130px;
   color: #ffffff;
   background: #54b8e7;
+  text-align: center;
 }
 .liens-contact .icon-tel > span,
 .liens-contact .icon-mail > span {
@@ -1121,6 +1173,14 @@ footer form #bouton-ok:active {
   background: rgba(0, 0, 0, 0.5);
   display: none;
 }
+/* Page d'accueil */
+.home h1,
+.home h2,
+.home p,
+.home li {
+  text-align: center;
+}
+/* Page références */
 .ref li {
   display: inline-block;
   width: 205px;
@@ -1192,6 +1252,7 @@ footer form #bouton-ok:active {
 .ref li .lt-ie9 {
   margin: 20px 18px;
 }
+/* Page contact */
 .masqueMap {
   height: 215px;
   overflow: hidden;
@@ -1209,7 +1270,7 @@ footer form #bouton-ok:active {
   height: 91px;
   display: block;
   float: left;
-  margin: 2px 30px 0 0;
+  margin: 2px 28px 0 0;
   background: url(../layoutImg/bgPin.png) no-repeat;
 }
 .adresses p,
@@ -1218,6 +1279,18 @@ footer form #bouton-ok:active {
   line-height: 1.35em;
 }
 .adresses .maj {
+  display: block;
+}
+.success {
+  padding: 0 0 50px;
+}
+.success form {
+  display: none;
+}
+.form {
+  display: none;
+}
+.form.opened {
   display: block;
 }
 /* @end */
@@ -1414,6 +1487,12 @@ footer form #bouton-ok:active {
   }
 }
 @media (max-width: 850px) {
+  form {
+    width: 100%;
+  }
+  form fieldset.smallField {
+    width: 100%;
+  }
   #contact {
     /*&.up{
       top: -122px;
@@ -1460,6 +1539,31 @@ footer form #bouton-ok:active {
     display: none;
   }
 }
+@media (max-width: 630px) {
+  form fieldset {
+    display: block;
+  }
+  p.error {
+    width: 88%;
+  }
+  .liens-contact.btn-contact {
+    padding-left: 90px;
+  }
+  .liens-contact.btn-contact .icon-tel,
+  .liens-contact.btn-contact .icon-mail {
+    font-size: 1.4em;
+    height: 57px;
+    line-height: 25px;
+    padding: 12px 0 0;
+  }
+  .liens-contact.btn-contact .icon-tel:before,
+  .liens-contact.btn-contact .icon-mail:before {
+    width: 77px;
+    line-height: 77px;
+    left: -90px;
+    font-size: 6rem;
+  }
+}
 @media (max-width: 610px) {
   #contact {
     /*&.up{
@@ -1501,6 +1605,38 @@ footer form #bouton-ok:active {
     float: none;
     clear: both;
   }
+  .liens-contact.btn-contact {
+    padding-left: 66px;
+  }
+  .liens-contact.btn-contact .icon-tel,
+  .liens-contact.btn-contact .icon-mail {
+    font-size: 1em;
+    height: 40px;
+    line-height: 19px;
+    padding: 8px 0 0;
+  }
+  .liens-contact.btn-contact .icon-tel:before,
+  .liens-contact.btn-contact .icon-mail:before {
+    width: 55px;
+    line-height: 55px;
+    left: -66px;
+    font-size: 4rem;
+  }
+  .liens-contact.btn-contact .icon-tel > span,
+  .liens-contact.btn-contact .icon-mail > span {
+    font-size: 0.7em;
+  }
+  .adresses:before {
+    width: 55px;
+    height: 90px;
+    background-size: 100%;
+    margin-right: 10px;
+  }
+  .adresses p,
+  .adresses strong,
+  .adresses b {
+    line-height: 1.2em;
+  }
 }
 @media (max-width: 480px) {
   #contact {
@@ -1531,14 +1667,36 @@ footer form #bouton-ok:active {
   #footer-bottom li.plan + li {
     padding: 0 0 0 5px;
   }
+  .adresses p,
+  .adresses strong,
+  .adresses b {
+    font-size: 0.8em;
+  }
 }
 @media (max-width: 390px) {
   .container.medium,
   .container.small {
     padding: 0 20px 0;
   }
+  header #bottom-header .content-bottom-header a#logo {
+    margin-left: 15px;
+  }
   header #bottom-header .content-bottom-header a#logo:after {
-    display: none;
+    left: 70px;
+  }
+  header #bottom-header .content-bottom-header .hamburger {
+    right: 15px;
+  }
+  header #bottom-header .content-bottom-header a#logo {
+    height: 27px;
+    width: 31px;
+    margin-top: 35px;
+  }
+  header #bottom-header .content-bottom-header a#logo:after {
+    width: 94px;
+    height: 25px;
+    top: 35px;
+    left: 60px;
   }
   header #top-header #blog-header {
     display: none;
@@ -1548,6 +1706,12 @@ footer form #bouton-ok:active {
   }
   .ref li {
     margin: 20px 35px 20px 15px;
+  }
+}
+@media (max-width: 335px) {
+  .liens-contact.btn-contact .icon-tel,
+  .liens-contact.btn-contact .icon-mail {
+    font-size: 0.9em;
   }
 }
 @media (max-width: 320px) {

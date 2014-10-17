@@ -121,8 +121,20 @@ function initMap() {
       ['Strasbourg', 48.5809678, 7.7543122, "https://www.google.fr/maps/place/30+Quai+des+Bateliers/@48.5809678,7.7543122,17z/data=!3m1!4b1!4m2!3m1!1s0x4796c854f4ca5601:0x7c8b5e817e4619b0"]
     ];
 
+    var _zoom;
+    
+    if ($("body").hasClass("lt-ie9")) {    
+	    if (window.matchMedia("(min-width: 1150px)").matches) {
+	      _zoom=7;
+	    } else {
+	      _zoom=6;
+	    }
+	 }else {
+	 	_zoom=6;
+	 }
+
 	var mapOptions = {
-        zoom: 6,
+        zoom: _zoom,
         center: new google.maps.LatLng(48.4167150, 4.9383584),
         panControl: false,
 		zoomControl: false,
@@ -137,7 +149,7 @@ function initMap() {
 
     var map = new google.maps.Map(mapElement, mapOptions);
 
-    var pin = '../layoutImg/pin.png';
+    var pin = 'layoutImg/pin.png'; 
 
     var parmentier = new google.maps.Marker({ 
     	position: new google.maps.LatLng(locations[0][1], locations[0][2]),
@@ -162,6 +174,44 @@ function initMap() {
     });
 }
 
+function openForm(){
+	if ($('#contactMail').hasClass("opened")) {
+		$("html, body").animate({scrollTop: $('#contactMail').offset().top - 70 }, 0);
+	}
+	
+	if ($('#contactTel').hasClass("opened")) {
+		$("html, body").animate({scrollTop: $('#contactTel').offset().top - 70 }, 0);
+	}
+
+
+
+	if ($("#contactMail").find('medium').hasClass("success")) {
+		$("html, body").animate({scrollTop: $('#contactMail').offset().top - 70 }, 500);
+	}
+	
+	if ($("#contactTel").find('medium').hasClass("success")) {
+		$("html, body").animate({scrollTop: $('#contactTel').offset().top - 70 }, 500);
+	}
+
+	$('#soumettre').click(function(){
+		$("#contactMail").slideDown(100);
+		$("#contactTel").slideUp(100,function() {
+			$("html, body").animate({scrollTop: $('#contactMail').offset().top - 70 }, 600);
+		});
+		return false;
+	});
+	
+	$('#consultant').click(function(){
+		$("#contactTel").slideDown(100);
+		$("#contactMail").slideUp(100,function() {
+			$("html, body").animate({scrollTop: $('#contactTel').offset().top - 70 }, 600);
+		});
+		return false;
+	});
+
+	setSizeBugerMenu();
+}
+
 
 $(document).ready(function(){
 
@@ -171,6 +221,7 @@ $(document).ready(function(){
 	//noScroll();
 
 	if ($("body").hasClass("contactPage")){
+		openForm();
 		google.maps.event.addDomListener(window, 'load', initMap);
 	}
 

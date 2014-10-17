@@ -8,50 +8,48 @@ $opened_tel = ($_GET['open']==="2");
 
   
 
- $message_status='';
+ $message_status = '';
+ $erreurNom = '';
+ $erreurSociete = '';
  $erreurMail = '';
- $erreurNom='';
- $erreurSociete='';
- $erreurTel='';
+ $erreurTel = '';
 
- $message_status2='';
- $erreurNom2='';
- $erreurTel2='';
+ $message_status2 = '';
+ $erreurNom2 = '';
+ $erreurTel2 = '';
 
- $erreurEnvoi= '';
+ $erreurEnvoi = '';
 
- $champs_incomplets = "Vous devez renseigner tous les champs.";
- $mail_invalide   = "Addresse mail invalide";
- $message_non_envoye  = "Le message n'a pas été envoyé. Veuillez réessayer.";
- $message_envoye = "Nous avons bien reçu votre demande de contact";
 
- $mail = $_POST['mail'];
- $nom = $_POST['nom'];
- $societe = $_POST['societe'];
- $tel = $_POST['tel'];
- $message = $_POST['message'];
+ $nom = strip_tags($_POST['nom']);
+ $societe = strip_tags($_POST['societe']);
+ $mail = strip_tags($_POST['mail']);
+ $tel = strip_tags($_POST['tel']);
+ $message = strip_tags($_POST['message']);
  $submitted = $_POST['submitted'];
 
- $nom2 = $_POST['nom2'];
- $tel2 = $_POST['tel2'];
- $periodeAM = $_POST['periodeAM'];
- $periodePM = $_POST['periodePM'];
+ $nom2 = strip_tags($_POST['nom2']);
+ $tel2 = strip_tags($_POST['tel2']);
+ $periodeAM = strip_tags($_POST['periodeAM']);
+ $periodePM = strip_tags($_POST['periodePM']);
  $submitted2 = $_POST['submitted2'];
  
  
  
  
 // MAIL DE DESTINATION //////////////////////////////////////
-$mailto = 'shwarp@live.fr';
+$mailto = 'faustine@proximis.com';
  
  
  
  
  $subject = "Nouveau message provenant de change-commerce.com";
  $headers = 'De: '. $nom . "\r\n" .
- 			'Societe: '. $societe . "\r\n" .
- 			'Tel: '. $tel . "\r\n" .
+ 			'Société: '. $societe . "\r\n" .
+ 			'Tél: '. $tel . "\r\n" .
 			'Répondre : ' . $mail . "\r\n";
+
+ $subject2 = "Demande d'appel telephonique sur change-commerce.com";
  $periodeIdeale = "– rien de coché –";
  if ($periodeAM === "on") {
  		if ($periodePM === "on") {
@@ -64,38 +62,47 @@ $mailto = 'shwarp@live.fr';
  		 $periodeIdeale = "après-midi ";
  	}
  }
-
- $subject2 = "Demande d'appel téléphonique sur change-commerce.com";
  $headers2 = 'De: '. $nom2 . "\r\n" .
-			 'Téléphone: '. $telephone . "\r\n" .
+			 'Tél: '. $tel2 . "\r\n" .
 			 'Période idéale: '. $periodeIdeale . "\r\n" ;
  
 
 
  if ( $submitted ) {
-	if(empty($mail)) {
- 		$erreurMail = 'Le champ <span>Email</span> est obligatoire';
- 		}else{
-			if(!(filter_var($mail, FILTER_VALIDATE_EMAIL))) {
-				$erreurMail = 'L’adresse email est invalide';
-			}
- 		}
  	if(empty($nom)) {
  		$erreurNom = 'Le champ <span>Nom</span> est obligatoire';
+ 		$message_status = "Erreur"; 
  	}
  	if(empty($societe)) {
  		$erreurSociete = 'Le champ <span>Société</span> est obligatoire';
+ 		$message_status = "Erreur"; 
+ 	}
+	if(empty($mail)) {
+ 		$erreurMail = 'Le champ <span>Email</span> est obligatoire';
+ 		$message_status = "Erreur"; 
+ 	}else{
+		if(!(filter_var($mail, FILTER_VALIDATE_EMAIL))) {
+			$erreurMail = 'L’adresse email est invalide';
+			$message_status = "Erreur"; 
+		}
  	}
  	if(empty($tel)) {
  		$erreurTel = 'Le champ <span>Téléphone</span> est obligatoire';
+ 		$message_status = "Erreur"; 
+ 	}else {
+ 		if (!(strlen($tel) == 10 && ctype_digit($tel))) {
+ 			$erreurTel = 'Le numéro de téléphone est incorrect';
+ 			$message_status = "Erreur"; 
+ 		}
  	}
-	if($erreurMail == '' && $erreurNom == '' && $erreurSite == ''&& $erreurMagasins == ''){ 
+	if($erreurNom == '' && $erreurSociete == '' && $erreurMail == '' && $erreurTel == ''){ 
 		 $sent = mail( $mailto, $subject, $headers, $message);
 		 if($sent) {
-		 	$message_status="envoiReussi";
+		 	$message_status = "Demande envoyée";
 		 }
 		 else{ 
-		 	$message_status = "eror"; 	
+		 	$message_status = "Erreur"; 	
+		 	$erreurEnvoi = "Votre message n'a pas pu être envoyé. Veuillez réessayer!";
 		}
 	}
 }
@@ -104,21 +111,26 @@ $mailto = 'shwarp@live.fr';
 if ( $submitted2 ) {
 	if(empty($tel2)) {
 		$erreurTel2 = 'Le champ <span>Téléphone</span> est obligatoire';
- 		}else {
- 			if (!(strlen($telephone) == 10 && ctype_digit($telephone))) {
- 				$erreurTel2 = 'Numéro de téléphone incorrect';
- 			}
+		$message_status2 = "Erreur"; 
+ 	}else {
+ 		if (!(strlen($tel2) == 10 && ctype_digit($tel2))) {
+ 			$erreurTel2 = 'Numéro de téléphone incorrect';
+ 			$message_status2 = "Erreur"; 
  		}
- 		if(empty($nom2)) {
- 			$erreurNom2 = 'Le champ <span>Nom</span> est obligatoire';
- 		}
- 		else{
-	 		if($erreurTel2 == '' && $erreurNom2 == ''){ 
-				 $sent = mail( $mailto, $subject2, $headers2);
-			 if($sent) {
-			 	$message_status2="envoiReussi";
+ 	}
+ 	if(empty($nom2)) {
+ 		$erreurNom2 = 'Le champ <span>Nom</span> est obligatoire';
+ 		$message_status2 = "Erreur"; 
+ 	}
+ 	else{
+	 	if($erreurTel2 == '' && $erreurNom2 == ''){ 
+			$sent = mail( $mailto, $subject2, $headers2);
+			if($sent) {
+			 	$message_status2 = "Demande envoyée";
 		 	}
-		 	else{ $message_status = "error"; 	
+		 	else{ 
+		 		$message_status2 = "Erreur"; 	
+		 		$erreurEnvoi = "Votre message n'a pas pu être envoyé. Veuillez réessayer!";
 			}
 		}
 	}
@@ -136,7 +148,7 @@ if ( $submitted2 ) {
 	  	<meta charset="utf-8">
 	  	<title>Change - Contact</title>
 	  	<meta name="description" content="">
-	  	<meta name="viewport" content="width=device-width,initial-scale=1">
+	  	<meta name="viewport" content="width=device-width; initial-scale = 1;" />
 
 	  	<meta property="og:title" content="Change" />
 	  	<meta property="og:type" content="article" />
@@ -212,13 +224,13 @@ if ( $submitted2 ) {
 				<p><b>Votre activité e-commerce est en plein développement</b><br/> et vous souhaitez intégrer rapidement vos magasins et vos produits au cœur de votre stratégie digitale, nous sommes à votre disposition pour échanger avec vous.</p>
 				<ul class="liens-contact btn-contact">
 					<li>
-						<a class="icon-mail" href="contact.php?open=1">
+						<a id="soumettre" class="icon-mail" href="contact.php?open=1">
 							contact@change-commerce.com
 							<span> ou <span class="a">échanger autour de mon projet</span></span>
 						</a>
 					</li>
 					<li>
-						<a class="icon-tel" href="contact.php?open=1">
+						<a id="consultant" class="icon-tel" href="contact.php?open=2">
 							09 72 26 88 88
 							<span> ou <span class="a">un consultant vous rappelle</span></span>
 						</a> 
@@ -242,41 +254,44 @@ if ( $submitted2 ) {
 			</div>
 		</div>
 
-		<div class="largeContainer content contactMail">
-			<div class="container medium">
-				<h2 class="h1">Votre projet</h2>
-				<p class="maj">Merci de bien vouloir compléter le formulaire suivant</p>
-				<p class="envoiReussi">Nos équipes vont revenir vers vous dés que possible</p>
+		<div id="contactMail" class="largeContainer content form <?php if($opened_mail) echo 'opened'; ?>">
+			<div class="container medium <?php if($message_status == 'Demande envoyée') echo 'success'; ?>">
+				<h2 class="h1"><?php if($message_status == 'Demande envoyée'){ echo 'Merci !'; }else{ echo 'Votre projet'; } ?></h2>
+				<p class="maj"><?php if($message_status == 'Demande envoyée'){ echo 'Nous avons bien reçu votre demande de contact'; }else{ echo 'Merci de bien vouloir compléter le formulaire suivant'; } ?></p>
+				<?php if($message_status == 'Demande envoyée') echo '<p class="envoiReussi">Nos équipes vont revenir vers vous dés que possible</p>' ; ?>
 
-				<p class="error">
-					Le champ <span>Nom &#38; prénom</span> est obligatoire <br/>
-					Le champ <span>Société</span> est obligatoire <br/>
-					Le champ <span>Email</span> est obligatoire <br/>
-					Le champ <span>Téléphone</span> est obligatoire <br/>
-				</p>
+				<?php if($message_status == 'Erreur'){
+					echo '<p class="error">';
+					if($erreurNom != '') echo $erreurNom .'<br/>';
+					if($erreurSociete != '') echo $erreurSociete .'<br/>';
+					if($erreurMail != '') echo $erreurMail .'<br/>';
+					if($erreurTel != '') echo $erreurTel .'<br/>'; 
+					if($erreurEnvoi != '') echo $erreurEnvoi;
+					echo '</p>'; 
+				} ?>
 
 				<form method="POST" action="contact.php?open=1">
 					<fieldset class="smallField">
-						<fieldset class="error" class="<? if ($erreurSite != '') { echo 'error-form'; }?>">
+						<fieldset class="<?php if($erreurNom != '') echo 'error'; ?>">
 							<label for="nom">Nom &#38; prénom</label>
-							<input type="text" id="nom" name="nom" value=" ">
+							<input type="text" name="nom" id="nom" value="<?php echo $nom; ?>">
 						</fieldset>
-						<fieldset class="<? if ($erreurSite != '') { echo 'error-form'; }?>">
+						<fieldset class="<?php if($erreurSociete != '') echo 'error'; ?>">
 							<label for="societe">Société</label>
-							<input type="text" id="societe" name="societe" value=" ">
+							<input type="text" name="societe" id="societe" value="<?php echo $societe; ?>">
 						</fieldset>
-						<fieldset class="<? if ($erreurNom != '') { echo 'error-form'; }?>">
+						<fieldset class="<?php if($erreurMail != '') echo 'error'; ?>">
 							<label for="mail">Email <span>(pour vous répondre)</span></label>
-							<input type="email" name="mail" id="mail" value=" ">
+							<input type="email" name="mail" id="mail" value="<?php echo $mail; ?>">
 						</fieldset>
-						<fieldset class="<? if ($erreurMail != '') { echo 'error-form'; }?>">
+						<fieldset class="<?php if($erreurTel != '') echo 'error'; ?>">
 							<label for="tel">Téléphone</label>
-							<input type="tel" name="tel" id="tel" value=" ">
+							<input type="tel" name="tel" id="tel" value="<?php echo $tel; ?>">
 						</fieldset>
 					</fieldset>
 					<fieldset class="fieldBlock">
 						<label for="message" class="facultatif">Commentaires <span>(facultatif)</span></label> 
-						<textarea name="message" id="message" value=" "></textarea>
+						<textarea name="message" id="message" value="<?php echo $message; ?>"></textarea>
 					</fieldset>
 					<input class="maj" type="submit" id="envoyer" name="submitted" value="Valider">
 				</form>
@@ -284,24 +299,33 @@ if ( $submitted2 ) {
 			</div>
 		</div>
 
-		<div class="largeContainer content contactTel">
-			<div class="container medium">
-				<h2 class="h1">Un consultant vous rappelle</h2>
+		<div id="contactTel" class="largeContainer content form <?php if($opened_tel) echo 'opened'; ?>">
+			<div class="container medium <?php if($message_status2 == 'Demande envoyée') echo 'success'; ?>">
+				<h2 class="h1"><?php if($message_status2 == 'Demande envoyée'){ echo 'Merci !'; }else{ echo 'Un consultant vous rappelle'; } ?></h2>
+				<?php if($message_status2 == 'Demande envoyée') echo '<p class="maj">Un consultant vous rappelle dés que possible</p>'; ?>
+
+				<?php if($message_status2 == 'Erreur'){
+					echo '<p class="error">';
+					if($erreurTel2 != '') echo $erreurTel2 .'<br/>';
+					if($erreurNom2 != '') echo $erreurNom2 .'<br/>';
+					if($erreurEnvoi != '') echo $erreurEnvoi;
+					echo '</p>'; 
+				}?>
 
 				<form method="POST" action="contact.php?open=2">
-					<fieldset class=" <? if ($erreurTelephone != '') { echo 'error-form'; }?>">
+					<fieldset class=" <?php if ($erreurTel2 != '') echo 'error'; ?>">
 						<label for="tel2">Numéro de téléphone</label>
-						<input type="tel" id="tel2" name="telephone" value=" ">
+						<input type="tel" id="tel2" name="tel2" value="<?php echo $tel2; ?>">
 					</fieldset>
-					<fieldset class=" <? if ($erreurNom2 != '') { echo 'error-form'; }?>">
+					<fieldset class=" <?php if ($erreurNom2 != '') echo 'error'; ?>">
 						<label for="nom2">Nom</label>
-						<input type="text" id="nom2" name="nom2" value=" ">
+						<input type="text" id="nom2" name="nom2" value="<?php echo $nom2; ?>">
 					</fieldset>
 					<fieldset class="rappel">
 						<legend class="facultatif">Quand préférez-vous être rappelé ? <span>(facultatif)</span></legend>
-						<input name="periodeAM" id="periodeAM" type="checkbox" />
+						<input name="periodeAM" id="periodeAM" type="checkbox" <?php if($periodeAM === "on") echo "checked"; ?>/>
 						<label class="labelBox" for="periodeAM">Matin</label>
-						<input class="secondBox"  name="periodePM" id="periodePM" type="checkbox" />
+						<input class="secondBox"  name="periodePM" id="periodePM" type="checkbox" <?php if($periodePM === "on") echo "checked"; ?>/>
 						<label class="labelBox" for="periodePM">Après-midi</label>
 					</fieldset>
 					<input class="maj" type="submit" id="envoyer" name="submitted2" value="Valider">
