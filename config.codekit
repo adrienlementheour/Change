@@ -223,6 +223,72 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/accueil\/afflelou.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 109440,
+		"inputAbbreviatedPath": "\/img\/accueil\/afflelou.jpg",
+		"outputAbbreviatedPath": "\/img\/accueil\/afflelou.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/accueil\/aubert.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 90055,
+		"inputAbbreviatedPath": "\/img\/accueil\/aubert.jpg",
+		"outputAbbreviatedPath": "\/img\/accueil\/aubert.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/accueil\/catimini.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49809,
+		"inputAbbreviatedPath": "\/img\/accueil\/catimini.jpg",
+		"outputAbbreviatedPath": "\/img\/accueil\/catimini.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/accueil\/histoire.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 102643,
+		"inputAbbreviatedPath": "\/img\/accueil\/histoire.jpg",
+		"outputAbbreviatedPath": "\/img\/accueil\/histoire.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/accueil\/manfield.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75571,
+		"inputAbbreviatedPath": "\/img\/accueil\/manfield.jpg",
+		"outputAbbreviatedPath": "\/img\/accueil\/manfield.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/accueil\/z.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 189380,
+		"inputAbbreviatedPath": "\/img\/accueil\/z.jpg",
+		"outputAbbreviatedPath": "\/img\/accueil\/z.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/ref\/afflelou.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -824,6 +890,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/logoVid.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32019,
+		"inputAbbreviatedPath": "\/layoutImg\/logoVid.png",
+		"outputAbbreviatedPath": "\/layoutImg\/logoVid.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/old_logoVid.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20073,
+		"inputAbbreviatedPath": "\/layoutImg\/old_logoVid.png",
+		"outputAbbreviatedPath": "\/layoutImg\/old_logoVid.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/old_pngMask.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10161,
+		"inputAbbreviatedPath": "\/layoutImg\/old_pngMask.png",
+		"outputAbbreviatedPath": "\/layoutImg\/old_pngMask.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/pin.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -831,6 +930,17 @@
 		"initialSize": 2264,
 		"inputAbbreviatedPath": "\/layoutImg\/pin.png",
 		"outputAbbreviatedPath": "\/layoutImg\/pin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/pngMask.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10161,
+		"inputAbbreviatedPath": "\/layoutImg\/pngMask.png",
+		"outputAbbreviatedPath": "\/layoutImg\/pngMask.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
