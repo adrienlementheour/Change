@@ -64,8 +64,8 @@
 						<ul id="menu-header">
 							<li><a href="solution-cross-commerce" class="lien-menu-header" title="Solution"><span>Solution</span></a></li>
 							<li><a href="fonctionnalites" class="lien-menu-header" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
-							<li class="active"><a href="references" class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
-							<li><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
+							<li><a href="references" class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
+							<li class="active"><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
 							<li><a href="qui-sommes-nous" class="lien-menu-header" title="Entreprise"><span>Entreprise</span></a></li>
 							<li><a href="contacts" class="lien-menu-header lien-contact" title="Contact"><span>Contact</span></a></li>
 						</ul>
@@ -77,66 +77,28 @@
 			</div>
 		</header>
 
-		<div class="container first small content">
-			<h1>Ils nous font confiance</h1>
-			<p><b>Tous nos clients ont comme point commun d&rsquo;avoir connu un brillant succ&egrave;s d&egrave;s la cr&eacute;ation de leur marque. </b>Au fil du temps, ils ont su l&rsquo;installer durablement et d&eacute;velopper un r&eacute;seau de magasins de qualit&eacute;. Tr&egrave;s t&ocirc;t, ils ont choisi le e-commerce comme levier de croissance innovant parce qu&rsquo;ils avaient per&ccedil;u qu&rsquo;il r&eacute;pondait d&eacute;j&agrave; &agrave; une attente de leurs clients.</p>
-			<p>Aujourd&rsquo;hui, ils nous confient leur projet e-commerce car ils souhaitent int&eacute;grer rapidement et simplement leurs points de vente au c&oelig;ur de leur strat&eacute;gie digitale et faire de leur site internet le meilleur ambassadeur de leur marque et de leurs produits.</p>
-			<h2 class="maj">Nous sommes fiers de les compter parmi nos plus fid&egrave;les clients :</h2>
-		</div>
-
-		<div class="largeContainer content">
-			<div class="container">
-				<ul class="ref">
-					<li>
-						<div class="logo"> <img src="img/ref/aubert-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/aubert.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/histoire-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/histoiredor.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/catimini-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/catimini.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/manfield-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/manfield.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/z-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/z-generation.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/alain-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/afflelou.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/rossignol-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/rossignol.jpg" alt=""/></div>
-					</li>
-					<li>
-						<div class="logo"> <img src="img/ref/solaris-logo.jpg" alt=""/> </div>
-						<div class="fond"><img src="img/ref/solaris.jpg" alt=""/></div>
-					</li>
-				</ul>
+		<div class="content">
+			<div class="container first small small-temp">
+				<h1>Chers partenaires,</h1>
+				<p><b>Change accorde une place essentielle à la relation qu'elle entretient avec VOUS</b><br/>(partenaires technologiques et partenaires d’intégration). À cet effet, nous sommes en cours de création d'un programme d'adhésion et d'animation qui vous sera exclusivement dédié.</p>
+			</div>
+			<div class="container container-temp">
+				<div class="temp temp-newsletter">
+					<h2 class="maj">Vous souhaitez<br/>être informé de la mise en ligne de cette page ?</h2>
+					<form action="#" method="post" id="newsletter-temp">
+						<label for="email-temp">Email</label>
+					  	<input size="" name="email" id="email-temp" type="email" value=""/>
+					  	<input class="maj" type="submit" value="S'inscrire" name="subscribe" class="button" id="envoyer">
+					</form>
+				</div>
+				<div class="temp temp-contact">
+					<h2 class="maj">Vous souhaitez<br/>entrer en contact avec nous ?</h2>
+					<span class="icon-mail fd-rouge">partners@change-commerce.com</span>
+				</div>
 			</div>
 		</div>
 
 		<footer>
-			<div id="contact" class="contactBlanc">
-				<div class="container medium">
-					<p><b>Contactez-nous.</b> Parlons de votre projet !</p>
-					<ul class="liens-contact">
-						<li>
-							<a class="icon-tel fd-bleu" href="contacts?open=2">09 72 26 88 88</a> 
-						</li>
-						<li>
-							<a class="icon-mail fd-rouge" href="contacts?open=1">contact@change-commerce.com</a>
-						</li>
-					</ul>
-				</div>
-			</div>
 			<div class="container medium">
 				<div class="col-left">
 					<h2 class="footer-titre rouge">L'entreprise</h2>

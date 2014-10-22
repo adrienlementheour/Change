@@ -698,7 +698,7 @@ header{
     background: @grisFonce;
     .content-bottom-header{
       text-align: right;
-      a#logo{
+      #logo{
         float: left;
         width: 44px;
         height: 39px;
@@ -954,6 +954,7 @@ ul.social-small{
   }
 }
 
+/* Liens contact (partie footer + page contact) */
 .liens-contact{
     &.btn-contact{
       padding: 30px 0 0 130px;
@@ -1236,16 +1237,16 @@ footer{
       }
       span{
         &:before{
-          font-size: 11em;
+          font-size: 165px;
           width: 175px;
           line-height: 175px;
           margin: 0 auto;
         }
         &.icon-cloud:before{
-            font-size: 14em;
+            font-size: 210px;
         }
         &.icon-tshirt:before{
-            font-size: 9em;
+            font-size: 135px;
         }
       }
       h3{
@@ -1264,17 +1265,17 @@ footer{
           float: left;
           width: 93px;
           line-height: 93px;
-          font-size: 4.5em;
+          font-size: 80px;
           margin: 0 35px 0 60px;
         }
         &.icon-horloge:before{
-            font-size: 5.5em;
+            font-size: 97px;
         }
         &.icon-fleche:before{
-            font-size: 6em;
+            font-size: 105px;
         }
         &.icon-cible:before{
-            font-size: 7em;
+            font-size: 125px;
         }
       }
       h3{
@@ -1353,7 +1354,7 @@ footer{
   background: url('../layoutImg/pngMask.png') no-repeat right bottom;
   z-index: 2;
 }
-video {
+video, embed {
   position: absolute;
   left: 50%;
   margin-left: -400px;
@@ -1381,7 +1382,7 @@ iframe{
   .vignettes{
     li{
       display: inline-block;
-      margin: 0 10px;
+      margin: 10px;
     }
     .lien{
       background: @bleu;
@@ -1397,7 +1398,7 @@ iframe{
       display: block;
       border: 0;
       font-size: 4em;
-      line-height: 77px;
+      line-height: 78px;
       &:hover, &:focus{
         color: @bleu;
       }
@@ -1405,8 +1406,10 @@ iframe{
   }
   #bulle{
     margin-left: 57px;
+    margin-top: 15px;
     display: block;
     position: absolute;
+    top: 110px;
     &:before{
       content: '• ';
       display: block;
@@ -1527,6 +1530,62 @@ iframe{
 }
 
 
+/* Pages en construction */
+
+.container.small-temp{
+  padding-right: 310px;
+}
+.container-temp{
+  overflow: hidden;
+  margin-top: 50px;
+}
+.temp{
+  background: @grisTresClairFond;
+  width: 448px;
+  float: left;
+  padding: 35px 30px;
+  border-radius: 5px;
+  .maj{
+    padding-top: 0;
+  }
+}
+.temp-newsletter{
+  margin-left: 34px;
+  form{
+    margin: 0;
+    input{
+      height: 32px;
+    }
+    #envoyer{
+      display: inline;
+      width: 155px;
+      height: 48px;
+      margin-left: 5px;
+    }
+  }
+}
+.temp-contact{
+   float: right;
+   .icon-mail{
+    display: block;
+    margin: 30px 0 6px;
+    text-indent: 55px;
+    line-height: 42px;
+    .bariol(1.4em);
+    &:before{
+      font-family: 'change';
+      line-height: 48px;
+      width: 48px;
+      color: @blanc;
+      font-size: 60px;
+      position: absolute;
+      display: block;
+      text-indent: 0;
+    }
+   }
+}
+
+
 /* @end */
 
 
@@ -1627,7 +1686,7 @@ iframe{
             }
           }
         }
-        a#logo{
+        #logo{
           margin: 28px 0 0 25px;
           &:after{
             left: 80px;
@@ -1684,7 +1743,7 @@ iframe{
       width: 470px;
       li{
         float: none;
-        width: 100%;
+        width: 98%;
         overflow: hidden;
         span:before{
           margin: 0 35px 0 0;
@@ -1707,6 +1766,14 @@ iframe{
 
   .ref{
     padding-left: 40px;
+  }
+
+  .temp{
+    float: none;
+  }
+  .temp-contact{
+    float: none;
+    margin: 20px 0 0 34px;
   }
 
 }
@@ -1805,21 +1872,38 @@ iframe{
   }
 
   .home{
-    .first{
+    .content{
       p{
         width: 95%;
       }
     }
-    .first-ul{
+    /*.first-ul{
       width: 95%;
+    }*/
+    .first-ul{
+      width: 100%;
     }
   }
 
   #containerVid img{
     width: 70%;
   }
-  #mask, video{
+  #mask, video, embed{
     display: none;
+  }
+
+  #slider{
+    #bulle{
+      margin-top: 0;
+      &:before{
+        font-size: 27px;
+      }
+    }
+    .pagination{
+      top: 230px;
+      margin-left: -267px;
+      width: 535px;
+    }
   }
 
   .largeContainer+footer{
@@ -1900,7 +1984,13 @@ iframe{
     }
 
     .home{
+      .content{
+        p{
+          width: 86%;
+        }
+      }
       .first-ul{
+        width: 92%;
         li, li.liSmall, li.liBig{
           width: 100%;
           margin: 50px 0 0;
@@ -2011,9 +2101,29 @@ iframe{
     }
   }*/
 
+  #slider{
+    .pagination{
+      width: 265px;
+      margin-left: -133px;
+    }
+    /*.vignettes{
+      .lien{
+        display: block;
+        margin: 10px auto;
+      }
+    }*/
+    .slides{
+      height: 800px;
+    }
+  }
+
+  .temp{
+    width: 78%;
+  }
+
 }
 
-@media (max-width: 515px) {
+@media (max-width: 520px) {
   
 
   footer{
@@ -2075,6 +2185,33 @@ iframe{
     }
   }
 
+  .temp{
+    width: 75%;
+    form{
+      label{
+        text-align: center;
+      }
+      input{
+        margin: 0 auto;
+        display: block;
+      }
+      #envoyer{
+        display: block;
+        margin: 5px 0 0;
+        margin: 5px auto 0;
+      }
+    }
+    .icon-mail{
+      text-indent: 0;
+      font-size: 0.95em;
+      text-align: center;
+      &:before{
+        position: relative;
+        margin: 0 auto;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -2117,16 +2254,16 @@ iframe{
       li{
         span{
           &:before{
-            margin: 19px 30px 40px 0;
-            font-size: 2.5em;
+            margin: 14px 20px 40px 15px;
+            font-size: 44px;
             width: 54px;
             line-height: 54px;
           }
           &.icon-fleche:before, &.icon-cible:before{
-            font-size: 4em;
+            font-size: 70px;
           }
           &.icon-horloge:before{
-            font-size: 3em;
+            font-size: 55px;
           }
         }
       }
@@ -2141,6 +2278,18 @@ iframe{
 
 }
 
+@media (max-width: 465px){
+  #slider{
+    margin-top: -350px;
+    .pagination{
+      top: 350px;
+    }
+    .slides{
+      height: 900px;
+    }
+  }
+}
+
 @media (max-width: 430px){
   
   .home {
@@ -2151,6 +2300,10 @@ iframe{
         }
       }
     }
+  }
+
+  .temp{
+    width: 70%;
   }
 
 }
@@ -2166,7 +2319,7 @@ iframe{
   header {
     #bottom-header {
       .content-bottom-header {
-        a#logo{
+        #logo{
           margin-left: 15px;
           &:after{
             left: 70px;
@@ -2179,7 +2332,7 @@ iframe{
     }
   }
 
-  header #bottom-header .content-bottom-header a#logo{
+  header #bottom-header .content-bottom-header #logo{
     height: 27px;
     width: 31px;
     margin-top: 35px;
@@ -2218,6 +2371,14 @@ iframe{
     } 
   }
 
+  .temp{
+    form{
+      input{
+        width: 92%;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 335px) {
@@ -2241,6 +2402,11 @@ iframe{
 
   #contact .liens-contact .icon-mail {
     margin: 10px 0 0 57px;
+  }
+
+  .temp {
+    width: 71%;
+    margin-left: 15px;
   }
 
 }

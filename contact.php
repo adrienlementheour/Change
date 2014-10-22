@@ -1,10 +1,10 @@
  <?php
  
 $opened_mail = false;
-$opened_mail = ($_GET['open']==="1");
+$opened_mail = ($_GET['open']=="1");
    
 $opened_tel = false;
-$opened_tel = ($_GET['open']==="2");
+$opened_tel = ($_GET['open']=="2");
 
   
 
@@ -185,10 +185,10 @@ if ( $submitted2 ) {
 			<div id="top-header">
 				<div class="container">
 					<nav class="content-top-header">
-						<div id="blog-header">
+						<!--<div id="blog-header">
 							<p><b>En direct du blog :</b> <span>Shopping : simplifier les achats, la cl&eacute; de la r&eacute;ussite</span></p>
 							<a href="#" class="icon-plus" title="Lire le blog"></a>
-						</div>
+						</div>-->
 						<ul class="social-small">
 							<li><a href="#" class="lien-social icon-facebook" title="Change sur Facebook"></a></li>
 							<li><a href="#" class="lien-social icon-twitter" title="Change sur Twitter"></a></li>
@@ -200,11 +200,11 @@ if ( $submitted2 ) {
 			<div id="bottom-header">
 				<div class="container">
 					<nav class="content-bottom-header">
-						<a href="http://www.change-commerce.com" id="logo" title="Retour à l'accueil" class="ir">Change - Cross Commerce</a>
+						<a href="./" id="logo" title="Retour à l'accueil" class="ir">Change - Cross Commerce</a>
 						<ul id="menu-header">
 							<li><a href="solution-cross-commerce" class="lien-menu-header" title="Solution"><span>Solution</span></a></li>
 							<li><a href="fonctionnalites" class="lien-menu-header" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
-							<li><a href="references " class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
+							<li><a href="references" class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
 							<li><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
 							<li><a href="qui-sommes-nous" class="lien-menu-header" title="Entreprise"><span>Entreprise</span></a></li>
 							<li class="active"><a href="contacts" class="lien-menu-header lien-contact" title="Contacter la société Change"><span>Contact</span></a></li>
@@ -269,7 +269,7 @@ if ( $submitted2 ) {
 					echo '</p>'; 
 				} ?>
 
-				<form method="POST" action="contact.php?open=1">
+				<form method="POST" action="contacts?open=1">
 					<fieldset class="smallField">
 						<fieldset class="<?php if($erreurNom != '') echo 'error'; ?>">
 							<label for="nom">Nom &#38; prénom</label>
@@ -311,7 +311,7 @@ if ( $submitted2 ) {
 					echo '</p>'; 
 				}?>
 
-				<form method="POST" action="contact.php?open=2">
+				<form method="POST" action="contacts?open=2">
 					<fieldset class=" <?php if ($erreurTel2 != '') echo 'error'; ?>">
 						<label for="tel2">Numéro de téléphone</label>
 						<input type="tel" id="tel2" name="tel2" value="<?php echo $tel2; ?>">
@@ -338,14 +338,14 @@ if ( $submitted2 ) {
 					<h2 class="footer-titre rouge">L'entreprise</h2>
 					<nav>
 						<ul class="menu-footer">
-							<li><a href="#" title="A propos">A propos</a></li>
+							<li><a href="index.html#apropos" title="A propos">A propos</a></li>
 							<li><a href="programme-integrateurs" title="Partenaires">Partenaires</a></li>
-							<li><a href="#" title="Carrière">Carrière</a></li>
+							<!--<li><a href="#" title="Carrière">Carrière</a></li>-->
 							<li><a href="contacts" title="Contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
-				<div class="col-mid">
+				<!--<div class="col-mid">
 					<h2 class="footer-titre gris">Ressources</h2>
 					<nav>
 						<ul class="menu-footer">
@@ -368,14 +368,14 @@ if ( $submitted2 ) {
 					  	<input size="" name="email" id="email" type="email" value="votre@email.fr" onfocus="this.value=''" />
 					  	<input type="submit" value="OK" name="subscribe" class="button" id="bouton-ok">
 					</form>
-				</div>
+				</div>-->
 			</div>
 			<div id="footer-bottom">
 				<div class="container medium">
 					<nav>
 						<ul>
 							<li class="plan"><a href="#" title="Plan du site">Plan du site</a></li>
-							<li><a href="mentions.html" title="Mentions légales">Mentions légales</a></li>
+							<li><a href="mentions-legales" title="Mentions légales">Mentions légales</a></li>
 						</ul>
 					</nav>
 					<span class="copyright">©2014 Change</span>

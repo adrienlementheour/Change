@@ -4,6 +4,7 @@ var countSlide = 0;
 var slides;
 var timerSlide = 5;
 var pagination;
+var vignettes;
 
 
 /* Burger menu */
@@ -174,12 +175,22 @@ function setVideoContainer(){
 	if($("html").hasClass("lt-ie9")){
 		$('#containerVid').find('.container').css('height', '700px');
 	}
+	if($('#containerVid').find('video').length > 0 ){
+		$("video").bind("ended", function() {
+	   		$(this).fadeOut(function(){
+	   			$('#mask').fadeOut();
+	   		});
+		});
+	}
+	if($('#containerVid').find('embed').length > 0 ){
+		$("embed").bind("ended", function() {
+	   		$(this).fadeOut(function(){
+	   			$('#mask').fadeOut();
+	   		});
+		});
+	}
 
-	$("video").bind("ended", function() {
-	   	$(this).fadeOut(function(){
-	   		$('#mask').fadeOut();
-	   	});
-	});
+	
 }
 
 
@@ -197,7 +208,8 @@ function resetSlide(index){
 function setSlide(index){
 	if (slides.eq(index).css('z-index') !== "2") {
 		slides.eq(index).css({'z-index': '3', 'opacity': '0'});
-		TweenMax.to(pagination, 0.2, {left: index*135+"px", ease:Quad.easeIn});
+		var posVignette = vignettes.eq(index).position();
+		TweenMax.to(pagination, 0.2, {left: posVignette.left+5+"px", top: posVignette.top+110+"px", ease:Quad.easeIn});
 		TweenMax.to(slides.eq(index), 0.5, {opacity: "1", onComplete: resetSlide, onCompleteParams:[index]});
 	}
 }
@@ -212,8 +224,6 @@ function slideshow(){
 }
 
 function setSlider(){
-	var vignettes = $('#slider').find('.vignettes').find('li');
-
 	for(var i = 0; i < slides.length; i++){
 		var src = slides.eq(i).data('img');
 		slides.eq(i).css('background-image', 'url(' + src + ')');
@@ -356,6 +366,7 @@ $(document).ready(function(){
 
 	$(document).scroll(function() {
 		scroll();
+		setFooter();
 	});
 
 });
@@ -363,6 +374,7 @@ $(document).ready(function(){
 $(window).load(function(){
 	if($('body').hasClass('home')){
 		slides = $('#slider').find('.slides').find('li');
+		vignettes = $('#slider').find('.vignettes').find('li');
 		pagination = $('#bulle');
 		setSlider();
 	}
