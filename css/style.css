@@ -778,6 +778,9 @@ header #bottom-header .content-bottom-header ul#menu-header li a:active {
   opacity: 1;
   padding-top: 4px;
 }
+header #bottom-header .content-bottom-header ul#menu-header li a:active.lien-temp {
+  opacity: 0.5;
+}
 header #bottom-header .content-bottom-header ul#menu-header li a:active:before {
   height: 94px;
   top: 4px;
@@ -1802,10 +1805,11 @@ iframe {
   }
   .temp {
     float: none;
+    margin-left: 55px;
   }
   .temp-contact {
     float: none;
-    margin: 20px 0 0 34px;
+    margin: 20px 0 0 55px;
   }
 }
 @media (max-width: 979px) {
@@ -2281,6 +2285,10 @@ iframe {
   .ref li {
     margin: 20px 35px 20px 15px;
   }
+  .temp {
+    width: 71%;
+    margin-left: 15px;
+  }
   .temp form input {
     width: 92%;
   }
@@ -2298,10 +2306,6 @@ iframe {
   }
   #contact .liens-contact .icon-mail {
     margin: 10px 0 0 57px;
-  }
-  .temp {
-    width: 71%;
-    margin-left: 15px;
   }
 }
 /* retina */
