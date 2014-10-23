@@ -10,8 +10,8 @@
  // MAIL DE DESTINATION //////////////////////////////////////
 $mailto = 'faustine.marechalle@proximis.com';
 
- $subject = "Inscription newsletter page Partenaires sur change-commerce.com";
- $message = "Une personne souhaite être tenue au courant de la mise en ligne de la page partenaires: " . $mail;
+ $subject = "Inscription newsletter page Entreprise sur change-commerce.com";
+ $message = "Une personne souhaite être tenue au courant de la mise en ligne de la page entreprise: " . $mail;
 
   if ( $submitted ) {
 	if(empty($mail)) {
@@ -44,7 +44,7 @@ $mailto = 'faustine.marechalle@proximis.com';
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 	  	<meta charset="utf-8">
-	  	<title>Change - Partenaires</title>
+	  	<title>Change - Entreprise</title>
 	  	<meta name="description" content="">
 	  	<meta name="viewport" content="width=device-width, initial-scale = 1" />
 
@@ -104,8 +104,8 @@ $mailto = 'faustine.marechalle@proximis.com';
 							<li><a href="solution-cross-commerce" class="lien-menu-header" title="Solution"><span>Solution</span></a></li>
 							<li><a href="fonctionnalites" class="lien-menu-header" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
 							<li><a href="references" class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
-							<li class="active lien-temp"><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
-							<li class="lien-temp"><a href="qui-sommes-nous" class="lien-menu-header" title="Entreprise"><span>Entreprise</span></a></li>
+							<li class="lien-temp"><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
+							<li class="active lien-temp"><a href="qui-sommes-nous" class="lien-menu-header" title="Entreprise"><span>Entreprise</span></a></li>
 							<li><a href="contacts" class="lien-menu-header lien-contact" title="Contact"><span>Contact</span></a></li>
 						</ul>
 						<div class="hamburger">
@@ -118,13 +118,13 @@ $mailto = 'faustine.marechalle@proximis.com';
 
 		<div class="content">
 			<div class="container first small small-temp">
-				<h1>Chers partenaires,</h1>
-				<p><b>Change accorde une place essentielle à la relation qu'elle entretient avec VOUS</b><br/>(partenaires technologiques et partenaires d’intégration). À cet effet, nous sommes en cours de création d'un programme d'adhésion et d'animation qui vous sera exclusivement dédié.</p>
+				<h1>La page entreprise <br/> sera prochainement mise en ligne. </h1>
+				<p>Elle vous permettra de comprendre <b>notre vision du marché du Retail</b> et du e-commerce ainsi que de connaître les principaux acteurs de l'entreprise qui portent ce projet.</p>
 			</div>
 			<div class="container container-temp">
 				<div class="temp temp-newsletter">
 					<h2 class="maj"><?php if($message_status == "success"){ echo "Merci !"; }else{ echo "Vous souhaitez<br/>être informé de la mise en ligne de cette page ?"; } ?></h2>
-					<form action="programme-integrateurs" method="post" id="newsletter-temp" class='<?php if($message_status == "success") echo $message_status; if($message_status == "Erreur") echo 'error';?>'>
+					<form action="qui-sommes-nous" method="post" id="newsletter-temp" class='<?php if($message_status == "success") echo $message_status; if($message_status == "Erreur") echo 'error';?>'>
 						<label for="email-temp">Email</label>
 					  	<input size="" name="email-news" id="email-temp" type="email" value="<?php echo $mail; ?>"/>
 					  	<input class="maj" type="submit" value="S'inscrire" name="subscribe" class="button" id="envoyer">
@@ -139,7 +139,7 @@ $mailto = 'faustine.marechalle@proximis.com';
 				</div>
 				<div class="temp temp-contact">
 					<h2 class="maj">Vous souhaitez<br/>entrer en contact avec nous ?</h2>
-					<span class="icon-mail fd-rouge">partners@change-commerce.com</span>
+					<span class="icon-mail fd-rouge">contact@change-commerce.com</span>
 				</div>
 			</div>
 		</div>

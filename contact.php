@@ -205,8 +205,8 @@ if ( $submitted2 ) {
 							<li><a href="solution-cross-commerce" class="lien-menu-header" title="Solution"><span>Solution</span></a></li>
 							<li><a href="fonctionnalites" class="lien-menu-header" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
 							<li><a href="references" class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
-							<li><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
-							<li><a href="qui-sommes-nous" class="lien-menu-header" title="Entreprise"><span>Entreprise</span></a></li>
+							<li class="lien-temp"><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
+							<li class="lien-temp"><a href="qui-sommes-nous" class="lien-menu-header" title="Entreprise"><span>Entreprise</span></a></li>
 							<li class="active"><a href="contacts" class="lien-menu-header lien-contact" title="Contacter la société Change"><span>Contact</span></a></li>
 						</ul>
 						<div class="hamburger">

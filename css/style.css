@@ -673,6 +673,9 @@ header #bottom-header .content-bottom-header ul#menu-header li {
   height: 94px;
   vertical-align: top;
 }
+header #bottom-header .content-bottom-header ul#menu-header li.lien-temp {
+  opacity: 0.5;
+}
 header #bottom-header .content-bottom-header ul#menu-header li.active a,
 header #bottom-header .content-bottom-header ul#menu-header li.current-menu-item a {
   padding-top: 4px;
@@ -777,9 +780,6 @@ header #bottom-header .content-bottom-header ul#menu-header li a:focus:after {
 header #bottom-header .content-bottom-header ul#menu-header li a:active {
   opacity: 1;
   padding-top: 4px;
-}
-header #bottom-header .content-bottom-header ul#menu-header li a:active.lien-temp {
-  opacity: 0.5;
 }
 header #bottom-header .content-bottom-header ul#menu-header li a:active:before {
   height: 94px;
@@ -1620,11 +1620,24 @@ iframe {
 .temp .maj {
   padding-top: 0;
 }
+.lt-ie9 .temp {
+  width: 400px;
+}
 .temp-newsletter {
   margin-left: 34px;
 }
 .temp-newsletter form {
   margin: 0;
+  width: 100%;
+}
+.temp-newsletter form.success {
+  display: none;
+}
+.temp-newsletter form.error label {
+  color: #f04a2f;
+}
+.temp-newsletter form.error input {
+  border-color: #f04a2f;
 }
 .temp-newsletter form input {
   height: 32px;
@@ -1634,6 +1647,16 @@ iframe {
   width: 155px;
   height: 48px;
   margin-left: 5px;
+}
+.lt-ie9 .temp-newsletter form #envoyer {
+  width: 118px;
+  float: right;
+}
+.temp-newsletter .inscriptionOk {
+  margin-top: 59px;
+}
+.temp-newsletter p.error {
+  width: 81%;
 }
 .temp-contact {
   float: right;
@@ -2087,7 +2110,7 @@ iframe {
     height: 800px;
   }
   .temp {
-    width: 78%;
+    width: 74%;
   }
 }
 @media (max-width: 520px) {
@@ -2145,7 +2168,7 @@ iframe {
     line-height: 1.2em;
   }
   .temp {
-    width: 75%;
+    width: 71%;
   }
   .temp form label {
     text-align: center;
@@ -2236,7 +2259,7 @@ iframe {
     padding: 12px 0 0;
   }
   .temp {
-    width: 70%;
+    width: 65%;
   }
 }
 @media (max-width: 390px) {
@@ -2287,11 +2310,10 @@ iframe {
     margin: 20px 35px 20px 15px;
   }
   .temp {
-    width: 71%;
     margin-left: 15px;
   }
   .temp form input {
-    width: 92%;
+    width: 100%;
   }
 }
 @media (max-width: 335px) {

@@ -730,6 +730,9 @@ header{
           margin: 0 0 0 16px;
           height: 94px;
           vertical-align: top;
+          &.lien-temp{
+            opacity: 0.5;
+          }
           &.active, &.current-menu-item {
             a{
               .lienMenuActif();
@@ -793,9 +796,6 @@ header{
             }
             &:active{
               opacity: 1;
-              &.lien-temp{
-                opacity: 0.5;
-              }
               .lienMenuActif();
             }
             .lt-ie9 &{
@@ -1552,11 +1552,26 @@ iframe{
   .maj{
     padding-top: 0;
   }
+  .lt-ie9 &{
+    width: 400px;
+  }
 }
 .temp-newsletter{
   margin-left: 34px;
   form{
     margin: 0;
+    width: 100%;
+    &.success{
+      display: none;
+    }
+    &.error{
+      label{
+        color: @rouge;
+      }
+      input{
+        border-color: @rouge;
+      }
+    }
     input{
       height: 32px;
     }
@@ -1565,7 +1580,17 @@ iframe{
       width: 155px;
       height: 48px;
       margin-left: 5px;
+      .lt-ie9 &{
+        width: 118px;
+        float: right;
+      }
     }
+  }
+  .inscriptionOk{
+    margin-top: 59px;
+  }
+  p.error{
+    width: 81%;
   }
 }
 .temp-contact{
@@ -2123,7 +2148,7 @@ iframe{
   }
 
   .temp{
-    width: 78%;
+    width: 74%;
   }
 
 }
@@ -2191,7 +2216,7 @@ iframe{
   }
 
   .temp{
-    width: 75%;
+    width: 71%;
     form{
       label{
         text-align: center;
@@ -2308,7 +2333,7 @@ iframe{
   }
 
   .temp{
-    width: 70%;
+    width: 65%;
   }
 
 }
@@ -2377,11 +2402,10 @@ iframe{
   }
 
   .temp{
-    width: 71%;
     margin-left: 15px;
     form{
       input{
-        width: 92%;
+        width: 100%;
       }
     }
   }
