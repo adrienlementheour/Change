@@ -1590,6 +1590,30 @@ footer{
 
 /* @group Page Solution */
 
+/*<div class="num-bloc">1.</div>*/
+.num-bloc{
+	display: block;
+	width: 274px;
+	height: 274px;
+	background-color: #F4F1EB;
+	.border-radius(8px);
+	position: relative;
+	.num-bloc-inte{
+		display: block;
+		width: 252px;
+		height: 252px;
+		position: absolute;
+		top: 11px;
+		left: 11px;
+		background-color: @blanc;
+		.border-radius(5px);
+		text-align: center;
+		line-height: 252px;
+		color: @rouge;
+		.proximaNovaIt(11em);
+	}
+}
+
 #bloc-visu-solution{
 	display: block;
 	width: 100%;
@@ -1689,6 +1713,7 @@ footer{
 	height: auto;
 	margin: 0;
 	padding: 0;
+	position: relative;
 	.zone-gauche-schema{
 		display: inline-block;
 		vertical-align: top;
@@ -1706,7 +1731,52 @@ footer{
 		padding: 0 0 0 165px;
 	}
 	.zone-centre-schema{
-		
+		.zone-web{
+			display: block;
+			width: 104px;
+			height: 104px;
+			position: absolute;
+			top: 50%;
+			margin-top: -52px;
+			left: 50%;
+			margin-left: -52px;
+			background-color: @rouge;
+			.border-radius(5px);
+			text-align: center;
+			.icon-web{
+				color: @blanc;
+				font-size: 46px;
+				line-height: 104px;
+			}
+		}
+	}
+	.zone-arrow{
+		display: block;
+		width: 113px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		text-align: center;
+		.box-sizing(border-box);
+		&.left{
+			margin-left: -165px;
+		}
+		&.right{
+			margin-left: 52px;
+		}
+		.icon-arrow-double{
+			display: block;
+			width: 100%;
+			height: 50px;
+			position: absolute;
+			top: 50%;
+			margin-top: -25px;
+			left: 0;
+			line-height: 50px;
+			color: #9c9c9f;
+			font-size: 11px;
+		}
 	}
 }
 
