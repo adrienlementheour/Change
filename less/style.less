@@ -133,6 +133,21 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right:before {
+	content: "\e60d";
+}
+.icon-arrow-double:before {
+	content: "\e60e";
+}
+.icon-tool:before {
+	content: "\e60f";
+}
+.icon-store:before {
+	content: "\e610";
+}
+.icon-web:before {
+	content: "\e611";
+}
 .icon-facebook:before {
   content: "\f09a";
 }
@@ -365,6 +380,13 @@ body{
 	height: auto;
 	position: relative;
 	background-color: @grisTresClairFond;
+}
+.bloc-blanc{
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-color: @blanc;
 }
 .largeContainer{
   background: @grisTresClairFond;
@@ -1591,14 +1613,15 @@ iframe{
 .encadre{
 	display: block;
 	width: 100%;
-	height: auto;
+	height: 140px;
 	background-color: #F4F1EB;
 	border: 2px solid @bleu;
 	.border-radius(5px);
 	.box-shadow(0 8px 21px rgba(0, 0, 0, 0.07));
 	.box-sizing(border-box);
 	position: relative;
-	margin: 0 0 40px 0;
+	margin: 30px 0;
+	line-height: 140px;
 	.bloc-icon-encadre{
 		display: block;
 		width: 140px;
@@ -1620,23 +1643,93 @@ iframe{
 			top: 50%;
 			margin-top: -50px;
 			left: 0;
+			font-size: 100px;
 		}
 		.icon-cross{
 			font-size: 120px;
 		}
+		.icon-tshirt{
+			font-size: 100px;
+		}
+		.icon-cloud{
+			font-size: 150px;
+		}
+		.icon-plug{
+			font-size: 130px;
+		}
 	}
 	.bloc-txt-encadre{
-		color: @bleu;
-		display: block;
+		color: @bleuTexte;
+		display: inline-block;
+		vertical-align: middle;
 		.box-sizing(border-box);
 		width: 100%;
 		height: auto;
-		padding: 34px 120px 34px 170px;
-		.bariol(1.9em);
-		line-height: 1.1em;
+		padding: 0 34px 0 170px;
+		.bariol(1.8em);
+		line-height: 1em;
 		b{
 			.bariolBold(1em);
 			line-height: 1.1em;
+		}
+	}
+}
+
+.zone-schema{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	.zone-gauche-schema{
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		margin: 0;
+		.box-sizing(border-box);
+		padding: 0 165px 0 0;
+	}
+	.zone-droite-schema{
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		margin: 0;
+		.box-sizing(border-box);
+		padding: 0 0 0 165px;
+	}
+	.zone-centre-schema{
+		
+	}
+}
+
+ul.liste-checks-bleus{
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	li{
+		background-color: @bleu;
+		.bariolBold(1.125em);
+		color: @blanc;
+		padding: 6px 0;
+		margin: 12px 0;
+		text-align: center;
+		.border-radius(5px);
+		position: relative;
+		&:before{
+			content: "";
+			display: block;
+			width: 32px;
+			height: 33px;
+			background: url('../layoutImg/check.png') no-repeat center center;
+			position: absolute;
+			top: -7px;
+			left: -15px;
+			.zone-gauche-schema &{
+				left: inherit;
+				right: -15px;
+			}
 		}
 	}
 }
