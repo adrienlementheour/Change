@@ -748,6 +748,10 @@ header #bottom-header .content-bottom-header ul#menu-header li a.lien-contact {
   line-height: 92px;
   height: 94px;
 }
+.lt-ie9 header #bottom-header .content-bottom-header ul#menu-header li a.lien-contact {
+  line-height: 96px;
+  height: 96px;
+}
 header #bottom-header .content-bottom-header ul#menu-header li a.lien-contact:before {
   bottom: 0;
 }
@@ -1432,29 +1436,32 @@ footer form #bouton-ok:active {
 }
 #containerVid img {
   bottom: -1px;
-  right: 0;
+  right: 1px;
   position: absolute;
   z-index: 0;
+  cursor: pointer;
+}
+#containerVid .rejouer {
+  position: absolute;
+  display: block;
+  background: #ffffff;
+  color: #47acdc;
+}
+#containerVid video,
+#containerVid embed {
+  position: absolute;
+  right: 1px;
+  bottom: -50px;
+  z-index: 1;
 }
 #mask {
   position: absolute;
   width: 100%;
   height: 95%;
-  left: 0;
+  right: 1px;
   bottom: 0;
   background: url('../layoutImg/pngMask.png') no-repeat right bottom;
   z-index: 2;
-}
-video,
-embed {
-  position: absolute;
-  left: 50%;
-  margin-left: -400px;
-  bottom: -50px;
-  z-index: 1;
-}
-iframe {
-  position: relative;
 }
 #slider {
   margin-top: -230px;
@@ -1796,15 +1803,21 @@ iframe {
   float: right;
 }
 .temp-contact .icon-mail {
-  display: block;
-  margin: 30px 0 6px;
-  text-indent: 55px;
+  display: inline-block;
+  position: relative;
+  margin: 30px 0 6px 55px;
   line-height: 42px;
   font-family: 'bariol', sans-serif;
   font-size: 1.4em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  color: #34343c;
+  border-color: rgba(52, 52, 60, 0.2);
+}
+.temp-contact .icon-mail:hover {
+  color: #f04a2f;
+  border-color: #eecfcb;
 }
 .temp-contact .icon-mail:before {
   font-family: 'change';
@@ -1814,7 +1827,7 @@ iframe {
   font-size: 60px;
   position: absolute;
   display: block;
-  text-indent: 0;
+  left: -55px;
 }
 /* @end */
 /* @group Non semantic Boilerplate */
@@ -2061,12 +2074,14 @@ iframe {
   .home .first-ul {
     width: 100%;
   }
+  #containerVid video,
+  #containerVid embed {
+    display: none;
+  }
   #containerVid img {
     width: 70%;
   }
-  #mask,
-  video,
-  embed {
+  #mask {
     display: none;
   }
   #slider #bulle {
@@ -2376,6 +2391,9 @@ iframe {
   .adresses b {
     font-size: 0.8em;
   }
+  #contactTel .facultatif {
+    display: inline;
+  }
 }
 @media (max-width: 465px) {
   #slider {
@@ -2445,6 +2463,7 @@ iframe {
   }
   .temp {
     margin-left: 15px;
+    width: 73%;
   }
   .temp form input {
     width: 100%;

@@ -196,7 +196,13 @@ function setVideoContainer(){
 	   		});
 		});
 	}
-
+	$('#containerVid').find('img').click(function(){
+		$('#mask').fadeIn(function(){
+			$('video')[0].play();
+			setTimeout( "$('video').fadeIn();", 200);
+		
+		});
+	});
 	
 }
 

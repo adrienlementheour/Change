@@ -8,10 +8,10 @@
  $submitted = $_POST['subscribe'];
 
  // MAIL DE DESTINATION //////////////////////////////////////
-$mailto = 'faustine.marechalle@proximis.com';
+$mailto = 'info@proximis.com';
 
- $subject = "Inscription newsletter page Entreprise sur change-commerce.com";
- $message = "Une personne souhaite être tenue au courant de la mise en ligne de la page entreprise: " . $mail;
+ $subject = "Inscription alerte page Entreprise";
+ $message = "Une personne souhaite être tenue au courant de la mise en ligne de la page entreprise sur change-commerce.com : " . $mail;
 
   if ( $submitted ) {
 	if(empty($mail)) {
@@ -139,7 +139,7 @@ $mailto = 'faustine.marechalle@proximis.com';
 				</div>
 				<div class="temp temp-contact">
 					<h2 class="maj">Vous souhaitez<br/>entrer en contact avec nous ?</h2>
-					<span class="icon-mail fd-rouge">contact@change-commerce.com</span>
+					<a href="mailto:contact@change-commerce.com" class="icon-mail fd-rouge">contact@change-commerce.com</a>
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18027",
+"creatorBuild": "17945",
 "files": {
 	"\/apple-touch-icon-114x114.png": {
 		"fileType": 32768,
@@ -155,6 +155,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/entreprise.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/entreprise.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -753,7 +762,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 104085,
+		"initialSize": 109440,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/afflelou.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/afflelou.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -764,7 +773,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 84457,
+		"initialSize": 90055,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/aubert.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/aubert.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -775,7 +784,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 43077,
+		"initialSize": 49809,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/catimini.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/catimini.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -786,7 +795,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 96600,
+		"initialSize": 102643,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/histoire.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/histoire.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -797,7 +806,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 67922,
+		"initialSize": 75571,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/manfield.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/manfield.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -808,7 +817,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 116548,
+		"initialSize": 189380,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/z.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/z.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -969,6 +978,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/solution\/ombre-visu-solution.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5492,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/ombre-visu-solution.png",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/ombre-visu-solution.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/solution\/ombre-visu-solution@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20701,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/ombre-visu-solution@2x.png",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/ombre-visu-solution@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/solution\/solution-screen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99980,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/solution-screen.png",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/solution-screen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/solution\/solution-screen@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 142981,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/solution-screen@2x.png",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/solution-screen@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/less\/lesshat.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -1115,7 +1168,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Adrien",
+"lastSavedByUser": "elisabeth",
 "manualImportLinks": {
 	},
 "projectAttributes": {

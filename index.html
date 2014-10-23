@@ -80,25 +80,27 @@
 		<div id="containerVid">
 			<div class="container">
 				<p>
-					<span class="bleu">Vos produits & vos points de vente</span>
+					<span class="bleu">Vos produits &#38; vos points de vente</span>
 					<span class="bleu">ont fait le succès de votre marque.</span>
 					<span class="blanc">Faites en votre meilleur atout <br/> e-commerce.</span>
 				</p>
 				<div id="mask"></div>
-				<video autoplay preload="auto" width="1300" height="700">
-					<source src="vid/Change.mp4" type="video/mp4" />
-					<source src="vid/Change.webm" type="video/webm" />
-					<source src="vid/Change.ogv" type="video/ogg" />
+				<video autoplay preload="auto" width="700" height="700">
+					<source src="vid/change.mp4" type="video/mp4"/>
+					<source src="vid/change.webm" type="video/webm"/>
+					<source src="vid/change.ogv" type="video/ogg"/>
 
-					<object type="application/x-shockwave-flash" width="1300" height="700" data="http://elisabeth-hamel.fr/content/creas/birds.swf">
-					  <param name="movie" value="http://elisabeth-hamel.fr/content/creas/birds.swf" />
-					  <param name="wmode" value="transparent" />
-					  <param name="loop" value="false" />
-					  <param name="autoplay" value="true" />
-					  Vous n'avez pas de navigateur moderne, ni Flash installé...
+					<object type="application/x-shockwave-flash" width="700" height="700" data="vid/videoPlayer.swf">
+					  <param name="movie" value="vid/videoPlayer.swf"/>
+					  <param name="wmode" value="transparent"/>
+					  <param name="loop" value="false"/>
+					  <param name="autoplay" value="true"/>
+					  <param name=FlashVars value="myvid=monadresseurldevideo"/>
+					  <img src='layoutImg/logoVid.png' alt='Logo Change'/>
 					</object>
 				</video>
 				<img src='layoutImg/logoVid.png' alt='Logo Change'/>
+				<span class="rejouer maj">Rejouer</span>
 			</div>
 		</div>
 
