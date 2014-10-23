@@ -1055,19 +1055,20 @@ ul.social-small li a.lien-social:focus {
 footer {
   background: #202026;
   margin: 120px 0 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  /*&.bottom{
-    position: fixed;
+  /*position: fixed;
     width: 100%;
-    bottom: 0;
-  }*/
+    bottom: 0;*/
+  position: relative;
   /*.transition(margin 0.3s ease-out);
   &.contactUp{
     .transition(margin 0.3s ease-in);
     margin: 150px 0 0;
   }*/
+}
+footer.bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 footer .container {
   overflow: hidden;

@@ -73,8 +73,15 @@ function setSizeBugerMenu(){
 /* Footer tojours en bas de page */
 
 function setFooter(){
-	if ($(document).height() > $(window).height()) { 
-	   $('footer').css('position', 'relative'); 
+	var docHeight = $('html').height();
+	if($('footer').hasClass('bottom')){
+		docHeight = $('html').height() + $('footer').height();
+		if (docHeight >= $(window).height()) {
+			$('footer').removeClass('bottom');
+		}
+	}
+	if (docHeight < $(window).height()) { 
+	   $('footer').addClass('bottom');
 	}
 }
 
