@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17945",
+"creatorBuild": "18027",
 "files": {
 	"\/apple-touch-icon-114x114.png": {
 		"fileType": 32768,
@@ -123,15 +123,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/contact.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/contact.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/contact.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -219,72 +210,6 @@
 		"initialSize": 4607,
 		"inputAbbreviatedPath": "\/favicon-96x96.png",
 		"outputAbbreviatedPath": "\/favicon-96x96.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/accueil\/afflelou.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 109440,
-		"inputAbbreviatedPath": "\/img\/accueil\/afflelou.jpg",
-		"outputAbbreviatedPath": "\/img\/accueil\/afflelou.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/accueil\/aubert.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 90055,
-		"inputAbbreviatedPath": "\/img\/accueil\/aubert.jpg",
-		"outputAbbreviatedPath": "\/img\/accueil\/aubert.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/accueil\/catimini.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 49809,
-		"inputAbbreviatedPath": "\/img\/accueil\/catimini.jpg",
-		"outputAbbreviatedPath": "\/img\/accueil\/catimini.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/accueil\/histoire.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 102643,
-		"inputAbbreviatedPath": "\/img\/accueil\/histoire.jpg",
-		"outputAbbreviatedPath": "\/img\/accueil\/histoire.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/accueil\/manfield.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 75571,
-		"inputAbbreviatedPath": "\/img\/accueil\/manfield.jpg",
-		"outputAbbreviatedPath": "\/img\/accueil\/manfield.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/accueil\/z.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 189380,
-		"inputAbbreviatedPath": "\/img\/accueil\/z.jpg",
-		"outputAbbreviatedPath": "\/img\/accueil\/z.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -824,6 +749,72 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/layoutImg\/accueil\/afflelou.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104085,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/afflelou.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/afflelou.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/aubert.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84457,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/aubert.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/aubert.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/catimini.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43077,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/catimini.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/catimini.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/histoire.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96600,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/histoire.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/histoire.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/manfield.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67922,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/manfield.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/manfield.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/z.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116548,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/z.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/z.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/bgPin.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -956,6 +947,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/solution\/bg-visu-solution.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.36282e+06,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/bg-visu-solution.png",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/bg-visu-solution.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/solution\/bg-visu-solution@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.75603e+06,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/bg-visu-solution@2x.png",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/bg-visu-solution@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/less\/lesshat.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -1060,6 +1073,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/partenaires.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partenaires.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -1080,11 +1102,20 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/solution.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/solution.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "elisabeth",
+"lastSavedByUser": "Adrien",
 "manualImportLinks": {
 	},
 "projectAttributes": {
