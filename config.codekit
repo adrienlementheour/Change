@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17945",
+"creatorBuild": "18027",
 "files": {
 	"\/apple-touch-icon-114x114.png": {
 		"fileType": 32768,
@@ -146,15 +146,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/libs\/normalize.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/css\/style.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -762,7 +753,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 109440,
+		"initialSize": 104085,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/afflelou.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/afflelou.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -773,7 +764,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 90055,
+		"initialSize": 84457,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/aubert.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/aubert.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -784,7 +775,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 49809,
+		"initialSize": 43077,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/catimini.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/catimini.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -795,7 +786,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 102643,
+		"initialSize": 96600,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/histoire.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/histoire.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -806,7 +797,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 75571,
+		"initialSize": 67922,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/manfield.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/manfield.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -817,7 +808,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 189380,
+		"initialSize": 116548,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/z.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/z.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -831,6 +822,28 @@
 		"initialSize": 5649,
 		"inputAbbreviatedPath": "\/layoutImg\/bgPin.png",
 		"outputAbbreviatedPath": "\/layoutImg\/bgPin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/check.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1762,
+		"inputAbbreviatedPath": "\/layoutImg\/check.png",
+		"outputAbbreviatedPath": "\/layoutImg\/check.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/check@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3937,
+		"inputAbbreviatedPath": "\/layoutImg\/check@2x.png",
+		"outputAbbreviatedPath": "\/layoutImg\/check@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1042,26 +1055,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/style.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/style.less",
-		"outputAbbreviatedPath": "\/css\/style.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
 	"\/mentions.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1155,20 +1148,11 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/solution.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/solution.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "elisabeth",
+"lastSavedByUser": "Adrien",
 "manualImportLinks": {
 	},
 "projectAttributes": {
