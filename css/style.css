@@ -604,6 +604,12 @@ header {
   top: 0;
   left: 0;
 }
+.touch header {
+  position: relative;
+}
+.touch header #bottom-header ul#menu-header {
+  position: fixed;
+}
 header:hover.scrolled #top-header {
   margin-top: 0;
 }
@@ -1480,6 +1486,10 @@ footer form #bouton-ok:active {
   right: 1px;
   bottom: -50px;
   z-index: 1;
+}
+.touch #containerVid video,
+.touch #containerVid embed {
+  display: none;
 }
 #mask {
   position: absolute;
@@ -2363,12 +2373,6 @@ ul.liste-checks-bleus li:before {
   .containerRight {
     width: 100%;
   }
-  .touch header {
-    position: relative;
-  }
-  .touch header #bottom-header ul#menu-header {
-    position: fixed;
-  }
   header #top-header .content-top-header p {
     width: auto;
   }
@@ -2445,6 +2449,17 @@ ul.liste-checks-bleus li:before {
   #mask {
     right: -45px;
   }
+  #sliderVid {
+    width: 510px;
+    height: 510px;
+    right: 0;
+  }
+  #sliderVid .slides {
+    height: 510px;
+  }
+  #sliderVid .slides li {
+    top: 50px;
+  }
 }
 @media (max-width: 610px) {
   #contact {
@@ -2493,6 +2508,13 @@ ul.liste-checks-bleus li:before {
   }
   .temp {
     width: 74%;
+  }
+  #sliderVid {
+    width: 470px;
+    height: 470px;
+  }
+  #sliderVid .slides {
+    height: 470px;
   }
 }
 @media (max-width: 520px) {
@@ -2546,6 +2568,14 @@ ul.liste-checks-bleus li:before {
     font-size: 1.5em;
     line-height: 28px;
   }
+  #sliderVid {
+    right: -45px;
+    width: 430px;
+    height: 430px;
+  }
+  #sliderVid .slides {
+    height: 430px;
+  }
   #slider {
     margin-top: -300px;
   }
@@ -2586,7 +2616,7 @@ ul.liste-checks-bleus li:before {
     font-size: 0.95em;
     margin: 30px auto 6px;
     display: block;
-    width: 220px;
+    width: 225px;
   }
   .temp .icon-mail:before {
     position: relative;
@@ -2657,6 +2687,13 @@ ul.liste-checks-bleus li:before {
   .home .last-ul li.liRouge h3 {
     padding: 12px 0 0;
   }
+  #sliderVid {
+    width: 360px;
+    height: 360px;
+  }
+  #sliderVid .slides {
+    height: 360px;
+  }
   .temp {
     width: 65%;
   }
@@ -2689,18 +2726,31 @@ ul.liste-checks-bleus li:before {
   header #top-header #blog-header {
     display: none;
   }
+  #containerVid img {
+    width: 92%;
+  }
   #containerVid .container {
-    min-height: 380px;
-    max-height: 380px;
+    min-height: 440px;
+    max-height: 440px;
   }
   .touch #containerVid .container {
-    min-height: 280px;
-    max-height: 280px;
+    min-height: 340px;
+    max-height: 340px;
   }
   #containerVid p {
     font-size: 1.2em;
     line-height: 25px;
     padding-left: 15px;
+  }
+  #mask {
+    background-size: 133%;
+  }
+  #sliderVid {
+    width: 360px;
+    height: 360px;
+  }
+  #sliderVid .slides {
+    height: 360px;
   }
   .ref {
     padding: 0;
@@ -2716,10 +2766,26 @@ ul.liste-checks-bleus li:before {
     width: 100%;
   }
 }
+@media (max-width: 360px) {
+  #sliderVid {
+    width: 335px;
+    height: 335px;
+  }
+  #sliderVid .slides {
+    height: 335px;
+  }
+}
 @media (max-width: 335px) {
   .liens-contact.btn-contact .icon-tel,
   .liens-contact.btn-contact .icon-mail {
     font-size: 0.9em;
+  }
+  #sliderVid {
+    width: 310px;
+    height: 310px;
+  }
+  #sliderVid .slides {
+    height: 310px;
   }
 }
 @media (max-width: 320px) {

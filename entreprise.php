@@ -77,6 +77,7 @@ $mailto = 'info@proximis.com';
 		<![endif]-->
 
 		<script src="js/libs/modernizr.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/libs/isMobile.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -208,6 +209,6 @@ $mailto = 'info@proximis.com';
 		<script src="js/libs/greensock/TimelineMax.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/libs/greensock/plugins/BezierPlugin.min.js" type="text/javascript" charset="utf-8"></script>
 		
-		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/min/script-min.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

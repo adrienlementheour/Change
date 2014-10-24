@@ -178,6 +178,7 @@ if ( $submitted2 ) {
 		<![endif]-->
 
 		<script src="js/libs/modernizr.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/libs/isMobile.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body class="contactPage">
@@ -398,6 +399,6 @@ if ( $submitted2 ) {
 		<script src="js/libs/greensock/TimelineMax.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/libs/greensock/plugins/BezierPlugin.min.js" type="text/javascript" charset="utf-8"></script>
 		
-		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/min/script-min.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

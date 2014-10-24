@@ -670,6 +670,14 @@ header{
   position: fixed;
   top: 0;
   left: 0;
+  .touch &{
+    position: relative;
+    #bottom-header{
+      ul#menu-header{
+        position: fixed;
+      }
+    }
+  }
   &:hover{
     &.scrolled{
       #top-header{
@@ -1416,6 +1424,9 @@ footer{
     right: 1px;
     bottom: -50px;
     z-index: 1;
+    .touch &{
+      display: none;
+    }
   }
 }
 #mask {
@@ -2316,14 +2327,6 @@ ul.liste-checks-bleus{
     }
 
     header {
-     .touch &{
-        position: relative;
-        #bottom-header{
-          ul#menu-header{
-            position: fixed;
-          }
-        }
-      }
       #top-header{
         .content-top-header{
           p {
@@ -2428,6 +2431,17 @@ ul.liste-checks-bleus{
     right: -45px;
   }
 
+  #sliderVid{
+    width: 510px;
+    height: 510px;
+    right: 0;
+    .slides{
+      height: 510px;
+      li{
+        top: 50px;
+      }
+    }
+  }
 }
 
 @media (max-width: 610px) {
@@ -2485,6 +2499,14 @@ ul.liste-checks-bleus{
     width: 74%;
   }
 
+  #sliderVid{
+    width: 470px;
+    height: 470px;
+    .slides{
+      height: 470px;
+    }
+  }
+
 }
 
 @media (max-width: 520px) {
@@ -2540,6 +2562,15 @@ ul.liste-checks-bleus{
     }
   }
 
+  #sliderVid{
+    right: -45px;
+    width: 430px;
+    height: 430px;
+    .slides{
+      height: 430px;
+    }
+  }
+
   #slider {
     margin-top: -300px;
     .pagination{
@@ -2583,7 +2614,7 @@ ul.liste-checks-bleus{
       font-size: 0.95em;
       margin: 30px auto 6px;
       display: block;
-      width: 220px;
+      width: 225px;
       &:before{
         position: relative;
         margin: 0 auto;
@@ -2684,6 +2715,14 @@ ul.liste-checks-bleus{
     }
   }
 
+  #sliderVid{
+    width: 360px;
+    height: 360px;
+    .slides{
+      height: 360px;
+    }
+  }
+
   .temp{
     width: 65%;
   }
@@ -2731,18 +2770,33 @@ ul.liste-checks-bleus{
   }
 
   #containerVid{
+    img{
+      width: 92%;
+    }
     .container{
-      min-height: 380px;
-      max-height: 380px;
+      min-height: 440px;
+      max-height: 440px;
       .touch &{
-        min-height: 280px;
-        max-height: 280px;
+        min-height: 340px;
+        max-height: 340px;
       }
     }
     p{
       font-size: 1.2em;
       line-height: 25px;
       padding-left: 15px;
+    }
+  }
+
+  #mask{
+    background-size: 133%;
+  }
+
+  #sliderVid{
+    width: 360px;
+    height: 360px;
+    .slides{
+      height: 360px;
     }
   }
 
@@ -2765,6 +2819,17 @@ ul.liste-checks-bleus{
 
 }
 
+@media (max-width: 360px){
+  #sliderVid{
+    width: 335px;
+    height: 335px;
+    .slides{
+      height: 335px;
+    }
+  }
+}
+
+
 @media (max-width: 335px) {
 
   .liens-contact{
@@ -2773,6 +2838,14 @@ ul.liste-checks-bleus{
           font-size: 0.9em;
         }
       } 
+  }
+
+  #sliderVid{
+    width: 310px;
+    height: 310px;
+    .slides{
+      height: 310px;
+    }
   }
 
 }
