@@ -133,6 +133,21 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-helpdesk:before {
+	content: "\e612";
+}
+.icon-ipad:before {
+	content: "\e613";
+}
+.icon-pay-collect:before {
+	content: "\e614";
+}
+.icon-reserve-collect:before {
+	content: "\e615";
+}
+.icon-store-locator:before {
+	content: "\e616";
+}
 .icon-arrow-right:before {
 	content: "\e60d";
 }
@@ -373,6 +388,11 @@ body{
   	padding-top: 160px;
   	padding-bottom: 120px;
   }
+  &.container-num{
+  	h1, h2, h3, h4, p, bloc-desc, encadre, ul{
+  		position: relative;
+  	}
+  }
 }
 .bloc-gris-fond{
 	display: block;
@@ -387,6 +407,14 @@ body{
 	height: auto;
 	position: relative;
 	background-color: @blanc;
+}
+.bloc-padding-left{
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 0 0 0 70px;
+	.box-sizing(border-box);
 }
 .largeContainer{
   background: @grisTresClairFond;
@@ -440,6 +468,9 @@ h3{
   margin: 0 0 0 -1px; 
   padding: 10px 0 10px 0;
   .bariolBold(1.2em);
+  &.big-h3{
+  	.bariolBold(1.7em);
+  }
 }
 
 ul{
@@ -1635,14 +1666,15 @@ footer{
 
 /* @group Page Solution */
 
-/*<div class="num-bloc">1.</div>*/
 .num-bloc{
 	display: block;
 	width: 274px;
 	height: 274px;
 	background-color: #F4F1EB;
 	.border-radius(8px);
-	position: relative;
+	position: absolute;
+	top: 47px;
+	margin-left: -230px;
 	.num-bloc-inte{
 		display: block;
 		width: 252px;
@@ -1656,6 +1688,11 @@ footer{
 		line-height: 252px;
 		color: @rouge;
 		.proximaNovaIt(11em);
+	}
+	.bloc-blanc &{
+		.num-bloc-inte{
+			background-color: @grisTresClairFond;
+		}
 	}
 }
 
@@ -1853,6 +1890,25 @@ ul.liste-checks-bleus{
 				left: inherit;
 				right: -15px;
 			}
+		}
+	}
+}
+
+ul.liste-pictos{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	li{
+		.bariol(0.889em);
+		padding: 12px 0;
+		&:before{
+			display: none;
+		}
+		b{
+			.bariolBold(1em);
+			text-transform: uppercase;
 		}
 	}
 }

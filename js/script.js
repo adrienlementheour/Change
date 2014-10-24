@@ -455,8 +455,19 @@ function openForm(){
 	setSizeBugerMenu();
 }
 
+/// Fonction pour animer le visuel en haut de la page solution ///
+function visuSolution(){
+	TweenMax.set($("#screen-solution"), {y: 50, opacity: 0});
+	animVisuSolution();
+}
+
+function animVisuSolution(){
+	TweenMax.to($("#screen-solution"), 2, {y: 0, opacity: 0.95, ease:Cubic.easeIn});
+}
+
 
 $(function(){
+
 
 	detectTouchDevice();
 	setFooter();
@@ -472,6 +483,10 @@ $(function(){
 		}else{
 			setVideoContainer();
 		}
+	}
+
+	if ($("body").hasClass("solution")){
+		visuSolution();
 	}
 
 	if ($("body").hasClass("contactPage")){

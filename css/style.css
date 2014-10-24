@@ -68,6 +68,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-helpdesk:before {
+  content: "\e612";
+}
+.icon-ipad:before {
+  content: "\e613";
+}
+.icon-pay-collect:before {
+  content: "\e614";
+}
+.icon-reserve-collect:before {
+  content: "\e615";
+}
+.icon-store-locator:before {
+  content: "\e616";
+}
 .icon-arrow-right:before {
   content: "\e60d";
 }
@@ -231,6 +246,16 @@ body {
   padding-top: 160px;
   padding-bottom: 120px;
 }
+.container.container-num h1,
+.container.container-num h2,
+.container.container-num h3,
+.container.container-num h4,
+.container.container-num p,
+.container.container-num bloc-desc,
+.container.container-num encadre,
+.container.container-num ul {
+  position: relative;
+}
 .bloc-gris-fond {
   display: block;
   width: 100%;
@@ -244,6 +269,16 @@ body {
   height: auto;
   position: relative;
   background-color: #ffffff;
+}
+.bloc-padding-left {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0 0 0 70px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .largeContainer {
   background: #efebe2;
@@ -308,6 +343,13 @@ h3 {
   padding: 10px 0 10px 0;
   font-family: 'bariolBold', sans-serif;
   font-size: 1.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+h3.big-h3 {
+  font-family: 'bariolBold', sans-serif;
+  font-size: 1.7em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1707,7 +1749,6 @@ footer form #bouton-ok:active {
   display: block;
 }
 /* @group Page Solution */
-/*<div class="num-bloc">1.</div>*/
 .num-bloc {
   display: block;
   width: 274px;
@@ -1719,7 +1760,9 @@ footer form #bouton-ok:active {
   -moz-background-clip: padding;
   border-radius: 8px;
   background-clip: padding-box;
-  position: relative;
+  position: absolute;
+  top: 47px;
+  margin-left: -230px;
 }
 .num-bloc .num-bloc-inte {
   display: block;
@@ -1743,6 +1786,9 @@ footer form #bouton-ok:active {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+.bloc-blanc .num-bloc .num-bloc-inte {
+  background-color: #efebe2;
 }
 #bloc-visu-solution {
   display: block;
@@ -1979,6 +2025,32 @@ ul.liste-checks-bleus li:before {
 .zone-gauche-schema ul.liste-checks-bleus li:before {
   left: inherit;
   right: -15px;
+}
+ul.liste-pictos {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+ul.liste-pictos li {
+  font-family: 'bariol', sans-serif;
+  font-size: 0.889em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  padding: 12px 0;
+}
+ul.liste-pictos li:before {
+  display: none;
+}
+ul.liste-pictos li b {
+  font-family: 'bariolBold', sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
 }
 /* @end */
 /* Pages en construction */
