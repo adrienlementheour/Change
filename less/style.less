@@ -694,7 +694,7 @@ form{
 
 
 header{
-  z-index: 4;
+  z-index: 9;
   display: block;
   width: 100%;
   height: auto;
@@ -1409,7 +1409,7 @@ footer{
     .bariol(2.4em);
     line-height: 45px;
     position: absolute;
-    z-index: 3;
+    z-index: 6;
     top: 130px;
     span{
       display: block;
@@ -1433,11 +1433,16 @@ footer{
   }
   .rejouer{
     position: absolute;
-    display: block;
+    display: none;
     background: @blanc;
     color: @bleuTexte;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
   }
-  video, embed {
+  video, embed{
     position: absolute;
     right: 1px;
     bottom: -50px;
@@ -1451,7 +1456,36 @@ footer{
   right: 1px;
   bottom: 0;
   background: url('../layoutImg/pngMask.png') no-repeat right bottom;
-  z-index: 2;
+  z-index: 5;
+}
+
+#sliderVid{
+  display: none;
+  position: absolute;
+  width: 700px;
+  height: 550px;
+  z-index: 1;
+  bottom: 0;
+  right: 1px;
+  overflow: hidden;
+  .touch &, .lt-ie9 &{
+    display: block;
+  }
+  .slides{
+    position: relative;
+    height: 700px;
+    li{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -150px;
+      background: url(../layoutImg/accueil/vid1.jpg) no-repeat center center;
+      .background-size(cover);
+      &:before{
+        display: none;
+      }
+    }
+  }
 }
 
 #slider{
@@ -1515,7 +1549,7 @@ footer{
       position: absolute;
       height: 100%;
       width: 100%;
-      background: url(../img/accueil/aubert.jpg) no-repeat center center;
+      background: url(../layoutImg/accueil/aubert.jpg) no-repeat center center;
       .background-size(cover);
     }
   }
@@ -2249,9 +2283,6 @@ ul.liste-pictos{
         width: 95%;
       }
     }
-    /*.first-ul{
-      width: 95%;
-    }*/
     .first-ul{
       width: 100%;
     }
@@ -2262,11 +2293,12 @@ ul.liste-pictos{
       display: none;
     }
     img{
-      width: 70%;
+      width: 69%;
+      right: 2px;
     }
   }
   #mask{
-    display: none;
+    background-size: 100%;
   }
 
   #slider{
@@ -2388,7 +2420,14 @@ ul.liste-pictos{
           top: 0;
         }
       }
+      img{
+        width: 83%;
+      }
     }
+    #mask{
+      background-size: 120%;
+    }
+
 
 }
 
@@ -2424,11 +2463,11 @@ ul.liste-pictos{
 
   #containerVid{
     .container{
-      min-height: 550px;
-      max-height: 550px;
+     min-height: 650px;
+      max-height: 650px;
       .touch &{
-        min-height: 450px;
-        max-height: 450px;
+        min-height: 550px;
+        max-height: 550px;
       }
     }
     img{
@@ -2439,6 +2478,10 @@ ul.liste-pictos{
       line-height: 35px;
       top: 100px;
     }
+  }
+
+  #mask{
+    right: -45px;
   }
 
 }
@@ -2502,6 +2545,9 @@ ul.liste-pictos{
 
 @media (max-width: 520px) {
   
+  h1, .h1{
+    .bariol(2.2em);
+  }
 
   footer{
     .col-left, .col-mid{
@@ -2537,16 +2583,23 @@ ul.liste-pictos{
 
   #containerVid{
     .container{
-      min-height: 470px;
-      max-height: 470px;
+      min-height: 520px;
+      max-height: 520px;
       .touch &{
-        min-height: 370px;
-        max-height: 370px;
+        min-height: 420px;
+        max-height: 420px;
       }
     }
     p{
       font-size: 1.5em;
       line-height: 28px;
+    }
+  }
+
+  #slider {
+    margin-top: -300px;
+    .pagination{
+      top: 300px;
     }
   }
 
@@ -2564,6 +2617,9 @@ ul.liste-pictos{
 
   .temp{
     width: 71%;
+    .maj{
+      text-align: center;
+    }
     form{
       label{
         text-align: center;
@@ -2581,10 +2637,13 @@ ul.liste-pictos{
     .icon-mail{
       text-indent: 0;
       font-size: 0.95em;
-      text-align: center;
+      margin: 30px auto 6px;
+      display: block;
+      width: 220px;
       &:before{
         position: relative;
         margin: 0 auto;
+        left: 0;
       }
     }
   }
@@ -2663,10 +2722,6 @@ ul.liste-pictos{
 
 @media (max-width: 465px){
   #slider{
-    margin-top: -350px;
-    .pagination{
-      top: 350px;
-    }
     .slides{
       height: 900px;
     }
