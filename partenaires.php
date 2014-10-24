@@ -138,7 +138,7 @@ $mailto = 'info@proximis.com';
 					<?php if($message_status == "success") echo "<p class='inscriptionOk'>Votre demande d'inscription a bien été envoyée</p>" ?>
 				</div>
 				<div class="temp temp-contact">
-					<h2 class="maj">Vous souhaitez<br/>entrer en contact avec nous ?</h2>
+					<h2 class="maj">Vous souhaitez<br/>entrer en contact avec nous&nbsp;?</h2>
 					<a href="mailto:partners@change-commerce.com" class="icon-mail fd-rouge">partners@change-commerce.com</a>
 				</div>
 			</div>
