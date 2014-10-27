@@ -119,8 +119,8 @@ $mailto = 'info@proximis.com';
 
 		<div class="content">
 			<div class="container first small small-temp">
-				<h1>La page entreprise <br/> sera prochainement mise en ligne. </h1>
-				<p>Elle vous permettra de comprendre <b>notre vision du marché du Retail</b> et du e-commerce ainsi que de connaître les principaux acteurs de l'entreprise qui portent ce projet.</p>
+				<h1>Cette page sera prochainement mise en ligne. </h1>
+				<p>Nous vous invitons à nous contacter.</p>
 			</div>
 			<div class="container container-temp">
 				<div class="temp temp-newsletter">

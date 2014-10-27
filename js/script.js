@@ -8,7 +8,7 @@ var vignettes;
 
 var countSlideVid = 0;
 var slidesVid;
-var timerSlideVid = 2;
+var timerSlideVid = 2.2;
 
 var indic;
 
@@ -223,13 +223,13 @@ function gonePlayAgainIndic(){
 
 function onVideoEnd(video){
 	video.bind("ended", function() {
-		video.fadeOut(function(){
-			setPlayAgainIndic();
-			$('#mask').click(function(){
-				video[0].play();
-				setTimeout(function(){ video.fadeIn(); }, 200);
-				gonePlayAgainIndic();
-			});
+		video.fadeOut();
+		setPlayAgainIndic();
+		$('#mask').click(function(){
+			video[0].play();
+			animTxt();
+			setTimeout(function(){ video.fadeIn(); }, 10);
+			gonePlayAgainIndic();
 		});
 	});
 }
@@ -246,7 +246,18 @@ function setVideoContainer(){
 			onVideoEnd($('#containerVid').find('embed'));
 		}
 	}
+}
 
+function playVideo(){
+	if($('#containerVid').find('video').length > 0 ){
+		var vid = $('#containerVid').find('video');
+	}
+	if($('#containerVid').find('embed').length > 0 ){
+		var vid = $('#containerVid').find('embed');
+	}
+	vid[0].play();
+	setTimeout(function(){ vid.fadeIn(); }, 10);
+	//console.log(vid.currentTime());
 }
 
 /* Animation du texte */
@@ -264,13 +275,13 @@ function animTxt(){
 	var tl = new TimelineMax();
 	tl.to($('.sentence'), 0.5, {className:"+=discret"});
   	tl.to($('.produits'), 0.5, {className:"+=big"});
-  	tl.to($('.produits'), 0.1, {delay:2,className:"-=big"});
+  	tl.to($('.produits'), 0.1, {delay:1.5,className:"-=big"});
   	tl.to($('.vente'), 0.5, {className:"+=big"});
-  	tl.to($('.vente'), 0.1, {delay:2,className:"-=big"});
+  	tl.to($('.vente'), 0.1, {delay:1.2,className:"-=big"});
   	tl.to($('.marque'), 0.5, {className:"+=big"});
-  	tl.to($('.marque'), 0.1, {delay:2,className:"-=big"});
+  	tl.to($('.marque'), 0.1, {delay:1.5,className:"-=big"});
   	tl.to($('.ecommerce'), 0.5, {className:"+=big"});
-  	tl.to($('.ecommerce'), 0.1, {delay:2,className:"-=big"});
+  	tl.to($('.ecommerce'), 0.1, {delay:1.5,className:"-=big"});
     tl.to($('.sentence'), 0.5, {className:"-=discret",onComplete:setAnimHomeenCours});
 }
 
@@ -308,6 +319,7 @@ function slideshowVid(){
 		setSlideVid(countSlideVid);
 		TweenMax.killTweensOf(slideshowVid);
 		slideshowVid();
+		animTxt();
 		TweenMax.to($('#sliderVid'), 0.4, {opacity: "1"});
 		if($('html').hasClass('no-touch')){
 			gonePlayAgainIndic();
@@ -501,7 +513,6 @@ $(function(){
 
 	if($('body').hasClass('home')){
 		indic = $('#containerVid').find('.rejouer');
-		animTxt();
 		if($("html").hasClass("lt-ie9")){
 			$('#containerVid').find('.container').css('height', '700px');
 		}else{
@@ -529,9 +540,13 @@ $(window).load(function(){
 	if($('body').hasClass('home')){
 
 		// Slider a la place de la vidéo
-		if($('html').hasClass('lt-ie9') || $('html').hasClass('touch')){
+		if($('html').hasClass('lt-ie9') || $('html').hasClass('touch') || $('html').width() < 979){
 			slidesVid = $('#sliderVid').find('.slides').find('li');
+			animTxt();
 			setSliderVid();
+		}else{
+			animTxt();
+			playVideo();
 		}
 
 		// Slider références

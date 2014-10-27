@@ -1257,6 +1257,7 @@ footer{
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 8;
 }
 
 .logo{
@@ -1419,8 +1420,20 @@ footer{
     position: absolute;
     z-index: 6;
     top: 130px;
-    span{
+    color: @blanc;
+    > span{
       display: block;
+      &.discret{
+        color: @grisFonceTexte;
+      }
+      span{
+        display: inline-block;
+      }
+      .big{
+        .transform(scale(1.1));
+        color: @bleu;
+        padding: 0 10px;
+      }
     }
     br{
       display: none;
@@ -1451,6 +1464,7 @@ footer{
     z-index: 2;
   }
   video, embed{
+    display: none;
     position: absolute;
     right: 1px;
     bottom: -50px;
@@ -2220,6 +2234,9 @@ ul.liste-pictos{
           margin: 0;
           width: 200px;
           .box-sizing(border-box);
+          .touch &{
+            position: fixed;
+          }
           li{
             display: block;
             height: auto;
@@ -2300,9 +2317,6 @@ ul.liste-pictos{
   }
 
   #containerVid {
-    video, embed{
-      display: none;
-    }
     img{
       width: 69%;
       right: 2px;
@@ -2310,6 +2324,13 @@ ul.liste-pictos{
   }
   #mask{
     background-size: 100%;
+  }
+
+  #sliderVid{
+    display: block;
+    .no-js &{
+      display: none;
+    }
   }
 
   #slider{
@@ -2613,7 +2634,7 @@ ul.liste-pictos{
       }
     }
     p{
-      font-size: 1.5em;
+      font-size: 1.4em;
       line-height: 28px;
     }
   }
@@ -2915,6 +2936,12 @@ ul.liste-pictos{
 
   #contact .liens-contact .icon-mail {
     margin: 10px 0 0 57px;
+  }
+
+  #containerVid{
+    p{
+      font-size: 1.1em;
+    }
   }
 
 }

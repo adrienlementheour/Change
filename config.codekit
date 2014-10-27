@@ -150,6 +150,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/entreprise.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/entreprise.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/favicon-160x160.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -402,6 +420,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/interieur.html": {
 		"fileType": 8192,
@@ -676,6 +703,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/libs\/isMobile.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/libs\/isMobile.min.js",
+		"outputAbbreviatedPath": "\/js\/libs\/min\/isMobile.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/libs\/jquery-1.11.1.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -698,6 +736,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/min\/script-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/script-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/script-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/script-ck.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -709,11 +758,22 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/script.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/script.js",
+		"outputAbbreviatedPath": "\/js\/min\/script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/layoutImg\/accueil\/afflelou.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 104085,
+		"initialSize": 109440,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/afflelou.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/afflelou.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -724,7 +784,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 84457,
+		"initialSize": 90055,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/aubert.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/aubert.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -735,7 +795,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 43077,
+		"initialSize": 49809,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/catimini.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/catimini.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -746,7 +806,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 96600,
+		"initialSize": 102643,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/histoire.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/histoire.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -757,9 +817,64 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 67922,
+		"initialSize": 75571,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/manfield.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/manfield.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/vid1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 79690,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/vid1.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/vid2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67946,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/vid2.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/vid3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 81963,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/vid3.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/vid4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65468,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/vid4.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/accueil\/vid5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60089,
+		"inputAbbreviatedPath": "\/layoutImg\/accueil\/vid5.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -768,7 +883,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 116548,
+		"initialSize": 189380,
 		"inputAbbreviatedPath": "\/layoutImg\/accueil\/z.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/z.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -867,31 +982,9 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 32019,
+		"initialSize": 20073,
 		"inputAbbreviatedPath": "\/layoutImg\/logoVid.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoVid.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/layoutImg\/old_logoVid.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20073,
-		"inputAbbreviatedPath": "\/layoutImg\/old_logoVid.png",
-		"outputAbbreviatedPath": "\/layoutImg\/old_logoVid.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/layoutImg\/old_pngMask.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10161,
-		"inputAbbreviatedPath": "\/layoutImg\/old_pngMask.png",
-		"outputAbbreviatedPath": "\/layoutImg\/old_pngMask.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1015,6 +1108,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/less\/style.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/style.less",
+		"outputAbbreviatedPath": "\/css\/style.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/mentions.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1079,6 +1192,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/partenaires.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partenaires.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -1099,11 +1221,20 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/solution.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/solution.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Adrien",
+"lastSavedByUser": "elisabeth",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1113,7 +1244,7 @@
 	"iconImageName": "\/apple-touch-icon.png"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
