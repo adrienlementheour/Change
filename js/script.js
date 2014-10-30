@@ -196,14 +196,48 @@ function scroll(){
 }*/
 
 
+/* Animation du texte */
+
+function setAnimHomeenCours(){
+  if(animHencours === false){
+    animHencours = true;
+  }else{
+    animHencours = false;
+  }
+}
+
+function animTxt(){
+	setAnimHomeenCours();
+	var tl = new TimelineMax();
+	var big;
+	if($('html').hasClass('lt-ie9')){
+		big = 'bigIe';
+	}
+	else{
+		big = 'big';
+	}
+	tl.to($('.sentence'), 0.5, {className:"+=discret"});
+	tl.to($('.produits'), 0.35, {className:"+="+big});
+  	tl.to($('.produits'), 0.1, {delay:1.5,className:"-="+big});
+	tl.to($('.vente'), 0.35, {className:"+="+big});
+	tl.to($('.vente'), 0.1, {delay:1.2,className:"-="+big});
+	tl.to($('.marque'), 0.35, {className:"+="+big});
+	tl.to($('.marque'), 0.1, {delay:1.5,className:"-="+big});
+	tl.to($('.ecommerce'), 0.35, {className:"+="+big});
+	tl.to($('.ecommerce'), 0.1, {delay:1.5,className:"-="+big});
+	tl.to($('.sentence'), 0.6, {className:"-=discret",onComplete:setAnimHomeenCours});
+}
+
+
 /* Tooltip rejouer (video + slider accueil) */ 
 
 function setPlayAgainIndic(){
-	var logoVid = $('#mask');
+	//var logoVid = $('#mask');
 
 	$('#mask').css('cursor', 'pointer');
+	indic.fadeIn();
 
-	logoVid.mousemove(function(evt){
+	/*logoVid.mousemove(function(evt){
 		var posContainer = $('#containerVid').find('.container').offset(); 
 		indic.css({'left': evt.pageX - posContainer.left - 90 +'px', 'top': evt.pageY - posContainer.top + 15 +'px'});
 	});
@@ -211,7 +245,7 @@ function setPlayAgainIndic(){
 		indic.fadeIn();
 	}).mouseleave(function(){
 		indic.fadeOut();
-	});
+	});*/
 }
 
 function gonePlayAgainIndic(){
@@ -236,7 +270,12 @@ function onVideoEnd(video){
 
 function setVideoContainer(){
 	var height = $(window).height() - 100;
+
 	$('#containerVid').find('.container').css('height', height + 'px');
+
+	if(height < 751){
+		$('#containerVid').find('br').css('display', 'block');
+	}
 
 	if($('html').hasClass('no-touch') && $(window).width() > 980){
 		if($('#containerVid').find('video').length > 0 ){
@@ -249,41 +288,18 @@ function setVideoContainer(){
 }
 
 function playVideo(){
+	var vid;
 	if($('#containerVid').find('video').length > 0 ){
-		var vid = $('#containerVid').find('video');
+		vid = $('#containerVid').find('video');
 	}
 	if($('#containerVid').find('embed').length > 0 ){
-		var vid = $('#containerVid').find('embed');
+		vid = $('#containerVid').find('embed');
 	}
 	vid[0].play();
 	setTimeout(function(){ vid.fadeIn(); }, 10);
 	//console.log(vid.currentTime());
 }
 
-/* Animation du texte */
-
-function setAnimHomeenCours(){
-  if(animHencours === false){
-    animHencours = true;
-  }else{
-    animHencours = false;
-  }
-}
-
-function animTxt(){
-	setAnimHomeenCours();
-	var tl = new TimelineMax();
-	tl.to($('.sentence'), 0.5, {className:"+=discret"});
-  	tl.to($('.produits'), 0.5, {className:"+=big"});
-  	tl.to($('.produits'), 0.1, {delay:1.5,className:"-=big"});
-  	tl.to($('.vente'), 0.5, {className:"+=big"});
-  	tl.to($('.vente'), 0.1, {delay:1.2,className:"-=big"});
-  	tl.to($('.marque'), 0.5, {className:"+=big"});
-  	tl.to($('.marque'), 0.1, {delay:1.5,className:"-=big"});
-  	tl.to($('.ecommerce'), 0.5, {className:"+=big"});
-  	tl.to($('.ecommerce'), 0.1, {delay:1.5,className:"-=big"});
-    tl.to($('.sentence'), 0.5, {className:"-=discret",onComplete:setAnimHomeenCours});
-}
 
 /* Slider smartphone et ie9 (à la place de la vidéo) */
 

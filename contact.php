@@ -145,7 +145,7 @@ if ( $submitted2 ) {
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 	  	<meta charset="utf-8">
-	  	<title>Change - Contact</title>
+	  	<title>Contactez-nous - Change</title>
 	  	<meta name="description" content="">
 	  	<meta name="viewport" content="width=device-width, initial-scale = 1" />
 
@@ -375,7 +375,7 @@ if ( $submitted2 ) {
 				<div class="container medium">
 					<nav>
 						<ul>
-							<li class="plan"><a href="#" title="Plan du site">Plan du site</a></li>
+							<li class="plan"><a href="plan-du-site" title="Plan du site">Plan du site</a></li>
 							<li><a href="mentions-legales" title="Mentions légales">Mentions légales</a></li>
 						</ul>
 					</nav>

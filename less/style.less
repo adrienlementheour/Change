@@ -1420,19 +1420,23 @@ footer{
     position: absolute;
     z-index: 6;
     top: 130px;
-    color: @blanc;
+    color: @bleu;
     > span{
       display: block;
       &.discret{
         color: @grisFonceTexte;
       }
       span{
-        display: inline-block;
+        display: inline;
       }
       .big{
-        .transform(scale(1.1));
+        /*.transform(scale(1.1));*/
+        font-size: 1.12em;
         color: @bleu;
-        padding: 0 10px;
+        /*padding: 0 10px;*/
+      }
+      .bigIe{
+        color: @bleu;
       }
     }
     br{
@@ -1453,15 +1457,19 @@ footer{
     cursor: pointer;
   }
   .rejouer{
-    position: absolute;
     display: none;
-    background: @blanc;
-    color: @bleuTexte;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 2;
+    position: absolute;
+    color: @grisMoyenTexte;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    cursor: pointer;
+    font-size: 0.65em;
+    .transition(color .3s ease-in-out);
+    &:hover{
+      color: @blanc;
+      .transition(color .3s ease-in-out);
+    }
   }
   video, embed{
     display: none;
@@ -1929,10 +1937,33 @@ ul.liste-pictos{
 
 /* @end */
 
+
+/* Plan du site */
+
+.plan{
+  .first{
+    ul{
+      margin-top: 30px;
+      a{
+        border: 0;
+        color: @grisFonceTexte;
+        &:hover, &:focus, &:active{
+          color: @rouge;
+          border-bottom: 1px solid @rougeClair;
+        }
+      }
+    }
+  }
+}
+
+
 /* Pages en construction */
 
 .container.small-temp{
   padding-right: 310px;
+  &.ent{
+    padding-right: 30px;
+  }
 }
 .container-temp{
   overflow: hidden;

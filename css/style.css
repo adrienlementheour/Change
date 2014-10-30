@@ -1492,7 +1492,7 @@ footer form #bouton-ok:active {
   position: absolute;
   z-index: 6;
   top: 130px;
-  color: #ffffff;
+  color: #54b8e7;
 }
 #containerVid p > span {
   display: block;
@@ -1501,16 +1501,16 @@ footer form #bouton-ok:active {
   color: #34343c;
 }
 #containerVid p > span span {
-  display: inline-block;
+  display: inline;
 }
 #containerVid p > span .big {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  /*.transform(scale(1.1));*/
+  font-size: 1.12em;
   color: #54b8e7;
-  padding: 0 10px;
+  /*padding: 0 10px;*/
+}
+#containerVid p > span .bigIe {
+  color: #54b8e7;
 }
 #containerVid p br {
   display: none;
@@ -1529,15 +1529,25 @@ footer form #bouton-ok:active {
   cursor: pointer;
 }
 #containerVid .rejouer {
-  position: absolute;
   display: none;
-  background: #ffffff;
-  color: #47acdc;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  border-radius: 5px;
-  z-index: 2;
+  position: absolute;
+  color: #757581;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  cursor: pointer;
+  font-size: 0.65em;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+#containerVid .rejouer:hover {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 #containerVid video,
 #containerVid embed {
@@ -2071,9 +2081,26 @@ ul.liste-pictos li b {
   text-transform: uppercase;
 }
 /* @end */
+/* Plan du site */
+.plan .first ul {
+  margin-top: 30px;
+}
+.plan .first ul a {
+  border: 0;
+  color: #34343c;
+}
+.plan .first ul a:hover,
+.plan .first ul a:focus,
+.plan .first ul a:active {
+  color: #f04a2f;
+  border-bottom: 1px solid #eecfcb;
+}
 /* Pages en construction */
 .container.small-temp {
   padding-right: 310px;
+}
+.container.small-temp.ent {
+  padding-right: 30px;
 }
 .container-temp {
   overflow: hidden;

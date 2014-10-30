@@ -44,7 +44,7 @@ $mailto = 'info@proximis.com';
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 	  	<meta charset="utf-8">
-	  	<title>Change - Entreprise</title>
+	  	<title>Page en construction - Change</title>
 	  	<meta name="description" content="">
 	  	<meta name="viewport" content="width=device-width, initial-scale = 1" />
 
@@ -118,7 +118,7 @@ $mailto = 'info@proximis.com';
 		</header>
 
 		<div class="content">
-			<div class="container first small small-temp">
+			<div class="container first small small-temp ent">
 				<h1>Cette page sera prochainement mise en ligne. </h1>
 				<p>Nous vous invitons à nous contacter.</p>
 			</div>
@@ -187,7 +187,7 @@ $mailto = 'info@proximis.com';
 				<div class="container medium">
 					<nav>
 						<ul>
-							<li class="plan"><a href="#" title="Plan du site">Plan du site</a></li>
+							<li class="plan"><a href="plan-du-site" title="Plan du site">Plan du site</a></li>
 							<li><a href="mentions-legales" title="Mentions légales">Mentions légales</a></li>
 						</ul>
 					</nav>
