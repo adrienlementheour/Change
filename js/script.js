@@ -470,11 +470,11 @@ function initMap() {
 
 function openForm(){
 	if ($('#contactMail').hasClass("opened")) {
-		$("html, body").animate({scrollTop: $('#contactMail').offset().top - 70 }, 0);
+		$("html, body").delay(300).animate({scrollTop: $('#contactMail').offset().top - 70 }, 500);
 	}
 	
 	if ($('#contactTel').hasClass("opened")) {
-		$("html, body").animate({scrollTop: $('#contactTel').offset().top - 70 }, 0);
+		$("html, body").delay(300).animate({scrollTop: $('#contactTel').offset().top - 70 }, 500);
 	}
 
 
