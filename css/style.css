@@ -1422,7 +1422,8 @@ footer form #bouton-ok:active {
   font-size: 135px;
 }
 .home .first-ul li h3 {
-  padding: 35px 0 0;
+  padding: 35px 0 5px;
+  font-size: 1em;
 }
 .home .last-ul li {
   text-align: left;
@@ -2522,10 +2523,12 @@ ul.liste-pictos li b {
     top: 0;
   }
   #containerVid img {
-    width: 83%;
+    /*width: 83%;*/
+    width: 76%;
   }
   #mask {
-    background-size: 120%;
+    /*background-size: 120%;*/
+    background-size: 110%;
   }
 }
 @media (max-width: 630px) {
@@ -2560,8 +2563,16 @@ ul.liste-pictos li b {
     min-height: 550px;
     max-height: 550px;
   }
+  #containerVid .rejouer {
+    right: 60px;
+  }
+  #containerVid .rejouer span {
+    display: block;
+    text-indent: 15px;
+  }
   #containerVid img {
     right: -45px;
+    width: 83%;
   }
   #containerVid p {
     font-size: 2em;
@@ -2570,6 +2581,7 @@ ul.liste-pictos li b {
   }
   #mask {
     right: -45px;
+    background-size: 120%;
   }
   #sliderVid {
     width: 510px;
@@ -2685,6 +2697,13 @@ ul.liste-pictos li b {
   .touch #containerVid .container {
     min-height: 420px;
     max-height: 420px;
+  }
+  #containerVid .rejouer {
+    bottom: 10px;
+    font-size: 0.55em;
+  }
+  #containerVid .rejouer span {
+    display: none;
   }
   #containerVid p {
     font-size: 1.4em;

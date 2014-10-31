@@ -1345,7 +1345,8 @@ footer{
         }
       }
       h3{
-        padding: 35px 0 0;
+        padding: 35px 0 5px;
+        font-size: 1em;
       }
     }
   }
@@ -2476,11 +2477,13 @@ ul.liste-pictos{
         }
       }
       img{
-        width: 83%;
+        /*width: 83%;*/
+        width: 76%;
       }
     }
     #mask{
-      background-size: 120%;
+      /*background-size: 120%;*/
+      background-size: 110%;
     }
 
 
@@ -2525,8 +2528,16 @@ ul.liste-pictos{
         max-height: 550px;
       }
     }
+    .rejouer{
+      right: 60px;
+      span{
+        display: block;
+        text-indent: 15px;
+      }
+    }
     img{
       right: -45px;
+      width: 83%;
     }
     p{
       font-size: 2em;
@@ -2537,6 +2548,7 @@ ul.liste-pictos{
 
   #mask{
     right: -45px;
+    background-size: 120%;
   }
 
   #sliderVid{
@@ -2662,6 +2674,13 @@ ul.liste-pictos{
       .touch &{
         min-height: 420px;
         max-height: 420px;
+      }
+    }
+    .rejouer{
+      bottom: 10px;
+      font-size: 0.55em;
+      span{
+        display: none;
       }
     }
     p{
