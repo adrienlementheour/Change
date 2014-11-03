@@ -138,7 +138,7 @@ function setFirstStrong(){
 function scroll(){
 	var myScroll = $(document).scrollTop();
 	var factor = 1.9;
-	var myScrollH = -Math.ceil(myScroll/factor);
+	var factor2 = 10;
 
 	if (!$("html").hasClass("lt-ie9")) {
 
@@ -154,21 +154,31 @@ function scroll(){
 		}
 
 		// Video
+		if($('body').hasClass('home')){
+			if ($(window).height()>900) factor = 1.5;
+			if ($(window).height()>950) factor = 1.4;
+			if ($(window).height()>1050) factor = 1.2;
+			if ($(window).height()>1200) factor = 1;
+			var myScrollH = -Math.ceil(myScroll/factor);
 
-		if ($(window).height()>900) {
-			factor = 1.5;
-		}
-		if ($(window).height()>950) {
-			factor = 1.4;
-		}
-		if ($(window).height()>1050) {
-			factor = 1.2;
-		}
-		if ($(window).height()>1200) {
-			factor = 1;
+			$("video").css("bottom",myScrollH+"px");
 		}
 
-		$("video").css("bottom",myScrollH+"px");
+		//Parallaxe solution
+		if($('body').hasClass('solution')){
+			var myScrollH2 = Math.ceil(myScroll/factor2);
+
+			$("#screen-solution").css("margin-bottom",myScrollH2+"px");
+
+			if(myScroll > 600 && $(window).width() > 978){
+				$('#shop').css('top', -myScrollH2+'px');
+			}
+
+			if(myScroll > 2470){
+				$('#nuage1').css('margin-top', -myScrollH2/1.7+'px');
+				$('#nuage2').css('margin-top', -myScrollH2+'px');
+			}
+		}
 	}
 }
 

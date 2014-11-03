@@ -133,6 +133,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-h24:before {
+  content: "\e61c";
+}
 .icon-bulle:before {
   content: "\e617";
 }
@@ -420,14 +423,14 @@ body{
       color: @blanc;
     }
 }
-.bloc-padding-left{
+/*.bloc-padding-left{
 	display: block;
 	width: 100%;
 	height: auto;
 	position: relative;
-	padding: 0 0 0 47%;
+	padding: 0 0 0 57%;
 	.box-sizing(border-box);
-}
+}*/
 .largeContainer{
   background: @grisTresClairFond;
   padding: 20px 0 60px;
@@ -526,6 +529,9 @@ strong, b{
     color: @blanc;
     font-size: 1.2em;
     margin-top: 71px;
+    clear: both;
+    text-indent: 48px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1311,6 +1317,8 @@ footer{
       }
       &.liBig{
         width: 245px;
+      }
+      &.last{
         margin: 0;
       }
       .lt-ie9 &{
@@ -1406,6 +1414,17 @@ footer{
   }
   p{
     .bariol(2.4em);
+    &.alt{
+      font-size: 2.35em;
+      > span{
+        &.discret{
+          color: #9b9b9b;
+        }
+        .big{
+          font-size: 1.29em;
+        }
+      }
+    }
     line-height: 45px;
     position: absolute;
     z-index: 6;
@@ -1414,13 +1433,13 @@ footer{
     > span{
       display: block;
       &.discret{
-        color: @grisFonceTexte;
+        color: #2f2f33;
       }
       span{
         display: inline;
       }
       .big{
-        font-size: 1.12em;
+        font-size: 1.1em;
         color: @bleu;
       }
       .bigIe{
@@ -1676,8 +1695,22 @@ footer{
 
 /* @group Page Solution */
 
-.solution p{
-  font-size: 0.95em;
+.solution{
+  p{
+    font-size: 0.95em;
+  }
+  .bloc-noir-fond{
+    background: @grisFonce url(../layoutImg/solution/nana.jpg) no-repeat right bottom;
+  }
+  .bloc-padding-left{
+    width: 43%;
+    float: right;
+    h4{
+      &.first{
+        margin-top: 37px;
+      }
+    }
+  }
 }
 
 #bloc-visu-solution{
@@ -1694,7 +1727,7 @@ footer{
 		height: 401px;
 		background: url('../layoutImg/solution/solution-screen.png') no-repeat center bottom;
 		position: absolute;
-		bottom: 0;
+		bottom: -80px;
 		left: 50%;
 		margin-left: -439px;
 	}
@@ -1711,10 +1744,13 @@ footer{
 
 .fd-shop{
   width: 1304px;
-  height: 667px;
-  position: absolute;
+  /*position: absolute;*/
   top: 500px;
-  left: -25%;
+  /*right: 50%;*/
+  margin-left: -65%;
+  overflow:hidden;
+  float: left;
+  margin-top: 40px;
   >div{
     position: relative;
   }
@@ -1722,28 +1758,27 @@ footer{
     width: 100%;
     height: 667px;
     background: url(../layoutImg/solution/vitrine.png) no-repeat;
-    position: relative;
+    position: absolute;
     z-index: 1;
   }
   .shop{
     width: 99%;
-    height: 600px;
-    background: url(../layoutImg/solution/store.jpg) no-repeat center center;
-    position: absolute;
-    top: 5px;
+    position: relative;
+    top: -100px;
     left: 5px;
+    margin-top: 135px;
   }
 }
 
 .encadre{
-	height: 140px;
 	.box-sizing(border-box);
 	position: relative;
 	margin: 80px 0 30px;
 	line-height: 140px;
+  clear: both;
 	.bloc-icon-encadre{
 		width: 140px;
-		height: 100%;
+		height: 140px;
 		background: @rouge;
 		position: absolute;
 		top: 0;
@@ -1751,6 +1786,9 @@ footer{
 		.border-radius(5px);
 		color: @blanc;
 		text-align: center;
+    &.fond-bleu{
+      background: @bleu;
+    }
 		.container-icon-encadre{
 			width: 100%;
 			line-height: 100px;
@@ -1777,12 +1815,17 @@ footer{
 		display: inline-block;
 		vertical-align: middle;
 		.box-sizing(border-box);
-		padding: 0 34px 0 170px;
+		padding: 0 20px 0 170px;
 		line-height: 1em;
+    &.small-encadre{
+      width: 900px;
+    }
     p{
       margin: 0;
       &.big-p{
-        font-size: 1.7em;
+        .bariol(2em);
+        line-height: 32px;
+        padding-bottom: 6px;
       }
     }
 	}
@@ -1795,38 +1838,28 @@ footer{
 	margin: 0;
 	padding: 0;
 	position: relative;
-	.zone-gauche-schema{
-		display: inline-block;
-		vertical-align: top;
-		width: 50%;
-		margin: 0;
-		.box-sizing(border-box);
-		padding: 0 165px 0 0;
-	}
-	.zone-droite-schema{
-		display: inline-block;
-		vertical-align: top;
-		width: 50%;
-		margin: 0;
-		.box-sizing(border-box);
-		padding: 0 0 0 165px;
-	}
+  .zone-check{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin: 0;
+    .box-sizing(border-box);
+    padding: 0 150px 0 170px;
+  }
+  .zone-droite{
+    padding: 0 180px 0 160px;
+  }
 	.zone-centre-schema{
 		.zone-web{
 			display: block;
-			width: 104px;
-			height: 104px;
 			position: absolute;
 			top: 50%;
 			margin-top: -52px;
 			left: 50%;
-			margin-left: -52px;
-			background-color: @rouge;
-			.border-radius(5px);
-			text-align: center;
+			margin-left: -46px;
 			.icon-web{
-				color: @blanc;
-				font-size: 46px;
+				color: @grisFonce;
+				font-size: 75px;
 				line-height: 104px;
 			}
 		}
@@ -1841,10 +1874,10 @@ footer{
 		text-align: center;
 		.box-sizing(border-box);
 		&.left{
-			margin-left: -165px;
+			margin-left: -150px;
 		}
 		&.right{
-			margin-left: 52px;
+			margin-left: 42px;
 		}
 		.icon-arrow-double{
 			display: block;
@@ -1861,14 +1894,14 @@ footer{
 	}
 }
 
-.liste-checks-bleus{
+.liste-checks{
 	display: block;
 	width: 100%;
 	height: auto;
 	padding: 0;
 	margin: 0;
 	li{
-		background-color: @bleu;
+		background-color: @grisFonce;
 		.bariolBold(1.125em);
 		color: @blanc;
 		padding: 6px 0;
@@ -1884,10 +1917,10 @@ footer{
 			background: url('../layoutImg/check.png') no-repeat center center;
 			position: absolute;
 			top: -7px;
-			left: -15px;
-			.zone-gauche-schema &{
-				left: inherit;
-				right: -15px;
+			right: -15px;
+			.zone-droite &{
+				right: auto;
+				left: -15px;
 			}
 		}
 	}
@@ -1899,21 +1932,125 @@ footer{
 	height: auto;
 	margin: 0;
 	padding: 0;
+  &.liste-pictos-noir{
+    padding-left: 165px;
+    width: 80%;
+    li:before{
+      font-size: 50px;
+      color: @grisFonce;
+      top: 2px;
+    }
+    .icon-tool:before{
+      font-size: 25px;
+      top: 15px;
+    }
+  }
 	li{
-		.bariol(0.889em);
-		padding: 12px 0 12px 50px;
+		.bariol(1em);
+		padding: 12px 0 23px 50px;
     position: relative;
+    &.icon-store-locator:before{
+      font-size: 42px;
+    }
     &:before{
       font-family: 'change';
       font-size: 35px;
       color: @blanc;
       position: absolute;
       left: 0;
+      text-align: center;
+      width: 35px;
     }
 		b{
-			font-size: 1em;
+			font-size: 0.9em;
 		}
+    .maj{
+      font-size: 0.8em;
+    }
 	}
+}
+
+.liste-pictos2{
+  margin: 0 0 0 160px;
+  width: 70%;
+  li{
+    &.icon-facebook:before{
+      font-size: 25px;
+      top: 8px;
+    }
+    &:before{
+      top: 1px;
+      font-size: 40px;
+    }
+  }
+}
+
+.icon-caisse{
+  margin: 0;
+  .bariol(1em);
+  padding: 12px 0 12px 50px;
+  position: relative;
+  b{
+    font-size: 0.9em;
+  }
+  .maj{
+    font-size: 0.8em;
+  }
+  &:before{
+    font-family: 'change';
+    font-size: 52px;
+    color: @blanc;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 35px;
+    top: 7px;
+  }
+}
+
+.bloc-saas{
+  padding-bottom: 100px;
+  position: relative;
+  +footer{
+    margin-top: 0;
+  }
+}
+
+.fd-saas{
+  width: 33%;
+  height: 540px;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  background: url(../layoutImg/solution/groupe.jpg) no-repeat right;
+  z-index: -1;
+  .nuage1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 180px;
+    margin-top: 100%;
+    background: url(../layoutImg/solution/nuage1.png) no-repeat right bottom;
+  }
+  .nuage2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 320px;
+    margin-top: 100%;
+    background: url(../layoutImg/solution/nuage2.png) no-repeat right bottom;
+  }
+}
+
+.fd-api{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../layoutImg/solution/fd-saas.png) no-repeat right bottom;
+  background-size: 100%;
+  z-index: -1;
 }
 
 /* @end */
@@ -2218,6 +2355,34 @@ footer{
     margin: 20px 0 0 55px;
   }
 
+  .solution{
+    > .container, > div .container{
+      padding-left: 30px;
+      padding-right: 30px;
+      .container{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .bloc-noir-fond{
+      background-position: 160px bottom;
+    }
+    .bloc-padding-left{
+      float: none;
+      width: 100%;
+      margin-top: -50px;
+    }
+  }
+  .fd-shop{
+    width: 100%;
+    margin-left: 0;
+    float: none;
+    margin-top: 60px;
+    .vitrine{
+      background-size: 100%;
+    }
+  }
+
 }
 
 
@@ -2360,6 +2525,21 @@ footer{
       margin-top: 122px;
     }
   }
+
+  .encadre {
+    .bloc-txt-encadre{
+      &.small-encadre{
+        width: 100%;
+      }
+    }
+  }
+
+   .fd-shop{
+    .shop{
+      margin-top: 0;
+      top: 0;
+    }
+   }
 
 }
 

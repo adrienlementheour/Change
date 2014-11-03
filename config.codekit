@@ -914,7 +914,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1762,
+		"initialSize": 2398,
 		"inputAbbreviatedPath": "\/layoutImg\/check.png",
 		"outputAbbreviatedPath": "\/layoutImg\/check.png",
 		"outputPathIsOutsideProject": 0,
@@ -1053,6 +1053,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/solution\/fd-saas.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/fd-saas.png",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/fd-saas.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/solution\/groupe.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47100,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/groupe.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/groupe.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/solution\/nana.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1060,6 +1082,28 @@
 		"initialSize": 77543,
 		"inputAbbreviatedPath": "\/layoutImg\/solution\/nana.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/nana.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/solution\/nuage1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53339,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/nuage1.png",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/nuage1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/solution\/nuage2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/layoutImg\/solution\/nuage2.png",
+		"outputAbbreviatedPath": "\/layoutImg\/solution\/nuage2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1119,17 +1163,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/layoutImg\/solution\/store.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/layoutImg\/solution\/store.png",
-		"outputAbbreviatedPath": "\/layoutImg\/solution\/store.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/layoutImg\/solution\/vitrine.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1140,6 +1173,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/less\/alt-index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/alt-index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/less\/lesshat.less": {
 		"allowInsecureImports": 0,
