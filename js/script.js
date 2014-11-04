@@ -168,15 +168,23 @@ function scroll(){
 		if($('body').hasClass('solution')){
 			var myScrollH2 = Math.ceil(myScroll/factor2);
 
-			$("#screen-solution").css("margin-bottom",myScrollH2+"px");
+			if($(window).width() > 978){
+				$("#screen-solution").css("margin-bottom",myScrollH2+"px");
 
-			if(myScroll > 600 && $(window).width() > 978){
-				$('#shop').css('top', -myScrollH2+'px');
+				if(myScroll > 600){
+					$('#shop').css('top', -myScrollH2+'px');
+				}
+
+				if(myScroll > 2470){
+					$('#nuage1').css('margin-top', -myScrollH2/1.7+'px');
+					$('#nuage2').css('margin-top', -myScrollH2+'px');
+				}
 			}
-
-			if(myScroll > 2470){
-				$('#nuage1').css('margin-top', -myScrollH2/1.7+'px');
-				$('#nuage2').css('margin-top', -myScrollH2+'px');
+			else{
+				$("#screen-solution").css("margin-bottom", "0px");
+				$('#shop').css('top', '0px');
+				$('#nuage1').css('margin-top', '0px');
+				$('#nuage2').css('margin-top', '0px');
 			}
 		}
 	}
