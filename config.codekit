@@ -232,6 +232,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/fonctionnalite.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/fonctionnalite.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/img\/ref\/afflelou.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1360,7 +1369,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "elisabeth",
+"lastSavedByUser": "Boris Forconi",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1370,7 +1379,7 @@
 	"iconImageName": "\/apple-touch-icon.png"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",

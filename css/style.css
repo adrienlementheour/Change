@@ -68,6 +68,108 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-access-management:before {
+  content: "\e61d";
+}
+.icon-API-acronym:before {
+  content: "\e61e";
+}
+.icon-backorders:before {
+  content: "\e61f";
+}
+.icon-box:before {
+  content: "\e620";
+}
+.icon-catalog:before {
+  content: "\e621";
+}
+.icon-cb:before {
+  content: "\e622";
+}
+.icon-client-check:before {
+  content: "\e623";
+}
+.icon-client:before {
+  content: "\e624";
+}
+.icon-cms-acronym:before {
+  content: "\e625";
+}
+.icon-cms:before {
+  content: "\e626";
+}
+.icon-coupon:before {
+  content: "\e627";
+}
+.icon-crosscommerce:before {
+  content: "\e628";
+}
+.icon-delivery:before {
+  content: "\e629";
+}
+.icon-dot-com:before {
+  content: "\e62a";
+}
+.icon-email-notification:before {
+  content: "\e62b";
+}
+.icon-flags:before {
+  content: "\e62c";
+}
+.icon-form:before {
+  content: "\e62d";
+}
+.icon-graphic-theme:before {
+  content: "\e62e";
+}
+.icon-iphone:before {
+  content: "\e62f";
+}
+.icon-lock:before {
+  content: "\e630";
+}
+.icon-map-seo:before {
+  content: "\e631";
+}
+.icon-multisite:before {
+  content: "\e632";
+}
+.icon-news:before {
+  content: "\e633";
+}
+.icon-order-management:before {
+  content: "\e634";
+}
+.icon-order-treatment:before {
+  content: "\e635";
+}
+.icon-product-page:before {
+  content: "\e636";
+}
+.icon-search:before {
+  content: "\e637";
+}
+.icon-seo:before {
+  content: "\e638";
+}
+.icon-store-locator:before {
+  content: "\e639";
+}
+.icon-store-to-web:before {
+  content: "\e63a";
+}
+.icon-target:before {
+  content: "\e63b";
+}
+.icon-web-to-store:before {
+  content: "\e63c";
+}
+.icon-workflow:before {
+  content: "\e63d";
+}
+.icon-worldwide:before {
+  content: "\e63e";
+}
 .icon-h24:before {
   content: "\e61c";
 }
@@ -98,7 +200,7 @@
 .icon-reserve-collect:before {
   content: "\e615";
 }
-.icon-store-locator:before {
+.icon-store-locator2:before {
   content: "\e616";
 }
 .icon-arrow-right:before {
