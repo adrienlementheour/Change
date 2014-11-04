@@ -441,7 +441,8 @@ h2 {
   color: #47acdc;
   line-height: 1.1em;
 }
-h3 {
+h3,
+.h3 {
   margin: 0 0 0 -1px;
   padding: 10px 0 10px 0;
   font-family: 'bariolBold', sans-serif;
@@ -450,7 +451,8 @@ h3 {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-h3.big-h3 {
+h3.big-h3,
+.h3.big-h3 {
   font-family: 'bariolBold', sans-serif;
   font-size: 2em;
   -webkit-font-smoothing: antialiased;
@@ -746,6 +748,9 @@ form #envoyer:focus {
 }
 .blanc {
   color: #ffffff;
+}
+.noir {
+  color: #34343c;
 }
 /* @end */
 /* @group header */
@@ -1922,13 +1927,14 @@ footer form #bouton-ok:active {
 }
 .fd-shop {
   width: 1304px;
-  /*position: absolute;*/
   top: 500px;
-  /*right: 50%;*/
   margin-left: -65%;
   overflow: hidden;
   float: left;
   margin-top: 40px;
+}
+.lt-ie9 .fd-shop {
+  margin-left: -80%;
 }
 .fd-shop > div {
   position: relative;
@@ -1946,6 +1952,9 @@ footer form #bouton-ok:active {
   top: -100px;
   left: 5px;
   margin-top: 135px;
+}
+.lt-ie9 .fd-shop .shop {
+  top: -120px;
 }
 .encadre {
   -webkit-box-sizing: border-box;
@@ -2018,7 +2027,7 @@ footer form #bouton-ok:active {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   line-height: 32px;
-  padding-bottom: 6px;
+  padding-bottom: 12px;
 }
 .zone-schema {
   display: block;
@@ -2049,6 +2058,9 @@ footer form #bouton-ok:active {
   position: absolute;
   top: 50%;
   left: 52%;
+}
+.lt-ie9 .zone-schema .zone-centre-schema {
+  left: 59%;
 }
 .zone-schema .zone-centre-schema .zone-web {
   display: block;
@@ -2243,6 +2255,83 @@ footer form #bouton-ok:active {
   background: url(../layoutImg/solution/fd-saas.png) no-repeat right bottom;
   background-size: 100%;
   z-index: -1;
+}
+/* @end */
+/* Fonctionnalites */
+.fonctionnalites .content > div {
+  padding: 60px 0;
+}
+.fonctionnalites .noir .h3 {
+  color: #34343c;
+}
+.fonctionnalites .noir .liste-pictos li:before {
+  color: #000;
+}
+.fonctionnalites .blanc .h3,
+.fonctionnalites .blanc .maj {
+  color: #ffffff;
+}
+.fonctionnalites h1 {
+  padding-top: 120px;
+  width: 585px;
+}
+.fonctionnalites .liste-pictos {
+  width: 560px;
+}
+.fonctionnalites .liste-pictos li {
+  line-height: 21px;
+}
+.fonctionnalites .liste-pictos li:before {
+  top: 18px;
+  font-size: 27px;
+}
+.fonctionnalites .liste-pictos .icon-product-page:before {
+  font-size: 25px;
+}
+.fonctionnalites .big-padding-left .liste-pictos {
+  padding-left: 140px;
+}
+.fonctionnalites .cms {
+  height: 690px;
+  background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.fonctionnalites .api {
+  height: 515px;
+  background: url(../layoutImg/fonc/visu-api.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.fonctionnalites .inter {
+  height: 715px;
+  background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.fonctionnalites .fid {
+  background: #efebe2 url(../layoutImg/fonc/visu-fid.jpg) no-repeat right bottom;
+}
+.fonctionnalites .secu {
+  background: url(../layoutImg/fonc/visu-secu.jpg) no-repeat;
+  background-size: auto 100%;
+}
+.fonctionnalites .maj {
+  padding: 2px 0;
+}
+.fonctionnalites .encadre {
+  margin-top: 0;
+}
+.titre-fonctionnalite {
+  height: 630px;
+  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  margin: -13px 0 0;
 }
 /* @end */
 /* Plan du site */
@@ -2511,7 +2600,8 @@ footer form #bouton-ok:active {
     padding-right: 0;
   }
   .solution .bloc-noir-fond {
-    background-position: 160px bottom;
+    background-position: 280px bottom;
+    background-size: 80%;
   }
   .solution .bloc-padding-left {
     float: none;
@@ -2519,7 +2609,7 @@ footer form #bouton-ok:active {
     margin-top: -70px;
   }
   .solution .big-padding-left {
-    margin-top: 350px;
+    margin-top: 455px;
   }
   .fd-shop {
     width: 100%;
@@ -2672,7 +2762,7 @@ footer form #bouton-ok:active {
     margin-left: 0;
   }
   .solution .big-padding-left {
-    margin-top: 370px;
+    margin-top: 500px;
   }
   .solution .bloc-padding-left {
     margin-top: 60px;
@@ -2686,8 +2776,7 @@ footer form #bouton-ok:active {
   }
   .fd-saas .nuage1,
   .fd-saas .nuage2 {
-    top: 0;
-    margin-top: 0;
+    display: none;
   }
 }
 @media (max-width: 850px) {
@@ -2871,7 +2960,9 @@ footer form #bouton-ok:active {
     top: 50px;
   }
   .solution .bloc-noir-fond {
-    background-position: 60px bottom;
+    background-position: right bottom;
+    background-size: 100%;
+    padding-bottom: 200px;
   }
   .encadre .bloc-txt-encadre {
     padding: 50px 0 0;
@@ -3112,7 +3203,7 @@ footer form #bouton-ok:active {
   }
   .zone-schema .zone-centre-schema {
     left: 50%;
-    margin-left: -105px;
+    margin-left: -111px;
     top: 49%;
     bottom: auto;
   }
@@ -3123,6 +3214,14 @@ footer form #bouton-ok:active {
   }
   .liste-checks li {
     display: block;
+    font-size: 1em;
+    margin: 20px 0 0;
+    padding: 0 20px;
+  }
+  .liste-checks li:before {
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
   }
 }
 @media (max-width: 430px) {

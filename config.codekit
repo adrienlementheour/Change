@@ -950,6 +950,83 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/fonc\/ipad1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 136015,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/ipad1.png",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/ipad1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fonc\/ipad2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 141377,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/ipad2.png",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/ipad2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fonc\/visu-api.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43462,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-api.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-api.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fonc\/visu-cms.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 109251,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cms.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cms.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fonc\/visu-inter.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 130647,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-inter.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-inter.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fonc\/visu-titre.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 367339,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-titre.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-titre.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fonc\/visu.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 580167,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/logo-change.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1342,6 +1419,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/references.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/solution.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/solution.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

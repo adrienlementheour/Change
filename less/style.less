@@ -573,7 +573,7 @@ h2{
   line-height: 1.1em;
 }
 
-h3{
+h3, .h3{
   margin: 0 0 0 -1px; 
   padding: 10px 0 10px 0;
   .bariolBold(1.2em);
@@ -805,6 +805,10 @@ form{
 .blanc{
   color: @blanc;
 }
+.noir{
+  color: @grisFonceTexte;
+}
+
 /* @end */
 
 /* @group header */
@@ -1846,13 +1850,14 @@ footer{
 
 .fd-shop{
   width: 1304px;
-  /*position: absolute;*/
   top: 500px;
-  /*right: 50%;*/
   margin-left: -65%;
   overflow:hidden;
   float: left;
   margin-top: 40px;
+  .lt-ie9 &{
+    margin-left: -80%;
+  }
   >div{
     position: relative;
   }
@@ -1869,6 +1874,9 @@ footer{
     top: -100px;
     left: 5px;
     margin-top: 135px;
+    .lt-ie9 &{
+      top: -120px;
+    }
   }
 }
 
@@ -1927,7 +1935,7 @@ footer{
       &.big-p{
         .bariol(2em);
         line-height: 32px;
-        padding-bottom: 6px;
+        padding-bottom: 12px;
       }
     }
 	}
@@ -1961,6 +1969,9 @@ footer{
     position: absolute;
     top: 50%;
     left: 52%;
+    .lt-ie9 &{
+      left: 59%;
+    }
 		.zone-web{
 			display: block;
 			position: absolute;
@@ -2148,6 +2159,89 @@ footer{
   background: url(../layoutImg/solution/fd-saas.png) no-repeat right bottom;
   background-size: 100%;
   z-index: -1;
+}
+
+/* @end */
+
+
+/* Fonctionnalites */
+
+.fonctionnalites {
+  .content > div{
+    padding: 60px 0;
+  }
+  .noir{
+    .h3{
+      color: @grisFonceTexte;
+     }
+     .liste-pictos{
+      li:before{
+        color: #000;
+      }  
+    }
+  }
+  .blanc{
+    .h3, .maj{
+      color: @blanc;
+    }
+  }
+  h1{
+    padding-top: 120px;
+    width: 585px;
+  }
+  .liste-pictos{
+    width: 560px;
+    li{
+      line-height: 21px;
+      &:before{
+        top: 18px;
+        font-size: 27px;
+      }
+    }
+    .icon-product-page:before{
+      font-size: 25px;
+    }
+  }
+  .big-padding-left{
+    .liste-pictos{
+      padding-left: 140px;
+    }
+  }
+  .cms{
+    height: 690px;
+    background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat fixed;
+    .background-size(cover);
+  }
+  .api{
+    height: 515px;
+    background: url(../layoutImg/fonc/visu-api.jpg) no-repeat fixed;
+    .background-size(cover);
+  }
+  .inter{
+    height: 715px;
+    background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
+    .background-size(cover);
+  }
+  .fid{
+    background: @grisTresClairFond url(../layoutImg/fonc/visu-fid.jpg) no-repeat right bottom;
+  }
+  .secu{
+    background: url(../layoutImg/fonc/visu-secu.jpg) no-repeat;
+    background-size: auto 100%;
+  }
+  .maj{
+    padding: 2px 0;
+  }
+  .encadre{
+    margin-top: 0;
+  }
+}
+
+.titre-fonctionnalite{
+  height: 630px;
+  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center center fixed;
+  .background-size(cover);
+  margin: -13px 0 0;
 }
 
 /* @end */
@@ -2462,7 +2556,8 @@ footer{
       }
     }
     .bloc-noir-fond{
-      background-position: 160px bottom;
+      background-position: 280px bottom;
+      background-size: 80%;
     }
     .bloc-padding-left{
       float: none;
@@ -2470,7 +2565,7 @@ footer{
       margin-top: -70px;
     }
     .big-padding-left{
-      margin-top: 350px;
+      margin-top: 455px;
     }
   }
   .fd-shop{
@@ -2664,7 +2759,7 @@ footer{
 
   .solution{
     .big-padding-left{
-      margin-top: 370px;
+      margin-top: 500px;
     }
     .bloc-padding-left{
       margin-top: 60px;
@@ -2681,8 +2776,7 @@ footer{
    .fd-saas {
       width: 80%;
       .nuage1, .nuage2{
-        top: 0;
-        margin-top: 0;
+        display: none;
       }
     }
 
@@ -2907,7 +3001,9 @@ footer{
 
   .solution{
     .bloc-noir-fond {
-      background-position: 60px bottom;
+      background-position: right bottom;
+      background-size: 100%;
+      padding-bottom: 200px;
     }
   }
 
@@ -3206,7 +3302,7 @@ footer{
 
   .zone-schema .zone-centre-schema{
     left: 50%;
-    margin-left: -105px;
+    margin-left: -111px;
     top: 49%;
     bottom: auto;
   }
@@ -3216,6 +3312,14 @@ footer{
     margin: 0 auto;
     li{
       display: block;
+      font-size: 1em;
+      margin: 20px 0 0;
+      padding: 0 20px;
+      &:before{
+        width: 25px;
+        height: 25px;
+        background-size: 100%;
+      }
     }
   }
 }
