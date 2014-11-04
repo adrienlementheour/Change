@@ -501,15 +501,12 @@ function visuSolution(){
 
 
 $(function(){
-
-
 	detectTouchDevice();
 	setFooter();
 	setSizeBugerMenu();
 	setBurgerMenu();
 	setFirstStrong();
 	//noScroll();
-
 	if($('body').hasClass('home')){
 		indic = $('#containerVid').find('.rejouer');
 		if($("html").hasClass("lt-ie9")){

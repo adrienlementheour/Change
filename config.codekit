@@ -994,6 +994,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/fonc\/visu-commande.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 563342,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-commande.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-commande.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fonc\/visu-cross.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 138677,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cross.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cross.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fonc\/visu-fid.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 142641,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-fid.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-fid.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/fonc\/visu-inter.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1005,6 +1038,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/fonc\/visu-secu.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27110,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-secu.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-secu.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/fonc\/visu-titre.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1012,17 +1056,6 @@
 		"initialSize": 367339,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-titre.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-titre.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/layoutImg\/fonc\/visu.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 580167,
-		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu.jpg",
-		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1137,17 +1170,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/layoutImg\/solution\/bg-visu-solution@2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.75603e+06,
-		"inputAbbreviatedPath": "\/layoutImg\/solution\/bg-visu-solution@2x.png",
-		"outputAbbreviatedPath": "\/layoutImg\/solution\/bg-visu-solution@2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/layoutImg\/solution\/fd-saas.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1229,20 +1251,9 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 99980,
+		"initialSize": 40913,
 		"inputAbbreviatedPath": "\/layoutImg\/solution\/solution-screen.png",
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/solution-screen.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/layoutImg\/solution\/solution-screen@2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 142981,
-		"inputAbbreviatedPath": "\/layoutImg\/solution\/solution-screen@2x.png",
-		"outputAbbreviatedPath": "\/layoutImg\/solution\/solution-screen@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1422,11 +1433,20 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/solution.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/solution.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "elisabeth",
+"lastSavedByUser": "Boris Forconi",
 "manualImportLinks": {
 	},
 "projectAttributes": {
