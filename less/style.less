@@ -123,6 +123,9 @@
 	font-style: normal;
 }
 
+
+/* @group icones */ 
+
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'change';
 	speak: none;
@@ -132,8 +135,6 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-
 .icon-access-management:before {
 	content: "\e61d";
 }
@@ -337,7 +338,7 @@
 }
 .fd-rouge:before{
   background: @rouge;
-}
+} /* @end */
 
 /* @group Mixins */
 
@@ -1504,6 +1505,13 @@ footer{
       border-top: 1px solid @grisTresClairFond;
       margin: 0 auto;
     }
+  }
+  footer {
+  	margin-top: 0;
+  }
+  #aProposHome {
+  	margin-bottom: 0;
+  	padding-bottom: 50px;
   }
 }
 

@@ -58,6 +58,7 @@
   font-weight: normal;
   font-style: normal;
 }
+/* @group icones */
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: 'change';
@@ -272,6 +273,7 @@
 .fd-rouge:before {
   background: #f04a2f;
 }
+/* @end */
 /* @group Mixins */
 /* @group Boilerplate */
 html,
@@ -1569,6 +1571,13 @@ footer form #bouton-ok:active {
   width: 1025px;
   border-top: 1px solid #efebe2;
   margin: 0 auto;
+}
+.home footer {
+  margin-top: 0;
+}
+.home #aProposHome {
+  margin-bottom: 0;
+  padding-bottom: 50px;
 }
 #containerVid {
   background: #202026;
