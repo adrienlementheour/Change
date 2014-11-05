@@ -2429,7 +2429,7 @@ footer form #bouton-ok:active {
 }
 .fonctionnalites .commande {
   position: relative;
-  height: 1030px;
+  height: 870px;
   background: url(../layoutImg/fonc/visu-commande.jpg) no-repeat bottom fixed;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
