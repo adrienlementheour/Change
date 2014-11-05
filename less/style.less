@@ -2351,10 +2351,18 @@ footer{
   }
   .cms{
     height: 550px;
-    background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat fixed;
+    background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat 30% 0 fixed;
+    .background-size(100% auto);
     .background-size(cover);
     z-index: 2;
     position: relative;
+    .lt-ie9 &{
+      background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat center center fixed;
+    }
+    .touch &{
+      background-attachment: scroll;
+      .background-size(100% auto);
+    }
     .big-p{
       width: 600px;
     }
@@ -2363,7 +2371,10 @@ footer{
     position: relative;
     height: 1030px;
     background: url(../layoutImg/fonc/visu-commande.jpg) no-repeat bottom fixed;
-    .background-size(100%);
+    .background-size(100% auto);
+    .touch &{
+      background-attachment: scroll;
+    }
     .fd-opaque{
       position: absolute;
       top: 0;
@@ -2377,6 +2388,9 @@ footer{
       position: relative;
       padding: 70px 0 20px;
       background: rgba(239, 235, 226, 0.9);
+      .lt-ie9 &{
+        background: url(../layoutImg/fonc/fd-ie-com.png);
+      }
     }
     .liste-pictos{
       padding-top: 30px;
@@ -2385,6 +2399,9 @@ footer{
       vertical-align: top;
       &.liste-first{
         margin-right: 75px;
+      }
+      .lt-ie9 &{
+        width: 45%;
       }
     }
   }
@@ -2402,7 +2419,7 @@ footer{
   }
   .api{
     height: 375px;
-    background: @grisFonce url(../layoutImg/fonc/api.png) no-repeat fixed;
+    background: @grisFonce url(../layoutImg/fonc/api.png) no-repeat;
     .background-size(auto 100%);
   }
   .fid{
@@ -2424,12 +2441,17 @@ footer{
   }
   .secu{
     background: url(../layoutImg/fonc/visu-secu.jpg) no-repeat;
-    background-size: auto 100%;
+    .background-size(auto 100%);
   }
   .inter{
     height: 575px;
     background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
+    .background-size(100% auto);
     .background-size(cover);
+    .touch &{
+      background-attachment: scroll;
+      .background-size(100% auto);
+    }
     .big-p{
       width: 505px;
     }
@@ -3099,7 +3121,9 @@ footer{
       .fid, .cross{
         .fd{
           width: 100%;
-          /*background-size: 100%;*/
+          background-size: 100%;
+          height: auto;
+          padding-bottom: 71%;
         }
       }
       .merch{

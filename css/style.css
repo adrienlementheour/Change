@@ -2443,12 +2443,24 @@ footer form #bouton-ok:active {
 }
 .fonctionnalites .cms {
   height: 550px;
-  background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat fixed;
+  background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat 30% 0 fixed;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   z-index: 2;
   position: relative;
+}
+.lt-ie9 .fonctionnalites .cms {
+  background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat center center fixed;
+}
+.touch .fonctionnalites .cms {
+  background-attachment: scroll;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
 }
 .fonctionnalites .cms .big-p {
   width: 600px;
@@ -2457,9 +2469,12 @@ footer form #bouton-ok:active {
   position: relative;
   height: 1030px;
   background: url(../layoutImg/fonc/visu-commande.jpg) no-repeat bottom fixed;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.touch .fonctionnalites .commande {
+  background-attachment: scroll;
 }
 .fonctionnalites .commande .fd-opaque {
   position: absolute;
@@ -2475,6 +2490,9 @@ footer form #bouton-ok:active {
   padding: 70px 0 20px;
   background: rgba(239, 235, 226, 0.9);
 }
+.lt-ie9 .fonctionnalites .commande .contenu-commande {
+  background: url(../layoutImg/fonc/fd-ie-com.png);
+}
 .fonctionnalites .commande .liste-pictos {
   padding-top: 30px;
   width: 46%;
@@ -2483,6 +2501,9 @@ footer form #bouton-ok:active {
 }
 .fonctionnalites .commande .liste-pictos.liste-first {
   margin-right: 75px;
+}
+.lt-ie9 .fonctionnalites .commande .liste-pictos {
+  width: 45%;
 }
 .fonctionnalites .cross {
   position: relative;
@@ -2498,7 +2519,7 @@ footer form #bouton-ok:active {
 }
 .fonctionnalites .api {
   height: 375px;
-  background: #202026 url(../layoutImg/fonc/api.png) no-repeat fixed;
+  background: #202026 url(../layoutImg/fonc/api.png) no-repeat;
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   background-size: auto 100%;
@@ -2522,14 +2543,25 @@ footer form #bouton-ok:active {
 }
 .fonctionnalites .secu {
   background: url(../layoutImg/fonc/visu-secu.jpg) no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
   background-size: auto 100%;
 }
 .fonctionnalites .inter {
   height: 575px;
   background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+.touch .fonctionnalites .inter {
+  background-attachment: scroll;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
 }
 .fonctionnalites .inter .big-p {
   width: 505px;
@@ -3098,7 +3130,9 @@ footer form #bouton-ok:active {
   .fonctionnalites .fid .fd,
   .fonctionnalites .cross .fd {
     width: 100%;
-    /*background-size: 100%;*/
+    background-size: 100%;
+    height: auto;
+    padding-bottom: 71%;
   }
   .fonctionnalites .merch .big-p {
     width: 100%;
