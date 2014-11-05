@@ -2327,7 +2327,7 @@ footer{
     }
     .touch &{
       background-attachment: scroll;
-      .background-size(100% auto);
+      .background-size(auto 100%);
     }
     .big-p{
       width: 600px;
@@ -2416,7 +2416,7 @@ footer{
     .background-size(cover);
     .touch &{
       background-attachment: scroll;
-      .background-size(100% auto);
+      .background-size(auto 100%);
     }
     .big-p{
       width: 505px;
@@ -2480,8 +2480,13 @@ footer{
 .titre-fonctionnalite{
   height: 630px;
   background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center center fixed;
+  .background-size(auto 100%);
   .background-size(cover);
   margin: -13px 0 0;
+  .touch &{
+    background-attachment: scroll;
+    .background-size(auto 100%);
+  }
 }
 
 /* @end */
@@ -2871,10 +2876,14 @@ footer{
       }
     }
     .commande{
-      background-size: auto;
+      .background-size(auto 100%);
       .liste-pictos{
         width: 45%;
       }
+    }
+    .api{
+      background: @grisFonce url(../layoutImg/fonc/api2.png) no-repeat;
+      .background-size(auto 100%);
     }
     .tab{
       &.tab1, &.tab2{

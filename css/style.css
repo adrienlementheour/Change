@@ -2420,9 +2420,9 @@ footer form #bouton-ok:active {
 }
 .touch .fonctionnalites .cms {
   background-attachment: scroll;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  background-size: 100% auto;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  background-size: auto 100%;
 }
 .fonctionnalites .cms .big-p {
   width: 600px;
@@ -2521,9 +2521,9 @@ footer form #bouton-ok:active {
 }
 .touch .fonctionnalites .inter {
   background-attachment: scroll;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  background-size: 100% auto;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  background-size: auto 100%;
 }
 .fonctionnalites .inter .big-p {
   width: 505px;
@@ -2589,10 +2589,19 @@ footer form #bouton-ok:active {
 .titre-fonctionnalite {
   height: 630px;
   background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center center fixed;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  background-size: auto 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   margin: -13px 0 0;
+}
+.touch .titre-fonctionnalite {
+  background-attachment: scroll;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  background-size: auto 100%;
 }
 /* @end */
 /* Plan du site */
@@ -2926,10 +2935,18 @@ footer form #bouton-ok:active {
     width: 80%;
   }
   .fonctionnalites .commande {
-    background-size: auto;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    background-size: auto 100%;
   }
   .fonctionnalites .commande .liste-pictos {
     width: 45%;
+  }
+  .fonctionnalites .api {
+    background: #202026 url(../layoutImg/fonc/api2.png) no-repeat;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    background-size: auto 100%;
   }
   .fonctionnalites .tab.tab1,
   .fonctionnalites .tab.tab2 {
