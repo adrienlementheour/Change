@@ -2266,7 +2266,7 @@ footer form #bouton-ok:active {
 /* @end */
 /* Fonctionnalites */
 .fonctionnalites .content > div {
-  padding: 60px 0;
+  padding: 70px 0;
 }
 .fonctionnalites .noir .h3 {
   color: #34343c;
@@ -2283,7 +2283,7 @@ footer form #bouton-ok:active {
   width: 585px;
 }
 .fonctionnalites .liste-pictos {
-  width: 560px;
+  width: 700px;
 }
 .fonctionnalites .liste-pictos li {
   line-height: 21px;
@@ -2299,25 +2299,25 @@ footer form #bouton-ok:active {
   padding-left: 140px;
 }
 .fonctionnalites .cms {
-  height: 690px;
+  height: 550px;
   background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
-.fonctionnalites .api {
-  height: 515px;
-  background: url(../layoutImg/fonc/visu-api.jpg) no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+.fonctionnalites .commande {
+  height: 960px;
+  background: url(..layoutImg/fonc/visu-commande.jpg) no-repeat bottom;
 }
-.fonctionnalites .inter {
-  height: 715px;
-  background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+.fonctionnalites .cross {
+  background: url(../layoutImg/fonc/visu-cross.jpg) no-repeat right bottom;
+}
+.fonctionnalites .api {
+  height: 375px;
+  background: #202026 url(../layoutImg/fonc/api.png) no-repeat fixed;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  background-size: auto 100%;
 }
 .fonctionnalites .fid {
   background: #efebe2 url(../layoutImg/fonc/visu-fid.jpg) no-repeat right bottom;
@@ -2325,6 +2325,13 @@ footer form #bouton-ok:active {
 .fonctionnalites .secu {
   background: url(../layoutImg/fonc/visu-secu.jpg) no-repeat;
   background-size: auto 100%;
+}
+.fonctionnalites .inter {
+  height: 575px;
+  background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .fonctionnalites .maj {
   padding: 2px 0;

@@ -950,6 +950,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/fonc\/api.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/api.png",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/api.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/fonc\/ipad1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -972,17 +983,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/layoutImg\/fonc\/visu-api.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 43462,
-		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-api.jpg",
-		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-api.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/layoutImg\/fonc\/visu-cms.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -998,7 +998,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 563342,
+		"initialSize": 580167,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-commande.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-commande.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1009,7 +1009,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 138677,
+		"initialSize": 580167,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cross.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cross.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1020,7 +1020,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 142641,
+		"initialSize": 148142,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-fid.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-fid.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1042,7 +1042,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 27110,
+		"initialSize": 580167,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-secu.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-secu.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1446,7 +1446,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Boris Forconi",
+"lastSavedByUser": "elisabeth",
 "manualImportLinks": {
 	},
 "projectAttributes": {
