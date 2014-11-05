@@ -213,7 +213,7 @@ function setTimingSpan(elt, timing, delay) {
 }
 
 function animTxt(){
-	setAnimHomeenCours();
+	/*setAnimHomeenCours();
 	
 	if ($("html").hasClass("lt-ie10")) {
 		var tl = new TimelineMax();
@@ -260,7 +260,7 @@ function animTxt(){
 			$('.sentence').removeClass("discret");
 			setAnimHomeenCours()
 		});
-	}
+	}*/
 }
 
 
