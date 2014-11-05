@@ -483,7 +483,6 @@ function animVisuSolution(){
 
 function visuSolution(){
 	TweenMax.set($("#screen-solution"), {y: 50, opacity: 0});
-	animVisuSolution();
 }
 
 
@@ -567,6 +566,9 @@ $(window).load(function(){
 		vignettes = $('#slider').find('.vignettes').find('li');
 		pagination = $('#bulle');
 		setSlider();
+	}
+	if($('body').hasClass('solution')){
+		animVisuSolution();
 	}
 });
 

@@ -318,7 +318,7 @@
 .icon-tel:before {
 	content: "\e602";
 }
-.icon-blog-plus:before {
+.icon-plus:before {
 	content: "\e601";
 }
 .icon-mail:before {
@@ -2406,7 +2406,7 @@ footer{
     }
   }
   .secu{
-    background: url(../layoutImg/fonc/visu-secu.jpg) no-repeat;
+    background: url(../layoutImg/fonc/visu-secu.png) no-repeat;
     .background-size(auto 100%);
   }
   .inter{
@@ -2479,7 +2479,7 @@ footer{
 
 .titre-fonctionnalite{
   height: 630px;
-  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center center fixed;
+  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center bottom;
   .background-size(auto 100%);
   .background-size(cover);
   margin: -13px 0 0;
@@ -2665,8 +2665,8 @@ footer{
 
 @media (max-width: 1280px) {
 	.fd-saas{
-	  background-size: 700px auto;
-	  background-position: 100% 100%;
+	  background-size: 600px auto;
+    background-position: 100% 60%;
 	}
 }
 
@@ -2840,6 +2840,9 @@ footer{
   .bloc-saas{
     .big-padding-left .encadre {
     	margin-left: 0;
+      .bloc-txt-encadre p.big-p br{
+        display: none;
+      }
     }
    }
   .fd-saas {
@@ -2852,6 +2855,11 @@ footer{
       left: 0;
       background-position: 0 bottom;
     }
+  }
+
+  .liste-pictos.liste-pictos-noir {
+    padding-left: 0;
+    width: 100%;
   }
 
   .zone-schema{

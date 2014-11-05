@@ -252,7 +252,7 @@
 .icon-tel:before {
   content: "\e602";
 }
-.icon-blog-plus:before {
+.icon-plus:before {
   content: "\e601";
 }
 .icon-mail:before {
@@ -2504,7 +2504,7 @@ footer form #bouton-ok:active {
   width: 635px;
 }
 .fonctionnalites .secu {
-  background: url(../layoutImg/fonc/visu-secu.jpg) no-repeat;
+  background: url(../layoutImg/fonc/visu-secu.png) no-repeat;
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   background-size: auto 100%;
@@ -2588,7 +2588,7 @@ footer form #bouton-ok:active {
 }
 .titre-fonctionnalite {
   height: 630px;
-  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center center fixed;
+  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center bottom;
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   background-size: auto 100%;
@@ -2760,8 +2760,8 @@ footer form #bouton-ok:active {
    ========================================================================== */
 @media (max-width: 1280px) {
   .fd-saas {
-    background-size: 700px auto;
-    background-position: 100% 100%;
+    background-size: 600px auto;
+    background-position: 100% 60%;
   }
 }
 @media (max-width: 1150px) {
@@ -2905,6 +2905,9 @@ footer form #bouton-ok:active {
   .bloc-saas .big-padding-left .encadre {
     margin-left: 0;
   }
+  .bloc-saas .big-padding-left .encadre .bloc-txt-encadre p.big-p br {
+    display: none;
+  }
   .fd-saas {
     width: 100%;
     margin: 0 auto;
@@ -2916,6 +2919,10 @@ footer form #bouton-ok:active {
   .fd-saas .nuage2 {
     left: 0;
     background-position: 0 bottom;
+  }
+  .liste-pictos.liste-pictos-noir {
+    padding-left: 0;
+    width: 100%;
   }
   .zone-schema {
     width: 87%;
