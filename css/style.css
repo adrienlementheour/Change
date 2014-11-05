@@ -1578,31 +1578,51 @@ footer form #bouton-ok:active {
   padding-bottom: 50px;
 }
 @-webkit-keyframes customZoom {
-  5% {
-    -webkit-transform: scale3d(1.2, 1.2, 1.2);
-    transform: scale3d(1.2, 1.2, 1.3) translate3d(10px, 0, -10px) rotate3d(0, 0, 1, 0);
-    text-shadow: 0 0 40px #fff;
-    text-shadow: 0 0 40px #ffffff, 0 0 5px rgba(255, 255, 255, 0.5);
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+  20% {
+    -webkit-transform: perspective(400px) translate3d(5px, 0, 0) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) translate3d(5px, 0, 0) rotate3d(0, 1, 0, -5deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    text-shadow: rgba(255, 255, 255, 0.3) 0 0 40px;
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-left: -10px;
+    margin-top: -5px;
   }
-  95% {
-    text-shadow: 0 0 40px #fff;
-    text-shadow: 0 0 40px #ffffff, 0 0 5px rgba(255, 255, 255, 0.5);
+  25% {
+    -webkit-transform: perspective(400px) translate3d(5px, 0, 0) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) translate3d(5px, 0, 0) rotate3d(0, 1, 0, -5deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    text-shadow: rgba(255, 255, 255, 0.1) 0 0 40px;
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-left: -10px;
+    margin-top: -5px;
   }
 }
 @keyframes customZoom {
-  5% {
-    -webkit-transform: scale3d(1.2, 1.2, 1.2);
-    transform: scale3d(1.2, 1.2, 1.3) translate3d(10px, 0, -10px) rotate3d(0, 0, 1, 0);
-    text-shadow: 0 0 40px #fff;
-    text-shadow: 0 0 40px #ffffff, 0 0 5px rgba(255, 255, 255, 0.5);
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+  20% {
+    -webkit-transform: perspective(400px) translate3d(5px, 0, 0) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) translate3d(5px, 0, 0) rotate3d(0, 1, 0, -5deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    text-shadow: rgba(255, 255, 255, 0.3) 0 0 40px;
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-left: -10px;
+    margin-top: -5px;
   }
-  95% {
-    text-shadow: 0 0 40px #fff;
-    text-shadow: 0 0 40px #ffffff, 0 0 5px rgba(255, 255, 255, 0.5);
+  25% {
+    -webkit-transform: perspective(400px) translate3d(5px, 0, 0) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) translate3d(5px, 0, 0) rotate3d(0, 1, 0, -5deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    text-shadow: rgba(255, 255, 255, 0.1) 0 0 40px;
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-left: -10px;
+    margin-top: -5px;
   }
 }
 .customZoom {
@@ -1633,6 +1653,9 @@ footer form #bouton-ok:active {
   top: 130px;
   color: #54b8e7;
 }
+.lt-ie10 #containerVid p {
+  font-size: 2.3em;
+}
 #containerVid p.alt > span {
   -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
@@ -1643,8 +1666,12 @@ footer form #bouton-ok:active {
   color: #9b9b9b;
 }
 #containerVid p.alt > span .big {
-  font-size: 1em;
   color: #54b8e7;
+  z-index: 2;
+}
+#containerVid p.alt > span .bigIe {
+  color: #54b8e7;
+  font-size: 1.1em;
 }
 #containerVid p > span {
   display: block;
@@ -1659,12 +1686,16 @@ footer form #bouton-ok:active {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
+.lt-ie10 #containerVid p > span span {
+  display: inline;
+}
 #containerVid p > span .big {
-  font-size: 1.1em;
   color: #54b8e7;
+  z-index: 2;
 }
 #containerVid p > span .bigIe {
   color: #54b8e7;
+  font-size: 1.05em;
 }
 #containerVid p br {
   display: none;

@@ -214,56 +214,53 @@ function setTimingSpan(elt, timing, delay) {
 
 function animTxt(){
 	setAnimHomeenCours();
-	/*var tl = new TimelineMax();
-	var big;
-	if($('html').hasClass('lt-ie9')){
-		big = 'bigIe';
+	
+	if ($("html").hasClass("lt-ie10")) {
+		var tl = new TimelineMax();
+		var big = 'bigIe';
+		tl.to($('.sentence'), 0.5, {className:"+=discret"});
+		tl.to($('.produits'), 0.35, {className:"+="+big});
+	  	tl.to($('.produits'), 0.1, {delay:1.5,className:"-="+big});
+		tl.to($('.vente'), 0.35, {className:"+="+big});
+		tl.to($('.vente'), 0.1, {delay:1.2,className:"-="+big});
+		tl.to($('.marque'), 0.35, {className:"+="+big});
+		tl.to($('.marque'), 0.1, {delay:1.5,className:"-="+big});
+		tl.to($('.ecommerce'), 0.35, {className:"+="+big});
+		tl.to($('.ecommerce'), 0.1, {delay:1.5,className:"-="+big});
+		tl.to($('.sentence'), 0.6, {className:"-=discret",onComplete:setAnimHomeenCours});
+	} else {
+		var anim = "customZoom animated big";
+		var timeIn = "1s";
+		var timeDelay = "1s";
+		$('.sentence').addClass("discret");
+		
+		setTimingSpan($('.produits'), timeIn,timeDelay);
+		$('.produits').addClass(anim);
+		
+		$('.produits').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+			$('.produits').removeClass(anim);
+			setTimingSpan($('.vente'), timeIn,timeDelay);
+			$('.vente').addClass(anim);
+		});
+		
+		$('.vente').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+			$('.vente').removeClass(anim);
+			setTimingSpan($('.marque'), timeIn,timeDelay);
+			$('.marque').addClass(anim);
+		});
+		
+		$('.marque').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+			$('.marque').removeClass(anim);
+			setTimingSpan($('.ecommerce'), timeIn,timeDelay);
+			$('.ecommerce').addClass(anim);
+		});
+		
+		$('.ecommerce').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+			$('.ecommerce').removeClass(anim);
+			$('.sentence').removeClass("discret");
+			setAnimHomeenCours()
+		});
 	}
-	else{
-		big = 'animated flipOutX';
-	}
-	tl.to($('.sentence'), 0.5, {className:"+=discret"});
-	tl.to($('.produits'), 0.35, {className:"+="+big});
-  	tl.to($('.produits'), 0.1, {delay:1.5,className:"-="+big});
-	tl.to($('.vente'), 0.35, {className:"+="+big});
-	tl.to($('.vente'), 0.1, {delay:1.2,className:"-="+big});
-	tl.to($('.marque'), 0.35, {className:"+="+big});
-	tl.to($('.marque'), 0.1, {delay:1.5,className:"-="+big});
-	tl.to($('.ecommerce'), 0.35, {className:"+="+big});
-	tl.to($('.ecommerce'), 0.1, {delay:1.5,className:"-="+big});
-	tl.to($('.sentence'), 0.6, {className:"-=discret",onComplete:setAnimHomeenCours});*/
-	
-	var anim = "customZoom animated big";
-	var timeIn = "1s";
-	var timeOut = "3s";
-	$('.sentence').addClass("discret");
-	
-	setTimingSpan($('.produits'), timeIn,"1s");
-	$('.produits').addClass(anim);
-	
-	$('.produits').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		$('.produits').removeClass(anim);
-		setTimingSpan($('.vente'), timeIn,"1s");
-		$('.vente').addClass(anim);
-	});
-	
-	$('.vente').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		$('.vente').removeClass(anim);
-		setTimingSpan($('.marque'), timeIn,"1s");
-		$('.marque').addClass(anim);
-	});
-	
-	$('.marque').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		$('.marque').removeClass(anim);
-		setTimingSpan($('.ecommerce'), timeIn,"1s");
-		$('.ecommerce').addClass(anim);
-	});
-	
-	$('.ecommerce').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		$('.ecommerce').removeClass(anim);
-		$('.sentence').removeClass("discret");
-		setAnimHomeenCours()
-	});
 }
 
 
