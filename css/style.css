@@ -1577,6 +1577,9 @@ footer form #bouton-ok:active {
   margin-bottom: 0;
   padding-bottom: 50px;
 }
+.home h2#apropos {
+  font-size: 1.8em;
+}
 @-webkit-keyframes customZoom {
   20% {
     -webkit-transform: perspective(400px) translate3d(5px, 0, 0) rotate3d(0, 1, 0, -15deg);
