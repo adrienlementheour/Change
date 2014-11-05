@@ -212,58 +212,6 @@ function setTimingSpan(elt, timing, delay) {
 	elt.css("animation-delay",delay);
 }
 
-function animTxt(){
-	/*setAnimHomeenCours();
-	
-	if ($("html").hasClass("lt-ie10")) {
-		var tl = new TimelineMax();
-		var big = 'bigIe';
-		tl.to($('.sentence'), 0.5, {className:"+=discret"});
-		tl.to($('.produits'), 0.35, {className:"+="+big});
-	  	tl.to($('.produits'), 0.1, {delay:1.5,className:"-="+big});
-		tl.to($('.vente'), 0.35, {className:"+="+big});
-		tl.to($('.vente'), 0.1, {delay:1.2,className:"-="+big});
-		tl.to($('.marque'), 0.35, {className:"+="+big});
-		tl.to($('.marque'), 0.1, {delay:1.5,className:"-="+big});
-		tl.to($('.ecommerce'), 0.35, {className:"+="+big});
-		tl.to($('.ecommerce'), 0.1, {delay:1.5,className:"-="+big});
-		tl.to($('.sentence'), 0.6, {className:"-=discret",onComplete:setAnimHomeenCours});
-	} else {
-		var anim = "customZoom animated big";
-		var timeIn = "1s";
-		var timeDelay = "1s";
-		$('.sentence').addClass("discret");
-		
-		setTimingSpan($('.produits'), timeIn,timeDelay);
-		$('.produits').addClass(anim);
-		
-		$('.produits').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-			$('.produits').removeClass(anim);
-			setTimingSpan($('.vente'), timeIn,timeDelay);
-			$('.vente').addClass(anim);
-		});
-		
-		$('.vente').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-			$('.vente').removeClass(anim);
-			setTimingSpan($('.marque'), timeIn,timeDelay);
-			$('.marque').addClass(anim);
-		});
-		
-		$('.marque').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-			$('.marque').removeClass(anim);
-			setTimingSpan($('.ecommerce'), timeIn,timeDelay);
-			$('.ecommerce').addClass(anim);
-		});
-		
-		$('.ecommerce').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-			$('.ecommerce').removeClass(anim);
-			$('.sentence').removeClass("discret");
-			setAnimHomeenCours()
-		});
-	}*/
-}
-
-
 /* Tooltip rejouer (video + slider accueil) */ 
 
 function setPlayAgainIndic(){
@@ -284,7 +232,6 @@ function onVideoEnd(video){
 		setPlayAgainIndic();
 		$('#mask').click(function(){
 			video[0].play();
-			animTxt();
 			setTimeout(function(){ video.fadeIn(); }, 10);
 			gonePlayAgainIndic();
 		});
@@ -358,7 +305,6 @@ function slideshowVid(){
 		setSlideVid(countSlideVid);
 		TweenMax.killTweensOf(slideshowVid);
 		slideshowVid();
-		animTxt();
 		TweenMax.to($('#sliderVid'), 0.4, {opacity: "1"});
 		if($('html').hasClass('no-touch')){
 			gonePlayAgainIndic();
@@ -611,10 +557,8 @@ $(window).load(function(){
 		// Slider a la place de la vidéo
 		if($('html').hasClass('lt-ie9') || $('html').hasClass('touch') || $('html').width() < 979){
 			slidesVid = $('#sliderVid').find('.slides').find('li');
-			animTxt();
 			setSliderVid();
 		}else{
-			animTxt();
 			playVideo();
 		}
 

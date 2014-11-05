@@ -1656,49 +1656,8 @@ footer form #bouton-ok:active {
   top: 130px;
   color: #54b8e7;
 }
-.lt-ie10 #containerVid p {
-  font-size: 2.3em;
-}
-#containerVid p.alt > span {
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-#containerVid p.alt > span.discret {
-  color: #9b9b9b;
-}
-#containerVid p.alt > span .big {
-  color: #54b8e7;
-  z-index: 2;
-}
-#containerVid p.alt > span .bigIe {
-  color: #54b8e7;
-  font-size: 1.1em;
-}
 #containerVid p > span {
   display: block;
-}
-#containerVid p > span.discret {
-  color: #2f2f33;
-}
-#containerVid p > span span {
-  display: inline-block;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-.lt-ie10 #containerVid p > span span {
-  display: inline;
-}
-#containerVid p > span .big {
-  color: #54b8e7;
-  z-index: 2;
-}
-#containerVid p > span .bigIe {
-  color: #54b8e7;
-  font-size: 1.05em;
 }
 #containerVid p br {
   display: none;
