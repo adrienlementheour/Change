@@ -1934,7 +1934,7 @@ footer{
     p{
       margin: 0;
       &.big-p{
-        .bariol(2em);
+        .bariol(1.9em);
         line-height: 32px;
         padding-bottom: 12px;
       }
@@ -2176,6 +2176,10 @@ footer{
 .fonctionnalites {
   .content > div{
     padding: 70px 0;
+    overflow: hidden;
+    &.commande{
+      padding-top: 0;
+    }
   }
   .noir{
     .h3{
@@ -2196,17 +2200,58 @@ footer{
     padding-top: 120px;
     width: 585px;
   }
+  .h3{
+    padding-top: 4px;
+  }
   .liste-pictos{
     width: 700px;
+    padding-top: 20px;
     li{
       line-height: 21px;
       &:before{
-        top: 18px;
+        top: 20px;
         font-size: 27px;
       }
     }
     .icon-product-page:before{
       font-size: 25px;
+    }
+    .icon-cms-acronym:before{
+      top: 14px;
+      font-size: 17px;
+    }
+    .icon-order-treatment:before{
+      font-size: 23px;
+    }
+    .icon-order-management:before{
+      top: 21px;
+      font-size: 30px;
+    }
+    .icon-cb:before, .icon-seo:before{
+      top: 15px;
+      font-size: 18px;
+    }
+    .icon-backorders:before{
+      top: 14px;
+      font-size: 18px;
+    }
+    .icon-store-locator:before{
+      top: 25px;
+      font-size: 40px;
+    }
+    .icon-web-to-store:before, .icon-store-to-web:before, .icon-form:before, .icon-map-seo:before{
+      top: 22px;
+      font-size: 32px;
+    }
+    .icon-API-acronym:before{
+      top: 14px;
+      font-size: 19px;
+    }
+    .icon-email-notification:before, .icon-news:before{
+      font-size: 24px;
+    }
+    .icon-access-management:before, .icon-workflow:before{
+      font-size: 18px;
     }
   }
   .big-padding-left{
@@ -2214,17 +2259,58 @@ footer{
       padding-left: 140px;
     }
   }
+  .merch{
+    .liste-pictos{
+      width: 635px;
+    }
+  }
   .cms{
     height: 550px;
     background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat fixed;
     .background-size(cover);
+    z-index: 2;
+    position: relative;
   }
   .commande{
-    height: 960px;
-    background: url(..layoutImg/fonc/visu-commande.jpg) no-repeat bottom;
+    position: relative;
+    height: 1030px;
+    background: url(../layoutImg/fonc/visu-commande.jpg) no-repeat bottom fixed;
+    .background-size(100%);
+    .fd-opaque{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 250px;
+      background: @blanc;
+    }
+    .contenu-commande{
+      z-index: 2;
+      position: relative;
+      padding: 70px 0 20px;
+      background: rgba(239, 235, 226, 0.9);
+    }
+    .liste-pictos{
+      padding-top: 30px;
+      width: 46%;
+      display: inline-block;
+      vertical-align: top;
+      &.liste-first{
+        margin-right: 75px;
+      }
+    }
   }
   .cross{
-    background: url(../layoutImg/fonc/visu-cross.jpg) no-repeat right bottom;
+    position: relative;
+    .container{
+      position: relative;
+      z-index: 2;
+    }
+    .fd{
+      width: 54%;
+      height: 734px;
+      background: url(../layoutImg/fonc/visu-cross.jpg) no-repeat;
+    }
   }
   .api{
     height: 375px;
@@ -2232,7 +2318,21 @@ footer{
     .background-size(auto 100%);
   }
   .fid{
-    background: @grisTresClairFond url(../layoutImg/fonc/visu-fid.jpg) no-repeat right bottom;
+     position: relative;
+     background: @grisTresClairFond;
+    .container{
+      position: relative;
+      z-index: 2;
+    }
+    .fd{
+      width: 50%;
+      height: 741px;
+      background: url(../layoutImg/fonc/visu-fid.jpg) no-repeat;
+      /*background-size: 100%;*/
+    }
+    .liste-pictos{
+      width: 635px;
+    }
   }
   .secu{
     background: url(../layoutImg/fonc/visu-secu.jpg) no-repeat;
@@ -2243,12 +2343,59 @@ footer{
     background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
     .background-size(cover);
   }
+  .tab{
+    position: absolute;
+    &.tab1{
+      background: url(../layoutImg/fonc/ipad1.png) no-repeat;
+      bottom: -278px;
+      right: 0;
+      width: 443px;
+      height: 542px;
+    }
+    &.tab2{
+      background: url(../layoutImg/fonc/ipad2.png) no-repeat;
+      right: -165px;
+      bottom: 100px;
+      width: 542px;
+      height: 443px;
+      .transform(rotate(40deg));
+    }
+  }
   .maj{
-    padding: 2px 0;
+    padding: 2px 0 0;
   }
   .encadre{
     margin-top: 0;
+    .bloc-icon-encadre{
+      width: 155px;
+      height: 155px;
+    }
+    .bloc-txt-encadre{
+      padding: 0 0 0 187px;
+    }
+    .icon-cms, .icon-box, .icon-target{
+      font-size: 65px;
+    }
+    .icon-crosscommerce{
+      font-size: 90px;
+    }
+    .icon-lock{
+      font-size: 55px;
+    }
+    .icon-worldwide{
+      font-size: 70px;
+    }
   }
+  footer{
+    margin-top: 0;
+  }
+}
+
+.fd{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-position: right bottom;
 }
 
 .titre-fonctionnalite{
@@ -2623,6 +2770,38 @@ footer{
     }
   }
 
+  .fonctionnalites{
+    .content, .titre-fonctionnalite{
+      .container{
+        width: 95%;
+        &.big-padding-left{
+          padding-left: 15%;
+        }
+      }
+    }
+    .big-padding-left{
+      .liste-pictos{
+        width: 80%;
+      }
+    }
+    .commande{
+      background-size: auto;
+      .liste-pictos{
+        width: 45%;
+      }
+    }
+    .tab{
+      &.tab1, &.tab2{
+        width: 50%;
+        background-size: 100%; 
+      }
+      &.tab1{
+        width: 40%;
+        right: -110px;
+      }
+    }
+  }
+
 }
 
 
@@ -2808,6 +2987,50 @@ footer{
       }
     }
 
+    .fonctionnalites{
+      .content{
+        .container{
+          &.big-padding-left{
+            padding-left: 0;
+          }
+        }
+        .cross, .fid{
+          padding-bottom: 0;
+        }
+      }
+      .fid, .cross{
+        .fd{
+          width: 100%;
+          /*background-size: 100%;*/
+        }
+      }
+      .merch{
+        .container{
+          padding-bottom: 370px;
+        }
+      }
+      .tab{
+        &.tab1{
+          width: 443px;
+          right: 200px
+        }
+      }
+      .inter, .api, .cms{
+        height: auto;
+      }
+      .commande{
+        .liste-pictos{
+          width: 44%;
+        }
+      }
+      .fd{
+        position: relative;
+      }
+    }
+    .titre-fonctionnalite{
+      height: 530px;
+    }
+
 }
 
 @media (max-width: 850px) {
@@ -2951,6 +3174,15 @@ footer{
     #bloc-visu-solution {
       height: 430px;
     }
+
+    .fonctionnalites{
+      .commande{
+        height: auto;
+        .liste-pictos{
+          width: 100%;
+        }
+      }
+    }
 }
 
 @media (max-width: 630px) {
@@ -3035,10 +3267,10 @@ footer{
     }
   }
 
-  .encadre{
+  .encadre, .fonctionnalites .encadre{
     .bloc-txt-encadre{
       padding: 50px 0 0;
-      h3{
+      h3, .h3{
         text-indent: 170px;
       }
       p.big-p{
@@ -3053,6 +3285,15 @@ footer{
   .liste-pictos.liste-pictos-noir{
     padding-left: 0;
     width: 97%;
+  }
+
+  .fonctionnalites{
+    .big-padding-left{
+      .liste-pictos{
+        padding-left: 0;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -3101,7 +3342,7 @@ footer{
     }
   }
 
-  .encadre{
+  .encadre, .fonctionnalites .encadre{
     .bloc-icon-encadre{
       width: 80px;
       height: 80px;
@@ -3114,8 +3355,15 @@ footer{
     }
     .bloc-txt-encadre{
       padding: 15px 0 0;
-      h3 {
+      h3, .h3{
         text-indent: 100px;
+      }
+    }
+  }
+  .fonctionnalites .encadre{
+    .bloc-txt-encadre{
+      p.big-p{
+        margin-top: 30px;
       }
     }
   }

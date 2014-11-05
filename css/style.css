@@ -2023,7 +2023,7 @@ footer form #bouton-ok:active {
 }
 .encadre .bloc-txt-encadre p.big-p {
   font-family: 'bariol', sans-serif;
-  font-size: 2em;
+  font-size: 1.9em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -2267,6 +2267,10 @@ footer form #bouton-ok:active {
 /* Fonctionnalites */
 .fonctionnalites .content > div {
   padding: 70px 0;
+  overflow: hidden;
+}
+.fonctionnalites .content > div.commande {
+  padding-top: 0;
 }
 .fonctionnalites .noir .h3 {
   color: #34343c;
@@ -2282,21 +2286,71 @@ footer form #bouton-ok:active {
   padding-top: 120px;
   width: 585px;
 }
+.fonctionnalites .h3 {
+  padding-top: 4px;
+}
 .fonctionnalites .liste-pictos {
   width: 700px;
+  padding-top: 20px;
 }
 .fonctionnalites .liste-pictos li {
   line-height: 21px;
 }
 .fonctionnalites .liste-pictos li:before {
-  top: 18px;
+  top: 20px;
   font-size: 27px;
 }
 .fonctionnalites .liste-pictos .icon-product-page:before {
   font-size: 25px;
 }
+.fonctionnalites .liste-pictos .icon-cms-acronym:before {
+  top: 14px;
+  font-size: 17px;
+}
+.fonctionnalites .liste-pictos .icon-order-treatment:before {
+  font-size: 23px;
+}
+.fonctionnalites .liste-pictos .icon-order-management:before {
+  top: 21px;
+  font-size: 30px;
+}
+.fonctionnalites .liste-pictos .icon-cb:before,
+.fonctionnalites .liste-pictos .icon-seo:before {
+  top: 15px;
+  font-size: 18px;
+}
+.fonctionnalites .liste-pictos .icon-backorders:before {
+  top: 14px;
+  font-size: 18px;
+}
+.fonctionnalites .liste-pictos .icon-store-locator:before {
+  top: 25px;
+  font-size: 40px;
+}
+.fonctionnalites .liste-pictos .icon-web-to-store:before,
+.fonctionnalites .liste-pictos .icon-store-to-web:before,
+.fonctionnalites .liste-pictos .icon-form:before,
+.fonctionnalites .liste-pictos .icon-map-seo:before {
+  top: 22px;
+  font-size: 32px;
+}
+.fonctionnalites .liste-pictos .icon-API-acronym:before {
+  top: 14px;
+  font-size: 19px;
+}
+.fonctionnalites .liste-pictos .icon-email-notification:before,
+.fonctionnalites .liste-pictos .icon-news:before {
+  font-size: 24px;
+}
+.fonctionnalites .liste-pictos .icon-access-management:before,
+.fonctionnalites .liste-pictos .icon-workflow:before {
+  font-size: 18px;
+}
 .fonctionnalites .big-padding-left .liste-pictos {
   padding-left: 140px;
+}
+.fonctionnalites .merch .liste-pictos {
+  width: 635px;
 }
 .fonctionnalites .cms {
   height: 550px;
@@ -2304,13 +2358,51 @@ footer form #bouton-ok:active {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  z-index: 2;
+  position: relative;
 }
 .fonctionnalites .commande {
-  height: 960px;
-  background: url(..layoutImg/fonc/visu-commande.jpg) no-repeat bottom;
+  position: relative;
+  height: 1030px;
+  background: url(../layoutImg/fonc/visu-commande.jpg) no-repeat bottom fixed;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+}
+.fonctionnalites .commande .fd-opaque {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: #ffffff;
+}
+.fonctionnalites .commande .contenu-commande {
+  z-index: 2;
+  position: relative;
+  padding: 70px 0 20px;
+  background: rgba(239, 235, 226, 0.9);
+}
+.fonctionnalites .commande .liste-pictos {
+  padding-top: 30px;
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+}
+.fonctionnalites .commande .liste-pictos.liste-first {
+  margin-right: 75px;
 }
 .fonctionnalites .cross {
-  background: url(../layoutImg/fonc/visu-cross.jpg) no-repeat right bottom;
+  position: relative;
+}
+.fonctionnalites .cross .container {
+  position: relative;
+  z-index: 2;
+}
+.fonctionnalites .cross .fd {
+  width: 54%;
+  height: 734px;
+  background: url(../layoutImg/fonc/visu-cross.jpg) no-repeat;
 }
 .fonctionnalites .api {
   height: 375px;
@@ -2320,7 +2412,21 @@ footer form #bouton-ok:active {
   background-size: auto 100%;
 }
 .fonctionnalites .fid {
-  background: #efebe2 url(../layoutImg/fonc/visu-fid.jpg) no-repeat right bottom;
+  position: relative;
+  background: #efebe2;
+}
+.fonctionnalites .fid .container {
+  position: relative;
+  z-index: 2;
+}
+.fonctionnalites .fid .fd {
+  width: 50%;
+  height: 741px;
+  background: url(../layoutImg/fonc/visu-fid.jpg) no-repeat;
+  /*background-size: 100%;*/
+}
+.fonctionnalites .fid .liste-pictos {
+  width: 635px;
 }
 .fonctionnalites .secu {
   background: url(../layoutImg/fonc/visu-secu.jpg) no-repeat;
@@ -2333,11 +2439,63 @@ footer form #bouton-ok:active {
   -moz-background-size: cover;
   background-size: cover;
 }
+.fonctionnalites .tab {
+  position: absolute;
+}
+.fonctionnalites .tab.tab1 {
+  background: url(../layoutImg/fonc/ipad1.png) no-repeat;
+  bottom: -278px;
+  right: 0;
+  width: 443px;
+  height: 542px;
+}
+.fonctionnalites .tab.tab2 {
+  background: url(../layoutImg/fonc/ipad2.png) no-repeat;
+  right: -165px;
+  bottom: 100px;
+  width: 542px;
+  height: 443px;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
 .fonctionnalites .maj {
-  padding: 2px 0;
+  padding: 2px 0 0;
 }
 .fonctionnalites .encadre {
   margin-top: 0;
+}
+.fonctionnalites .encadre .bloc-icon-encadre {
+  width: 155px;
+  height: 155px;
+}
+.fonctionnalites .encadre .bloc-txt-encadre {
+  padding: 0 0 0 187px;
+}
+.fonctionnalites .encadre .icon-cms,
+.fonctionnalites .encadre .icon-box,
+.fonctionnalites .encadre .icon-target {
+  font-size: 65px;
+}
+.fonctionnalites .encadre .icon-crosscommerce {
+  font-size: 90px;
+}
+.fonctionnalites .encadre .icon-lock {
+  font-size: 55px;
+}
+.fonctionnalites .encadre .icon-worldwide {
+  font-size: 70px;
+}
+.fonctionnalites footer {
+  margin-top: 0;
+}
+.fd {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-position: right bottom;
 }
 .titre-fonctionnalite {
   height: 630px;
@@ -2661,6 +2819,32 @@ footer form #bouton-ok:active {
   .zone-schema .zone-centre-schema {
     left: 463px;
   }
+  .fonctionnalites .content .container,
+  .fonctionnalites .titre-fonctionnalite .container {
+    width: 95%;
+  }
+  .fonctionnalites .content .container.big-padding-left,
+  .fonctionnalites .titre-fonctionnalite .container.big-padding-left {
+    padding-left: 15%;
+  }
+  .fonctionnalites .big-padding-left .liste-pictos {
+    width: 80%;
+  }
+  .fonctionnalites .commande {
+    background-size: auto;
+  }
+  .fonctionnalites .commande .liste-pictos {
+    width: 45%;
+  }
+  .fonctionnalites .tab.tab1,
+  .fonctionnalites .tab.tab2 {
+    width: 50%;
+    background-size: 100%;
+  }
+  .fonctionnalites .tab.tab1 {
+    width: 40%;
+    right: -110px;
+  }
 }
 @media (max-width: 979px) {
   .container.small {
@@ -2803,6 +2987,39 @@ footer form #bouton-ok:active {
   .fd-saas .nuage2 {
     display: none;
   }
+  .fonctionnalites .content .container.big-padding-left {
+    padding-left: 0;
+  }
+  .fonctionnalites .content .cross,
+  .fonctionnalites .content .fid {
+    padding-bottom: 0;
+  }
+  .fonctionnalites .fid .fd,
+  .fonctionnalites .cross .fd {
+    width: 100%;
+    /*background-size: 100%;*/
+  }
+  .fonctionnalites .merch .container {
+    padding-bottom: 370px;
+  }
+  .fonctionnalites .tab.tab1 {
+    width: 443px;
+    right: 200px;
+  }
+  .fonctionnalites .inter,
+  .fonctionnalites .api,
+  .fonctionnalites .cms {
+    height: auto;
+  }
+  .fonctionnalites .commande .liste-pictos {
+    width: 44%;
+  }
+  .fonctionnalites .fd {
+    position: relative;
+  }
+  .titre-fonctionnalite {
+    height: 530px;
+  }
 }
 @media (max-width: 850px) {
   form {
@@ -2920,6 +3137,12 @@ footer form #bouton-ok:active {
   #bloc-visu-solution {
     height: 430px;
   }
+  .fonctionnalites .commande {
+    height: auto;
+  }
+  .fonctionnalites .commande .liste-pictos {
+    width: 100%;
+  }
 }
 @media (max-width: 630px) {
   form fieldset {
@@ -2989,13 +3212,18 @@ footer form #bouton-ok:active {
     background-size: 100%;
     padding-bottom: 200px;
   }
-  .encadre .bloc-txt-encadre {
+  .encadre .bloc-txt-encadre,
+  .fonctionnalites .encadre .bloc-txt-encadre {
     padding: 50px 0 0;
   }
-  .encadre .bloc-txt-encadre h3 {
+  .encadre .bloc-txt-encadre h3,
+  .fonctionnalites .encadre .bloc-txt-encadre h3,
+  .encadre .bloc-txt-encadre .h3,
+  .fonctionnalites .encadre .bloc-txt-encadre .h3 {
     text-indent: 170px;
   }
-  .encadre .bloc-txt-encadre p.big-p {
+  .encadre .bloc-txt-encadre p.big-p,
+  .fonctionnalites .encadre .bloc-txt-encadre p.big-p {
     margin-top: 70px;
   }
   .liste-pictos2 {
@@ -3004,6 +3232,10 @@ footer form #bouton-ok:active {
   .liste-pictos.liste-pictos-noir {
     padding-left: 0;
     width: 97%;
+  }
+  .fonctionnalites .big-padding-left .liste-pictos {
+    padding-left: 0;
+    width: 100%;
   }
 }
 @media (max-width: 610px) {
@@ -3038,23 +3270,35 @@ footer form #bouton-ok:active {
   #sliderVid .slides {
     height: 470px;
   }
-  .encadre .bloc-icon-encadre {
+  .encadre .bloc-icon-encadre,
+  .fonctionnalites .encadre .bloc-icon-encadre {
     width: 80px;
     height: 80px;
   }
   .encadre .bloc-icon-encadre .icon-cross,
+  .fonctionnalites .encadre .bloc-icon-encadre .icon-cross,
   .encadre .bloc-icon-encadre .icon-tshirt,
-  .encadre .bloc-icon-encadre .icon-plug {
+  .fonctionnalites .encadre .bloc-icon-encadre .icon-tshirt,
+  .encadre .bloc-icon-encadre .icon-plug,
+  .fonctionnalites .encadre .bloc-icon-encadre .icon-plug {
     font-size: 80px;
   }
-  .encadre .bloc-icon-encadre .icon-cloud {
+  .encadre .bloc-icon-encadre .icon-cloud,
+  .fonctionnalites .encadre .bloc-icon-encadre .icon-cloud {
     font-size: 110px;
   }
-  .encadre .bloc-txt-encadre {
+  .encadre .bloc-txt-encadre,
+  .fonctionnalites .encadre .bloc-txt-encadre {
     padding: 15px 0 0;
   }
-  .encadre .bloc-txt-encadre h3 {
+  .encadre .bloc-txt-encadre h3,
+  .fonctionnalites .encadre .bloc-txt-encadre h3,
+  .encadre .bloc-txt-encadre .h3,
+  .fonctionnalites .encadre .bloc-txt-encadre .h3 {
     text-indent: 100px;
+  }
+  .fonctionnalites .encadre .bloc-txt-encadre p.big-p {
+    margin-top: 30px;
   }
 }
 @media (max-width: 520px) {
