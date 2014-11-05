@@ -71,6 +71,7 @@ function setBurgerMenu(){
 	$("#masque").click(function(){
 		moveBurgerMenu($("header"), 'close');
 		moveBurgerMenu($("body"), 'close'); 
+		$("#menu-header").animate({ "right": "-200px"}, "ease-in-out" );
 		$(this).fadeOut();
 		$('.hamburger').removeClass("burgerOn");
 	});
@@ -204,15 +205,22 @@ function setAnimHomeenCours(){
   }
 }
 
+function setTimingSpan(elt, timing, delay) {
+	elt.css("-webkit-animation-duration",timing);
+	elt.css("animation-duration",timing);
+	elt.css("-webkit-animation-delay",delay);
+	elt.css("animation-delay",delay);
+}
+
 function animTxt(){
 	setAnimHomeenCours();
-	var tl = new TimelineMax();
+	/*var tl = new TimelineMax();
 	var big;
 	if($('html').hasClass('lt-ie9')){
 		big = 'bigIe';
 	}
 	else{
-		big = 'big';
+		big = 'animated flipOutX';
 	}
 	tl.to($('.sentence'), 0.5, {className:"+=discret"});
 	tl.to($('.produits'), 0.35, {className:"+="+big});
@@ -223,7 +231,39 @@ function animTxt(){
 	tl.to($('.marque'), 0.1, {delay:1.5,className:"-="+big});
 	tl.to($('.ecommerce'), 0.35, {className:"+="+big});
 	tl.to($('.ecommerce'), 0.1, {delay:1.5,className:"-="+big});
-	tl.to($('.sentence'), 0.6, {className:"-=discret",onComplete:setAnimHomeenCours});
+	tl.to($('.sentence'), 0.6, {className:"-=discret",onComplete:setAnimHomeenCours});*/
+	
+	var anim = "customZoom animated big";
+	var timeIn = "1s";
+	var timeOut = "3s";
+	$('.sentence').addClass("discret");
+	
+	setTimingSpan($('.produits'), timeIn,"1s");
+	$('.produits').addClass(anim);
+	
+	$('.produits').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$('.produits').removeClass(anim);
+		setTimingSpan($('.vente'), timeIn,"1s");
+		$('.vente').addClass(anim);
+	});
+	
+	$('.vente').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$('.vente').removeClass(anim);
+		setTimingSpan($('.marque'), timeIn,"1s");
+		$('.marque').addClass(anim);
+	});
+	
+	$('.marque').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$('.marque').removeClass(anim);
+		setTimingSpan($('.ecommerce'), timeIn,"1s");
+		$('.ecommerce').addClass(anim);
+	});
+	
+	$('.ecommerce').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$('.ecommerce').removeClass(anim);
+		$('.sentence').removeClass("discret");
+		setAnimHomeenCours()
+	});
 }
 
 
