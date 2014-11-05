@@ -2404,6 +2404,9 @@ footer form #bouton-ok:active {
 .fonctionnalites .big-padding-left .liste-pictos {
   padding-left: 140px;
 }
+.fonctionnalites .merch .big-p {
+  width: 725px;
+}
 .fonctionnalites .merch .liste-pictos {
   width: 635px;
 }
@@ -2415,6 +2418,9 @@ footer form #bouton-ok:active {
   background-size: cover;
   z-index: 2;
   position: relative;
+}
+.fonctionnalites .cms .big-p {
+  width: 600px;
 }
 .fonctionnalites .commande {
   position: relative;
@@ -2493,6 +2499,9 @@ footer form #bouton-ok:active {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+.fonctionnalites .inter .big-p {
+  width: 505px;
 }
 .fonctionnalites .tab {
   position: absolute;
@@ -2789,7 +2798,8 @@ footer form #bouton-ok:active {
   .home .first-ul li.liSmall {
     width: 40%;
   }
-  .home .first-ul li.liBig {
+  .home .first-ul li.liBig,
+  .home .first-ul li.last {
     width: 40%;
     margin: 5% 5% 0;
   }
@@ -2881,7 +2891,7 @@ footer form #bouton-ok:active {
   }
   .fonctionnalites .content .container,
   .fonctionnalites .titre-fonctionnalite .container {
-    width: 95%;
+    width: 90%;
   }
   .fonctionnalites .content .container.big-padding-left,
   .fonctionnalites .titre-fonctionnalite .container.big-padding-left {
@@ -3059,12 +3069,22 @@ footer form #bouton-ok:active {
     width: 100%;
     /*background-size: 100%;*/
   }
+  .fonctionnalites .merch .big-p {
+    width: 100%;
+  }
   .fonctionnalites .merch .container {
     padding-bottom: 370px;
+  }
+  .fonctionnalites .fid .big-p br {
+    display: none;
   }
   .fonctionnalites .tab.tab1 {
     width: 443px;
     right: 200px;
+  }
+  .fonctionnalites .tab.tab2 {
+    width: 542px;
+    bottom: -50px;
   }
   .fonctionnalites .inter,
   .fonctionnalites .api,
@@ -3153,6 +3173,12 @@ footer form #bouton-ok:active {
     right: auto;
     left: -15px;
   }
+  .fonctionnalites .cms .big-p {
+    width: auto;
+  }
+  .fonctionnalites .commande .fd-opaque {
+    height: 280px;
+  }
 }
 @media (max-width: 767px) {
   .touch .container.first {
@@ -3176,7 +3202,8 @@ footer form #bouton-ok:active {
   }
   .home .first-ul li,
   .home .first-ul li.liSmall,
-  .home .first-ul li.liBig {
+  .home .first-ul li.liBig,
+  .home .first-ul li.last {
     width: 100%;
     margin: 50px 0 0;
     float: none;
@@ -3197,10 +3224,26 @@ footer form #bouton-ok:active {
   #bloc-visu-solution {
     height: 430px;
   }
+  .fonctionnalites h1 {
+    width: 78%;
+  }
   .fonctionnalites .commande {
     height: auto;
   }
+  .fonctionnalites .commande .fd-opaque {
+    height: 290px;
+  }
   .fonctionnalites .commande .liste-pictos {
+    width: 100%;
+  }
+  .fonctionnalites .merch .liste-pictos,
+  .fonctionnalites .fid .liste-pictos {
+    width: 100%;
+  }
+  .fonctionnalites .inter .big-p {
+    width: auto;
+  }
+  .fonctionnalites .liste-pictos {
     width: 100%;
   }
 }
@@ -3297,6 +3340,19 @@ footer form #bouton-ok:active {
     padding-left: 0;
     width: 100%;
   }
+  .fonctionnalites .commande .fd-opaque {
+    height: 410px;
+  }
+  .fonctionnalites .tab.tab1 {
+    width: 60%;
+    right: 30%;
+    bottom: -30%;
+  }
+  .fonctionnalites .tab.tab2 {
+    width: 75%;
+    right: -120px;
+    bottom: -10%;
+  }
 }
 @media (max-width: 610px) {
   #contact .liens-contact li,
@@ -3359,6 +3415,21 @@ footer form #bouton-ok:active {
   }
   .fonctionnalites .encadre .bloc-txt-encadre p.big-p {
     margin-top: 30px;
+  }
+  .fonctionnalites .encadre .icon-cms,
+  .fonctionnalites .encadre .icon-box,
+  .fonctionnalites .encadre .icon-target,
+  .fonctionnalites .encadre .icon-worldwide {
+    font-size: 50px;
+  }
+  .fonctionnalites .encadre .icon-crosscommerce {
+    font-size: 65px;
+  }
+  .fonctionnalites .encadre .icon-lock {
+    font-size: 44px;
+  }
+  .fonctionnalites .commande .fd-opaque {
+    height: 340px;
   }
 }
 @media (max-width: 520px) {
@@ -3478,6 +3549,15 @@ footer form #bouton-ok:active {
     font-size: 1.5em;
     line-height: 27px;
   }
+  .fonctionnalites h1 {
+    width: 100%;
+  }
+  .fonctionnalites .commande .fd-opaque {
+    height: 300px;
+  }
+  .titre-fonctionnalite {
+    height: 330px;
+  }
 }
 @media (max-width: 480px) {
   #contact p {
@@ -3525,6 +3605,14 @@ footer form #bouton-ok:active {
   .solution .big-h3 {
     font-size: 1.5em;
   }
+  .fonctionnalites .commande .fd-opaque {
+    height: 350px;
+  }
+  .fonctionnalites .encadre .bloc-txt-encadre .h3 {
+    text-indent: 0;
+    padding-left: 90px;
+    line-height: 30px;
+  }
 }
 @media (max-width: 465px) {
   #slider .slides {
@@ -3551,6 +3639,13 @@ footer form #bouton-ok:active {
     width: 25px;
     height: 25px;
     background-size: 100%;
+  }
+  .fonctionnalites .merch .container {
+    padding-bottom: 270px;
+  }
+  .fonctionnalites .tab.tab2 {
+    right: -80px;
+    bottom: -15%;
   }
 }
 @media (max-width: 430px) {

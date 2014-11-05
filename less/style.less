@@ -2311,6 +2311,9 @@ footer{
     }
   }
   .merch{
+    .big-p{
+      width: 725px;
+    }
     .liste-pictos{
       width: 635px;
     }
@@ -2321,6 +2324,9 @@ footer{
     .background-size(cover);
     z-index: 2;
     position: relative;
+    .big-p{
+      width: 600px;
+    }
   }
   .commande{
     position: relative;
@@ -2393,6 +2399,9 @@ footer{
     height: 575px;
     background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
     .background-size(cover);
+    .big-p{
+      width: 505px;
+    }
   }
   .tab{
     position: absolute;
@@ -2726,7 +2735,7 @@ footer{
         &.liSmall{
           width: 40%;
         }
-        &.liBig{
+        &.liBig, &.last{
          width: 40%;
           margin: 5% 5% 0;
         }
@@ -2831,7 +2840,7 @@ footer{
   .fonctionnalites{
     .content, .titre-fonctionnalite{
       .container{
-        width: 95%;
+        width: 90%;
         &.big-padding-left{
           padding-left: 15%;
         }
@@ -3063,14 +3072,28 @@ footer{
         }
       }
       .merch{
+        .big-p{
+          width: 100%;
+        }
         .container{
           padding-bottom: 370px;
+        }
+      }
+      .fid{
+        .big-p{
+          br{
+            display: none;
+          }
         }
       }
       .tab{
         &.tab1{
           width: 443px;
           right: 200px
+        }
+        &.tab2{
+          width: 542px;
+          bottom: -50px;
         }
       }
       .inter, .api, .cms{
@@ -3168,6 +3191,19 @@ footer{
     }
   }
 
+  .fonctionnalites{
+    .cms{
+      .big-p{
+        width: auto;
+      }
+    }
+    .commande{
+      .fd-opaque{
+        height: 280px;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -3201,7 +3237,7 @@ footer{
       }
       .first-ul{
         width: 92%;
-        li, li.liSmall, li.liBig{
+        li, li.liSmall, li.liBig, li.last{
           width: 100%;
           margin: 50px 0 0;
           float: none;
@@ -3234,11 +3270,30 @@ footer{
     }
 
     .fonctionnalites{
+      h1{
+        width: 78%;
+      }
       .commande{
         height: auto;
+        .fd-opaque{
+          height: 290px;
+        }
         .liste-pictos{
           width: 100%;
         }
+      }
+      .merch, .fid{
+        .liste-pictos{
+          width: 100%;
+        }
+      }
+      .inter{
+        .big-p{
+          width: auto;
+        }
+      }
+      .liste-pictos{
+        width: 100%;
       }
     }
 }
@@ -3352,6 +3407,23 @@ footer{
         width: 100%;
       }
     }
+    .commande{
+      .fd-opaque{
+        height: 410px;
+      }
+    }
+    .tab{
+      &.tab1{
+        width: 60%;
+        right: 30%;
+        bottom: -30%;
+      }
+      &.tab2{
+        width: 75%;
+        right: -120px;
+        bottom: -10%;
+      }
+    }
   }
 }
 
@@ -3418,10 +3490,27 @@ footer{
       }
     }
   }
-  .fonctionnalites .encadre{
-    .bloc-txt-encadre{
-      p.big-p{
-        margin-top: 30px;
+  .fonctionnalites {
+    .encadre{
+      .bloc-txt-encadre{
+        p.big-p{
+          margin-top: 30px;
+        }
+      }
+      .icon-cms, .icon-box, .icon-target, .icon-worldwide{
+        font-size: 50px;
+      }
+      .icon-crosscommerce{
+        font-size: 65px;
+      }
+      .icon-lock{
+        font-size: 44px;
+      }
+    }
+
+    .commande{
+      .fd-opaque{
+        height: 340px;
       }
     }
   }
@@ -3558,6 +3647,20 @@ footer{
     }
   }
 
+  .fonctionnalites{
+    h1{
+      width: 100%;
+    }
+    .commande{
+      .fd-opaque{
+        height: 300px;
+      }
+    }
+  }
+  .titre-fonctionnalite{
+    height: 330px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -3625,6 +3728,23 @@ footer{
     }
   }
 
+  .fonctionnalites{
+    .commande{
+      .fd-opaque{
+        height: 350px;
+      }
+    }
+    .encadre{
+      .bloc-txt-encadre{
+        .h3{
+          text-indent: 0;
+          padding-left: 90px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width: 465px){
@@ -3653,6 +3773,20 @@ footer{
         width: 25px;
         height: 25px;
         background-size: 100%;
+      }
+    }
+  }
+
+  .fonctionnalites{
+    .merch{
+      .container{
+        padding-bottom: 270px;
+      }
+    }
+    .tab{
+      &.tab2{
+        right: -80px;
+        bottom: -15%;
       }
     }
   }
