@@ -1152,6 +1152,7 @@ ul.social-small li a.lien-social:focus {
   margin: 0;
   line-height: 61px;
   float: left;
+  font-size: 1em;
 }
 #contact .liens-contact {
   float: right;
