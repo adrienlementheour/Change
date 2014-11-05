@@ -2504,7 +2504,7 @@ footer form #bouton-ok:active {
   width: 635px;
 }
 .fonctionnalites .secu {
-  background: url(../layoutImg/fonc/visu-secu.png) no-repeat;
+  background: url(../layoutImg/fonc/visu-secu.png) no-repeat 50% 0;
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   background-size: auto 100%;

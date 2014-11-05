@@ -1051,13 +1051,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/layoutImg\/fonc\/visu-secu.jpg": {
-		"fileType": 16384,
+	"\/layoutImg\/fonc\/visu-secu.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 27110,
-		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-secu.jpg",
-		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-secu.jpg",
+		"initialSize": 53529,
+		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-secu.png",
+		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-secu.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
