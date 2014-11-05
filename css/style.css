@@ -2511,7 +2511,12 @@ footer form #bouton-ok:active {
 /* @end */
 /* ==|== media queries ======================================================
    ========================================================================== */
-/* mes resolutions responsives "classiques" */
+@media (max-width: 1280px) {
+  .fd-saas {
+    background-size: 700px auto;
+    background-position: 100% 100%;
+  }
+}
 @media (max-width: 1150px) {
   .container {
     width: 100%;
