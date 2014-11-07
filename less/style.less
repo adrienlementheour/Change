@@ -2136,8 +2136,7 @@ footer{
     background: @rouge url(../layoutImg/change.png) no-repeat center center;
     border-radius: 5px;
     position: absolute;
-    left: 50%;
-    margin-left: -43px;
+    left: 413px;
     top: 70px;
   }
   .msk{
@@ -3204,6 +3203,89 @@ footer{
       margin-top: 60px;
     }
   }
+
+  .schema{
+    width: 693px;
+    .change{
+      left: 293px;
+      top: 75px;
+    }
+    li{
+    &.erp{
+      top: 0;
+      left: 176px;
+      .msk{
+        width: 61px;
+      }
+    }
+    &.mob{
+      .msk{
+        width: 165px;
+      }
+    }
+    &.rs{
+      top: 163px;
+      left: 47px;
+      .msk{
+        width: 150px;
+      }
+    }
+    &.wms{
+      top: 199px;
+      left: 189px;
+    }
+    &.tablette{
+      top: 357px;
+      left: 205px;
+    }
+    &.pim{
+      top: 259px;
+      left: 326px;
+      .msk{
+        .transform(rotate(81deg));
+        left: -36px;
+      }
+    }
+    &.obj{
+      top: 292px;
+      left: 440px;
+      .msk{
+        top: -76px;
+        width: 177px;
+        left: -122px;
+      }
+    }
+    &.fid{
+      top: 174px;
+      left: 493px;
+      .msk{
+        width: 134px;
+        left: -127px;
+      }
+    }
+    &.ecran{
+      left: 663px;
+      top: 89px;
+      .msk{
+        left: -291px;
+        top: 25px;
+        width: 205px;
+      }
+      span{
+        left: -81px;
+      }
+    }
+    &.crm{
+      top: 29px;
+      left: 505px;
+      .msk{
+        width: 131px;
+        left: -137px;
+        top: 39px;
+      }
+    }
+  }
+}
 	
    .fd-shop{
     .shop{
@@ -3450,6 +3532,123 @@ footer{
         width: 100%;
       }
     }
+
+  .schema{
+    width: 473px;
+    margin-top: 65px;
+    .change{
+      left: 171px;
+      top: 200px;
+      height: 56px;
+      width: 56px;
+    }
+    li{
+    &.erp{
+      left: 167px;
+      top: 65px;
+      .msk{
+        left: 4px;
+        top: 84px;
+        .transform(rotate(88deg));
+      }
+    }
+    &.mob{
+      left: 34px;
+      top: 0;
+      .msk{
+        width: 134px;
+        .transform(rotate(63deg));
+        top: 123px;
+        left: 45px;
+      }
+      span{
+        top: -40px;
+      }
+    }
+    &.rs{
+      left: 0;
+      top: 107px;
+      .msk{
+        left: 90px;
+        top: 80px;
+        width: 74px;
+        .transform(rotate(24deg));
+      }
+    }
+    &.wms{
+      top: 228px;
+      left: 37px;
+      .msk{
+        width: 61px;
+        top: 6px;
+        left: 60px;
+        .transform(rotate(-15deg));
+      }
+    }
+    &.tablette{
+      top: 345px;
+      left: 13px;
+      .msk{
+        top: -47px;
+        width: 120px;
+        left: 60px;
+        .transform(rotate(-54deg));
+      }
+    }
+    &.pim{
+      top: 346px;
+      left: 170px;
+      .msk{
+        .transform(rotate(87deg));
+        left: -10px;
+        width: 76px;
+        top: -49px;
+      }
+    }
+    &.obj{
+      top: 360px;
+      left: 262px;
+      .msk{
+        top: -55px;
+        width: 115px;
+        left: -67px;
+        .transform(rotate(62deg));
+      }
+    }
+    &.fid{
+      top: 251px;
+      left: 310px;
+      .msk{
+        width: 76px;
+        left: -72px;
+        top: -5px;
+      }
+    }
+    &.ecran{
+      left: 443px;
+      top: 123px;
+      .msk{
+        left: -205px;
+        top: 69px;
+        width: 117px;
+        .transform(rotate(-13deg));
+      }
+      span{
+        left: -81px;
+      }
+    }
+    &.crm{
+      top: 36px;
+      left: 308px;
+      .msk{
+        width: 131px;
+        left: -102px;
+        top: 98px;
+        .transform(rotate(-50deg));
+      }
+    }
+  }
+}
 }
 
 @media (max-width: 630px) {
@@ -3770,6 +3969,123 @@ footer{
       p.big-p{
         font-size: 1.5em;
         line-height: 27px;
+      }
+    }
+  }
+
+  .schema{
+    width: 300px;
+    .change{
+      height: 47px;
+      width: 47px;
+      left: 120px;
+      top: 197px;
+    }
+    li{
+      &.mob, &.obj{
+        span{
+          width: 95px;
+          height: 95px;
+          padding-top: 29px;
+        }
+      }
+      &.ecran{
+        span{
+          width: 90px;
+          height: 90px;
+          padding-top: 27px;
+        }
+      }
+      &.rs, &.tablette{
+        span{
+          width: 80px;
+          height: 80px;
+          padding-top: 22px;
+        }
+      }
+      &.fid{
+        span{
+          height: 70px;
+          width: 70px;
+          line-height: 70px;
+        }
+      }
+      &.erp{
+        left: 110px;
+        top: 72px;
+      }
+      &.mob{
+        left: 9px;
+        top: 51px;
+        .msk{
+          width: 101px;
+          top: 87px;
+          left: 42px;
+        }
+      }
+      &.rs{
+        top: 130px;
+        .msk{
+          width: 45px;
+          top: 62px;
+          left: 73px;
+        }
+      }
+      &.wms{
+        top: 219px;
+        left: 12px;
+        .msk{
+          width: 47px;
+        }
+      }
+      &.tablette{
+        top: 313px;
+        left: 7px;
+        .msk{
+          top: -40px;
+          width: 88px;
+          left: 48px;
+          .transform(rotate(-61deg));
+        }
+      }
+      &.pim{
+        top: 326px;
+        left: 113px;
+      }
+      &.obj{
+        top: 331px;
+        left: 191px;
+        .msk{
+          top: -49px;
+          width: 104px;
+          left: -54px;
+        }
+      }
+      &.fid{
+        left: 224px;
+        top: 240px;
+        .msk{
+          width: 56px;
+          left: -56px;
+        }
+      }
+      &.ecran{
+        left: 292px;
+        top: 133px;
+        .msk{
+          left: -123px;
+          top: 65px;
+          width: 42px;
+        }
+      }
+      &.crm{
+        top: 59px;
+        left: 220px;
+        .msk{
+          width: 101px;
+          left: -79px;
+          top: 86px;
+        }
       }
     }
   }
@@ -4110,6 +4426,7 @@ footer{
       height: 335px;
     }
   }
+
 }
 
 
@@ -4129,6 +4446,10 @@ footer{
     .slides{
       height: 310px;
     }
+  }
+
+  .schema{
+    margin-left: -20px;
   }
 
 }

@@ -472,8 +472,16 @@ function visuSolution(){
 	TweenMax.set($("#screen-solution"), {y: 50, opacity: 0});
 }
 
+// Schéma clignotant page solution //
+
 function ploup(){
+	var numPloup = $('.ploup').length;
 	$('.ploup').spriteanim();
+	var rand = Math.floor((Math.random() * numPloup));
+	$('.ploup').eq(rand).spriteanim('play').one('frame-10-shown', function(){
+		$(this).spriteanim('stop');
+		ploup();
+	});
 }
 
 

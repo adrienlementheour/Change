@@ -2220,8 +2220,7 @@ footer form #bouton-ok:active {
   background: #f04a2f url(../layoutImg/change.png) no-repeat center center;
   border-radius: 5px;
   position: absolute;
-  left: 50%;
-  margin-left: -43px;
+  left: 413px;
   top: 70px;
 }
 .schema .msk {
@@ -3254,6 +3253,88 @@ footer form #bouton-ok:active {
   .solution .bloc-padding-left {
     margin-top: 60px;
   }
+  .schema {
+    width: 693px;
+  }
+  .schema .change {
+    left: 293px;
+    top: 75px;
+  }
+  .schema li.erp {
+    top: 0;
+    left: 176px;
+  }
+  .schema li.erp .msk {
+    width: 61px;
+  }
+  .schema li.mob .msk {
+    width: 165px;
+  }
+  .schema li.rs {
+    top: 163px;
+    left: 47px;
+  }
+  .schema li.rs .msk {
+    width: 150px;
+  }
+  .schema li.wms {
+    top: 199px;
+    left: 189px;
+  }
+  .schema li.tablette {
+    top: 357px;
+    left: 205px;
+  }
+  .schema li.pim {
+    top: 259px;
+    left: 326px;
+  }
+  .schema li.pim .msk {
+    -webkit-transform: rotate(81deg);
+    -moz-transform: rotate(81deg);
+    -o-transform: rotate(81deg);
+    -ms-transform: rotate(81deg);
+    transform: rotate(81deg);
+    left: -36px;
+  }
+  .schema li.obj {
+    top: 292px;
+    left: 440px;
+  }
+  .schema li.obj .msk {
+    top: -76px;
+    width: 177px;
+    left: -122px;
+  }
+  .schema li.fid {
+    top: 174px;
+    left: 493px;
+  }
+  .schema li.fid .msk {
+    width: 134px;
+    left: -127px;
+  }
+  .schema li.ecran {
+    left: 663px;
+    top: 89px;
+  }
+  .schema li.ecran .msk {
+    left: -291px;
+    top: 25px;
+    width: 205px;
+  }
+  .schema li.ecran span {
+    left: -81px;
+  }
+  .schema li.crm {
+    top: 29px;
+    left: 505px;
+  }
+  .schema li.crm .msk {
+    width: 131px;
+    left: -137px;
+    top: 39px;
+  }
   .fd-shop .shop {
     margin-top: 0;
     top: 0;
@@ -3445,6 +3526,156 @@ footer form #bouton-ok:active {
   }
   .fonctionnalites .liste-pictos {
     width: 100%;
+  }
+  .schema {
+    width: 473px;
+    margin-top: 65px;
+  }
+  .schema .change {
+    left: 171px;
+    top: 200px;
+    height: 56px;
+    width: 56px;
+  }
+  .schema li.erp {
+    left: 167px;
+    top: 65px;
+  }
+  .schema li.erp .msk {
+    left: 4px;
+    top: 84px;
+    -webkit-transform: rotate(88deg);
+    -moz-transform: rotate(88deg);
+    -o-transform: rotate(88deg);
+    -ms-transform: rotate(88deg);
+    transform: rotate(88deg);
+  }
+  .schema li.mob {
+    left: 34px;
+    top: 0;
+  }
+  .schema li.mob .msk {
+    width: 134px;
+    -webkit-transform: rotate(63deg);
+    -moz-transform: rotate(63deg);
+    -o-transform: rotate(63deg);
+    -ms-transform: rotate(63deg);
+    transform: rotate(63deg);
+    top: 123px;
+    left: 45px;
+  }
+  .schema li.mob span {
+    top: -40px;
+  }
+  .schema li.rs {
+    left: 0;
+    top: 107px;
+  }
+  .schema li.rs .msk {
+    left: 90px;
+    top: 80px;
+    width: 74px;
+    -webkit-transform: rotate(24deg);
+    -moz-transform: rotate(24deg);
+    -o-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+  .schema li.wms {
+    top: 228px;
+    left: 37px;
+  }
+  .schema li.wms .msk {
+    width: 61px;
+    top: 6px;
+    left: 60px;
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  .schema li.tablette {
+    top: 345px;
+    left: 13px;
+  }
+  .schema li.tablette .msk {
+    top: -47px;
+    width: 120px;
+    left: 60px;
+    -webkit-transform: rotate(-54deg);
+    -moz-transform: rotate(-54deg);
+    -o-transform: rotate(-54deg);
+    -ms-transform: rotate(-54deg);
+    transform: rotate(-54deg);
+  }
+  .schema li.pim {
+    top: 346px;
+    left: 170px;
+  }
+  .schema li.pim .msk {
+    -webkit-transform: rotate(87deg);
+    -moz-transform: rotate(87deg);
+    -o-transform: rotate(87deg);
+    -ms-transform: rotate(87deg);
+    transform: rotate(87deg);
+    left: -10px;
+    width: 76px;
+    top: -49px;
+  }
+  .schema li.obj {
+    top: 360px;
+    left: 262px;
+  }
+  .schema li.obj .msk {
+    top: -55px;
+    width: 115px;
+    left: -67px;
+    -webkit-transform: rotate(62deg);
+    -moz-transform: rotate(62deg);
+    -o-transform: rotate(62deg);
+    -ms-transform: rotate(62deg);
+    transform: rotate(62deg);
+  }
+  .schema li.fid {
+    top: 251px;
+    left: 310px;
+  }
+  .schema li.fid .msk {
+    width: 76px;
+    left: -72px;
+    top: -5px;
+  }
+  .schema li.ecran {
+    left: 443px;
+    top: 123px;
+  }
+  .schema li.ecran .msk {
+    left: -205px;
+    top: 69px;
+    width: 117px;
+    -webkit-transform: rotate(-13deg);
+    -moz-transform: rotate(-13deg);
+    -o-transform: rotate(-13deg);
+    -ms-transform: rotate(-13deg);
+    transform: rotate(-13deg);
+  }
+  .schema li.ecran span {
+    left: -81px;
+  }
+  .schema li.crm {
+    top: 36px;
+    left: 308px;
+  }
+  .schema li.crm .msk {
+    width: 131px;
+    left: -102px;
+    top: 98px;
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg);
   }
 }
 @media (max-width: 630px) {
@@ -3722,6 +3953,118 @@ footer form #bouton-ok:active {
     font-size: 1.5em;
     line-height: 27px;
   }
+  .schema {
+    width: 300px;
+  }
+  .schema .change {
+    height: 47px;
+    width: 47px;
+    left: 120px;
+    top: 197px;
+  }
+  .schema li.mob span,
+  .schema li.obj span {
+    width: 95px;
+    height: 95px;
+    padding-top: 29px;
+  }
+  .schema li.ecran span {
+    width: 90px;
+    height: 90px;
+    padding-top: 27px;
+  }
+  .schema li.rs span,
+  .schema li.tablette span {
+    width: 80px;
+    height: 80px;
+    padding-top: 22px;
+  }
+  .schema li.fid span {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+  }
+  .schema li.erp {
+    left: 110px;
+    top: 72px;
+  }
+  .schema li.mob {
+    left: 9px;
+    top: 51px;
+  }
+  .schema li.mob .msk {
+    width: 101px;
+    top: 87px;
+    left: 42px;
+  }
+  .schema li.rs {
+    top: 130px;
+  }
+  .schema li.rs .msk {
+    width: 45px;
+    top: 62px;
+    left: 73px;
+  }
+  .schema li.wms {
+    top: 219px;
+    left: 12px;
+  }
+  .schema li.wms .msk {
+    width: 47px;
+  }
+  .schema li.tablette {
+    top: 313px;
+    left: 7px;
+  }
+  .schema li.tablette .msk {
+    top: -40px;
+    width: 88px;
+    left: 48px;
+    -webkit-transform: rotate(-61deg);
+    -moz-transform: rotate(-61deg);
+    -o-transform: rotate(-61deg);
+    -ms-transform: rotate(-61deg);
+    transform: rotate(-61deg);
+  }
+  .schema li.pim {
+    top: 326px;
+    left: 113px;
+  }
+  .schema li.obj {
+    top: 331px;
+    left: 191px;
+  }
+  .schema li.obj .msk {
+    top: -49px;
+    width: 104px;
+    left: -54px;
+  }
+  .schema li.fid {
+    left: 224px;
+    top: 240px;
+  }
+  .schema li.fid .msk {
+    width: 56px;
+    left: -56px;
+  }
+  .schema li.ecran {
+    left: 292px;
+    top: 133px;
+  }
+  .schema li.ecran .msk {
+    left: -123px;
+    top: 65px;
+    width: 42px;
+  }
+  .schema li.crm {
+    top: 59px;
+    left: 220px;
+  }
+  .schema li.crm .msk {
+    width: 101px;
+    left: -79px;
+    top: 86px;
+  }
   .fonctionnalites h1 {
     width: 100%;
   }
@@ -3980,6 +4323,9 @@ footer form #bouton-ok:active {
   }
   #sliderVid .slides {
     height: 310px;
+  }
+  .schema {
+    margin-left: -20px;
   }
 }
 @media (max-width: 320px) {
