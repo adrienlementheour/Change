@@ -1759,73 +1759,59 @@ footer form #bouton-ok:active {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: url(../layoutImg/accueil/aubert.jpg) no-repeat center center fixed;
+  background: url(../layoutImg/accueil/aubert.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
 /* Page références */
 .ref li {
-  display: inline-block;
-  width: 205px;
-  height: 205px;
-  position: relative;
-  margin: 20px 35px;
-}
-.ref li .logo {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
-}
-.ref li .fond {
-  width: 180px;
-  height: 180px;
-  overflow: hidden;
-  border-radius: 7px;
-  position: relative;
-  margin: 25px 0 0 25px;
-  background: #000000;
-}
-.ref li .fond img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
+  /* display: inline-block;
+    width: 205px;
+    height: 205px;
+    position: relative;
+    margin: 20px 35px;
+    .logo{
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      .transition(all .6s ease-out);
+    }
+    .fond{
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      border-radius: 7px;
+      position: relative;
+      margin: 25px 0 0 25px;
+      background: @noir;
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        .transition(all .6s ease-out);
+      }
+    }*/
+  /*.lt-ie9{
+      margin: 20px 18px;
+    }*/
 }
 .ref li:before {
   display: none;
 }
-.ref li:hover .logo {
-  -webkit-transition: all 0.2s ease-out 0.05s;
-  -moz-transition: all 0.2s ease-out 0.05s;
-  -o-transition: all 0.2s ease-out 0.05s;
-  transition: all 0.2s ease-out 0.05s;
-  top: 60px;
-  left: 60px;
-}
-.ref li:hover .fond img {
-  opacity: 0.5;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-.ref li .lt-ie9 {
-  margin: 20px 18px;
+.ref li:hover {
+  /*.logo{
+        .transition(all .2s ease-out .05s);
+        top:60px;
+        left:60px;
+      }
+      .fond img{
+        opacity: 0.5;
+        .transform(scale(1.2));
+        .transition(all .2s ease-out);
+      }*/
 }
 /* Page contact */
 .masqueMap {
@@ -2100,6 +2086,8 @@ footer form #bouton-ok:active {
   top: 7px;
 }
 .bloc-saas {
+  background: url(../layoutImg/solution/fd-saas.png) no-repeat 50% 100%;
+  background-size: 100% auto;
   padding-bottom: 100px;
   position: relative;
 }
@@ -2222,16 +2210,28 @@ footer form #bouton-ok:active {
   position: absolute;
   left: 413px;
   top: 70px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .schema .msk {
   overflow: hidden;
   position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.schema .msk .lt-ie9 {
+.lt-ie9 .schema .msk {
   display: none;
 }
 .schema li {
   position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .schema li:before {
   display: none;
@@ -2286,6 +2286,10 @@ footer form #bouton-ok:active {
   top: 61px;
   left: 116px;
   width: 279px;
+  -webkit-transform: rotate(4.5deg);
+  -moz-transform: rotate(4.5deg);
+  -o-transform: rotate(4.5deg);
+  -ms-transform: rotate(4.5deg);
   transform: rotate(4.5deg);
 }
 .schema li.rs {
@@ -3003,9 +3007,6 @@ footer form #bouton-ok:active {
   #containerVid p br {
     display: block;
   }
-  #slider .slides li {
-    background-attachment: scroll;
-  }
   .ref {
     padding-left: 40px;
   }
@@ -3536,6 +3537,7 @@ footer form #bouton-ok:active {
     top: 200px;
     height: 56px;
     width: 56px;
+    background-size: 78%;
   }
   .schema li.erp {
     left: 167px;

@@ -1686,7 +1686,7 @@ footer{
       position: absolute;
       height: 100%;
       width: 100%;
-      background: url(../layoutImg/accueil/aubert.jpg) no-repeat center center fixed;
+      background: url(../layoutImg/accueil/aubert.jpg) no-repeat center center;
       .background-size(cover);
     }
   }
@@ -1697,7 +1697,7 @@ footer{
 
 .ref{
   li{
-    display: inline-block;
+   /* display: inline-block;
     width: 205px;
     height: 205px;
     position: relative;
@@ -1724,12 +1724,12 @@ footer{
         width: 100%;
         .transition(all .6s ease-out);
       }
-    }
+    }*/
     &:before{
       display: none;
     }
     &:hover{
-      .logo{
+      /*.logo{
         .transition(all .2s ease-out .05s);
         top:60px;
         left:60px;
@@ -1738,11 +1738,11 @@ footer{
         opacity: 0.5;
         .transform(scale(1.2));
         .transition(all .2s ease-out);
-      }
+      }*/
     }
-    .lt-ie9{
+    /*.lt-ie9{
       margin: 20px 18px;
-    }
+    }*/
   }
 }
 
@@ -2015,6 +2015,8 @@ footer{
 }
 
 .bloc-saas{
+  background: url(../layoutImg/solution/fd-saas.png) no-repeat 50% 100%;
+  background-size: 100% auto;
   .big-padding-left .encadre {
   	margin-left: 170px;
   }
@@ -2138,16 +2140,19 @@ footer{
     position: absolute;
     left: 413px;
     top: 70px;
+    .transition(all .3s ease-in-out);
   }
   .msk{
     overflow: hidden;
     position: absolute;
-    .lt-ie9{
+    .transition(all .3s ease-in-out);
+    .lt-ie9 &{
       display: none;
     }
   }
   li{
     position: absolute;
+    .transition(all .3s ease-in-out);
     &:before{
       display: none;
     }
@@ -2190,7 +2195,7 @@ footer{
         top: 61px;
         left: 116px;
         width: 279px;
-        transform: rotate(4.5deg);
+        .transform(rotate(4.5deg));
       }
     }
     &.rs{
@@ -2903,14 +2908,6 @@ footer{
     }
   }
 
-  #slider{
-    .slides{
-      li{
-        background-attachment: scroll;
-      }
-    }
-  }
-
   .ref{
     padding-left: 40px;
   }
@@ -3541,6 +3538,7 @@ footer{
       top: 200px;
       height: 56px;
       width: 56px;
+      background-size: 78%;
     }
     li{
     &.erp{

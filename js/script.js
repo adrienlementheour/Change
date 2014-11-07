@@ -475,9 +475,8 @@ function visuSolution(){
 // Schéma clignotant page solution //
 
 function ploup(){
-	var numPloup = $('.ploup').length;
 	$('.ploup').spriteanim();
-	var rand = Math.floor((Math.random() * numPloup));
+	var rand = Math.floor((Math.random() * $('.ploup').length));
 	$('.ploup').eq(rand).spriteanim('play').one('frame-10-shown', function(){
 		$(this).spriteanim('stop');
 		ploup();
