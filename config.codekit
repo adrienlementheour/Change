@@ -1502,7 +1502,7 @@
 	"iconImageName": "\/apple-touch-icon.png"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
