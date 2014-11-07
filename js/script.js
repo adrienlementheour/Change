@@ -16,8 +16,6 @@ var animHencours = false;
 
 var myScroll;
 
-var animTab = false;
-
 
 /* Add class touch when mobile and tablet are detected, no-touch if not */
 
@@ -143,19 +141,9 @@ function setFirstStrong(){
 function scroll(){
 	var factor = 1.9;
 	var factor2 = 10;
+	var myScrollH2 = Math.ceil(myScroll/factor2);
 
 	if (!$("html").hasClass("lt-ie9")) {
-
-		// Header
-		if (myScroll>100) {
-			if($("html").hasClass("no-touch")){
-				$("#header").addClass("scrolled");
-			}
-		} else {
-			if($("html").hasClass("no-touch")){
-				$("#header").removeClass("scrolled");
-			}
-		}
 
 		// Video
 		if($('body').hasClass('home')){
@@ -170,7 +158,6 @@ function scroll(){
 
 		//Parallaxe solution
 		if($('body').hasClass('solution')){
-			var myScrollH2 = Math.ceil(myScroll/factor2);
 
 			if($(window).width() > 978){
 				$("#screen-solution").css("margin-bottom",myScrollH2+"px");
@@ -195,7 +182,7 @@ function scroll(){
 }
 
 
-/* Animation du texte */
+/* Animation du texte 
 
 function setAnimHomeenCours(){
   if(animHencours === false){
@@ -210,9 +197,10 @@ function setTimingSpan(elt, timing, delay) {
 	elt.css("animation-duration",timing);
 	elt.css("-webkit-animation-delay",delay);
 	elt.css("animation-delay",delay);
-}
+} */
 
-/* Tooltip rejouer (video + slider accueil) */ 
+
+/* Lien rejouer (video + slider accueil) */ 
 
 function setPlayAgainIndic(){
 	$('#mask').css('cursor', 'pointer');
@@ -267,7 +255,6 @@ function playVideo(){
 	}
 	vid[0].play();
 	setTimeout(function(){ vid.fadeIn(); }, 10);
-	//console.log(vid.currentTime());
 }
 
 
@@ -485,27 +472,9 @@ function visuSolution(){
 	TweenMax.set($("#screen-solution"), {y: 50, opacity: 0});
 }
 
-
-/// Fonction pour animer les tablettes de la page fonctionnalités ///
-
-function animTabFonc(){
-	animTab = true;
-	TweenMax.to($("#tab1"), 1, {y: 0, opacity: 1, transform: 'rotate(-15deg)', ease:Cubic.easeIn});
-	//TweenMax.to($("#tab2"), 2, {x: 0, y: 0,  opacity: 1, transform: 'rotate(5deg)', ease:Cubic.easeIn});
-	TweenMax.to($("#tab2"), 2, {y: 0,  opacity: 1, transform: 'rotate(5deg)', ease:Cubic.easeIn});
+function ploup(){
+	$('.ploup').spriteanim();
 }
-
-function tabFonc(){
-	if(animTab === false){
-		TweenMax.set($("#tab1"), {y: 100, opacity: 0});
-		//TweenMax.set($("#tab2"), {x: 500, y:300, opacity: 0});
-		TweenMax.set($("#tab2"), {y:600, opacity: 0});
-		if(myScroll > 550){
-			animTabFonc();
-		}
-	}
-}
-
 
 
 $(function(){
@@ -526,10 +495,7 @@ $(function(){
 
 	if ($("body").hasClass("solution")){
 		visuSolution();
-	}
-
-	if ($("body").hasClass("fonctionnalites")){
-		tabFonc();
+		ploup();
 	}
 
 	if ($("body").hasClass("contactPage")){
@@ -539,13 +505,8 @@ $(function(){
 
 	$(document).scroll(function() {
 		myScroll = $(document).scrollTop();
-
 		scroll();
 		setFooter();
-
-		if ($("body").hasClass("fonctionnalites")){
-			tabFonc();
-		}
 	});
 
 });
