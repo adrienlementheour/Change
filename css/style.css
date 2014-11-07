@@ -1868,6 +1868,10 @@ footer form #bouton-ok:active {
 .solution .bloc-padding-left h4.first {
   margin-top: 37px;
 }
+.solution .icon-h24:before {
+  left: -17px;
+  margin-top: -2px;
+}
 #bloc-visu-solution {
   display: block;
   width: 100%;
