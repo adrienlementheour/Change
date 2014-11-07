@@ -105,7 +105,7 @@ $mailto = 'info@proximis.com';
 		<div class="content">
 			<div class="container first small small-temp">
 				<h1>Chers partenaires,</h1>
-				<p><b>Change accorde une place essentielle à la relation qu'elle entretient avec VOUS</b><br/>(partenaires technologiques et partenaires d’intégration). Découvrez prochainement notre programme d'adhésion et d'animation qui vous sera exclusivement dédié.</p>
+				<p><b>Change accorde une place essentielle à la relation qu'elle entretient avec vous</b> (partenaires technologiques et partenaires d’intégration). Découvrez prochainement notre programme d'adhésion et d'animation qui vous sera exclusivement dédié.</p>
 			</div>
 			<div class="container container-temp">
 				<div class="temp temp-newsletter">
