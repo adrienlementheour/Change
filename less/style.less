@@ -1628,7 +1628,7 @@ footer{
 }
 
 .ref-header{
-  background: url(../layoutImg/fd-ref.png) no-repeat center bottom;
+  background: url(../layoutImg/fd-ref.jpg) no-repeat center bottom;
   background-size: 100% auto;
   padding-top: 135px;
   .lt-ie9 &{
@@ -1656,13 +1656,13 @@ footer{
     &:before{
       display: none;
     }
-    &:hover{
+    &.openRef{
       height: 380px;
       .transition(height .3s ease-in-out);
       .fd{
         top: 0;
         opacity: 1;
-        .scale(1.05);
+       .transform(scale(1.05) rotate(0.01deg));
         .transition(all .3s ease-in-out);
       }
     }
@@ -1678,10 +1678,10 @@ footer{
     height: 430px;
     width: 100%;
     position: absolute;
-    top: -50px;
+    top: 0;
     left: 0;
     opacity: 0.7;
-    .transition(all .6s ease-in-out);
+   .transition(all .6s ease-in-out);
   }
   .aubert{
     background: url(../img/ref/aubert.jpg) no-repeat;
