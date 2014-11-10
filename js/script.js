@@ -182,24 +182,6 @@ function scroll(){
 }
 
 
-/* Animation du texte 
-
-function setAnimHomeenCours(){
-  if(animHencours === false){
-    animHencours = true;
-  }else{
-    animHencours = false;
-  }
-}
-
-function setTimingSpan(elt, timing, delay) {
-	elt.css("-webkit-animation-duration",timing);
-	elt.css("animation-duration",timing);
-	elt.css("-webkit-animation-delay",delay);
-	elt.css("animation-delay",delay);
-} */
-
-
 /* Lien rejouer (video + slider accueil) */ 
 
 function setPlayAgainIndic(){

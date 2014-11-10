@@ -241,17 +241,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/ref\/afflelou.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 22571,
-		"inputAbbreviatedPath": "\/img\/ref\/afflelou.jpg",
-		"outputAbbreviatedPath": "\/img\/ref\/afflelou.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/ref\/alain-logo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -259,6 +248,17 @@
 		"initialSize": 3737,
 		"inputAbbreviatedPath": "\/img\/ref\/alain-logo.jpg",
 		"outputAbbreviatedPath": "\/img\/ref\/alain-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/alain.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 333016,
+		"inputAbbreviatedPath": "\/img\/ref\/alain.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/alain.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -300,7 +300,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 19413,
+		"initialSize": 8355,
 		"inputAbbreviatedPath": "\/img\/ref\/catimini.jpg",
 		"outputAbbreviatedPath": "\/img\/ref\/catimini.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -318,13 +318,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/ref\/histoiredor.jpg": {
+	"\/img\/ref\/histoire.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 22637,
-		"inputAbbreviatedPath": "\/img\/ref\/histoiredor.jpg",
-		"outputAbbreviatedPath": "\/img\/ref\/histoiredor.jpg",
+		"initialSize": 342047,
+		"inputAbbreviatedPath": "\/img\/ref\/histoire.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/histoire.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -347,17 +347,6 @@
 		"initialSize": 8355,
 		"inputAbbreviatedPath": "\/img\/ref\/manfield.jpg",
 		"outputAbbreviatedPath": "\/img\/ref\/manfield.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/ref\/onestep.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20204,
-		"inputAbbreviatedPath": "\/img\/ref\/onestep.jpg",
-		"outputAbbreviatedPath": "\/img\/ref\/onestep.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -406,24 +395,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/ref\/tartineetchocolat.jpg": {
+	"\/img\/ref\/tartine-logo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 27184,
-		"inputAbbreviatedPath": "\/img\/ref\/tartineetchocolat.jpg",
-		"outputAbbreviatedPath": "\/img\/ref\/tartineetchocolat.jpg",
+		"initialSize": 2246,
+		"inputAbbreviatedPath": "\/img\/ref\/tartine-logo.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/tartine-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/ref\/z-generation.jpg": {
+	"\/img\/ref\/tartine.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20328,
-		"inputAbbreviatedPath": "\/img\/ref\/z-generation.jpg",
-		"outputAbbreviatedPath": "\/img\/ref\/z-generation.jpg",
+		"initialSize": 341766,
+		"inputAbbreviatedPath": "\/img\/ref\/tartine.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/tartine.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -435,6 +424,17 @@
 		"initialSize": 5066,
 		"inputAbbreviatedPath": "\/img\/ref\/z-logo.jpg",
 		"outputAbbreviatedPath": "\/img\/ref\/z-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/z.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 450357,
+		"inputAbbreviatedPath": "\/img\/ref\/z.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/z.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1458,6 +1458,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/ploup0.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9744,
+		"inputAbbreviatedPath": "\/ploup0.png",
+		"outputAbbreviatedPath": "\/ploup0.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,

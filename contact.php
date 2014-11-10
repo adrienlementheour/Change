@@ -172,7 +172,7 @@ if ( $submitted2 ) {
 	  	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
 	  	<link rel="stylesheet" href="css/libs/normalize.css">
-	  	<link rel="stylesheet" href="css/style.css">
+	  	<link rel="stylesheet" href="css/style.min.css">
 		<!--[if lt IE 7]>
 		<link rel="stylesheet" href="css/libs/ie6.css" />
 		<![endif]-->
@@ -185,7 +185,7 @@ if ( $submitted2 ) {
 		<header>
 			<div>
 				<div class="container">
-					<nav class="content-bottom-header">
+					<nav class="bottom-header">
 						<a href="./" id="logo" title="Retour à l'accueil" class="ir">Change - Cross Commerce</a>
 						<ul id="menu-header">
 							<li><a href="solution-cross-commerce" class="lien-menu-header" title="Solution"><span>Solution</span></a></li>
