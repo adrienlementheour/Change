@@ -491,6 +491,9 @@ body{
   &.small{
     padding: 0 350px 0 60px;
   }
+  &.small2{
+    padding: 0 205px 0 60px;
+  }
   &.medium{
     padding-left: 60px;
   }
@@ -1625,7 +1628,7 @@ footer{
 }
 
 .ref-header{
-  background: url(../layoutImg/solution/fd-saas.png) no-repeat center bottom;
+  background: url(../layoutImg/fd-ref.png) no-repeat center bottom;
   background-size: 100% auto;
   padding-top: 135px;
   .lt-ie9 &{
@@ -1640,7 +1643,7 @@ footer{
     background: @blanc;
     position: relative;
     overflow: hidden;
-    .transition(height .3s ease-in-out);
+    .transition(height .6s ease-in-out);
     .lt-ie9 &{
       height: 380px;
       .fd{
@@ -1659,6 +1662,7 @@ footer{
       .fd{
         top: 0;
         opacity: 1;
+        .scale(1.05);
         .transition(all .3s ease-in-out);
       }
     }
@@ -1677,7 +1681,7 @@ footer{
     top: -50px;
     left: 0;
     opacity: 0.7;
-    .transition(all .3s ease-in-out);
+    .transition(all .6s ease-in-out);
   }
   .aubert{
     background: url(../img/ref/aubert.jpg) no-repeat;
@@ -2927,7 +2931,7 @@ footer{
 @media (max-width: 979px) {
 
   .container{
-    &.small{
+    &.small, &.small2{
       padding: 0 50px 0 80px;
     }
   }
@@ -4162,7 +4166,7 @@ footer{
 @media (max-width: 390px) {
 
   .container{
-    &.medium, &.small{
+    &.medium, &.small, &.small2{
       padding: 0 20px 0;
     }
   }
@@ -4308,7 +4312,7 @@ footer{
 
 @media (max-width: 320px) {
   .container{
-    &.medium, &.small {
+    &.medium, &.small, &.small2{
       padding: 0 15px 0;
     }
   }
