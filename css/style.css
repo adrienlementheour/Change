@@ -1701,6 +1701,9 @@ footer form input {
 .lt-ie9 .ref-header {
   background: none;
 }
+.touch .ref-header {
+  padding-top: 0;
+}
 .ref li {
   height: 310px;
   padding: 40px 0 0;

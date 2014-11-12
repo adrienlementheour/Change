@@ -8,7 +8,7 @@ deny from all
 Options -Indexes
 
 # redirections
-ErrorDocument 404 /404.html
+ErrorDocument 404 http://www.change-commerce.com/404.html
 <IfModule mod_rewrite.c>
 	RewriteEngine on
 	RewriteRule solution-cross-commerce solution.html [L]
