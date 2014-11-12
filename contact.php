@@ -206,7 +206,7 @@ if ( $submitted2 ) {
 		<div class="container first medium content">
 			<h1>Contactez-nous</h1>
 			<div class="containerLeft">
-				<p><b>Votre activité e-commerce est en plein développement</b><br/> et vous souhaitez intégrer rapidement vos magasins et vos produits au cœur de votre stratégie digitale, nous sommes à votre disposition pour échanger avec vous.</p>
+				<p><b>Votre activité <nobr>e-commerce</nobr> est en plein développement</b><br/> et vous souhaitez intégrer rapidement vos magasins et vos produits au cœur de votre stratégie digitale, nous sommes à votre disposition pour échanger avec vous.</p>
 				<ul class="liens-contact btn-contact">
 					<li>
 						<a id="soumettre" class="icon-mail fd-rouge" href="contact.php?open=1">
