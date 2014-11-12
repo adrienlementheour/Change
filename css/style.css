@@ -2534,6 +2534,7 @@ footer form input {
 }
 .touch .fonctionnalites .commande {
   background-attachment: scroll;
+  padding-bottom: 0;
 }
 .fonctionnalites .commande .fd-opaque {
   position: absolute;

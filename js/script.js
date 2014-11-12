@@ -487,6 +487,14 @@ $(function(){
 	setBurgerMenu();
 	setFirstStrong();
 
+	if($('html').hasClass('touch')){
+		$('#menu-header').find('a').on('click touchend', function(e) {
+		    var el = $(this);
+		    var link = el.attr('href');
+		    window.location = link;
+		});
+	}
+
 	if($('body').hasClass('home')){
 		indic = $('#containerVid').find('.rejouer');
 		if($("html").hasClass("lt-ie9")){
