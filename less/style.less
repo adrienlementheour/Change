@@ -1677,7 +1677,6 @@ footer{
     }
   }
   .fd{
-    background-position: center center;
     height: 430px;
     width: 100%;
     position: absolute;
@@ -1687,47 +1686,47 @@ footer{
    .transition(all .6s ease-in-out);
   }
   .aubert{
-    background: url(../img/ref/aubert.jpg) no-repeat;
+    background: url(../img/ref/aubert.jpg) no-repeat center center;
     background-size: 100% auto;
     background-size: cover;
   }
   .histoire{
-    background: url(../img/ref/histoire.jpg) no-repeat;
+    background: url(../img/ref/histoire.jpg) no-repeat center center;
     background-size: 100% auto;
     background-size: cover;
   }
   .catimini{
-    background: url(../img/ref/catimini.jpg) no-repeat;
+    background: url(../img/ref/catimini.jpg) no-repeat center center;
     background-size: 100% auto;
     background-size: cover;
   }
   .manfield{
-    background: url(../img/ref/manfield.jpg) no-repeat;
+    background: url(../img/ref/manfield.jpg) no-repeat center center;
     background-size: 100% auto;
     background-size: cover;
   }
   .z{
-    background: url(../img/ref/z.jpg) no-repeat;
+    background: url(../img/ref/z.jpg) no-repeat center center;
     background-size: 100% auto;
     background-size: cover;
   }
   .alain{
-    background: url(../img/ref/alain.jpg) no-repeat;
+    background: url(../img/ref/alain.jpg) no-repeat center center;
     background-size: 100% auto;
     background-size: cover;
   }
   .rossignol{
-    background: url(../img/ref/rossignol.jpg) no-repeat;
+    background: url(../img/ref/rossignol.jpg) no-repeat center center;
     background-size: 100% auto;
     background-size: cover;
   }
   .solaris{
-    background: url(../img/ref/solaris.jpg) no-repeat;
+    background: url(../img/ref/solaris.jpg) no-repeat center center;
     background-size: 100% auto;
     background-size: cover;
   }
   .tartine{
-    background: url(../img/ref/tartine.jpg) no-repeat;
+    background: url(../img/ref/tartine.jpg) no-repeat center center;
     background-size: 100% auto;
     background-size: cover;
   }
@@ -2274,6 +2273,11 @@ footer{
 /* Fonctionnalites */
 
 .fonctionnalites {
+  .container.first{
+    .touch &{
+      margin-top: 41px;
+    }
+  }
   .content > div{
     padding: 70px 0;
     overflow: hidden;
@@ -3303,6 +3307,7 @@ footer{
       height: auto;
       padding: 40px 0;
       &:hover{
+        margin: 0;
         height: auto;
       }
     }

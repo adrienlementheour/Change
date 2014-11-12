@@ -163,7 +163,7 @@ function scroll(){
 				$("#screen-solution").css("margin-bottom",myScrollH2+"px");
 
 				if(myScroll > 600){
-					$('#shop').css('top', -myScrollH2+'px');
+					$('#shop').css('top', -myScrollH2/1.05+'px');
 				}
 
 				if(myScroll > 2470){
@@ -470,9 +470,13 @@ function ploup(){
 
 function openRef(){
 	var ref = $('.ref').find('.first');
-	ref.mouseout(function(){
-		$(this).removeClass('openRef');
-	});
+	if($(window).width() > 850){
+		ref.mouseout(function(){
+			$(this).removeClass('openRef');
+		});
+	}else{
+		ref.removeClass('openRef');
+	}
 }
 
 
