@@ -1,7 +1,16 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18027",
+"creatorBuild": "18270",
 "files": {
+	"\/404.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/404.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/apple-touch-icon-114x114.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -123,6 +132,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/contact.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contact.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/libs\/ie6.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -137,6 +155,24 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/libs\/normalize.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/style.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/style.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/entreprise.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/entreprise.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -492,6 +528,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/interieur.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/interieur.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/js\/libs\/dd_belatedpng.js": {
 		"fileType": 64,
@@ -1014,7 +1068,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 29692,
+		"initialSize": 23796,
 		"inputAbbreviatedPath": "\/layoutImg\/fd-ref.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fd-ref.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1091,7 +1145,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 580167,
+		"initialSize": 563342,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-commande.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-commande.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1102,7 +1156,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 580167,
+		"initialSize": 138677,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cross.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cross.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1113,7 +1167,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 142641,
+		"initialSize": 148142,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-fid.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-fid.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1404,6 +1458,15 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/mentions.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mentions.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/min\/js-min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1470,6 +1533,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/partenaires.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partenaires.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/plan.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1505,7 +1577,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "elisabeth",
+"lastSavedByUser": "Boris Forconi",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1905,6 +1977,10 @@
 			"flagValue": -1
 			},
 		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
 			"active": 0,
 			"flagValue": -1
 			},
