@@ -294,6 +294,105 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/ref\/big\/alain.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 333016,
+		"inputAbbreviatedPath": "\/img\/ref\/big\/alain.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/big\/alain.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/big\/aubert.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19776,
+		"inputAbbreviatedPath": "\/img\/ref\/big\/aubert.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/big\/aubert.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/big\/catimini.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8355,
+		"inputAbbreviatedPath": "\/img\/ref\/big\/catimini.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/big\/catimini.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/big\/histoire.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 342047,
+		"inputAbbreviatedPath": "\/img\/ref\/big\/histoire.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/big\/histoire.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/big\/manfield.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 399756,
+		"inputAbbreviatedPath": "\/img\/ref\/big\/manfield.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/big\/manfield.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/big\/rossignol.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18568,
+		"inputAbbreviatedPath": "\/img\/ref\/big\/rossignol.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/big\/rossignol.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/big\/solaris.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17371,
+		"inputAbbreviatedPath": "\/img\/ref\/big\/solaris.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/big\/solaris.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/big\/tartine.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 341766,
+		"inputAbbreviatedPath": "\/img\/ref\/big\/tartine.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/big\/tartine.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/big\/z.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 450357,
+		"inputAbbreviatedPath": "\/img\/ref\/big\/z.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/big\/z.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/ref\/catimini-logo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -345,6 +444,17 @@
 		"initialSize": 2730,
 		"inputAbbreviatedPath": "\/img\/ref\/manfield-logo.jpg",
 		"outputAbbreviatedPath": "\/img\/ref\/manfield-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ref\/manfield.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 399756,
+		"inputAbbreviatedPath": "\/img\/ref\/manfield.jpg",
+		"outputAbbreviatedPath": "\/img\/ref\/manfield.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -972,13 +1082,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/layoutImg\/fd-ref.png": {
-		"fileType": 32768,
+	"\/layoutImg\/fd-ref.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/layoutImg\/fd-ref.png",
-		"outputAbbreviatedPath": "\/layoutImg\/fd-ref.png",
+		"initialSize": 29692,
+		"inputAbbreviatedPath": "\/layoutImg\/fd-ref.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fd-ref.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1177,17 +1287,6 @@
 		"initialSize": 20073,
 		"inputAbbreviatedPath": "\/layoutImg\/logoVid.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoVid.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/layoutImg\/manfield.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 399756,
-		"inputAbbreviatedPath": "\/layoutImg\/manfield.jpg",
-		"outputAbbreviatedPath": "\/layoutImg\/manfield.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

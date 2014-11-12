@@ -1696,6 +1696,7 @@ footer form input {
   background: url(../layoutImg/fd-ref.jpg) no-repeat center bottom;
   background-size: 100% auto;
   padding-top: 135px;
+  padding-bottom: 90px;
 }
 .lt-ie9 .ref-header {
   background: none;
@@ -1703,13 +1704,15 @@ footer form input {
 .ref li {
   height: 290px;
   padding: 40px 0 0;
+  margin-top: 0;
   background: #ffffff;
   position: relative;
   overflow: hidden;
-  -webkit-transition: height 0.6s ease-in-out;
-  -moz-transition: height 0.6s ease-in-out;
-  -o-transition: height 0.6s ease-in-out;
-  transition: height 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  /*&.openRef*/
 }
 .lt-ie9 .ref li {
   height: 380px;
@@ -1723,21 +1726,22 @@ footer form input {
 .ref li:before {
   display: none;
 }
-.ref li.openRef {
+.ref li:hover {
   height: 380px;
-  -webkit-transition: height 0.3s ease-in-out;
-  -moz-transition: height 0.3s ease-in-out;
-  -o-transition: height 0.3s ease-in-out;
-  transition: height 0.3s ease-in-out;
+  margin-top: -90px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.ref li.openRef .fd {
+.ref li:hover .fd {
   top: 0;
   opacity: 1;
-  -webkit-transform: scale(1.05) rotate(0.01deg);
-  -moz-transform: scale(1.05) rotate(0.01deg);
-  -o-transform: scale(1.05) rotate(0.01deg);
-  -ms-transform: scale(1.05) rotate(0.01deg);
-  transform: scale(1.05) rotate(0.01deg);
+  -webkit-transform: scale(1.05) rotate(0.01deg) translateZ(0px);
+  -moz-transform: scale(1.05) rotate(0.01deg) translateZ(0px);
+  -o-transform: scale(1.05) rotate(0.01deg) translateZ(0px);
+  -ms-transform: scale(1.05) rotate(0.01deg) translateZ(0px);
+  transform: scale(1.05) rotate(0.01deg) translateZ(0px);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
