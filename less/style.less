@@ -1631,7 +1631,7 @@ footer{
   background: url(../layoutImg/fd-ref.jpg) no-repeat center bottom;
   background-size: 100% auto;
   padding-top: 135px;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
   .lt-ie9 &{
     background: none;
   }
@@ -1639,7 +1639,7 @@ footer{
 
 .ref{
   li{
-    height: 290px;
+    height: 310px;
     padding: 40px 0 0;
     margin-top: 0;
     background: @blanc;
@@ -1658,15 +1658,14 @@ footer{
     &:before{
       display: none;
     }
-    /*&.openRef*/&:hover{
-      height: 380px;
-      margin-top: -90px;
+    &.openRef, &:hover{
+      height: 360px;
+      margin-top: -70px;
       .transition(all .3s ease-in-out);
-
       .fd{
         top: 0;
         opacity: 1;
-       .transform(scale(1.05) rotate(0.01deg) translateZ(0));
+        .transform(scale(1.05) rotate(0.01deg) translateZ(0));
         .transition(all .3s ease-in-out);
       }
     }

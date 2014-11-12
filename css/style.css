@@ -1696,13 +1696,13 @@ footer form input {
   background: url(../layoutImg/fd-ref.jpg) no-repeat center bottom;
   background-size: 100% auto;
   padding-top: 135px;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 .lt-ie9 .ref-header {
   background: none;
 }
 .ref li {
-  height: 290px;
+  height: 310px;
   padding: 40px 0 0;
   margin-top: 0;
   background: #ffffff;
@@ -1712,7 +1712,6 @@ footer form input {
   -moz-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
-  /*&.openRef*/
 }
 .lt-ie9 .ref li {
   height: 380px;
@@ -1726,14 +1725,16 @@ footer form input {
 .ref li:before {
   display: none;
 }
+.ref li.openRef,
 .ref li:hover {
-  height: 380px;
-  margin-top: -90px;
+  height: 360px;
+  margin-top: -70px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.ref li.openRef .fd,
 .ref li:hover .fd {
   top: 0;
   opacity: 1;
