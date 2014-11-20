@@ -671,11 +671,6 @@ a, .a{
   }
 }
 
-.lien-menu-header{
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 blockquote{
   margin: 0 0 0 -70px;
   p{
@@ -882,6 +877,8 @@ header{
     line-height: 20px;
     border: 0;
     color: @blanc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     .symbole-burger{
       width: 21px;
       height: 25px;
@@ -934,7 +931,7 @@ header{
     background: url('../layoutImg/logoChangeIE.png') no-repeat;
   }
 }
-#menu-header{
+#menu-main{
   display: block;
   list-style: none;
   li{
@@ -950,6 +947,23 @@ header{
         .lienMenuActif();
       }
     }
+    .lien-contact, &#menu-item-54 a{
+      text-transform: none;
+      .bariolBold(1.1em);
+      letter-spacing: 0;
+      line-height: 92px;
+      height: 94px;
+      .lt-ie9 &{
+        line-height: 96px;
+        height: 96px;
+      }
+      &:before{
+        bottom: 0;
+      }
+      &:after{
+        .proximaNovaBold(0.9em);
+      }
+    }
     a{
       display: block;
       padding: 0 10px 0;
@@ -957,23 +971,8 @@ header{
       line-height: 94px;
       color: @blanc;
       border: 0;
-      &.lien-contact{
-        text-transform: none;
-        .bariolBold(1.1em);
-        letter-spacing: 0;
-        line-height: 92px;
-        height: 94px;
-        .lt-ie9 &{
-          line-height: 96px;
-          height: 96px;
-        }
-        &:before{
-          bottom: 0;
-        }
-        &:after{
-          .proximaNovaBold(0.9em);
-        }
-      }
+      text-transform: uppercase;
+      letter-spacing: 1px;
       span{
         position: relative;
       }
@@ -1190,7 +1189,7 @@ footer{
     .bariolBold(0.9em);
     padding-bottom: 10px;
   }
-  .menu-footer{
+  .menu-footer, .col-left, .col-mid{
     li{
       display: inline;
       padding: 0 10px 0 0;
@@ -1320,6 +1319,10 @@ footer{
   .home-ul{
     overflow: hidden;
     margin: 60px 0;
+    p{
+      width: auto;
+      margin: 0;
+    }
     li{
       float: left;
       &:before{
@@ -1612,8 +1615,23 @@ footer{
       position: absolute;
       height: 100%;
       width: 100%;
-      background: url(../layoutImg/accueil/aubert.jpg) no-repeat center center;
-      .background-size(cover);
+      div{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      .img{
+        opacity: 0.7;
+        background: url(../layoutImg/ref/aubert.jpg) no-repeat center center;
+        .background-size(cover);
+      }
+      .fd{
+        background: #000;
+      }
+      .deg{
+        background: url(../layoutImg/degRef2.png) repeat-x;
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -1621,7 +1639,7 @@ footer{
 
 /* Page références */
 
-.references{
+.references, .page-template-references-php{
   footer{
     margin: 0;
   }
@@ -1667,7 +1685,7 @@ footer{
       .transition(all .3s ease-in-out);
       .fd{
         top: 0;
-        opacity: 0.7;
+        opacity: 0.6;
         .transform(scale(1.05) rotate(0.01deg) translateZ(0));
         .transition(all .3s ease-in-out);
       }
@@ -1677,6 +1695,10 @@ footer{
       .maj{
         color: @blanc;
       }
+      .deg{
+        background: url(../layoutImg/degRef2.png) repeat-x;
+        opacity: 0.6;
+      }
     }
   }
   .fd{
@@ -1685,53 +1707,11 @@ footer{
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 1;
+    opacity: 0.9;
    .transition(all .6s ease-in-out);
   }
-  .aubert{
-    background: url(../img/ref/aubert.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-size: cover;
-  }
-  .histoire{
-    background: url(../img/ref/histoire.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-size: cover;
-  }
-  .catimini{
-    background: url(../img/ref/catimini.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-size: cover;
-  }
-  .manfield{
-    background: url(../img/ref/manfield.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-size: cover;
-  }
-  .z{
-    background: url(../img/ref/z.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-size: cover;
-  }
-  .alain{
-    background: url(../img/ref/alain.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-size: cover;
-  }
-  .rossignol{
-    background: url(../img/ref/rossignol.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-size: cover;
-  }
-  .solaris{
-    background: url(../img/ref/solaris.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-size: cover;
-  }
-  .tartine{
-    background: url(../img/ref/tartine.jpg) no-repeat center center;
-    background-size: 100% auto;
-    background-size: cover;
+  .deg{
+    background: url(../layoutImg/degRef.png) repeat-x;
   }
   .logo{
     position: absolute;
@@ -1803,7 +1783,7 @@ footer{
 
 /* @group Page Solution */
 
-.solution{
+.solution, .page-template-solution-php{
   p{
     font-size: 0.95em;
   }
@@ -2275,7 +2255,7 @@ footer{
 
 /* Fonctionnalites */
 
-.fonctionnalites {
+.fonctionnalites, .page-template-fonctionnalites-php{
   .container.first{
     .touch &{
       margin-top: 41px;
@@ -2553,7 +2533,7 @@ footer{
 
 /* Plan du site */
 
-.plan{
+.plan, .page-id-21{
   .first{
     ul{
       margin-top: 30px;
@@ -2746,15 +2726,15 @@ footer{
     display: block;
   }
 
-  #menu-header {
+  #menu-main {
     li{
       margin: 0 0 0 3px;
+      .lien-contact, &#menu-item-54 a{
+        font-size: 1em;
+      }
       a{
         padding: 0 8px 0;
         font-size: 0.7em;
-        &.lien-contact{
-          font-size: 1em;
-        }
       }
     }
   }
@@ -2833,7 +2813,7 @@ footer{
     }
   }
 
-  .solution{
+  .solution, .page-template-solution-php{
     > .container, > div .container{
       padding-left: 30px;
       padding-right: 30px;
@@ -2892,7 +2872,7 @@ footer{
     width: 100%;
   }
 
-  .fonctionnalites{
+  .fonctionnalites, .page-template-fonctionnalites-php{
     .content, .titre-fonctionnalite{
       .container{
         width: 90%;
@@ -2955,7 +2935,7 @@ footer{
   .hamburger{
     display: block;
   }
-  #menu-header {
+  #menu-main {
     background: @grisFonce;
     position: absolute;
     padding: 50px 15px 0;
@@ -2980,13 +2960,13 @@ footer{
           }
         }
       }
+      &#menu-item-54 a, .lien-contact{
+        line-height: 50px;
+        height: auto;
+      }
       a{
         text-align: left;
         line-height: 50px;
-        &.lien-contact{
-          line-height: 50px;
-          height: auto;
-        }
         &:focus, &:hover, &:active{
           &:before{
             height: 51px;
@@ -3008,7 +2988,7 @@ footer{
   }
 
   footer{
-    .menu-footer a{
+    .menu-footer a, .col-left a, .col-mid a{
       font-size: 1em;
     }
     &.contactUp{
@@ -3107,7 +3087,7 @@ footer{
       margin-left: 0;
     }
 
-  .solution{
+  .solution, .page-template-solution-php{
     .big-padding-left{
       margin-top: 500px;
     }
@@ -3213,7 +3193,7 @@ footer{
       }
     }
 
-    .fonctionnalites{
+    .fonctionnalites, .page-template-fonctionnalites-php{
       .content{
         .container{
           &.big-padding-left{
@@ -3326,7 +3306,7 @@ footer{
       width: 100%;
     }
 
-  .fonctionnalites{
+  .fonctionnalites, .page-template-fonctionnalites-php{
     .cms{
       .big-p{
         width: auto;
@@ -3397,11 +3377,13 @@ footer{
       height: 430px;
     }
 
-    .solution .big-padding-left {
-      margin-top: 430px;
+    .solution, .page-template-solution-php {
+      .big-padding-left {
+        margin-top: 430px;
+      }
     }
 
-    .fonctionnalites{
+    .fonctionnalites, .page-template-fonctionnalites-php{
       h1{
         width: 78%;
       }
@@ -3632,7 +3614,7 @@ footer{
     }
   }
 
-  .solution{
+  .solution, .page-template-solution-php{
     .bloc-noir-fond {
       background-position: right bottom;
       background-size: 100%;
@@ -3640,7 +3622,7 @@ footer{
     }
   }
 
-  .encadre, .fonctionnalites .encadre{
+  .encadre, .fonctionnalites .encadre, .page-template-fonctionnalites-php .encadre{
     .bloc-txt-encadre{
       padding: 50px 0 0;
       h3, .h3{
@@ -3660,7 +3642,7 @@ footer{
     width: 97%;
   }
 
-  .fonctionnalites{
+  .fonctionnalites, .page-template-fonctionnalites-php{
     .big-padding-left{
       .liste-pictos{
         padding-left: 0;
@@ -3732,7 +3714,7 @@ footer{
     background-size: 70%;
   } 
 
-  .encadre, .fonctionnalites .encadre{
+  .encadre, .fonctionnalites .encadre, .page-template-fonctionnalites-php .encadre{
     .bloc-icon-encadre{
       width: 80px;
       height: 80px;
@@ -3750,7 +3732,7 @@ footer{
       }
     }
   }
-  .fonctionnalites {
+  .fonctionnalites, .page-template-fonctionnalites-php{
     .encadre{
       .bloc-txt-encadre{
         p.big-p{
@@ -3869,7 +3851,7 @@ footer{
     li{
       background: @grisTresClairFond;
       .fd{
-        background: none;
+        background: none !important;
       }
     }
   }
@@ -3887,7 +3869,7 @@ footer{
     background-size: 80%;
   }
 
-  .solution{
+  .solution, .page-template-solution-php{
     .container.padding-top-bottom {
       padding-top: 0;
     }
@@ -4014,7 +3996,7 @@ footer{
     }
   }
 
-  .fonctionnalites{
+  .fonctionnalites, .page-template-fonctionnalites-php{
     h1{
       width: 100%;
     }
@@ -4122,13 +4104,13 @@ footer{
     }
   }
 
-  .solution{
+  .solution, .page-template-solution-php{
     .big-h3{
       font-size: 1.5em;
     }
   }
 
-  .fonctionnalites{
+  .fonctionnalites, .page-template-fonctionnalites-php{
     .commande{
       .fd-opaque{
         height: 350px;
@@ -4154,7 +4136,7 @@ footer{
     }
   }
 
-  .fonctionnalites{
+  .fonctionnalites, .page-template-fonctionnalites-php{
     .merch{
       .container{
         padding-bottom: 270px;
@@ -4256,7 +4238,7 @@ footer{
     }
   }
 
-  .solution{
+  .solution, .page-template-solution-php{
     .big-h4{
       text-indent: 0;
     }
@@ -4327,7 +4309,7 @@ footer{
     background-size: 100%;
   }
 
-  .fonctionnalites {
+  .fonctionnalites, .page-template-fonctionnalites-php{
     h1{
       padding-top: 50px;
     }

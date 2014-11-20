@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18270",
+"creatorBuild": "18027",
 "files": {
 	"\/404.html": {
 		"fileType": 8192,
@@ -970,7 +970,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/change.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/check.png": {
 		"fileType": 32768,
@@ -983,11 +983,33 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/degRef.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1075,
+		"inputAbbreviatedPath": "\/layoutImg\/degRef.png",
+		"outputAbbreviatedPath": "\/layoutImg\/degRef.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/degRef2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1378,
+		"inputAbbreviatedPath": "\/layoutImg\/degRef2.png",
+		"outputAbbreviatedPath": "\/layoutImg\/degRef2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/fd-ref.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 23796,
+		"initialSize": 29692,
 		"inputAbbreviatedPath": "\/layoutImg\/fd-ref.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fd-ref.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1064,7 +1086,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 563342,
+		"initialSize": 580167,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-commande.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-commande.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1075,7 +1097,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 138677,
+		"initialSize": 580167,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cross.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cross.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1086,7 +1108,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 148142,
+		"initialSize": 142641,
 		"inputAbbreviatedPath": "\/layoutImg\/fonc\/visu-fid.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-fid.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1210,6 +1232,105 @@
 		"initialSize": 1944,
 		"inputAbbreviatedPath": "\/layoutImg\/quote.png",
 		"outputAbbreviatedPath": "\/layoutImg\/quote.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ref\/alain.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 206615,
+		"inputAbbreviatedPath": "\/layoutImg\/ref\/alain.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ref\/alain.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ref\/aubert.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 168336,
+		"inputAbbreviatedPath": "\/layoutImg\/ref\/aubert.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ref\/aubert.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ref\/catimini.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 115073,
+		"inputAbbreviatedPath": "\/layoutImg\/ref\/catimini.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ref\/catimini.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ref\/histoire.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 196023,
+		"inputAbbreviatedPath": "\/layoutImg\/ref\/histoire.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ref\/histoire.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ref\/manfield.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 141391,
+		"inputAbbreviatedPath": "\/layoutImg\/ref\/manfield.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ref\/manfield.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ref\/rossignol.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153278,
+		"inputAbbreviatedPath": "\/layoutImg\/ref\/rossignol.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ref\/rossignol.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ref\/solaris.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 213382,
+		"inputAbbreviatedPath": "\/layoutImg\/ref\/solaris.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ref\/solaris.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ref\/tartine.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 182550,
+		"inputAbbreviatedPath": "\/layoutImg\/ref\/tartine.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ref\/tartine.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ref\/z.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 238864,
+		"inputAbbreviatedPath": "\/layoutImg\/ref\/z.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ref\/z.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1512,7 +1633,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Boris Forconi",
+"lastSavedByUser": "elisabeth",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1912,10 +2033,6 @@
 			"flagValue": -1
 			},
 		"shelljs": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"singleGroups": {
 			"active": 0,
 			"flagValue": -1
 			},

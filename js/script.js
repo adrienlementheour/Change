@@ -12,8 +12,6 @@ var timerSlideVid = 2.2;
 
 var indic;
 
-var animHencours = false;
-
 var myScroll;
 
 
@@ -48,7 +46,7 @@ function setBurgerMenu(){
 				moveBurgerMenu($('header'), 'close');
 			}
 			else{
-				$("#menu-header").animate({ "right": "-200px"}, "ease-in-out" );
+				$("#menu-main").animate({ "right": "-200px"}, "ease-in-out" );
 			}
 		    moveBurgerMenu($("body"), 'close');
 		    $("#masque").fadeOut();
@@ -58,7 +56,7 @@ function setBurgerMenu(){
  				moveBurgerMenu($("header"), 'open');
  			}
  			else{
-				$("#menu-header").animate({ "right": "0"}, "ease-in-out" );
+				$("#menu-main").animate({ "right": "0"}, "ease-in-out" );
 			}
 		    moveBurgerMenu($("body"), 'open');
 		    $("#masque").fadeIn(); 
@@ -69,7 +67,7 @@ function setBurgerMenu(){
 	$("#masque").click(function(){
 		moveBurgerMenu($("header"), 'close');
 		moveBurgerMenu($("body"), 'close'); 
-		$("#menu-header").animate({ "right": "-200px"}, "ease-in-out" );
+		$("#menu-main").animate({ "right": "-200px"}, "ease-in-out" );
 		$(this).fadeOut();
 		$('.hamburger').removeClass("burgerOn");
 	});
@@ -87,10 +85,10 @@ function adjustBurgerMenu(){
 function setSizeBugerMenu(){
 	if($(window).width() < 979){
 		var height = $(window).height() + 100;
-		$('#menu-header').css('height', height+'px');
+		$('#menu-main').css('height', height+'px');
 	}
 	else{
-		$('#menu-header').css('height', 'auto');
+		$('#menu-main').css('height', 'auto');
 	}
 }
 
@@ -157,7 +155,7 @@ function scroll(){
 		}
 
 		//Parallaxe solution
-		if($('body').hasClass('solution')){
+		if($('body').hasClass('solution') || $("body").hasClass('page-template-solution-php')){
 
 			if($(window).width() > 978){
 				$("#screen-solution").css("margin-bottom",myScrollH2+"px");
@@ -324,7 +322,7 @@ function slideshow(){
 function setSlider(){
 	for(var i = 0; i < slides.length; i++){
 		var src = slides.eq(i).data('img');
-		slides.eq(i).css('background-image', 'url(' + src + ')');
+		slides.eq(i).find('.img').css('background-image', 'url(' + src + ')');
 	}
 
 	for(var j = 0; j < vignettes.length-1; j++){
@@ -345,11 +343,6 @@ function setSlider(){
 /* Google maps */
 
 function initMap() {
-	var locations = [
-      ['Paris', 48.8597311, 2.3793472, "https://www.google.fr/maps/place/16+Bis+Avenue+Parmentier/@48.8597149,2.3792576,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66df744c37131:0xd60d5e672814a3e9"],
-      ['Strasbourg', 48.5809678, 7.7543122, "https://www.google.fr/maps/place/30+Quai+des+Bateliers/@48.5809678,7.7543122,17z/data=!3m1!4b1!4m2!3m1!1s0x4796c854f4ca5601:0x7c8b5e817e4619b0"]
-    ];
-
     var _zoom;
     
     if ($("body").hasClass("lt-ie9")) {    
@@ -377,8 +370,6 @@ function initMap() {
     var mapElement = document.getElementById('map');
 
     var map = new google.maps.Map(mapElement, mapOptions);
-
-    var pin = 'layoutImg/pin.png'; 
 
     var parmentier = new google.maps.Marker({ 
     	position: new google.maps.LatLng(locations[0][1], locations[0][2]),
@@ -488,7 +479,7 @@ $(function(){
 	setFirstStrong();
 
 	if($('html').hasClass('touch')){
-		$('#menu-header').find('a').on('click touchend', function(e) {
+		$('#menu-main').find('a').on('click touchend', function(e) {
 		    var el = $(this);
 		    var link = el.attr('href');
 		    window.location = link;
@@ -504,17 +495,16 @@ $(function(){
 		}
 	}
 
-	if ($("body").hasClass("solution")){
+	if ($("body").hasClass("solution") || $("body").hasClass('page-template-solution-php')){
 		visuSolution();
 		ploup();
 	}
 
-	if ($("body").hasClass("contactPage")){
+	if ($("body").hasClass("contactPage") || $("body").hasClass('page-template-contact-php')){
 		openForm();
-		google.maps.event.addDomListener(window, 'load', initMap);
 	}
 
-	if($('body').hasClass('references')){
+	if($('body').hasClass('references') || $("body").hasClass('page-template-references-php')){
 			openRef();
 		}
 
@@ -544,7 +534,7 @@ $(window).load(function(){
 		setSlider();
 	}
 	
-	if($('body').hasClass('solution')){
+	if($('body').hasClass('solution') || $("body").hasClass('page-template-solution-php')){
 		animVisuSolution();
 	}
 });

@@ -1,74 +1,43 @@
  <?php
- 
-$opened_mail = false;
-$opened_mail = ($_GET['open']=="1");
-   
-$opened_tel = false;
-$opened_tel = ($_GET['open']=="2");
 
-  
+ if(isset($_GET['open'])){
+ 	if ($_GET['open']=="1") {
+ 		$opened_mail = ($_GET['open']=="1");
+ 		$opened_tel = false;
+ 	}
+ 	if ($_GET['open']=="2") {
+ 		$opened_tel = ($_GET['open']=="2");
+ 		$opened_mail = false;
+ 	}
+ }else{
+ 	$opened_mail = false;
+ 	$opened_tel = false;
+ }
 
  $message_status = '';
  $erreurNom = '';
  $erreurSociete = '';
  $erreurMail = '';
  $erreurTel = '';
-
  $message_status2 = '';
  $erreurNom2 = '';
  $erreurTel2 = '';
-
  $erreurEnvoi = '';
 
+ if(isset($_POST['nom'])){ $nom = strip_tags($_POST['nom']); }else{ $nom = '';}
+ if(isset($_POST['societe'])){ $societe = strip_tags($_POST['societe']); }else{ $societe = ''; }
+ if(isset($_POST['mail'])){ $mail = strip_tags($_POST['mail']); }else{ $mail = ''; }
+ if(isset($_POST['tel'])){ $tel = strip_tags($_POST['tel']); }else{ $tel = ''; }
+ if(isset($_POST['message'])){ $message = strip_tags($_POST['message']); }else{ $message= ''; }
+ if(isset($_POST['nom2'])){ $nom2 = strip_tags($_POST['nom2']); }else{ $nom2 = ''; }
+ if(isset($_POST['tel2'])){ $tel2 = strip_tags($_POST['tel2']); }else{ $tel2 = ''; }
+ if(isset($_POST['periodeAM'])){ $periodeAM = strip_tags($_POST['periodeAM']); }else{ $periodeAM = ''; }
+ if(isset($_POST['periodePM'])){ $periodePM = strip_tags($_POST['periodePM']); }else{ $periodePM = ''; }
 
- $nom = strip_tags($_POST['nom']);
- $societe = strip_tags($_POST['societe']);
- $mail = strip_tags($_POST['mail']);
- $tel = strip_tags($_POST['tel']);
- $message = strip_tags($_POST['message']);
- $submitted = $_POST['submitted'];
+ // MAIL DE DESTINATION //////////////////////////////////////
+ $mailto = 'faustine.marechalle@proximis.com';
 
- $nom2 = strip_tags($_POST['nom2']);
- $tel2 = strip_tags($_POST['tel2']);
- $periodeAM = strip_tags($_POST['periodeAM']);
- $periodePM = strip_tags($_POST['periodePM']);
- $submitted2 = $_POST['submitted2'];
- 
- 
- 
- 
-// MAIL DE DESTINATION //////////////////////////////////////
-$mailto = 'faustine.marechalle@proximis.com';
- 
- 
- 
- 
- $subject = "Nouveau message provenant de change-commerce.com";
- $headers = 'De: '. $nom . "\r\n" .
- 			'Société: '. $societe . "\r\n" .
- 			'Tél: '. $tel . "\r\n" .
-			'Répondre : ' . $mail . "\r\n";
-
- $subject2 = "Demande d'appel telephonique sur change-commerce.com";
- $periodeIdeale = "– rien de coché –";
- if ($periodeAM === "on") {
- 		if ($periodePM === "on") {
-		 	 $periodeIdeale = "matin et après-midi";
-		} else {
-			 $periodeIdeale = "matin";
-		}
- } else {
- 	if ($periodePM === "on") {
- 		 $periodeIdeale = "après-midi ";
- 	}
- }
- $headers2 = 'De: '. $nom2 . "\r\n" .
-			 'Tél: '. $tel2 . "\r\n" .
-			 'Période idéale: '. $periodeIdeale . "\r\n" ;
- 
-
-
- if ( $submitted ) {
+ if(isset($_POST['submitted'])) {
  	if(empty($nom)) {
  		$erreurNom = 'Le champ <span>Nom</span> est obligatoire';
  		$message_status = "Erreur"; 
@@ -77,14 +46,14 @@ $mailto = 'faustine.marechalle@proximis.com';
  		$erreurSociete = 'Le champ <span>Société</span> est obligatoire';
  		$message_status = "Erreur"; 
  	}
-	if(empty($mail)) {
+ 	if(empty($mail)) {
  		$erreurMail = 'Le champ <span>Email</span> est obligatoire';
  		$message_status = "Erreur"; 
  	}else{
-		if(!(filter_var($mail, FILTER_VALIDATE_EMAIL))) {
-			$erreurMail = 'L’adresse email est invalide';
-			$message_status = "Erreur"; 
-		}
+ 		if(!(filter_var($mail, FILTER_VALIDATE_EMAIL))) {
+ 			$erreurMail = 'L’adresse email est invalide';
+ 			$message_status = "Erreur"; 
+ 		}
  	}
  	if(empty($tel)) {
  		$erreurTel = 'Le champ <span>Téléphone</span> est obligatoire';
@@ -95,23 +64,27 @@ $mailto = 'faustine.marechalle@proximis.com';
  			$message_status = "Erreur"; 
  		}
  	}
-	if($erreurNom == '' && $erreurSociete == '' && $erreurMail == '' && $erreurTel == ''){ 
-		 $sent = mail( $mailto, $subject, $headers, $message);
-		 if($sent) {
-		 	$message_status = "Demande envoyée";
-		 }
-		 else{ 
-		 	$message_status = "Erreur"; 	
-		 	$erreurEnvoi = "Votre message n'a pas pu être envoyé. Veuillez réessayer!";
-		}
-	}
-}
+ 	if($erreurNom == '' && $erreurSociete == '' && $erreurMail == '' && $erreurTel == ''){ 
+ 		$subject = "Nouveau message provenant de change-commerce.com";
+ 		$headers = 'De: '. $nom . "\r\n" .
+ 					'Société: '. $societe . "\r\n" .
+ 					'Tél: '. $tel . "\r\n" .
+ 					'Répondre : ' . $mail . "\r\n";
+ 		$sent = mail( $mailto, $subject, $headers, $message);
+ 		if($sent) {
+ 			$message_status = "Demande envoyée";
+ 		}
+ 		else{ 
+ 			$message_status = "Erreur"; 	
+ 			$erreurEnvoi = "Votre message n'a pas pu être envoyé. Veuillez réessayer!";
+ 		}
+ 	}
+ }
 
-
-if ( $submitted2 ) {
-	if(empty($tel2)) {
-		$erreurTel2 = 'Le champ <span>Téléphone</span> est obligatoire';
-		$message_status2 = "Erreur"; 
+ if(isset($_POST['submitted2'])) {
+ 	if(empty($tel2)) {
+ 		$erreurTel2 = 'Le champ <span>Téléphone</span> est obligatoire';
+ 		$message_status2 = "Erreur"; 
  	}else {
  		if (!(strlen($tel2) == 10 && ctype_digit($tel2))) {
  			$erreurTel2 = 'Numéro de téléphone incorrect';
@@ -123,18 +96,34 @@ if ( $submitted2 ) {
  		$message_status2 = "Erreur"; 
  	}
  	else{
-	 	if($erreurTel2 == '' && $erreurNom2 == ''){ 
-			$sent = mail( $mailto, $subject2, $headers2);
-			if($sent) {
-			 	$message_status2 = "Demande envoyée";
-		 	}
-		 	else{ 
-		 		$message_status2 = "Erreur"; 	
-		 		$erreurEnvoi = "Votre message n'a pas pu être envoyé. Veuillez réessayer!";
-			}
-		}
-	}
-}
+ 		if($erreurTel2 == '' && $erreurNom2 == ''){ 
+ 			$subject2 = "Demande d'appel telephonique sur change-commerce.com";
+ 			$periodeIdeale = "– rien de coché –";
+ 			if ($periodeAM === "on") {
+ 				if ($periodePM === "on") {
+ 				 	$periodeIdeale = "matin et après-midi";
+ 				} else {
+ 				 	$periodeIdeale = "matin";
+ 				}
+ 			} else {
+ 				if ($periodePM === "on") {
+ 				 	$periodeIdeale = "après-midi ";
+ 				}
+ 			}
+ 			$headers2 = 'De: '. $nom2 . "\r\n" .
+ 				 		'Tél: '. $tel2 . "\r\n" .
+ 				 		'Période idéale: '. $periodeIdeale . "\r\n" ;
+ 			$sent = mail( $mailto, $subject2, $headers2);
+ 			if($sent) {
+ 				$message_status2 = "Demande envoyée";
+ 			}
+ 			else{ 
+ 				$message_status2 = "Erreur"; 	
+ 				$erreurEnvoi = "Votre message n'a pas pu être envoyé. Veuillez réessayer!";
+ 			}
+ 		}
+ 	}
+ }
 
 ?>
 
@@ -172,7 +161,7 @@ if ( $submitted2 ) {
 	  	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
 	  	<link rel="stylesheet" href="css/libs/normalize.css">
-	  	<link rel="stylesheet" href="css/style.min.css">
+	  	<link rel="stylesheet" href="css/style.css">
 		<!--[if lt IE 7]>
 		<link rel="stylesheet" href="css/libs/ie6.css" />
 		<![endif]-->
@@ -187,16 +176,16 @@ if ( $submitted2 ) {
 				<div class="container">
 					<nav class="bottom-header">
 						<a href="./" id="logo" title="Retour à l'accueil" class="ir">Change - Cross Commerce</a>
-						<ul id="menu-header">
-							<li><a href="solution-cross-commerce" class="lien-menu-header" title="Solution"><span>Solution</span></a></li>
-							<li><a href="fonctionnalites" class="lien-menu-header" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
-							<li><a href="references" class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
-							<li class="lien-temp"><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
-							<li class="lien-temp"><a href="qui-sommes-nous" class="lien-menu-header" title="Entreprise"><span>Entreprise</span></a></li>
-							<li class="active"><a href="contacts" class="lien-menu-header lien-contact" title="Contacter la société Change"><span>Contact</span></a></li>
+						<ul id="menu-main">
+							<li><a href="solution-cross-commerce" title="Solution"><span>Solution</span></a></li>
+							<li><a href="fonctionnalites" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
+							<li><a href="references" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
+							<li class="lien-temp"><a href="programme-integrateurs" title="Partenaires"><span>Partenaires</span></a></li>
+							<li class="lien-temp"><a href="qui-sommes-nous" title="Entreprise"><span>Entreprise</span></a></li>
+							<li class="active"><a href="contacts" class="lien-contact" title="Contacter la société Change"><span>Contact</span></a></li>
 						</ul>
 						<div class="hamburger">
-							<a href="http://www.change-commerce.com" class="lien-menu-header symbole-burger" title="Déployer le menu">Menu <span class="symbole-burger"><span class="icon-burger1 b1"></span><span class="icon-burger2"></span><span class="icon-burger1 b3"></span></span></a>
+							<a href="http://www.change-commerce.com" class="symbole-burger" title="Déployer le menu">Menu <span class="symbole-burger"><span class="icon-burger1 b1"></span><span class="icon-burger2"></span><span class="icon-burger1 b3"></span></span></a>
 						</div>
 					</nav>
 				</div>
@@ -387,5 +376,13 @@ if ( $submitted2 ) {
 		<script src="js/libs/greensock/plugins/BezierPlugin.min.js" type="text/javascript" charset="utf-8"></script>
 		
 		<script src="js/min/script-min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var locations = [
+		      ['Paris', 48.8597311, 2.3793472, "https://www.google.fr/maps/place/16+Bis+Avenue+Parmentier/@48.8597149,2.3792576,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66df744c37131:0xd60d5e672814a3e9"],
+		      ['Strasbourg', 48.5809678, 7.7543122, "https://www.google.fr/maps/place/30+Quai+des+Bateliers/@48.5809678,7.7543122,17z/data=!3m1!4b1!4m2!3m1!1s0x4796c854f4ca5601:0x7c8b5e817e4619b0"]
+		    ];
+		    var pin = 'layoutImg/pin.png'; 
+			google.maps.event.addDomListener(window, 'load', initMap);
+		</script>
 	</body>
 </html>

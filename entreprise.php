@@ -71,7 +71,7 @@ $mailto = 'info@proximis.com';
 	  	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
 	  	<link rel="stylesheet" href="css/libs/normalize.css">
-	  	<link rel="stylesheet" href="css/style.min.css">
+	  	<link rel="stylesheet" href="css/style.css">
 		<!--[if lt IE 7]>
 		<link rel="stylesheet" href="css/libs/ie6.css" />
 		<![endif]-->
@@ -86,16 +86,16 @@ $mailto = 'info@proximis.com';
 				<div class="container">
 					<nav class="bottom-header">
 						<a href="./" id="logo" title="Retour à l'accueil" class="ir">Change - Cross Commerce</a>
-						<ul id="menu-header">
-							<li><a href="solution-cross-commerce" class="lien-menu-header" title="Solution"><span>Solution</span></a></li>
-							<li><a href="fonctionnalites" class="lien-menu-header" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
-							<li><a href="references" class="lien-menu-header" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
-							<li class="lien-temp"><a href="programme-integrateurs" class="lien-menu-header" title="Partenaires"><span>Partenaires</span></a></li>
-							<li class="active lien-temp"><a href="qui-sommes-nous" class="lien-menu-header" title="Entreprise"><span>Entreprise</span></a></li>
-							<li><a href="contacts" class="lien-menu-header lien-contact" title="Contact"><span>Contact</span></a></li>
+						<ul id="menu-main">
+							<li><a href="solution-cross-commerce" title="Solution"><span>Solution</span></a></li>
+							<li><a href="fonctionnalites" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
+							<li><a href="references" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
+							<li class="lien-temp"><a href="programme-integrateurs" title="Partenaires"><span>Partenaires</span></a></li>
+							<li class="active lien-temp"><a href="qui-sommes-nous" title="Entreprise"><span>Entreprise</span></a></li>
+							<li><a href="contacts" class="lien-contact" title="Contact"><span>Contact</span></a></li>
 						</ul>
 						<div class="hamburger">
-							<a href="http://www.change-commerce.com" class="lien-menu-header symbole-burger" title="Déployer le menu">Menu <span class="symbole-burger"><span class="icon-burger1 b1"></span><span class="icon-burger2"></span><span class="icon-burger1 b3"></span></span></a>
+							<a href="http://www.change-commerce.com" class="symbole-burger" title="Déployer le menu">Menu <span class="symbole-burger"><span class="icon-burger1 b1"></span><span class="icon-burger2"></span><span class="icon-burger1 b3"></span></span></a>
 						</div>
 					</nav>
 				</div>

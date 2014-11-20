@@ -576,10 +576,6 @@ a:active,
   line-height: 25px;
   right: -32px;
 }
-.lien-menu-header {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 blockquote {
   margin: 0 0 0 -70px;
 }
@@ -833,6 +829,8 @@ header > div {
   line-height: 20px;
   border: 0;
   color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .hamburger a .symbole-burger {
   width: 21px;
@@ -891,25 +889,25 @@ header > div {
 .lt-ie9 #logo {
   background: url('../layoutImg/logoChangeIE.png') no-repeat;
 }
-#menu-header {
+#menu-main {
   display: block;
   list-style: none;
 }
-#menu-header li {
+#menu-main li {
   display: inline-block;
   margin: 0 0 0 16px;
   height: 94px;
   vertical-align: top;
 }
-#menu-header li.lien-temp {
+#menu-main li.lien-temp {
   opacity: 0.5;
 }
-#menu-header li.active a,
-#menu-header li.current-menu-item a {
+#menu-main li.active a,
+#menu-main li.current-menu-item a {
   padding-top: 4px;
 }
-#menu-header li.active a:before,
-#menu-header li.current-menu-item a:before {
+#menu-main li.active a:before,
+#menu-main li.current-menu-item a:before {
   height: 94px;
   top: 4px;
   background: #f04a2f;
@@ -919,8 +917,8 @@ header > div {
   -o-transition: height 0.1s ease-in-out;
   transition: height 0.1s ease-in-out;
 }
-#menu-header li.active a:after,
-#menu-header li.current-menu-item a:after {
+#menu-main li.active a:after,
+#menu-main li.current-menu-item a:after {
   visibility: visible;
   top: -1px;
   -webkit-transition: top 0.1s ease-out 0.2s;
@@ -928,15 +926,8 @@ header > div {
   -o-transition: top 0.1s ease-out 0.2s;
   transition: top 0.1s ease-out 0.2s;
 }
-#menu-header li a {
-  display: block;
-  padding: 0 10px 0;
-  position: relative;
-  line-height: 94px;
-  color: #ffffff;
-  border: 0;
-}
-#menu-header li a.lien-contact {
+#menu-main li .lien-contact,
+#menu-main li#menu-item-54 a {
   text-transform: none;
   font-family: 'bariolBold', sans-serif;
   font-size: 1.1em;
@@ -947,24 +938,37 @@ header > div {
   line-height: 92px;
   height: 94px;
 }
-.lt-ie9 #menu-header li a.lien-contact {
+.lt-ie9 #menu-main li .lien-contact,
+.lt-ie9 #menu-main li#menu-item-54 a {
   line-height: 96px;
   height: 96px;
 }
-#menu-header li a.lien-contact:before {
+#menu-main li .lien-contact:before,
+#menu-main li#menu-item-54 a:before {
   bottom: 0;
 }
-#menu-header li a.lien-contact:after {
+#menu-main li .lien-contact:after,
+#menu-main li#menu-item-54 a:after {
   font-family: 'proximaNovaBold', sans-serif;
   font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-#menu-header li a span {
+#menu-main li a {
+  display: block;
+  padding: 0 10px 0;
+  position: relative;
+  line-height: 94px;
+  color: #ffffff;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#menu-main li a span {
   position: relative;
 }
-#menu-header li a:after {
+#menu-main li a:after {
   content: ' •';
   position: relative;
   font-size: 1.2em;
@@ -975,7 +979,7 @@ header > div {
   -o-transition: top 0.3s ease-in;
   transition: top 0.3s ease-in;
 }
-#menu-header li a:before {
+#menu-main li a:before {
   content: ' ';
   display: block;
   position: absolute;
@@ -989,19 +993,19 @@ header > div {
   -o-transition: height 0.3s ease-in;
   transition: height 0.3s ease-in;
 }
-.lt-ie9 #menu-header li a:before {
+.lt-ie9 #menu-main li a:before {
   bottom: 2px;
 }
-#menu-header li a:hover:before,
-#menu-header li a:focus:before {
+#menu-main li a:hover:before,
+#menu-main li a:focus:before {
   height: 94px;
   -webkit-transition: height 0.1s ease-in-out;
   -moz-transition: height 0.1s ease-in-out;
   -o-transition: height 0.1s ease-in-out;
   transition: height 0.1s ease-in-out;
 }
-#menu-header li a:hover:after,
-#menu-header li a:focus:after {
+#menu-main li a:hover:after,
+#menu-main li a:focus:after {
   visibility: visible;
   top: -1px;
   -webkit-transition: top 0.1s ease-out 0.2s;
@@ -1009,11 +1013,11 @@ header > div {
   -o-transition: top 0.1s ease-out 0.2s;
   transition: top 0.1s ease-out 0.2s;
 }
-#menu-header li a:active {
+#menu-main li a:active {
   opacity: 1;
   padding-top: 4px;
 }
-#menu-header li a:active:before {
+#menu-main li a:active:before {
   height: 94px;
   top: 4px;
   background: #f04a2f;
@@ -1023,7 +1027,7 @@ header > div {
   -o-transition: height 0.1s ease-in-out;
   transition: height 0.1s ease-in-out;
 }
-#menu-header li a:active:after {
+#menu-main li a:active:after {
   visibility: visible;
   top: -1px;
   -webkit-transition: top 0.1s ease-out 0.2s;
@@ -1031,11 +1035,11 @@ header > div {
   -o-transition: top 0.1s ease-out 0.2s;
   transition: top 0.1s ease-out 0.2s;
 }
-.lt-ie9 #menu-header li a {
+.lt-ie9 #menu-main li a {
   padding-left: 5px;
   padding-right: 5px;
 }
-.lt-ie9 #menu-header li {
+.lt-ie9 #menu-main li {
   margin: 0;
 }
 .social-small {
@@ -1231,11 +1235,15 @@ footer .footer-titre {
   text-rendering: optimizeLegibility;
   padding-bottom: 10px;
 }
-footer .menu-footer li {
+footer .menu-footer li,
+footer .col-left li,
+footer .col-mid li {
   display: inline;
   padding: 0 10px 0 0;
 }
-footer .menu-footer a {
+footer .menu-footer a,
+footer .col-left a,
+footer .col-mid a {
   color: #ffffff;
   font-family: 'proximaNovaSBold', sans-serif;
   font-size: 0.9em;
@@ -1245,7 +1253,11 @@ footer .menu-footer a {
   border: 0;
 }
 footer .menu-footer a:hover,
-footer .menu-footer a:focus {
+footer .col-left a:hover,
+footer .col-mid a:hover,
+footer .menu-footer a:focus,
+footer .col-left a:focus,
+footer .col-mid a:focus {
   color: #d4d1cb;
 }
 footer form {
@@ -1386,6 +1398,10 @@ footer form input {
 .home .home-ul {
   overflow: hidden;
   margin: 60px 0;
+}
+.home .home-ul p {
+  width: auto;
+  margin: 0;
 }
 .home .home-ul li {
   float: left;
@@ -1683,13 +1699,29 @@ footer form input {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: url(../layoutImg/accueil/aubert.jpg) no-repeat center center;
+}
+#slider .slides li div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#slider .slides li .img {
+  opacity: 0.7;
+  background: url(../layoutImg/ref/aubert.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
+#slider .slides li .fd {
+  background: #000;
+}
+#slider .slides li .deg {
+  background: url(../layoutImg/degRef2.png) repeat-x;
+  opacity: 0.3;
+}
 /* Page références */
-.references footer {
+.references footer,
+.page-template-references-php footer {
   margin: 0;
 }
 .ref-header {
@@ -1740,7 +1772,7 @@ footer form input {
 .ref li.openRef .fd,
 .ref li:hover .fd {
   top: 0;
-  opacity: 0.7;
+  opacity: 0.6;
   -webkit-transform: scale(1.05) rotate(0.01deg) translateZ(0px);
   -moz-transform: scale(1.05) rotate(0.01deg) translateZ(0px);
   -o-transform: scale(1.05) rotate(0.01deg) translateZ(0px);
@@ -1757,62 +1789,24 @@ footer form input {
 .ref li.blanc .maj {
   color: #ffffff;
 }
+.ref li.blanc .deg {
+  background: url(../layoutImg/degRef2.png) repeat-x;
+  opacity: 0.6;
+}
 .ref .fd {
   height: 430px;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 1;
+  opacity: 0.9;
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
-.ref .aubert {
-  background: url(../img/ref/aubert.jpg) no-repeat center center;
-  background-size: 100% auto;
-  background-size: cover;
-}
-.ref .histoire {
-  background: url(../img/ref/histoire.jpg) no-repeat center center;
-  background-size: 100% auto;
-  background-size: cover;
-}
-.ref .catimini {
-  background: url(../img/ref/catimini.jpg) no-repeat center center;
-  background-size: 100% auto;
-  background-size: cover;
-}
-.ref .manfield {
-  background: url(../img/ref/manfield.jpg) no-repeat center center;
-  background-size: 100% auto;
-  background-size: cover;
-}
-.ref .z {
-  background: url(../img/ref/z.jpg) no-repeat center center;
-  background-size: 100% auto;
-  background-size: cover;
-}
-.ref .alain {
-  background: url(../img/ref/alain.jpg) no-repeat center center;
-  background-size: 100% auto;
-  background-size: cover;
-}
-.ref .rossignol {
-  background: url(../img/ref/rossignol.jpg) no-repeat center center;
-  background-size: 100% auto;
-  background-size: cover;
-}
-.ref .solaris {
-  background: url(../img/ref/solaris.jpg) no-repeat center center;
-  background-size: 100% auto;
-  background-size: cover;
-}
-.ref .tartine {
-  background: url(../img/ref/tartine.jpg) no-repeat center center;
-  background-size: 100% auto;
-  background-size: cover;
+.ref .deg {
+  background: url(../layoutImg/degRef.png) repeat-x;
 }
 .ref .logo {
   position: absolute;
@@ -1881,20 +1875,25 @@ footer form input {
   display: block;
 }
 /* @group Page Solution */
-.solution p {
+.solution p,
+.page-template-solution-php p {
   font-size: 0.95em;
 }
-.solution .bloc-noir-fond {
+.solution .bloc-noir-fond,
+.page-template-solution-php .bloc-noir-fond {
   background: #202026 url(../layoutImg/solution/nana.jpg) no-repeat right bottom;
 }
-.solution .bloc-padding-left {
+.solution .bloc-padding-left,
+.page-template-solution-php .bloc-padding-left {
   width: 43%;
   float: right;
 }
-.solution .bloc-padding-left h4.first {
+.solution .bloc-padding-left h4.first,
+.page-template-solution-php .bloc-padding-left h4.first {
   margin-top: 37px;
 }
-.solution .icon-h24:before {
+.solution .icon-h24:before,
+.page-template-solution-php .icon-h24:before {
   left: -17px;
   margin-top: -2px;
 }
@@ -2407,100 +2406,133 @@ footer form input {
 }
 /* @end */
 /* Fonctionnalites */
-.touch .fonctionnalites .container.first {
+.touch .fonctionnalites .container.first,
+.touch .page-template-fonctionnalites-php .container.first {
   margin-top: 41px;
 }
-.fonctionnalites .content > div {
+.fonctionnalites .content > div,
+.page-template-fonctionnalites-php .content > div {
   padding: 70px 0;
   overflow: hidden;
 }
-.fonctionnalites .content > div.commande {
+.fonctionnalites .content > div.commande,
+.page-template-fonctionnalites-php .content > div.commande {
   padding-top: 0;
 }
-.fonctionnalites .noir .h3 {
+.fonctionnalites .noir .h3,
+.page-template-fonctionnalites-php .noir .h3 {
   color: #34343c;
 }
-.fonctionnalites .noir .liste-pictos li:before {
+.fonctionnalites .noir .liste-pictos li:before,
+.page-template-fonctionnalites-php .noir .liste-pictos li:before {
   color: #000;
 }
 .fonctionnalites .blanc .h3,
-.fonctionnalites .blanc .maj {
+.page-template-fonctionnalites-php .blanc .h3,
+.fonctionnalites .blanc .maj,
+.page-template-fonctionnalites-php .blanc .maj {
   color: #ffffff;
 }
-.fonctionnalites h1 {
+.fonctionnalites h1,
+.page-template-fonctionnalites-php h1 {
   padding-top: 90px;
   width: 585px;
 }
-.fonctionnalites .h3 {
+.fonctionnalites .h3,
+.page-template-fonctionnalites-php .h3 {
   padding: 6px 0 0;
 }
-.fonctionnalites .liste-pictos {
+.fonctionnalites .liste-pictos,
+.page-template-fonctionnalites-php .liste-pictos {
   width: 700px;
   padding-top: 20px;
 }
-.fonctionnalites .liste-pictos li {
+.fonctionnalites .liste-pictos li,
+.page-template-fonctionnalites-php .liste-pictos li {
   line-height: 21px;
 }
-.fonctionnalites .liste-pictos li:before {
+.fonctionnalites .liste-pictos li:before,
+.page-template-fonctionnalites-php .liste-pictos li:before {
   top: 20px;
   font-size: 27px;
 }
-.fonctionnalites .liste-pictos .icon-product-page:before {
+.fonctionnalites .liste-pictos .icon-product-page:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-product-page:before {
   font-size: 25px;
 }
-.fonctionnalites .liste-pictos .icon-cms-acronym:before {
+.fonctionnalites .liste-pictos .icon-cms-acronym:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-cms-acronym:before {
   top: 14px;
   font-size: 17px;
 }
-.fonctionnalites .liste-pictos .icon-order-treatment:before {
+.fonctionnalites .liste-pictos .icon-order-treatment:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-order-treatment:before {
   font-size: 23px;
 }
-.fonctionnalites .liste-pictos .icon-order-management:before {
+.fonctionnalites .liste-pictos .icon-order-management:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-order-management:before {
   top: 21px;
   font-size: 30px;
 }
 .fonctionnalites .liste-pictos .icon-cb:before,
-.fonctionnalites .liste-pictos .icon-seo:before {
+.page-template-fonctionnalites-php .liste-pictos .icon-cb:before,
+.fonctionnalites .liste-pictos .icon-seo:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-seo:before {
   top: 15px;
   font-size: 18px;
 }
-.fonctionnalites .liste-pictos .icon-backorders:before {
+.fonctionnalites .liste-pictos .icon-backorders:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-backorders:before {
   top: 14px;
   font-size: 18px;
 }
-.fonctionnalites .liste-pictos .icon-store-locator:before {
+.fonctionnalites .liste-pictos .icon-store-locator:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-store-locator:before {
   top: 25px;
   font-size: 40px;
 }
 .fonctionnalites .liste-pictos .icon-web-to-store:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-web-to-store:before,
 .fonctionnalites .liste-pictos .icon-store-to-web:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-store-to-web:before,
 .fonctionnalites .liste-pictos .icon-form:before,
-.fonctionnalites .liste-pictos .icon-map-seo:before {
+.page-template-fonctionnalites-php .liste-pictos .icon-form:before,
+.fonctionnalites .liste-pictos .icon-map-seo:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-map-seo:before {
   top: 22px;
   font-size: 32px;
 }
-.fonctionnalites .liste-pictos .icon-API-acronym:before {
+.fonctionnalites .liste-pictos .icon-API-acronym:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-API-acronym:before {
   top: 14px;
   font-size: 19px;
 }
 .fonctionnalites .liste-pictos .icon-email-notification:before,
-.fonctionnalites .liste-pictos .icon-news:before {
+.page-template-fonctionnalites-php .liste-pictos .icon-email-notification:before,
+.fonctionnalites .liste-pictos .icon-news:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-news:before {
   font-size: 24px;
 }
 .fonctionnalites .liste-pictos .icon-access-management:before,
-.fonctionnalites .liste-pictos .icon-workflow:before {
+.page-template-fonctionnalites-php .liste-pictos .icon-access-management:before,
+.fonctionnalites .liste-pictos .icon-workflow:before,
+.page-template-fonctionnalites-php .liste-pictos .icon-workflow:before {
   font-size: 18px;
 }
-.fonctionnalites .big-padding-left .liste-pictos {
+.fonctionnalites .big-padding-left .liste-pictos,
+.page-template-fonctionnalites-php .big-padding-left .liste-pictos {
   padding-left: 140px;
 }
-.fonctionnalites .merch .big-p {
+.fonctionnalites .merch .big-p,
+.page-template-fonctionnalites-php .merch .big-p {
   width: 725px;
 }
-.fonctionnalites .merch .liste-pictos {
+.fonctionnalites .merch .liste-pictos,
+.page-template-fonctionnalites-php .merch .liste-pictos {
   width: 635px;
 }
-.fonctionnalites .cms {
+.fonctionnalites .cms,
+.page-template-fonctionnalites-php .cms {
   height: 550px;
   background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat 30% 0 fixed;
   -webkit-background-size: 100% auto;
@@ -2512,19 +2544,23 @@ footer form input {
   z-index: 2;
   position: relative;
 }
-.lt-ie9 .fonctionnalites .cms {
+.lt-ie9 .fonctionnalites .cms,
+.lt-ie9 .page-template-fonctionnalites-php .cms {
   background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat center center fixed;
 }
-.touch .fonctionnalites .cms {
+.touch .fonctionnalites .cms,
+.touch .page-template-fonctionnalites-php .cms {
   background-attachment: scroll;
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   background-size: auto 100%;
 }
-.fonctionnalites .cms .big-p {
+.fonctionnalites .cms .big-p,
+.page-template-fonctionnalites-php .cms .big-p {
   width: 600px;
 }
-.fonctionnalites .commande {
+.fonctionnalites .commande,
+.page-template-fonctionnalites-php .commande {
   position: relative;
   height: 870px;
   background: url(../layoutImg/fonc/visu-commande.jpg) no-repeat bottom fixed;
@@ -2535,11 +2571,13 @@ footer form input {
   -moz-background-size: cover;
   background-size: cover;
 }
-.touch .fonctionnalites .commande {
+.touch .fonctionnalites .commande,
+.touch .page-template-fonctionnalites-php .commande {
   background-attachment: scroll;
   padding-bottom: 0;
 }
-.fonctionnalites .commande .fd-opaque {
+.fonctionnalites .commande .fd-opaque,
+.page-template-fonctionnalites-php .commande .fd-opaque {
   position: absolute;
   top: 0;
   left: 0;
@@ -2547,69 +2585,84 @@ footer form input {
   height: 250px;
   background: #ffffff;
 }
-.fonctionnalites .commande .contenu-commande {
+.fonctionnalites .commande .contenu-commande,
+.page-template-fonctionnalites-php .commande .contenu-commande {
   z-index: 2;
   position: relative;
   padding: 70px 0 20px;
   background: rgba(239, 235, 226, 0.9);
 }
-.lt-ie9 .fonctionnalites .commande .contenu-commande {
+.lt-ie9 .fonctionnalites .commande .contenu-commande,
+.lt-ie9 .page-template-fonctionnalites-php .commande .contenu-commande {
   background: url(../layoutImg/fonc/fd-ie-com.png);
 }
-.fonctionnalites .commande .liste-pictos {
+.fonctionnalites .commande .liste-pictos,
+.page-template-fonctionnalites-php .commande .liste-pictos {
   padding-top: 30px;
   width: 46%;
   display: inline-block;
   vertical-align: top;
 }
-.fonctionnalites .commande .liste-pictos.liste-first {
+.fonctionnalites .commande .liste-pictos.liste-first,
+.page-template-fonctionnalites-php .commande .liste-pictos.liste-first {
   margin-right: 75px;
 }
-.lt-ie9 .fonctionnalites .commande .liste-pictos {
+.lt-ie9 .fonctionnalites .commande .liste-pictos,
+.lt-ie9 .page-template-fonctionnalites-php .commande .liste-pictos {
   width: 45%;
 }
-.fonctionnalites .cross {
+.fonctionnalites .cross,
+.page-template-fonctionnalites-php .cross {
   position: relative;
 }
-.fonctionnalites .cross .container {
+.fonctionnalites .cross .container,
+.page-template-fonctionnalites-php .cross .container {
   position: relative;
   z-index: 2;
 }
-.fonctionnalites .cross .fd {
+.fonctionnalites .cross .fd,
+.page-template-fonctionnalites-php .cross .fd {
   width: 54%;
   height: 734px;
   background: url(../layoutImg/fonc/visu-cross.jpg) no-repeat;
 }
-.fonctionnalites .api {
+.fonctionnalites .api,
+.page-template-fonctionnalites-php .api {
   height: 375px;
   background: #202026 url(../layoutImg/fonc/api.png) no-repeat;
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   background-size: auto 100%;
 }
-.fonctionnalites .fid {
+.fonctionnalites .fid,
+.page-template-fonctionnalites-php .fid {
   position: relative;
   background: #efebe2;
 }
-.fonctionnalites .fid .container {
+.fonctionnalites .fid .container,
+.page-template-fonctionnalites-php .fid .container {
   position: relative;
   z-index: 2;
 }
-.fonctionnalites .fid .fd {
+.fonctionnalites .fid .fd,
+.page-template-fonctionnalites-php .fid .fd {
   width: 50%;
   height: 741px;
   background: url(../layoutImg/fonc/visu-fid.jpg) no-repeat;
 }
-.fonctionnalites .fid .liste-pictos {
+.fonctionnalites .fid .liste-pictos,
+.page-template-fonctionnalites-php .fid .liste-pictos {
   width: 635px;
 }
-.fonctionnalites .secu {
+.fonctionnalites .secu,
+.page-template-fonctionnalites-php .secu {
   background: url(../layoutImg/fonc/visu-secu.png) no-repeat 50% 0;
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   background-size: auto 100%;
 }
-.fonctionnalites .inter {
+.fonctionnalites .inter,
+.page-template-fonctionnalites-php .inter {
   height: 575px;
   background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
   -webkit-background-size: 100% auto;
@@ -2619,19 +2672,23 @@ footer form input {
   -moz-background-size: cover;
   background-size: cover;
 }
-.touch .fonctionnalites .inter {
+.touch .fonctionnalites .inter,
+.touch .page-template-fonctionnalites-php .inter {
   background-attachment: scroll;
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   background-size: auto 100%;
 }
-.fonctionnalites .inter .big-p {
+.fonctionnalites .inter .big-p,
+.page-template-fonctionnalites-php .inter .big-p {
   width: 505px;
 }
-.fonctionnalites .tab {
+.fonctionnalites .tab,
+.page-template-fonctionnalites-php .tab {
   position: absolute;
 }
-.fonctionnalites .tab.tab1 {
+.fonctionnalites .tab.tab1,
+.page-template-fonctionnalites-php .tab.tab1 {
   background: url(../layoutImg/fonc/ipad1.png) no-repeat;
   bottom: -278px;
   right: 0;
@@ -2643,7 +2700,8 @@ footer form input {
   -ms-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
-.fonctionnalites .tab.tab2 {
+.fonctionnalites .tab.tab2,
+.page-template-fonctionnalites-php .tab.tab2 {
   background: url(../layoutImg/fonc/ipad2.png) no-repeat;
   right: -165px;
   bottom: 100px;
@@ -2655,37 +2713,49 @@ footer form input {
   -ms-transform: rotate(5deg);
   transform: rotate(5deg);
 }
-.fonctionnalites .maj {
+.fonctionnalites .maj,
+.page-template-fonctionnalites-php .maj {
   padding: 2px 0 0;
 }
-.fonctionnalites .encadre {
+.fonctionnalites .encadre,
+.page-template-fonctionnalites-php .encadre {
   margin-top: 0;
 }
-.fonctionnalites .encadre .bloc-icon-encadre {
+.fonctionnalites .encadre .bloc-icon-encadre,
+.page-template-fonctionnalites-php .encadre .bloc-icon-encadre {
   width: 155px;
   height: 155px;
 }
-.fonctionnalites .encadre .bloc-txt-encadre {
+.fonctionnalites .encadre .bloc-txt-encadre,
+.page-template-fonctionnalites-php .encadre .bloc-txt-encadre {
   padding: 0 0 0 187px;
 }
 .fonctionnalites .encadre .icon-cms,
+.page-template-fonctionnalites-php .encadre .icon-cms,
 .fonctionnalites .encadre .icon-box,
-.fonctionnalites .encadre .icon-target {
+.page-template-fonctionnalites-php .encadre .icon-box,
+.fonctionnalites .encadre .icon-target,
+.page-template-fonctionnalites-php .encadre .icon-target {
   font-size: 65px;
 }
-.fonctionnalites .encadre .icon-crosscommerce {
+.fonctionnalites .encadre .icon-crosscommerce,
+.page-template-fonctionnalites-php .encadre .icon-crosscommerce {
   font-size: 90px;
 }
-.fonctionnalites .encadre .icon-lock {
+.fonctionnalites .encadre .icon-lock,
+.page-template-fonctionnalites-php .encadre .icon-lock {
   font-size: 55px;
 }
-.fonctionnalites .encadre .icon-worldwide {
+.fonctionnalites .encadre .icon-worldwide,
+.page-template-fonctionnalites-php .encadre .icon-worldwide {
   font-size: 70px;
 }
-.fonctionnalites footer {
+.fonctionnalites footer,
+.page-template-fonctionnalites-php footer {
   margin-top: 0;
 }
-.fonctionnalites .fd {
+.fonctionnalites .fd,
+.page-template-fonctionnalites-php .fd {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -2709,16 +2779,21 @@ footer form input {
 }
 /* @end */
 /* Plan du site */
-.plan .first ul {
+.plan .first ul,
+.page-id-21 .first ul {
   margin-top: 30px;
 }
-.plan .first ul a {
+.plan .first ul a,
+.page-id-21 .first ul a {
   border: 0;
   color: #34343c;
 }
 .plan .first ul a:hover,
+.page-id-21 .first ul a:hover,
 .plan .first ul a:focus,
-.plan .first ul a:active {
+.page-id-21 .first ul a:focus,
+.plan .first ul a:active,
+.page-id-21 .first ul a:active {
   color: #f04a2f;
   border-bottom: 1px solid #eecfcb;
 }
@@ -2882,15 +2957,16 @@ footer form input {
   .containerRight {
     display: block;
   }
-  #menu-header li {
+  #menu-main li {
     margin: 0 0 0 3px;
   }
-  #menu-header li a {
+  #menu-main li .lien-contact,
+  #menu-main li#menu-item-54 a {
+    font-size: 1em;
+  }
+  #menu-main li a {
     padding: 0 8px 0;
     font-size: 0.7em;
-  }
-  #menu-header li a.lien-contact {
-    font-size: 1em;
   }
   #logo {
     margin: 28px 0 0 25px;
@@ -2956,25 +3032,32 @@ footer form input {
     display: block;
   }
   .solution > .container,
-  .solution > div .container {
+  .page-template-solution-php > .container,
+  .solution > div .container,
+  .page-template-solution-php > div .container {
     padding-left: 30px;
     padding-right: 30px;
   }
   .solution > .container .container,
-  .solution > div .container .container {
+  .page-template-solution-php > .container .container,
+  .solution > div .container .container,
+  .page-template-solution-php > div .container .container {
     padding-left: 0;
     padding-right: 0;
   }
-  .solution .bloc-noir-fond {
+  .solution .bloc-noir-fond,
+  .page-template-solution-php .bloc-noir-fond {
     background-position: 280px bottom;
     background-size: 80%;
   }
-  .solution .bloc-padding-left {
+  .solution .bloc-padding-left,
+  .page-template-solution-php .bloc-padding-left {
     float: none;
     width: 100%;
     margin-top: -70px;
   }
-  .solution .big-padding-left {
+  .solution .big-padding-left,
+  .page-template-solution-php .big-padding-left {
     margin-top: 455px;
   }
   .fd-shop {
@@ -3012,36 +3095,47 @@ footer form input {
     width: 100%;
   }
   .fonctionnalites .content .container,
-  .fonctionnalites .titre-fonctionnalite .container {
+  .page-template-fonctionnalites-php .content .container,
+  .fonctionnalites .titre-fonctionnalite .container,
+  .page-template-fonctionnalites-php .titre-fonctionnalite .container {
     width: 90%;
   }
   .fonctionnalites .content .container.big-padding-left,
-  .fonctionnalites .titre-fonctionnalite .container.big-padding-left {
+  .page-template-fonctionnalites-php .content .container.big-padding-left,
+  .fonctionnalites .titre-fonctionnalite .container.big-padding-left,
+  .page-template-fonctionnalites-php .titre-fonctionnalite .container.big-padding-left {
     padding-left: 15%;
   }
-  .fonctionnalites .big-padding-left .liste-pictos {
+  .fonctionnalites .big-padding-left .liste-pictos,
+  .page-template-fonctionnalites-php .big-padding-left .liste-pictos {
     width: 80%;
   }
-  .fonctionnalites .commande {
+  .fonctionnalites .commande,
+  .page-template-fonctionnalites-php .commande {
     -webkit-background-size: auto 100%;
     -moz-background-size: auto 100%;
     background-size: auto 100%;
   }
-  .fonctionnalites .commande .liste-pictos {
+  .fonctionnalites .commande .liste-pictos,
+  .page-template-fonctionnalites-php .commande .liste-pictos {
     width: 45%;
   }
-  .fonctionnalites .api {
+  .fonctionnalites .api,
+  .page-template-fonctionnalites-php .api {
     background: #202026 url(../layoutImg/fonc/api2.png) no-repeat;
     -webkit-background-size: auto 100%;
     -moz-background-size: auto 100%;
     background-size: auto 100%;
   }
   .fonctionnalites .tab.tab1,
-  .fonctionnalites .tab.tab2 {
+  .page-template-fonctionnalites-php .tab.tab1,
+  .fonctionnalites .tab.tab2,
+  .page-template-fonctionnalites-php .tab.tab2 {
     width: 50%;
     background-size: 100%;
   }
-  .fonctionnalites .tab.tab1 {
+  .fonctionnalites .tab.tab1,
+  .page-template-fonctionnalites-php .tab.tab1 {
     width: 40%;
     right: -110px;
   }
@@ -3065,7 +3159,7 @@ footer form input {
   .hamburger {
     display: block;
   }
-  #menu-header {
+  #menu-main {
     background: #202026;
     position: absolute;
     padding: 50px 15px 0;
@@ -3077,34 +3171,35 @@ footer form input {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .touch #menu-header {
+  .touch #menu-main {
     position: fixed;
   }
-  #menu-header li {
+  #menu-main li {
     display: block;
     height: auto;
     overflow: hidden;
   }
-  #menu-header li.active a,
-  #menu-header li.current-menu-item a {
+  #menu-main li.active a,
+  #menu-main li.current-menu-item a {
     padding-top: 0;
   }
-  #menu-header li.active a:before,
-  #menu-header li.current-menu-item a:before {
+  #menu-main li.active a:before,
+  #menu-main li.current-menu-item a:before {
     height: 51px;
     top: 0;
   }
-  #menu-header li a {
-    text-align: left;
-    line-height: 50px;
-  }
-  #menu-header li a.lien-contact {
+  #menu-main li#menu-item-54 a,
+  #menu-main li .lien-contact {
     line-height: 50px;
     height: auto;
   }
-  #menu-header li a:focus:before,
-  #menu-header li a:hover:before,
-  #menu-header li a:active:before {
+  #menu-main li a {
+    text-align: left;
+    line-height: 50px;
+  }
+  #menu-main li a:focus:before,
+  #menu-main li a:hover:before,
+  #menu-main li a:active:before {
     height: 51px;
   }
   #contact .liens-contact {
@@ -3115,7 +3210,9 @@ footer form input {
   #contact .icon-tel {
     margin-left: 58px;
   }
-  footer .menu-footer a {
+  footer .menu-footer a,
+  footer .col-left a,
+  footer .col-mid a {
     font-size: 1em;
   }
   footer.contactUp {
@@ -3194,10 +3291,12 @@ footer form input {
     left: 0;
     margin-left: 0;
   }
-  .solution .big-padding-left {
+  .solution .big-padding-left,
+  .page-template-solution-php .big-padding-left {
     margin-top: 500px;
   }
-  .solution .bloc-padding-left {
+  .solution .bloc-padding-left,
+  .page-template-solution-php .bloc-padding-left {
     margin-top: 60px;
   }
   .schema {
@@ -3293,46 +3392,61 @@ footer form input {
   .fd-saas .nuage2 {
     display: none;
   }
-  .fonctionnalites .content .container.big-padding-left {
+  .fonctionnalites .content .container.big-padding-left,
+  .page-template-fonctionnalites-php .content .container.big-padding-left {
     padding-left: 0;
   }
   .fonctionnalites .content .cross,
-  .fonctionnalites .content .fid {
+  .page-template-fonctionnalites-php .content .cross,
+  .fonctionnalites .content .fid,
+  .page-template-fonctionnalites-php .content .fid {
     padding-bottom: 0;
   }
   .fonctionnalites .fid .fd,
-  .fonctionnalites .cross .fd {
+  .page-template-fonctionnalites-php .fid .fd,
+  .fonctionnalites .cross .fd,
+  .page-template-fonctionnalites-php .cross .fd {
     width: 100%;
     background-size: 100%;
     height: auto;
     padding-bottom: 71%;
   }
-  .fonctionnalites .merch .big-p {
+  .fonctionnalites .merch .big-p,
+  .page-template-fonctionnalites-php .merch .big-p {
     width: 100%;
   }
-  .fonctionnalites .merch .container {
+  .fonctionnalites .merch .container,
+  .page-template-fonctionnalites-php .merch .container {
     padding-bottom: 370px;
   }
-  .fonctionnalites .fid .big-p br {
+  .fonctionnalites .fid .big-p br,
+  .page-template-fonctionnalites-php .fid .big-p br {
     display: none;
   }
-  .fonctionnalites .tab.tab1 {
+  .fonctionnalites .tab.tab1,
+  .page-template-fonctionnalites-php .tab.tab1 {
     width: 443px;
     right: 200px;
   }
-  .fonctionnalites .tab.tab2 {
+  .fonctionnalites .tab.tab2,
+  .page-template-fonctionnalites-php .tab.tab2 {
     width: 542px;
     bottom: -50px;
   }
   .fonctionnalites .inter,
+  .page-template-fonctionnalites-php .inter,
   .fonctionnalites .api,
-  .fonctionnalites .cms {
+  .page-template-fonctionnalites-php .api,
+  .fonctionnalites .cms,
+  .page-template-fonctionnalites-php .cms {
     height: auto;
   }
-  .fonctionnalites .commande .liste-pictos {
+  .fonctionnalites .commande .liste-pictos,
+  .page-template-fonctionnalites-php .commande .liste-pictos {
     width: 44%;
   }
-  .fonctionnalites .fd {
+  .fonctionnalites .fd,
+  .page-template-fonctionnalites-php .fd {
     position: relative;
   }
   .titre-fonctionnalite {
@@ -3379,10 +3493,12 @@ footer form input {
   .fd-saas {
     width: 100%;
   }
-  .fonctionnalites .cms .big-p {
+  .fonctionnalites .cms .big-p,
+  .page-template-fonctionnalites-php .cms .big-p {
     width: auto;
   }
-  .fonctionnalites .commande .fd-opaque {
+  .fonctionnalites .commande .fd-opaque,
+  .page-template-fonctionnalites-php .commande .fd-opaque {
     height: 280px;
   }
 }
@@ -3427,29 +3543,38 @@ footer form input {
   #bloc-visu-solution {
     height: 430px;
   }
-  .solution .big-padding-left {
+  .solution .big-padding-left,
+  .page-template-solution-php .big-padding-left {
     margin-top: 430px;
   }
-  .fonctionnalites h1 {
+  .fonctionnalites h1,
+  .page-template-fonctionnalites-php h1 {
     width: 78%;
   }
-  .fonctionnalites .commande {
+  .fonctionnalites .commande,
+  .page-template-fonctionnalites-php .commande {
     height: auto;
   }
-  .fonctionnalites .commande .fd-opaque {
+  .fonctionnalites .commande .fd-opaque,
+  .page-template-fonctionnalites-php .commande .fd-opaque {
     height: 290px;
   }
-  .fonctionnalites .commande .liste-pictos {
+  .fonctionnalites .commande .liste-pictos,
+  .page-template-fonctionnalites-php .commande .liste-pictos {
     width: 100%;
   }
   .fonctionnalites .merch .liste-pictos,
-  .fonctionnalites .fid .liste-pictos {
+  .page-template-fonctionnalites-php .merch .liste-pictos,
+  .fonctionnalites .fid .liste-pictos,
+  .page-template-fonctionnalites-php .fid .liste-pictos {
     width: 100%;
   }
-  .fonctionnalites .inter .big-p {
+  .fonctionnalites .inter .big-p,
+  .page-template-fonctionnalites-php .inter .big-p {
     width: auto;
   }
-  .fonctionnalites .liste-pictos {
+  .fonctionnalites .liste-pictos,
+  .page-template-fonctionnalites-php .liste-pictos {
     width: 100%;
   }
   .schema {
@@ -3672,23 +3797,28 @@ footer form input {
     text-indent: 0;
     line-height: 32px;
   }
-  .solution .bloc-noir-fond {
+  .solution .bloc-noir-fond,
+  .page-template-solution-php .bloc-noir-fond {
     background-position: right bottom;
     background-size: 100%;
     padding-bottom: 200px;
   }
   .encadre .bloc-txt-encadre,
-  .fonctionnalites .encadre .bloc-txt-encadre {
+  .fonctionnalites .encadre .bloc-txt-encadre,
+  .page-template-fonctionnalites-php .encadre .bloc-txt-encadre {
     padding: 50px 0 0;
   }
   .encadre .bloc-txt-encadre h3,
   .fonctionnalites .encadre .bloc-txt-encadre h3,
+  .page-template-fonctionnalites-php .encadre .bloc-txt-encadre h3,
   .encadre .bloc-txt-encadre .h3,
-  .fonctionnalites .encadre .bloc-txt-encadre .h3 {
+  .fonctionnalites .encadre .bloc-txt-encadre .h3,
+  .page-template-fonctionnalites-php .encadre .bloc-txt-encadre .h3 {
     text-indent: 170px;
   }
   .encadre .bloc-txt-encadre p.big-p,
-  .fonctionnalites .encadre .bloc-txt-encadre p.big-p {
+  .fonctionnalites .encadre .bloc-txt-encadre p.big-p,
+  .page-template-fonctionnalites-php .encadre .bloc-txt-encadre p.big-p {
     margin-top: 70px;
   }
   .liste-pictos2 {
@@ -3698,19 +3828,23 @@ footer form input {
     padding-left: 0;
     width: 97%;
   }
-  .fonctionnalites .big-padding-left .liste-pictos {
+  .fonctionnalites .big-padding-left .liste-pictos,
+  .page-template-fonctionnalites-php .big-padding-left .liste-pictos {
     padding-left: 0;
     width: 100%;
   }
-  .fonctionnalites .commande .fd-opaque {
+  .fonctionnalites .commande .fd-opaque,
+  .page-template-fonctionnalites-php .commande .fd-opaque {
     height: 410px;
   }
-  .fonctionnalites .tab.tab1 {
+  .fonctionnalites .tab.tab1,
+  .page-template-fonctionnalites-php .tab.tab1 {
     width: 60%;
     right: 30%;
     bottom: -30%;
   }
-  .fonctionnalites .tab.tab2 {
+  .fonctionnalites .tab.tab2,
+  .page-template-fonctionnalites-php .tab.tab2 {
     width: 75%;
     right: -120px;
     bottom: -10%;
@@ -3749,48 +3883,64 @@ footer form input {
     background-size: 70%;
   }
   .encadre .bloc-icon-encadre,
-  .fonctionnalites .encadre .bloc-icon-encadre {
+  .fonctionnalites .encadre .bloc-icon-encadre,
+  .page-template-fonctionnalites-php .encadre .bloc-icon-encadre {
     width: 80px;
     height: 80px;
   }
   .encadre .bloc-icon-encadre .icon-cross,
   .fonctionnalites .encadre .bloc-icon-encadre .icon-cross,
+  .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-cross,
   .encadre .bloc-icon-encadre .icon-tshirt,
   .fonctionnalites .encadre .bloc-icon-encadre .icon-tshirt,
+  .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-tshirt,
   .encadre .bloc-icon-encadre .icon-plug,
-  .fonctionnalites .encadre .bloc-icon-encadre .icon-plug {
+  .fonctionnalites .encadre .bloc-icon-encadre .icon-plug,
+  .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-plug {
     font-size: 80px;
   }
   .encadre .bloc-icon-encadre .icon-cloud,
-  .fonctionnalites .encadre .bloc-icon-encadre .icon-cloud {
+  .fonctionnalites .encadre .bloc-icon-encadre .icon-cloud,
+  .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-cloud {
     font-size: 110px;
   }
   .encadre .bloc-txt-encadre,
-  .fonctionnalites .encadre .bloc-txt-encadre {
+  .fonctionnalites .encadre .bloc-txt-encadre,
+  .page-template-fonctionnalites-php .encadre .bloc-txt-encadre {
     padding: 15px 0 0;
   }
   .encadre .bloc-txt-encadre h3,
   .fonctionnalites .encadre .bloc-txt-encadre h3,
+  .page-template-fonctionnalites-php .encadre .bloc-txt-encadre h3,
   .encadre .bloc-txt-encadre .h3,
-  .fonctionnalites .encadre .bloc-txt-encadre .h3 {
+  .fonctionnalites .encadre .bloc-txt-encadre .h3,
+  .page-template-fonctionnalites-php .encadre .bloc-txt-encadre .h3 {
     text-indent: 100px;
   }
-  .fonctionnalites .encadre .bloc-txt-encadre p.big-p {
+  .fonctionnalites .encadre .bloc-txt-encadre p.big-p,
+  .page-template-fonctionnalites-php .encadre .bloc-txt-encadre p.big-p {
     margin-top: 40px;
   }
   .fonctionnalites .encadre .icon-cms,
+  .page-template-fonctionnalites-php .encadre .icon-cms,
   .fonctionnalites .encadre .icon-box,
+  .page-template-fonctionnalites-php .encadre .icon-box,
   .fonctionnalites .encadre .icon-target,
-  .fonctionnalites .encadre .icon-worldwide {
+  .page-template-fonctionnalites-php .encadre .icon-target,
+  .fonctionnalites .encadre .icon-worldwide,
+  .page-template-fonctionnalites-php .encadre .icon-worldwide {
     font-size: 50px;
   }
-  .fonctionnalites .encadre .icon-crosscommerce {
+  .fonctionnalites .encadre .icon-crosscommerce,
+  .page-template-fonctionnalites-php .encadre .icon-crosscommerce {
     font-size: 65px;
   }
-  .fonctionnalites .encadre .icon-lock {
+  .fonctionnalites .encadre .icon-lock,
+  .page-template-fonctionnalites-php .encadre .icon-lock {
     font-size: 44px;
   }
-  .fonctionnalites .commande .fd-opaque {
+  .fonctionnalites .commande .fd-opaque,
+  .page-template-fonctionnalites-php .commande .fd-opaque {
     height: 340px;
   }
   .temp {
@@ -3880,7 +4030,7 @@ footer form input {
     background: #efebe2;
   }
   .ref li .fd {
-    background: none;
+    background: none !important;
   }
   .encadre .bloc-txt-encadre p.big-p {
     font-size: 1.5em;
@@ -3889,7 +4039,8 @@ footer form input {
   #screen-solution {
     background-size: 80%;
   }
-  .solution .container.padding-top-bottom {
+  .solution .container.padding-top-bottom,
+  .page-template-solution-php .container.padding-top-bottom {
     padding-top: 0;
   }
   .fd-saas {
@@ -4007,10 +4158,12 @@ footer form input {
     left: -79px;
     top: 86px;
   }
-  .fonctionnalites h1 {
+  .fonctionnalites h1,
+  .page-template-fonctionnalites-php h1 {
     width: 100%;
   }
-  .fonctionnalites .commande .fd-opaque {
+  .fonctionnalites .commande .fd-opaque,
+  .page-template-fonctionnalites-php .commande .fd-opaque {
     height: 300px;
   }
   .titre-fonctionnalite {
@@ -4090,13 +4243,16 @@ footer form input {
   #contactTel .facultatif {
     display: inline;
   }
-  .solution .big-h3 {
+  .solution .big-h3,
+  .page-template-solution-php .big-h3 {
     font-size: 1.5em;
   }
-  .fonctionnalites .commande .fd-opaque {
+  .fonctionnalites .commande .fd-opaque,
+  .page-template-fonctionnalites-php .commande .fd-opaque {
     height: 350px;
   }
-  .fonctionnalites .encadre .bloc-txt-encadre .h3 {
+  .fonctionnalites .encadre .bloc-txt-encadre .h3,
+  .page-template-fonctionnalites-php .encadre .bloc-txt-encadre .h3 {
     text-indent: 0;
     padding-left: 90px;
     line-height: 30px;
@@ -4106,10 +4262,12 @@ footer form input {
   #slider .slides {
     height: 900px;
   }
-  .fonctionnalites .merch .container {
+  .fonctionnalites .merch .container,
+  .page-template-fonctionnalites-php .merch .container {
     padding-bottom: 270px;
   }
-  .fonctionnalites .tab.tab2 {
+  .fonctionnalites .tab.tab2,
+  .page-template-fonctionnalites-php .tab.tab2 {
     right: -80px;
     bottom: -15%;
   }
@@ -4181,7 +4339,8 @@ footer form input {
   #sliderVid .slides {
     height: 360px;
   }
-  .solution .big-h4 {
+  .solution .big-h4,
+  .page-template-solution-php .big-h4 {
     text-indent: 0;
   }
   .encadre .bloc-txt-encadre {
@@ -4236,13 +4395,16 @@ footer form input {
     left: -120px;
     background-size: 100%;
   }
-  .fonctionnalites h1 {
+  .fonctionnalites h1,
+  .page-template-fonctionnalites-php h1 {
     padding-top: 50px;
   }
-  .fonctionnalites .tab.tab2 {
+  .fonctionnalites .tab.tab2,
+  .page-template-fonctionnalites-php .tab.tab2 {
     width: 85%;
   }
-  .fonctionnalites .tab.tab1 {
+  .fonctionnalites .tab.tab1,
+  .page-template-fonctionnalites-php .tab.tab1 {
     width: 75%;
     right: 22%;
     bottom: -30%;
