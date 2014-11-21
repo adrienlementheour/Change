@@ -599,36 +599,6 @@ form {
   width: 750px;
   margin: 25px 0 0;
 }
-form label,
-form legend {
-  display: block;
-  font-family: 'proximaNovaSBold', sans-serif;
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  color: #0c364e;
-  line-height: 30px;
-}
-form label.facultatif,
-form legend.facultatif,
-form label.labelBox,
-form legend.labelBox {
-  font-family: 'proximaNova', sans-serif;
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-form label span,
-form legend span {
-  font-family: 'proximaNovaIt', sans-serif;
-  font-size: 0.75em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  color: #54b8e7;
-}
 form fieldset {
   display: inline-block;
   margin: 0 48px 20px 0;
@@ -701,6 +671,36 @@ form input.secondBox {
 form textarea {
   height: 150px;
   width: 98%;
+}
+label,
+legend {
+  display: block;
+  font-family: 'proximaNovaSBold', sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #0c364e;
+  line-height: 30px;
+}
+label.facultatif,
+legend.facultatif,
+label.labelBox,
+legend.labelBox {
+  font-family: 'proximaNova', sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+label span,
+legend span {
+  font-family: 'proximaNovaIt', sans-serif;
+  font-size: 0.75em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #54b8e7;
 }
 #envoyer {
   display: block;
@@ -1216,8 +1216,26 @@ footer .col-right {
 footer .col-right nav {
   float: left;
 }
-footer .col-right form {
+footer .col-right > form,
+footer .col-right .news {
   float: right;
+}
+footer .col-right > form form,
+footer .col-right .news form {
+  display: inline-block;
+}
+footer .col-right form {
+  width: auto;
+  margin: 0;
+}
+footer .col-right input {
+  vertical-align: middle;
+  height: auto;
+}
+footer .col-right label {
+  color: #ffffff;
+  font-size: 0.9em;
+  display: inline;
 }
 .lt-ie9 footer .col-right {
   width: 40%;
@@ -1260,19 +1278,6 @@ footer .col-left a:focus,
 footer .col-mid a:focus {
   color: #d4d1cb;
 }
-footer form {
-  width: auto;
-  margin: 0;
-}
-footer form label {
-  color: #ffffff;
-  font-size: 0.9em;
-  display: inline;
-}
-footer form input {
-  vertical-align: middle;
-  height: auto;
-}
 #email {
   width: 140px;
   background: none;
@@ -1296,7 +1301,8 @@ footer form input {
   -o-transition: border 0.2s ease-in;
   transition: border 0.2s ease-in;
 }
-#bouton-ok {
+#bouton-ok,
+.mailjet-subscribe {
   width: auto;
   font-family: 'bariolBold', sans-serif;
   font-size: 0.9em;
@@ -1310,7 +1316,9 @@ footer form input {
   transition: all 0.2s ease-out;
 }
 #bouton-ok:hover,
-#bouton-ok:focus {
+.mailjet-subscribe:hover,
+#bouton-ok:focus,
+.mailjet-subscribe:focus {
   background: #ffffff;
   color: #47acdc;
   -webkit-transition: all 0.2s ease-in;
@@ -1318,7 +1326,8 @@ footer form input {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-#bouton-ok:active {
+#bouton-ok:active,
+.mailjet-subscribe:active {
   opacity: 0.7;
 }
 #footer-bottom {
@@ -3475,7 +3484,8 @@ footer form input {
   footer .col-right {
     width: 275px;
   }
-  footer .col-right form {
+  footer .col-right > form,
+  footer .col-right .news {
     float: none;
     clear: both;
   }

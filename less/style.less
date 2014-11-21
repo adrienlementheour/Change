@@ -690,19 +690,6 @@ blockquote{
 form{
   width: 750px;
   margin: 25px 0 0;
-  label, legend{
-    display: block;
-    .proximaNovaSBold(1em);
-    color: @bleuFonce;
-    line-height: 30px;
-    &.facultatif, &.labelBox{
-      .proximaNova(1em);
-    }
-    span{
-      .proximaNovaIt(0.75em);
-      color: @bleu;
-    }
-  }
   fieldset{
     display: inline-block;
     margin: 0 48px 20px 0;
@@ -771,6 +758,19 @@ form{
   textarea{
     height: 150px;
     width: 98%;
+  }
+}
+label, legend{
+  display: block;
+  .proximaNovaSBold(1em);
+  color: @bleuFonce;
+  line-height: 30px;
+  &.facultatif, &.labelBox{
+    .proximaNova(1em);
+  }
+  span{
+    .proximaNovaIt(0.75em);
+    color: @bleu;
   }
 }
 
@@ -1173,8 +1173,24 @@ footer{
     nav{
       float: left;
     }
-    form{
+    > form, .news{
       float: right;
+      form{
+        display: inline-block;
+      }
+    }
+    form{
+      width: auto;
+      margin: 0;
+    }
+    input{
+      vertical-align: middle;
+      height: auto;
+    }
+    label{
+      color: @blanc;
+      font-size: 0.9em;
+      display: inline;
     }
     .lt-ie9 &{
       width: 40%;
@@ -1203,19 +1219,6 @@ footer{
       }
     }
   }
-  form{
-    width: auto;
-    margin: 0;
-    label{
-      color: @blanc;
-      font-size: 0.9em;
-      display: inline;
-    }
-    input{
-      vertical-align: middle;
-      height: auto;
-    }
-  }
 }
 #email{
   width: 140px;
@@ -1230,7 +1233,7 @@ footer{
     .transition(border .2s ease-in);
   }
 }
-#bouton-ok{
+#bouton-ok, .mailjet-subscribe{
   width: auto;
   .bariolBold(0.9em);
   padding: 3px 5px 4px;
@@ -3281,7 +3284,7 @@ footer{
     }
     .col-right{
       width: 275px;
-      form{
+      > form, .news{
         float: none;
         clear: both;
       }
