@@ -408,11 +408,11 @@ function openForm(){
 
 
 
-	if ($("#contactMail").find('medium').hasClass("success")) {
+	if ($("#contactMail").find('.medium').hasClass("success")) {
 		$("html, body").animate({scrollTop: $('#contactMail').offset().top - 70 }, 500);
 	}
 	
-	if ($("#contactTel").find('medium').hasClass("success")) {
+	if ($("#contactTel").find('.medium').hasClass("success")) {
 		$("html, body").animate({scrollTop: $('#contactTel').offset().top - 70 }, 500);
 	}
 
@@ -428,6 +428,31 @@ function openForm(){
 		$("#contactTel").slideDown(100);
 		$("#contactMail").slideUp(100,function() {
 			$("html, body").animate({scrollTop: $('#contactTel').offset().top - 70 }, 600);
+		});
+		return false;
+	});
+
+	setSizeBugerMenu();
+}
+
+
+/* Formulaire dossier de presse */
+
+function openFormDossier(){
+	if ($('#formDossier').hasClass("opened")) {
+		$("html, body").delay(300).animate({scrollTop: $('#formDossier').offset().top + 80 }, 500);
+	}
+	
+	if ($("#formDossier").find('.container').hasClass("success")) {
+		$("html, body").animate({scrollTop: $('#formDossier').offset().top - 70 }, 500);
+	}
+
+	$('#dossier').click(function(){
+		$(this).fadeOut(100, function(){
+			$('#formDossier').find('form').slideDown(200,function() {
+				console.log('yo');
+				$("html, body").animate({scrollTop: $(this).offset().top - 120 }, 600);
+			});
 		});
 		return false;
 	});
@@ -504,9 +529,13 @@ $(function(){
 		openForm();
 	}
 
+	if ($("body").hasClass("presse") || $("body").hasClass('page-template-presse-php')){
+		openFormDossier();
+	}
+
 	if($('body').hasClass('references') || $("body").hasClass('page-template-references-php')){
-			openRef();
-		}
+		openRef();
+	}
 
 	$(document).scroll(function() {
 		myScroll = $(document).scrollTop();

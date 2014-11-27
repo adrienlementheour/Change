@@ -1,49 +1,33 @@
  <?php
 
- if(isset($_GET['open'])){
- 	if ($_GET['open']=="1") {
- 		$opened_mail = ($_GET['open']=="1");
- 		$opened_tel = false;
- 	}
- 	if ($_GET['open']=="2") {
- 		$opened_tel = ($_GET['open']=="2");
- 		$opened_mail = false;
- 	}
+ if(isset($_GET['open']) && $_GET['open']=="1"){
+ 	$opened = ($_GET['open']=="1");
  }else{
- 	$opened_mail = false;
- 	$opened_tel = false;
+ 	$opened = false;
  }
 
  $message_status = '';
  $erreurNom = '';
- $erreurSociete = '';
+ $erreurMedia = '';
  $erreurMail = '';
  $erreurTel = '';
- $message_status2 = '';
- $erreurNom2 = '';
- $erreurTel2 = '';
  $erreurEnvoi = '';
 
  if(isset($_POST['nom'])){ $nom = strip_tags($_POST['nom']); }else{ $nom = '';}
- if(isset($_POST['societe'])){ $societe = strip_tags($_POST['societe']); }else{ $societe = ''; }
+ if(isset($_POST['media'])){ $media = strip_tags($_POST['media']); }else{ $media = ''; }
  if(isset($_POST['mail'])){ $mail = strip_tags($_POST['mail']); }else{ $mail = ''; }
  if(isset($_POST['tel'])){ $tel = strip_tags($_POST['tel']); }else{ $tel = ''; }
- if(isset($_POST['message'])){ $message = strip_tags($_POST['message']); }else{ $message= ''; }
- if(isset($_POST['nom2'])){ $nom2 = strip_tags($_POST['nom2']); }else{ $nom2 = ''; }
- if(isset($_POST['tel2'])){ $tel2 = strip_tags($_POST['tel2']); }else{ $tel2 = ''; }
- if(isset($_POST['periodeAM'])){ $periodeAM = strip_tags($_POST['periodeAM']); }else{ $periodeAM = ''; }
- if(isset($_POST['periodePM'])){ $periodePM = strip_tags($_POST['periodePM']); }else{ $periodePM = ''; }
 
  // MAIL DE DESTINATION //////////////////////////////////////
- $mailto = 'faustine.marechalle@proximis.com';
+ $mailto = 'presse@cross-commerce.com';
 
  if(isset($_POST['submitted'])) {
  	if(empty($nom)) {
  		$erreurNom = 'Le champ <span>Nom</span> est obligatoire';
  		$message_status = "Erreur"; 
  	}
- 	if(empty($societe)) {
- 		$erreurSociete = 'Le champ <span>Société</span> est obligatoire';
+ 	if(empty($media)) {
+ 		$erreurMedia = 'Le champ <span>Média</span> est obligatoire';
  		$message_status = "Erreur"; 
  	}
  	if(empty($mail)) {
@@ -64,10 +48,10 @@
  			$message_status = "Erreur"; 
  		}
  	}
- 	if($erreurNom == '' && $erreurSociete == '' && $erreurMail == '' && $erreurTel == ''){ 
- 		$subject = "Nouveau message provenant de change-commerce.com";
+ 	if($erreurNom == '' && $erreurMedia == '' && $erreurMail == '' && $erreurTel == ''){ 
+ 		$subject = "Nouvelle demande de dossier de presse provenant de change-commerce.com";
  		$headers = 'De: '. $nom . "\r\n" .
- 					'Société: '. $societe . "\r\n" .
+ 					'Média: '. $media . "\r\n" .
  					'Tél: '. $tel . "\r\n" .
  					'Répondre : ' . $mail . "\r\n";
  		$sent = mail( $mailto, $subject, $headers, $message);
@@ -81,50 +65,6 @@
  	}
  }
 
- if(isset($_POST['submitted2'])) {
- 	if(empty($tel2)) {
- 		$erreurTel2 = 'Le champ <span>Téléphone</span> est obligatoire';
- 		$message_status2 = "Erreur"; 
- 	}else {
- 		if (!(strlen($tel2) == 10 && ctype_digit($tel2))) {
- 			$erreurTel2 = 'Numéro de téléphone incorrect';
- 			$message_status2 = "Erreur"; 
- 		}
- 	}
- 	if(empty($nom2)) {
- 		$erreurNom2 = 'Le champ <span>Nom</span> est obligatoire';
- 		$message_status2 = "Erreur"; 
- 	}
- 	else{
- 		if($erreurTel2 == '' && $erreurNom2 == ''){ 
- 			$subject2 = "Demande d'appel telephonique sur change-commerce.com";
- 			$periodeIdeale = "– rien de coché –";
- 			if ($periodeAM === "on") {
- 				if ($periodePM === "on") {
- 				 	$periodeIdeale = "matin et après-midi";
- 				} else {
- 				 	$periodeIdeale = "matin";
- 				}
- 			} else {
- 				if ($periodePM === "on") {
- 				 	$periodeIdeale = "après-midi ";
- 				}
- 			}
- 			$headers2 = 'De: '. $nom2 . "\r\n" .
- 				 		'Tél: '. $tel2 . "\r\n" .
- 				 		'Période idéale: '. $periodeIdeale . "\r\n" ;
- 			$sent = mail( $mailto, $subject2, $headers2);
- 			if($sent) {
- 				$message_status2 = "Demande envoyée";
- 			}
- 			else{ 
- 				$message_status2 = "Erreur"; 	
- 				$erreurEnvoi = "Votre message n'a pas pu être envoyé. Veuillez réessayer!";
- 			}
- 		}
- 	}
- }
-
 ?>
 
 <!DOCTYPE html>
@@ -134,9 +74,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 	  	<meta charset="utf-8">
-	  	<title>Contactez-nous - Change</title>
+	  	<title>Communiqués de presse - Change</title>
 	  	<meta name="description" content="">
 	  	<meta name="viewport" content="width=device-width, initial-scale = 1" />
+	  	<meta name="format-detection" content="telephone=no">
 
 	  	<meta property="og:title" content="Change" />
 	  	<meta property="og:type" content="article" />
@@ -170,7 +111,7 @@
 		<script src="js/libs/isMobile.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
-	<body class="contactPage">
+	<body class="presse">
 		<header>
 			<div>
 				<div class="container">
@@ -182,7 +123,7 @@
 							<li><a href="references" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
 							<li class="lien-temp"><a href="programme-integrateurs" title="Partenaires"><span>Partenaires</span></a></li>
 							<li class="lien-temp"><a href="qui-sommes-nous" title="Entreprise"><span>Entreprise</span></a></li>
-							<li class="active"><a href="contacts" class="lien-contact" title="Contacter la société Change"><span>Contact</span></a></li>
+							<li><a href="contacts" class="lien-contact" title="Contact"><span>Contact</span></a></li>
 						</ul>
 						<div class="hamburger">
 							<a href="http://www.change-commerce.com" class="symbole-burger" title="Déployer le menu">Menu <span class="symbole-burger"><span class="icon-burger1 b1"></span><span class="icon-burger2"></span><span class="icon-burger1 b3"></span></span></a>
@@ -192,67 +133,55 @@
 			</div>
 		</header>
 
-		<div class="container first medium content">
-			<h1>Contactez-nous</h1>
-			<div class="containerLeft">
-				<p><b>Votre activité <nobr>e-commerce</nobr> est en plein développement</b><br/> et vous souhaitez intégrer rapidement vos magasins et vos produits au cœur de votre stratégie digitale, nous sommes à votre disposition pour échanger avec vous.</p>
-				<ul class="liens-contact btn-contact">
-					<li>
-						<a id="soumettre" class="icon-mail fd-rouge" href="contact.php?open=1">
-							contact@change-commerce.com
-							<span> ou <span class="a">échanger autour de mon projet</span></span>
-						</a>
-					</li>
-					<li>
-						<a id="consultant" class="icon-tel fd-bleu" href="contact.php?open=2">
-							09 72 26 88 88
-							<span> ou <span class="a">un consultant vous rappelle</span></span>
-						</a> 
-					</li>
-				</ul>
+		<div class='presse-header'>
+			<div class="container small-width align-center content">
+				<h1 class="maj">Dernier communiqué de presse :</h1>
+				<h2 class="h1 small">“Deux acteurs phares du e-commerce français se rapprochent”</h2>
+				<p><b>Proximis, éditeur spécialisé dans le cross-canal depuis 2008, opère un rapprochement stratégique avec l’éditeur de la plateforme e-commerce Change et reprend dans son portefeuille produits la solution éponyme, jusqu’alors dans le giron de la société RBS.</b> Change, issue de 8 années de R&D et disposant de plus de 50 clients, dont des Retailers de premier ordre [...]</p>
+				<div class="btn"><a href="#" title="Télécharger le communiqué au format PDF">Lire la suite<span class="icon-plus"></span></a></div>
 			</div>
-			<div class="containerRight">
-				<div class="masqueMap">
-					<div id="map"></div>
-				</div>
-				<div class="adresses">
-					<p>
-						<b class="maj">Paris</b>
-						16 bis avenue Parmentier 75011 Paris
-					</p>
-					<p>
-						<b class="maj">Strasbourg</b>
-						30 quai des Bateliers 67000 Strasbourg
-					</p>
+
+			<div class='bandeau'>
+				<div class="container small-width">
+					<!--<div class="btn right"><a href="#" class="maj retour"><span class="icon-prev"></span> Retour</a><b class="maj">Voir le communiqué précédent :</b> <a href="#" title="Communiqué précédent">Rapprochement de Change et Proximis <span class="icon-plus"></span></a></div>
+					<div class="btn"><b class="maj">Voir le communiqué précédent :</b> <a href="#" title="Communiqué précédent">Rapprochement de Change et Proximis <span class="icon-plus"></span></a></div>-->
+					<div class="btn"><a href="#" class="maj" title="Tous les communiqués de presse">Tous les communiqués de presse<span class="icon-plus"></span></a></div>
 				</div>
 			</div>
+
+			<div class="ombrePresse"></div>
 		</div>
 
-		<div id="contactMail" class="largeContainer content form <?php if($opened_mail) echo 'opened'; ?>">
-			<div class="container medium <?php if($message_status == 'Demande envoyée') echo 'success'; ?>">
-				<h2 class="h1"><?php if($message_status == 'Demande envoyée'){ echo 'Merci !'; }else{ echo 'Votre projet'; } ?></h2>
-				<p class="maj"><?php if($message_status == 'Demande envoyée'){ echo 'Nous avons bien reçu votre demande de contact'; }else{ echo 'Merci de bien vouloir compléter le formulaire suivant'; } ?></p>
-				<?php if($message_status == 'Demande envoyée') echo '<p class="envoiReussi">Nos équipes vont revenir vers vous dés que possible</p>' ; ?>
+		<div class="largeContainer <?php if($opened) echo 'opened'; ?>" id="formDossier">
+			<div class="container small-width <?php if($message_status == 'Demande envoyée') echo 'success'; ?>">
+				<h2 class="h1 small">Dossier de presse</h2>
+				<p class="small">
+					<?php if($message_status == 'Demande envoyée'){ echo "<b>Merci !</b><br/>Nous allons vous faire parvenir notre dossier de presse dans les meilleurs délais.<br/><br/>Pour tout autre demande concernant la presse, merci de bien vouloir envoyer un email à l'adresse :<br/><a href='mailto:presse@cross-commerce.com'>presse@cross-commerce.com</a>"; 
+						  }else{ echo "Merci d'utliser notre dossier de presse si vous écrivez un article à propos de Change."; 
+					} ?>
+				</p>
+				<a href="#" class="maj bigBtn" id="dossier">Demander un dossier de presse</a>
 
 				<?php if($message_status == 'Erreur'){
 					echo '<p class="error">';
 					if($erreurNom != '') echo $erreurNom .'<br/>';
-					if($erreurSociete != '') echo $erreurSociete .'<br/>';
+					if($erreurMedia != '') echo $erreurMedia .'<br/>';
 					if($erreurMail != '') echo $erreurMail .'<br/>';
 					if($erreurTel != '') echo $erreurTel .'<br/>'; 
 					if($erreurEnvoi != '') echo $erreurEnvoi;
 					echo '</p>'; 
 				} ?>
 
-				<form method="POST" action="contacts?open=1">
+				<form method="POST" action="presse.php?open=1" class="form <?php if($opened) echo 'op'; ?>">
+					<b class="maj">Merci de bien vouloir compléter le formulaire :</b>
 					<fieldset class="smallField">
 						<fieldset class="<?php if($erreurNom != '') echo 'error'; ?>">
 							<label for="nom">Nom &#38; prénom</label>
 							<input type="text" name="nom" id="nom" value="<?php echo $nom; ?>">
 						</fieldset>
-						<fieldset class="<?php if($erreurSociete != '') echo 'error'; ?>">
-							<label for="societe">Société</label>
-							<input type="text" name="societe" id="societe" value="<?php echo $societe; ?>">
+						<fieldset class="<?php if($erreurMedia != '') echo 'error'; ?>">
+							<label for="media">Média</label>
+							<input type="text" name="media" id="media" value="<?php echo $media; ?>">
 						</fieldset>
 						<fieldset class="<?php if($erreurMail != '') echo 'error'; ?>">
 							<label for="mail">Email <span>(pour vous répondre)</span></label>
@@ -263,51 +192,96 @@
 							<input type="tel" name="tel" id="tel" value="<?php echo $tel; ?>">
 						</fieldset>
 					</fieldset>
-					<fieldset class="fieldBlock">
-						<label for="message" class="facultatif">Commentaires <span>(facultatif)</span></label> 
-						<textarea name="message" id="message"><?php echo $message; ?></textarea>
-					</fieldset>
-					<input class="maj bigBtn" type="submit" name="submitted" value="Valider">
+					<input class="maj bigBtn" type="submit" name="submitted" value="Envoyer ma demande">
 				</form>
 
+				<div class="chemise"></div>
+			</div>
+
+			<div class="bandeau">
+				<div class="container small-width align-center">
+					<p>Pour tout autre demande concernant la presse, merci de bien vouloir nous envoyer un email à <nobr><a href="mailto:presse@cross-commerce.com">presse@cross-commerce.com</a></nobr></p>
+				</div>
+			</div>
+		</div>	
+
+		<div class="bloc-noir-fond">
+			<div class="container small-width clearfix">
+				<div class="containerRight">
+					<h2 class="blanc small">Vous avez besoin du Logo Change ?</h2>
+					<a href="#" class="maj bigBtn">Télécharger le kit <span>(15Ko)</span></a>
+				</div>
+				<div class="presseLogo"></div>
 			</div>
 		</div>
 
-		<div id="contactTel" class="largeContainer content form <?php if($opened_tel) echo 'opened'; ?>">
-			<div class="container medium <?php if($message_status2 == 'Demande envoyée') echo 'success'; ?>">
-				<h2 class="h1"><?php if($message_status2 == 'Demande envoyée'){ echo 'Merci !'; }else{ echo 'Un consultant vous rappelle'; } ?></h2>
-				<?php if($message_status2 == 'Demande envoyée') echo '<p class="maj">Un consultant vous rappelle dés que possible</p>'; ?>
-
-				<?php if($message_status2 == 'Erreur'){
-					echo '<p class="error">';
-					if($erreurTel2 != '') echo $erreurTel2 .'<br/>';
-					if($erreurNom2 != '') echo $erreurNom2 .'<br/>';
-					if($erreurEnvoi != '') echo $erreurEnvoi;
-					echo '</p>'; 
-				}?>
-
-				<form method="POST" action="contacts?open=2">
-					<fieldset class=" <?php if ($erreurTel2 != '') echo 'error'; ?>">
-						<label for="tel2">Numéro de téléphone</label>
-						<input type="tel" id="tel2" name="tel2" value="<?php echo $tel2; ?>">
-					</fieldset>
-					<fieldset class=" <?php if ($erreurNom2 != '') echo 'error'; ?>">
-						<label for="nom2">Nom</label>
-						<input type="text" id="nom2" name="nom2" value="<?php echo $nom2; ?>">
-					</fieldset>
-					<fieldset class="rappel">
-						<legend class="facultatif">Quand préférez-vous être rappelé ? <span>(facultatif)</span></legend>
-						<input name="periodeAM" id="periodeAM" type="checkbox" <?php if($periodeAM === "on") echo "checked"; ?>/>
-						<label class="labelBox" for="periodeAM">Matin</label>
-						<input class="secondBox"  name="periodePM" id="periodePM" type="checkbox" <?php if($periodePM === "on") echo "checked"; ?>/>
-						<label class="labelBox" for="periodePM">Après-midi</label>
-					</fieldset>
-					<input class="maj bigBtn" type="submit" name="submitted2" value="Valider">
-				</form>
-			</div>
+		<div class="container small-width padding-top-bottom">
+			<h2 class="maj center">Dans l'actualité...</h2>
+			<ul class="liste-releves">
+				<li>
+					<a href="#">
+						<img src="img/presse/releve1.jpg" alt=""/>
+						<span>
+							<span class="meta">Le <b class="maj">30/09/14</b> sur <b class="maj">fusacq.com</b></span>
+							<span class="h2 small rouge">Deux acteurs phares du e-commerce français se rapprochent</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/presse/releve2.jpg" alt=""/>
+						<span>
+							<span class="meta">Le <b class="maj">23/09/14</b> sur <b class="maj">marketingperformer.fr</b></span>
+							<span class="h2 small rouge">Proximis rachète l'éditeur de la plateforme e-commerce Change</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/presse/releve3.jpg" alt=""/>
+						<span>
+							<span class="meta">Le <b class="maj">22/09/14</b> sur <b class="maj">itrnews.com</b></span>
+							<span class="h2 small rouge">Proximis et Change se rapprochent</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/presse/releve4.jpg" alt=""/>
+						<span>
+							<span class="meta">Le <b class="maj">22/09/14</b> sur <b class="maj">actic.fr</b></span>
+							<span class="h2 small rouge">Deux acteurs phares du Ecommerce français se rapprochent, PROXIMIS et CHANGE</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="nav-releves">
+				<li class="prev"><a href="">‹</a></li>
+				<li><a href="">1</a></li>
+				<li>...</li>
+				<li><a href="">4</a></li>
+				<li class="actif">5</li>
+				<li><a href="">6</a></li>
+				<li>...</li>
+				<li><a href="">25</a></li>
+				<li class="next"><a href="">›</a></li>
+			</ul>
 		</div>
 
 		<footer>
+			<div id="contact">
+				<div class="container medium">
+					<p><b>Contactez-nous.</b> Parlons de votre projet&nbsp;!</p>
+					<ul class="liens-contact">
+						<li>
+							<a class="icon-tel fd-bleu" href="contacts?open=2">09 72 26 88 88</a> 
+						</li>
+						<li>
+							<a class="icon-mail fd-rouge" href="contacts?open=1">contact@change-commerce.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div class="container medium">
 				<div class="col-left">
 					<h2 class="footer-titre rouge">L'entreprise</h2>
@@ -368,21 +342,11 @@
 		<![endif]-->
 		<!-- jQuery -->
 		<script src="js/libs/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
-		<!-- Map -->
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
 		<!-- Tweens -->
 		<script src="js/libs/greensock/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/libs/greensock/TimelineMax.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/libs/greensock/plugins/BezierPlugin.min.js" type="text/javascript" charset="utf-8"></script>
 		
 		<script src="js/min/script-min.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			var locations = [
-		      ['Paris', 48.8597311, 2.3793472, "https://www.google.fr/maps/place/16+Bis+Avenue+Parmentier/@48.8597149,2.3792576,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66df744c37131:0xd60d5e672814a3e9"],
-		      ['Strasbourg', 48.5809678, 7.7543122, "https://www.google.fr/maps/place/30+Quai+des+Bateliers/@48.5809678,7.7543122,17z/data=!3m1!4b1!4m2!3m1!1s0x4796c854f4ca5601:0x7c8b5e817e4619b0"]
-		    ];
-		    var pin = 'layoutImg/pin.png'; 
-			google.maps.event.addDomListener(window, 'load', initMap);
-		</script>
 	</body>
 </html>

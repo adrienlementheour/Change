@@ -135,6 +135,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.icon-prev:before {
+  content: "\e63f";
+}
 .icon-access-management:before {
 	content: "\e61d";
 }
@@ -506,6 +509,9 @@ body{
   &.medium-width{
   	width: 1024px;
   }
+  &.small-width{
+    width: 950px;
+  }
   &.big-padding-left{
   	padding-left: 250px ;
   }
@@ -563,13 +569,20 @@ h1, .h1{
   .bariol(3em);
   color: @rouge;
   line-height: 1em;
+  &.small{
+    font-size: 2.6em;
+    line-height: 0.9em;
+  }
 }
 
-h2{
+h2, .h2{
   padding: 25px 0 15px 0;
   .bariol(1.8em);
   color: @bleuTexte;
   line-height: 1.1em;
+  &.small{
+    font-size: 1.4em;
+  }
 }
 
 h3, .h3{
@@ -601,6 +614,9 @@ p, li, strong, b, .maj{
   line-height: 1.3em;
 }
 p{
+  &.small{
+    max-width: 430px;
+  }
   &.envoiReussi{
     margin-top: -1em;
   }
@@ -634,6 +650,9 @@ strong, b{
     text-indent: 48px;
     margin-bottom: 10px;
   }
+  span{
+    text-transform: none;
+  }
 }
 
 em{
@@ -655,10 +674,20 @@ a, .a{
   &:focus, &:active{
     opacity: 0.7;
   }
+  &.bigBtn{
+    margin: 17px 0 80px;
+    border-radius: 5px;
+    padding: 18px 45px;
+    text-align: center;
+    display: inline-block;
+  }
 }
 
 .btn{
   text-align: center;
+  &.right{
+    text-align: right;
+  }
   a{
     .proximaNovaSBold(1em);
     position: relative;
@@ -668,6 +697,9 @@ a, .a{
       line-height: 25px;
       right: -32px;
     }
+  }
+  .icon-prev{
+    font-size: 2.8em;
   }
 }
 
@@ -736,9 +768,8 @@ form{
     height: 22px;
     width: 224px;
     &[type="submit"]{
-      border: 0;
-      background: @bleu;
-      color: @blanc;
+      height: 60px;
+      padding: 8px;
     }
     &[type="checkbox"]{
       width: 13px;
@@ -759,6 +790,10 @@ form{
     height: 150px;
     width: 98%;
   }
+  b{
+    display: block;
+    margin-bottom: 35px;
+  }
 }
 label, legend{
   display: block;
@@ -774,17 +809,17 @@ label, legend{
   }
 }
 
-#envoyer{
+.bigBtn{
+  border: solid 3px @bleu;
+  background: @bleu;
+  color: @blanc;
   display: block;
   .bariolBold(1em);
-  height: 60px;
-  padding: 8px;
   .transition(all .3s ease-in-out);
   &:hover, &:focus{
-    padding: 5px;
-    border: 3px solid @bleu;
     background: @blanc;
     color: @bleu;
+    border-color: @bleu;
     .transition(all .3s ease-in-out);
   }
 }
@@ -805,6 +840,9 @@ label, legend{
   color: @grisFonceTexte;
 }
 
+.center{
+  text-align: center;
+}
 /* @end */
 
 /* @group header */
@@ -932,8 +970,6 @@ header{
   }
 }
 #menu-main{
-  display: block;
-  list-style: none;
   li{
     display: inline-block;
     margin: 0 0 0 16px;
@@ -1233,11 +1269,14 @@ footer{
     .transition(border .2s ease-in);
   }
 }
-#bouton-ok, .mailjet-subscribe{
+#bouton-ok, input[type="submit"].mailjet-subscribe{
   width: auto;
   .bariolBold(0.9em);
-  padding: 3px 5px 4px;
+  padding: 3px 8px 4px;
   .transition(all .2s ease-out);
+  border: 0;
+  background: @bleu;
+  color: @blanc;
   &:hover, &:focus{
     background: @blanc;
     color: @bleuTexte;
@@ -1778,7 +1817,7 @@ footer{
 
 .form{
   display: none;
-  &.opened{
+  &.opened, &.op{
     display: block;
   }
 }
@@ -2534,6 +2573,282 @@ footer{
 /* @end */
 
 
+/* Communiqué de presse */
+
+.presse-header{
+  padding-top: 81px;
+  margin-top: 94px;
+  background: url(../layoutImg/presse.jpg) no-repeat center center;
+  background-size: auto 100%;
+  background-size: cover;
+  position: relative;
+  .touch &{
+    margin-top: 0;
+  }
+  h1{
+    padding: 0;
+    margin: 0 0 10px;
+  }
+  .h1{
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  p, p b, i{
+    color: @grisTresClairFond;
+  }
+  b, a, .maj{
+    color: @blanc;
+  }
+  .bandeau{
+    margin-top: 80px;
+    background: @bleu;
+    background: rgba(84, 184, 231, 0.5);
+    a{
+      .proximaNovaSBoldIt(1em);
+      border: 0;
+      &:hover, &:focus{
+       opacity: 0.8;
+      }
+      span{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        right: auto;
+        font-size: 2em;
+        //top: -4px;
+      }
+      &.maj{
+        .proximaNovaBold(0.85em);
+      }
+    }
+    /*.retour{
+      .proximaNovaBold(0.85em);
+      float: left;
+    }*/
+  }
+  .content{
+    .btn{
+      margin-top: 35px;
+      a{
+        border-color: #7f7f82;
+        &:hover, &:focus{
+          color: @bleu;
+          border-color: #446579;
+        }
+      }
+    }
+  }
+}
+
+.presse, .page-template-presse-php{
+  .largeContainer{
+    padding-top: 60px;
+    padding-bottom: 0;
+    overflow: hidden;
+    .bigBtn{
+      margin-bottom: 40px;
+    }
+  }
+  .bloc-noir-fond{
+    overflow: hidden;
+  }
+  .containerRight{
+    float: right;
+    padding: 68px 0 0;
+    z-index: 2;
+    position: relative;
+    .bigBtn{
+      margin-top: 0;
+    }
+  }
+  form{
+    margin-top: 45px;
+    fieldset{
+      margin-right: 20px;
+    }
+    .bigBtn{
+      width: 290px;
+    }
+  }
+  .smallField{
+    margin: 0 0 15px;
+  }
+  .opened{
+    #dossier{
+      display: none;
+    }
+  }
+  .success{
+    .form.op{
+      display: none;
+    }
+  }
+}
+
+.presseLogo{
+  position: absolute;
+  left: -15px;
+  height: 279px;
+  width: 481px;
+  background: url(../layoutImg/logoPresse.png) no-repeat;
+}
+
+.chemise{
+  position: absolute;
+  right: -30px;
+  top: 80px;
+  width: 469px;
+  height: 659px;
+  background: url(../layoutImg/chemise.png) no-repeat;
+}
+
+.ombrePresse{
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  background: url(../layoutImg/ombrePresse.png) repeat-x;
+}
+
+.bandeau{
+  padding: 18px 0;
+  margin: 95px 0 0;
+  background: @blanc;
+  background: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 2;
+  p{
+    margin: 0;
+    a{
+      .proximaNovaSBold(1em);
+    }
+  }
+  .small-width{
+    width: 990px;
+  }
+}
+
+.liste-releves{
+  padding: 30px 0;
+  position: relative;
+  &:before, &:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -37px;
+    width: 73px;
+    height: 2px;
+    background: url(../layoutImg/sepPresse.jpg) no-repeat;
+  }
+  &:after{
+    top: auto;
+    bottom: 0;
+  }
+  li{
+    &:before{
+      display: none;
+    }
+    &.noli{
+      padding: 12px 0;
+    }
+    > span{
+      display: inline-block;
+      vertical-align: middle;
+      width: 63%;
+      max-width: 600px;
+      padding: 0 0 0 65px;
+    }
+  }
+  a{
+    border: 0;
+    border-radius: 5px;
+    color: @noir;
+    display: block;
+    padding: 12px 0;
+    .transition(background .4s ease-in-out .1s);
+    > span{
+      display: inline-block;
+      vertical-align: middle;
+      width: 63%;
+      max-width: 600px;
+      padding: 0 0 0 65px;
+      .transition(padding .4s ease-in-out);
+    }
+    &:hover, &:focus{
+      background: @grisTresClairFond;
+      .transition(background .2s ease-in-out .1s);
+      img{
+        padding-left: 10px;
+        .transition(padding .2s ease-in-out);
+      }
+      > span{
+        padding: 0 0 0 45px;
+        .transition(padding .2s ease-in-out);
+      }
+    }
+  }
+  .meta{
+    display: block;
+  }
+  .h2{
+    position: relative;
+    &:before{
+      content: '"';
+      position: absolute;
+      left: -7px;
+      top: 28px;
+    }
+    &:after{
+      content: '"';
+    }
+  }
+  img{
+    border: solid 1px @grisTresClairFond;
+    padding: 0;
+    .transition(padding .4s ease-in-out);
+  }
+  +.btn{
+    margin-top: 30px;
+    margin-left: -10px;
+  }
+}
+
+.nav-releves{
+  text-align: center;
+  margin: 20px 0 0;
+  li{
+    display: inline;
+    color: @grisTresClair;
+    .proximaNovaSBold(1em);
+    padding: 2px 4px;
+    &:before{
+      display: none;
+    }
+    &.actif{
+      background: @noir;
+      color: @blanc;
+    }
+    &.prev{
+      padding-right: 10px;
+    }
+    &.next{
+      padding-left: 10px;
+    }
+  }
+  a{
+    border: 0;
+    color: @grisClair;
+    &:hover, &:focus{
+      color: @noir;
+    }
+  }
+}
+
+/* @end */
+
 /* Plan du site */
 
 .plan, .page-id-21{
@@ -2597,11 +2912,12 @@ footer{
     input{
       height: 32px;
     }
-    #envoyer{
+    .bigBtn{
       display: inline;
       width: 155px;
       height: 48px;
       margin-left: 5px;
+      padding: 8px;
       .lt-ie9 &{
         width: 118px;
         float: right;
@@ -2722,6 +3038,11 @@ footer{
     }
     &.small{
       padding: 0 230px 0 80px;
+    }
+    &.small-width{
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
@@ -3256,6 +3577,20 @@ footer{
       height: 530px;
     }
 
+    .presse, .page-template-presse-php{
+      .containerRight{
+        width: 350px;
+      }
+    }
+
+    .chemise{
+      right: -100px;
+    }
+
+    .presseLogo{
+      left: -30px;
+    }
+
 }
 
 @media (max-width: 850px) {
@@ -3318,6 +3653,40 @@ footer{
     .commande{
       .fd-opaque{
         height: 280px;
+      }
+    }
+  }
+  
+  .presse, .page-template-presse-php{
+    form{
+      width: 600px;
+    }
+  }
+
+  .chemise{
+    display: none;
+  }
+
+  .presseLogo{
+    left: -80px;
+    opacity: 0.4;
+  }
+
+  .liste-releves{
+    li{
+      margin-bottom: 20px;
+    }
+    a{
+      >span{
+        display: block;
+        padding: 20px 10px 0 7px;
+        width: 100%;
+        max-width: 92%;
+      }
+      &:hover, &:focus{
+        >span{
+          padding: 10px 10px 0 17px;
+        }
       }
     }
   }
@@ -3531,6 +3900,13 @@ footer{
     }
   }
 }
+  
+  .presse, .page-template-presse-php{
+    form{
+      width: 100%;
+    }
+  }
+
 }
 
 @media (max-width: 630px) {
@@ -4026,7 +4402,7 @@ footer{
         margin: 0 auto;
         display: block;
       }
-      #envoyer{
+      .bigBtn{
         display: block;
         margin: 5px 0 0;
         margin: 5px auto 0;
@@ -4125,6 +4501,31 @@ footer{
           text-indent: 0;
           padding-left: 90px;
           line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .presse, .page-template-presse-php{
+    .containerRight {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .liste-releves{
+    a{
+      text-align: center;
+      >span{
+        width: auto;
+        max-width: 100%;
+      }
+      &:hover, &:focus{
+        img{
+          padding: 0;
+        }
+        >span{
+          padding-left: 7px;
         }
       }
     }
@@ -4273,6 +4674,17 @@ footer{
         font-size: 65px;
       }
     }
+  }
+  
+  .presse, .page-template-presse-php{
+    .containerRight{
+      width: 100%;
+    }
+  }
+
+  .presseLogo{
+    height: 100%;
+    background-size: auto 100%;
   }
 
   .temp{

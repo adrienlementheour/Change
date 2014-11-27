@@ -86,7 +86,7 @@ $mailto = 'info@proximis.com';
 				<div class="container">
 					<nav class="bottom-header">
 						<a href="./" id="logo" title="Retour à l'accueil" class="ir">Change - Cross Commerce</a>
-						<ul id="menu-header">
+						<ul id="menu-main">
 							<li><a href="solution-cross-commerce" title="Solution"><span>Solution</span></a></li>
 							<li><a href="fonctionnalites" title="Fonctionnalit&eacute;s"><span>Fonctionnalit&eacute;s</span></a></li>
 							<li><a href="references" title="R&eacute;f&eacute;rences"><span>R&eacute;f&eacute;rences</span></a></li>
@@ -113,7 +113,7 @@ $mailto = 'info@proximis.com';
 					<form action="programme-integrateurs" method="post" id="newsletter-temp" class='<?php if($message_status == "success") echo $message_status; if($message_status == "Erreur") echo 'error';?>'>
 						<label for="email-temp">Email</label>
 					  	<input size="" name="email-news" id="email-temp" type="email" value="<?php echo $mail; ?>"/>
-					  	<input class="maj" type="submit" value="S'inscrire" name="subscribe" class="button" id="envoyer">
+					  	<input class="maj bigBtn" type="submit" value="S'inscrire" name="subscribe">
 					</form>
 					<?php if($message_status == 'Erreur'){
 						echo '<p class="error">';
