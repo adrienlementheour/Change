@@ -2582,6 +2582,34 @@ footer{
   background-size: auto 100%;
   background-size: cover;
   position: relative;
+  &.archive{
+    margin-top: 0;
+    background-attachment: fixed;
+    .touch &{
+      padding-top: 0;
+    }
+    +footer{
+      margin-top: 0;
+    }
+    .h1{
+      padding-top: 70px;
+    }
+    .btn{
+      padding-bottom: 80px;
+      position: relative;
+      &:after{
+        content: ' ';
+        display: block;
+        height: 2px;
+        width: 260px;
+        background: #7f7f82;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -130px;
+      }
+    }
+  }
   .touch &{
     margin-top: 0;
   }

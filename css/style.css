@@ -2839,6 +2839,34 @@ input[type="submit"].mailjet-subscribe:active {
   background-size: cover;
   position: relative;
 }
+.presse-header.archive {
+  margin-top: 0;
+  background-attachment: fixed;
+}
+.touch .presse-header.archive {
+  padding-top: 0;
+}
+.presse-header.archive + footer {
+  margin-top: 0;
+}
+.presse-header.archive .h1 {
+  padding-top: 70px;
+}
+.presse-header.archive .btn {
+  padding-bottom: 80px;
+  position: relative;
+}
+.presse-header.archive .btn:after {
+  content: ' ';
+  display: block;
+  height: 2px;
+  width: 260px;
+  background: #7f7f82;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -130px;
+}
 .touch .presse-header {
   margin-top: 0;
 }
