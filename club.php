@@ -22,7 +22,7 @@
  if(isset($_POST['tel'])){ $tel = strip_tags($_POST['tel']); }else{ $tel = ''; }
 
  // MAIL DE DESTINATION //////////////////////////////////////
- $mailto = 'shwarp@live.fr';
+ $mailto = 'faustine.marechalle@proximis.com';
 
  if(isset($_POST['submitted'])) {
  	if(empty($nom)) {

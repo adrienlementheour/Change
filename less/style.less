@@ -2608,21 +2608,26 @@ footer{
     }
     .h1{
       padding-top: 70px;
-    }
-    .btn{
-      padding-bottom: 80px;
       position: relative;
-      &:after{
+      &:before{
         content: ' ';
         display: block;
         height: 2px;
         width: 260px;
         background: #7f7f82;
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 50%;
         margin-left: -130px;
       }
+      &:first-child{
+        &:before{
+          display: none;
+        }
+      }
+    }
+    .btn{
+      padding-bottom: 80px;
     }
   }
   .touch &{
@@ -2978,6 +2983,31 @@ footer{
     }
   }
 }
+/* @end */
+
+
+/* Téléchargement */
+
+.dl{
+  .bloc{
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    top: 20%;
+    text-align: center;
+    //transform: translate(-50%, -50%);
+  }
+  h2{
+    span{
+      display: block;
+      color: @rouge;
+      font-size: 0.5em;
+    }
+  }
+}
+
+/* @end */
 
 
 /* Pages en construction */

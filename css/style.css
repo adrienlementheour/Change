@@ -2866,21 +2866,24 @@ input[type="submit"].mailjet-subscribe:active {
 }
 .presse-header.archive .h1 {
   padding-top: 70px;
-}
-.presse-header.archive .btn {
-  padding-bottom: 80px;
   position: relative;
 }
-.presse-header.archive .btn:after {
+.presse-header.archive .h1:before {
   content: ' ';
   display: block;
   height: 2px;
   width: 260px;
   background: #7f7f82;
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 50%;
   margin-left: -130px;
+}
+.presse-header.archive .h1:first-child:before {
+  display: none;
+}
+.presse-header.archive .btn {
+  padding-bottom: 80px;
 }
 .touch .presse-header {
   margin-top: 0;
@@ -3261,6 +3264,22 @@ input[type="submit"].mailjet-subscribe:active {
   color: #f04a2f;
   border-bottom: 1px solid #eecfcb;
 }
+/* @end */
+/* Téléchargement */
+.dl .bloc {
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  margin-left: -250px;
+  top: 20%;
+  text-align: center;
+}
+.dl h2 span {
+  display: block;
+  color: #f04a2f;
+  font-size: 0.5em;
+}
+/* @end */
 /* Pages en construction */
 .container.small-temp {
   padding-right: 310px;
