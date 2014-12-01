@@ -8,13 +8,16 @@
 
  $message_status = '';
  $erreurNom = '';
- $erreurMedia = '';
+ $erreurPrenom = '';
+ $erreurSociete = '';
  $erreurMail = '';
  $erreurTel = '';
  $erreurEnvoi = '';
 
  if(isset($_POST['nom'])){ $nom = strip_tags($_POST['nom']); }else{ $nom = '';}
- if(isset($_POST['media'])){ $media = strip_tags($_POST['media']); }else{ $media = ''; }
+ if(isset($_POST['prenom'])){ $prenom = strip_tags($_POST['prenom']); }else{ $prenom = '';}
+ if(isset($_POST['societe'])){ $societe = strip_tags($_POST['societe']); }else{ $societe = ''; }
+ if(isset($_POST['fonction'])){ $fonction = strip_tags($_POST['fonction']); }else{ $fonction = '';}
  if(isset($_POST['mail'])){ $mail = strip_tags($_POST['mail']); }else{ $mail = ''; }
  if(isset($_POST['tel'])){ $tel = strip_tags($_POST['tel']); }else{ $tel = ''; }
 
@@ -26,8 +29,12 @@
  		$erreurNom = 'Le champ <span>Nom</span> est obligatoire';
  		$message_status = "Erreur"; 
  	}
- 	if(empty($media)) {
- 		$erreurMedia = 'Le champ <span>Société</span> est obligatoire';
+ 	if(empty($prenom)) {
+ 		$erreurPrenom = 'Le champ <span>Prénom</span> est obligatoire';
+ 		$message_status = "Erreur"; 
+ 	}
+ 	if(empty($societe)) {
+ 		$erreurSociete = 'Le champ <span>Société</span> est obligatoire';
  		$message_status = "Erreur"; 
  	}
  	if(empty($mail)) {
@@ -48,10 +55,11 @@
  			$message_status = "Erreur"; 
  		}
  	}
- 	if($erreurNom == '' && $erreurMedia == '' && $erreurMail == '' && $erreurTel == ''){ 
- 		$subject = "Nouveau message provenant de change-commerce.com";
- 		$headers = 'De: '. $nom . "\r\n" .
+ 	if($erreurNom == '' && $erreurSociete == '' && $erreurMail == '' && $erreurTel == ''){ 
+ 		$subject = "Nouvelle demande d'inscription au Club provenant de change-commerce.com";
+ 		$headers = 'De: '. $nom .' '. $prenom . "\r\n" .
  					'Société: '. $societe . "\r\n" .
+ 					'Fonction: '. $fonction . "\r\n" .
  					'Tél: '. $tel . "\r\n" .
  					'Répondre : ' . $mail . "\r\n";
  		$sent = mail( $mailto, $subject, $headers, $message);
@@ -74,7 +82,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 	  	<meta charset="utf-8">
-	  	<title>Communiqués de presse - Change</title>
+	  	<title>Le Club Cross-Commerce - Change</title>
 	  	<meta name="description" content="">
 	  	<meta name="viewport" content="width=device-width, initial-scale = 1" />
 	  	<meta name="format-detection" content="telephone=no">
@@ -111,7 +119,7 @@
 		<script src="js/libs/isMobile.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
-	<body class="presse">
+	<body class="club">
 		<header>
 			<div>
 				<div class="container">
@@ -132,33 +140,52 @@
 				</div>
 			</div>
 		</header>
-
-		<div class='presse-header'>
-			<div class="container small-width align-center content">
-				<b class="maj">Dernier communiqué de presse :</b>
-				<h1 class="small">“Deux acteurs phares du e-commerce français se rapprochent”</h1>
-				<p><b>Proximis, éditeur spécialisé dans le cross-canal depuis 2008, opère un rapprochement stratégique avec l’éditeur de la plateforme e-commerce Change et reprend dans son portefeuille produits la solution éponyme, jusqu’alors dans le giron de la société RBS.</b> Change, issue de 8 années de R&D et disposant de plus de 50 clients, dont des Retailers de premier ordre [...]</p>
-				<div class="btn"><a href="#" title="Télécharger le communiqué au format PDF">Lire la suite<span class="icon-plus"></span></a></div>
-			</div>
-
-			<div class='bandeau'>
-				<div class="container small-width">
-					<div class="btn"><b class="maj">Voir le communiqué précédent :</b> <a href="#" title="Communiqué précédent">Rapprochement de Change et Proximis<span class="icon-plus"></span></a></div>
+		
+		<div class="bloc-header-club">
+			<div class="container first content">
+				<div class="club-header">
+					<h1>Le Club <br/>Cross-Commerce</h1>
+					<p><b>Le marché du e-commerce est en pleine mutation. </b>Plus que jamais, les acteurs du Retail ont besoin de se rencontrer 
+					pour échanger sur les sujets relatifs au e-commerce et au cross-canal. </p>
+					<div class="macaron"></div>
+				</div>
+				
+				<div class="containerLeft">
+					<p>Dans ce cadre, nous vous proposons de rejoindre le Club<br/> Cross-Commerce cross-canal afin de <b>favoriser le partage d’expériences.</b></p>
+					<p>Le Club Cross-Commerce est <b>ouvert à toute personne souhaitant échanger sur ces sujets.</b></p>
+					<p>Que vous soyez clients, partenaires, prestataires, acteurs<br/> du marché, ou amis : rejoignez-nous dès maintenant ! </p>
+					<a href="#inscription" id="btnClub" class="maj bigBtn">Je m'inscris</a>
 				</div>
 			</div>
 
-			<div class="ombrePresse"></div>
+			<div class="fdClubHeader"></div>
 		</div>
 
-		<div class="largeContainer <?php if($opened) echo 'opened'; ?>" id="formDossier">
-			<div class="container small-width <?php if($message_status == 'Demande envoyée') echo 'success'; ?>">
-				<h2 class="h1 small">Dossier de presse</h2>
-				<p class="small">Merci d'utliser notre dossier de presse si vous écrivez un article à propos de Change.</p>
-				<a href="#" class="maj bigBtn" id="dossier">Demander un dossier de presse</a>
+		<div class="bloc-noir-fond">
+			<div class="container medium">
+				<h2 class="h1 extraSmall">En rejoignant le Club Cross-Commerce, vous pourrez :</h2>
+				<ul class="liste-pictos liste-first">
+					<li class="icon-bulles">Discuter et échanger vos expériences entre acteurs du e-commerce.</li>
+					<li class="icon-tasse">Participer à des petits-déjeuners cross-canaux organisés par le Club. interviews…).</li>
+				</ul><ul class="liste-pictos">
+					<li class="icon-calendrier">Être invité aux grands événements du e-commerce et du cross-canal.</li>
+					<li class="icon-participer">Participer à la meilleure promotion de vos actions marketing en lien avec le cross-canal (relations presse, communiqués de presse, interviews…).</li>
+				</ul>
+			</div>
+			<div class="bandeau fdbleu">
+				<p>Êtes-vous disponible pour vous joindre à nous lors des prochains événements du Club ? <a href="" title="Agenda">Accéder à l'agenda</a></p>
+			</div>
+		</div>
+
+		<div class="largeContainer <?php if($opened) echo 'opened'; if($message_status == 'Demande envoyée') echo ' envoye'; if($message_status == 'Erreur') echo ' nonenvoye'; ?>" id="inscription">
+			<div class="container small <?php if($message_status == 'Demande envoyée') echo 'success'; ?>">
+				<h2 class="h1">Inscription</h2>
+				<p class="maj"><?php if($message_status == 'Demande envoyée'){ echo "Votre demande d'inscription a bien été envoyée!"; }else{ echo "Pour vous inscrire, merci de remplir le formulaire ci-dessous :"; }?></p>
 
 				<?php if($message_status == 'Erreur'){
 					echo '<p class="error">';
 					if($erreurNom != '') echo $erreurNom .'<br/>';
+					if($erreurPrenom != '') echo $erreurPrenom .'<br/>';
 					if($erreurSociete != '') echo $erreurSociete .'<br/>';
 					if($erreurMail != '') echo $erreurMail .'<br/>';
 					if($erreurTel != '') echo $erreurTel .'<br/>'; 
@@ -166,48 +193,34 @@
 					echo '</p>'; 
 				} ?>
 
-				<form method="POST" action="contacts?open=1">
-					<fieldset class="smallField">
-						<fieldset class="<?php if($erreurNom != '') echo 'error'; ?>">
-							<label for="nom">Nom &#38; prénom</label>
-							<input type="text" name="nom" id="nom" value="<?php echo $nom; ?>">
-						</fieldset>
-						<fieldset class="<?php if($erreurMedia != '') echo 'error'; ?>">
-							<label for="media">Média</label>
-							<input type="text" name="media" id="media" value="<?php echo $media; ?>">
-						</fieldset>
-						<fieldset class="<?php if($erreurMail != '') echo 'error'; ?>">
-							<label for="mail">Email <span>(pour vous répondre)</span></label>
-							<input type="email" name="mail" id="mail" value="<?php echo $mail; ?>">
-						</fieldset>
-						<fieldset class="<?php if($erreurTel != '') echo 'error'; ?>">
-							<label for="tel">Téléphone</label>
-							<input type="tel" name="tel" id="tel" value="<?php echo $tel; ?>">
-						</fieldset>
+				<form method="POST" action="?open=1">
+					<fieldset class="<?php if($erreurNom != '') echo 'error'; ?>">
+						<label for="nom">Nom</label>
+						<input type="text" name="nom" id="nom" value="<?php echo $nom; ?>">
 					</fieldset>
-					<input class="maj bigBtn" type="submit" name="submitted" value="Envoyer ma demande">
+					<fieldset class="<?php if($erreurPrenom != '') echo 'error'; ?>">
+						<label for="prenom">Prénom</label>
+						<input type="text" name="prenom" id="prenom" value="<?php echo $prenom; ?>">
+					</fieldset>
+					<fieldset class="<?php if($erreurSociete != '') echo 'error'; ?>">
+						<label for="societe">Société</label>
+						<input type="text" name="societe" id="societe" value="<?php echo $societe; ?>">
+					</fieldset>
+					<fieldset>
+						<label for="fonction" class="facultatif">Fonction <span>(facultatif)</span></label>
+						<input type="text" name="fonction" id="fonction" value="<?php echo $fonction; ?>">
+					</fieldset>
+					<fieldset class="<?php if($erreurMail != '') echo 'error'; ?>">
+						<label for="mail">Email <span>(pour vous répondre)</span></label>
+						<input type="email" name="mail" id="mail" value="<?php echo $mail; ?>">
+					</fieldset>
+					<fieldset class="<?php if($erreurTel != '') echo 'error'; ?>">
+						<label for="tel">Téléphone</label>
+						<input type="tel" name="tel" id="tel" value="<?php echo $tel; ?>">
+					</fieldset><br/><br/>
+					<input class="maj bigBtn" type="submit" name="submitted" value="Envoyer">
 				</form>
 			</div>
-
-			<div class="bandeau">
-				<div class="container small-width align-center">
-					<p>Pour tout autre demande concernant la presse, merci de bien vouloir nous envoyer un email à <a href="mailto:presse@cross-commerce.com">presse@cross-commerce.com</a></p>
-				</div>
-			</div>
-		</div>	
-
-		<div class="bloc-noir-fond">
-			<div class="container small-width clearfix">
-				<div class="containerRight">
-					<h2 class="blanc small">Vous avez besoin du Logo Change ?</h2>
-					<a href="#" class="maj bigBtn">Télécharger le kit (15Ko)</a>
-				</div>
-				<div class="presseLogo"></div>
-			</div>
-		</div>
-
-		<div class="container small-width">
-			<h2 class="maj">Dans l'actualité...</h2>
 		</div>
 
 		<footer>

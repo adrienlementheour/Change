@@ -406,16 +406,6 @@ function openForm(){
 		$("html, body").delay(300).animate({scrollTop: $('#contactTel').offset().top - 70 }, 500);
 	}
 
-
-
-	if ($("#contactMail").find('.medium').hasClass("success")) {
-		$("html, body").animate({scrollTop: $('#contactMail').offset().top - 70 }, 500);
-	}
-	
-	if ($("#contactTel").find('.medium').hasClass("success")) {
-		$("html, body").animate({scrollTop: $('#contactTel').offset().top - 70 }, 500);
-	}
-
 	$('#soumettre').click(function(){
 		$("#contactMail").slideDown(100);
 		$("#contactTel").slideUp(100,function() {
@@ -450,7 +440,6 @@ function openFormDossier(){
 	$('#dossier').click(function(){
 		$(this).fadeOut(100, function(){
 			$('#formDossier').find('form').slideDown(200,function() {
-				console.log('yo');
 				$("html, body").animate({scrollTop: $(this).offset().top - 120 }, 600);
 			});
 		});
@@ -459,6 +448,21 @@ function openFormDossier(){
 
 	setSizeBugerMenu();
 }
+
+
+/* Formulaire inscription au club */
+
+function openFormClub(){
+	if ($('#inscription').hasClass("opened")) {
+		$("html, body").delay(300).animate({scrollTop: $('#inscription').offset().top - 120 }, 500);
+	}
+
+	$('#btnClub').click(function(){
+		$("html, body").animate({scrollTop: $('#inscription').offset().top - 70 }, 600);
+		return false;
+	});
+}
+
 
 /// Fonction pour animer le visuel en haut de la page solution ///
 
@@ -531,6 +535,10 @@ $(function(){
 
 	if ($("body").hasClass("presse") || $("body").hasClass('page-template-presse-php')){
 		openFormDossier();
+	}
+
+	if ($("body").hasClass("club") || $("body").hasClass('page-template-club-php')){
+		openFormClub();
 	}
 
 	if($('body').hasClass('references') || $("body").hasClass('page-template-references-php')){

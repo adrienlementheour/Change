@@ -69,6 +69,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-participer:before {
+  content: "\e640";
+}
+.icon-bulles:before {
+  content: "\e641";
+}
+.icon-tasse:before {
+  content: "\e642";
+}
 .icon-prev:before {
   content: "\e63f";
 }
@@ -436,6 +445,10 @@ h1.small,
 .h1.small {
   font-size: 2.6em;
   line-height: 0.9em;
+}
+h1.extraSmall,
+.h1.extraSmall {
+  font-size: 2.3em;
 }
 h2,
 .h2 {
@@ -1616,6 +1629,9 @@ input[type="submit"].mailjet-subscribe:active {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
+#containerVid .rejouer span {
+  text-transform: uppercase;
+}
 #containerVid .rejouer:hover {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2087,6 +2103,9 @@ input[type="submit"].mailjet-subscribe:active {
   height: auto;
   margin: 0;
   padding: 0;
+}
+.liste-pictos.liste-first {
+  margin-right: 75px;
 }
 .liste-pictos.liste-pictos-noir {
   padding-left: 165px;
@@ -2655,10 +2674,6 @@ input[type="submit"].mailjet-subscribe:active {
   display: inline-block;
   vertical-align: top;
 }
-.fonctionnalites .commande .liste-pictos.liste-first,
-.page-template-fonctionnalites-php .commande .liste-pictos.liste-first {
-  margin-right: 75px;
-}
 .lt-ie9 .fonctionnalites .commande .liste-pictos,
 .lt-ie9 .page-template-fonctionnalites-php .commande .liste-pictos {
   width: 45%;
@@ -2889,41 +2904,6 @@ input[type="submit"].mailjet-subscribe:active {
 .presse-header .maj {
   color: #ffffff;
 }
-.presse-header .bandeau {
-  margin-top: 80px;
-  background: #54b8e7;
-  background: rgba(84, 184, 231, 0.5);
-  /*.retour{
-      .proximaNovaBold(0.85em);
-      float: left;
-    }*/
-}
-.presse-header .bandeau a {
-  font-family: 'proximaNovaSBoldIt', sans-serif;
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  border: 0;
-}
-.presse-header .bandeau a:hover,
-.presse-header .bandeau a:focus {
-  opacity: 0.8;
-}
-.presse-header .bandeau a span {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  right: auto;
-  font-size: 2em;
-}
-.presse-header .bandeau a.maj {
-  font-family: 'proximaNovaBold', sans-serif;
-  font-size: 0.85em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
 .presse-header .content .btn {
   margin-top: 35px;
 }
@@ -3007,25 +2987,54 @@ input[type="submit"].mailjet-subscribe:active {
   background: url(../layoutImg/ombrePresse.png) repeat-x;
 }
 .bandeau {
-  padding: 18px 0;
+  padding: 18px 20px;
   margin: 95px 0 0;
   background: #ffffff;
   background: rgba(255, 255, 255, 0.9);
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 .bandeau p {
   margin: 0;
 }
-.bandeau p a {
+.bandeau a {
   font-family: 'proximaNovaSBold', sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-.bandeau .small-width {
-  width: 990px;
+.bandeau a.maj {
+  font-family: 'proximaNovaBold', sans-serif;
+  font-size: 0.85em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  border: 0;
+}
+.bandeau a span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  right: auto;
+  font-size: 2em;
+}
+.bandeau.fdbleu {
+  margin-top: 80px;
+  background: #54b8e7;
+  background: rgba(84, 184, 231, 0.5);
+}
+.bandeau.fdbleu a {
+  color: #ffffff;
+  border-color: #6b91a5;
+}
+.lt-ie9 .bandeau.fdbleu a {
+  border-color: #ffffff;
+}
+.bandeau.fdbleu a:hover,
+.bandeau.fdbleu a:focus {
+  opacity: 0.8;
 }
 .liste-releves {
   padding: 30px 0;
@@ -3167,6 +3176,70 @@ input[type="submit"].mailjet-subscribe:active {
 .nav-releves a:hover,
 .nav-releves a:focus {
   color: #000000;
+}
+/* @end */
+/* Page Club */
+.club .liste-pictos {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin-top: 30px;
+}
+.club .liste-pictos li {
+  line-height: 21px;
+}
+.club .liste-pictos li:before {
+  font-size: 50px;
+  top: 20px;
+}
+.club .extraSmall {
+  padding: 50px 0 0 50px;
+}
+.club #contact {
+  background: #ffffff;
+}
+.club .largeContainer {
+  background: #efebe2 url(../layoutImg/fdClub.jpg) no-repeat 59% 130%;
+}
+.club .largeContainer.envoye {
+  background-position: 59% -50px;
+}
+.club .largeContainer.nonenvoye {
+  background-position: 59% 110%;
+}
+.bloc-header-club {
+  position: relative;
+}
+.bloc-header-club .container {
+  z-index: 2;
+}
+.club-header {
+  width: 545px;
+  position: relative;
+  padding: 0 0 0 175px;
+}
+.club-header h1 br {
+  display: none;
+}
+.club-header b {
+  display: block;
+}
+.macaron {
+  height: 141px;
+  width: 141px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background: url(../layoutImg/club.png) no-repeat;
+}
+.fdClubHeader {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 667px;
+  width: 55%;
+  max-width: 1035px;
+  background: url(../layoutImg/fdClubHeader2.jpg) no-repeat;
 }
 /* @end */
 /* Plan du site */
@@ -3333,6 +3406,11 @@ input[type="submit"].mailjet-subscribe:active {
   .fd-saas {
     background-size: 600px auto;
     background-position: 100% 60%;
+  }
+}
+@media (max-width: 1500px) {
+  .fdClubHeader {
+    width: 64%;
   }
 }
 @media (max-width: 1150px) {
@@ -3507,12 +3585,6 @@ input[type="submit"].mailjet-subscribe:active {
   .page-template-fonctionnalites-php .big-padding-left .liste-pictos {
     width: 80%;
   }
-  .fonctionnalites .commande,
-  .page-template-fonctionnalites-php .commande {
-    -webkit-background-size: auto 100%;
-    -moz-background-size: auto 100%;
-    background-size: auto 100%;
-  }
   .fonctionnalites .commande .liste-pictos,
   .page-template-fonctionnalites-php .commande .liste-pictos {
     width: 45%;
@@ -3536,6 +3608,12 @@ input[type="submit"].mailjet-subscribe:active {
     width: 40%;
     right: -110px;
   }
+  .bloc-header-club .container {
+    padding: 0 25px;
+  }
+  .fdClubHeader {
+    width: 70%;
+  }
   .temp {
     float: none;
     margin-left: 55px;
@@ -3543,6 +3621,19 @@ input[type="submit"].mailjet-subscribe:active {
   .temp-contact {
     float: none;
     margin: 20px 0 0 55px;
+  }
+}
+@media (max-width: 1060px) {
+  .bloc-header-club a.bigBtn {
+    margin-bottom: 0;
+  }
+  .fdClubHeader {
+    width: 100%;
+    max-width: 100%;
+    background-size: 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: 63%;
   }
 }
 @media (max-width: 979px) {
@@ -3933,6 +4024,9 @@ input[type="submit"].mailjet-subscribe:active {
   .liste-releves a:focus > span {
     padding: 10px 10px 0 17px;
   }
+  .club .liste-pictos {
+    width: 44%;
+  }
 }
 @media (max-width: 767px) {
   .touch .container.first {
@@ -4164,6 +4258,30 @@ input[type="submit"].mailjet-subscribe:active {
   .page-template-presse-php form {
     width: 100%;
   }
+  .club .containerLeft br {
+    display: none;
+  }
+  .club .liste-pictos {
+    width: 100%;
+    margin: 0;
+  }
+  .club .liste-pictos.liste-first {
+    margin-top: 30px;
+  }
+  .club-header {
+    width: auto;
+    padding: 0 0 20px;
+  }
+  .club-header h1 {
+    padding-left: 175px;
+    padding-bottom: 30px;
+  }
+  .club-header h1 br {
+    display: block;
+  }
+  .macaron {
+    top: 25px;
+  }
 }
 @media (max-width: 630px) {
   form fieldset {
@@ -4378,6 +4496,16 @@ input[type="submit"].mailjet-subscribe:active {
   .fonctionnalites .commande .fd-opaque,
   .page-template-fonctionnalites-php .commande .fd-opaque {
     height: 340px;
+  }
+  .club-header h1 {
+    padding-left: 100px;
+    padding-bottom: 15px;
+  }
+  .macaron {
+    background-size: 100%;
+    height: 80px;
+    width: 80px;
+    top: 55px;
   }
   .temp {
     width: 74%;
@@ -4635,6 +4763,9 @@ input[type="submit"].mailjet-subscribe:active {
     margin: 0 auto;
     left: 0;
   }
+  .macaron {
+    top: 38px;
+  }
 }
 @media (max-width: 480px) {
   #contact p {
@@ -4744,6 +4875,9 @@ input[type="submit"].mailjet-subscribe:active {
     left: -141px;
     background-size: 100%;
   }
+  .club-header h1 br {
+    display: none;
+  }
   .temp {
     width: 65%;
   }
@@ -4834,6 +4968,9 @@ input[type="submit"].mailjet-subscribe:active {
     height: 100%;
     background-size: auto 100%;
   }
+  .club .extraSmall {
+    padding-left: 0;
+  }
   .temp {
     margin-left: 15px;
     width: 73%;
@@ -4907,7 +5044,9 @@ input[type="submit"].mailjet-subscribe:active {
 /* ==|== print styles =======================================================
    ========================================================================== */
 @media print {
-  /* Black prints faster: h5bp.com/s */
+  * {
+    color: #000;
+  }
   a,
   a:visited {
     text-decoration: underline;
@@ -4920,7 +5059,6 @@ input[type="submit"].mailjet-subscribe:active {
   a[href^="#"]:after {
     content: "";
   }
-  /* Don't show links for images, or javascript/internal links */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -4929,7 +5067,6 @@ input[type="submit"].mailjet-subscribe:active {
   thead {
     display: table-header-group;
   }
-  /* h5bp.com/t */
   tr,
   img {
     page-break-inside: avoid;
@@ -4951,7 +5088,3 @@ input[type="submit"].mailjet-subscribe:active {
     page-break-after: avoid;
   }
 }
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */

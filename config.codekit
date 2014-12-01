@@ -132,6 +132,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/club.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/club.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/contact.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -862,6 +871,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/club.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12541,
+		"inputAbbreviatedPath": "\/layoutImg\/club.png",
+		"outputAbbreviatedPath": "\/layoutImg\/club.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/degRef.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -891,6 +911,39 @@
 		"initialSize": 29692,
 		"inputAbbreviatedPath": "\/layoutImg\/fd-ref.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/fd-ref.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fdClub.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16185,
+		"inputAbbreviatedPath": "\/layoutImg\/fdClub.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fdClub.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fdClubHeader.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 236292,
+		"inputAbbreviatedPath": "\/layoutImg\/fdClubHeader.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fdClubHeader.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/fdClubHeader2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 255968,
+		"inputAbbreviatedPath": "\/layoutImg\/fdClubHeader2.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/fdClubHeader2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1533,15 +1586,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/presse.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/presse.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/presse.php": {
 		"fileType": 8192,

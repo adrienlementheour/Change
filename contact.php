@@ -35,7 +35,7 @@
  if(isset($_POST['periodePM'])){ $periodePM = strip_tags($_POST['periodePM']); }else{ $periodePM = ''; }
 
  // MAIL DE DESTINATION //////////////////////////////////////
- $mailto = 'faustine.marechalle@proximis.com';
+ $mailto = 'shwarp@live.fr';
 
  if(isset($_POST['submitted'])) {
  	if(empty($nom)) {

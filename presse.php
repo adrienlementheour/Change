@@ -141,12 +141,12 @@
 				<div class="btn"><a href="#" title="Télécharger le communiqué au format PDF">Lire la suite<span class="icon-plus"></span></a></div>
 			</div>
 
-			<div class='bandeau'>
-				<div class="container small-width">
-					<!--<div class="btn right"><a href="#" class="maj retour"><span class="icon-prev"></span> Retour</a><b class="maj">Voir le communiqué précédent :</b> <a href="#" title="Communiqué précédent">Rapprochement de Change et Proximis <span class="icon-plus"></span></a></div>
+			<div class='bandeau fdbleu'>
+				<!--<div class="container small-width">
+					<div class="btn right"><a href="#" class="maj retour"><span class="icon-prev"></span> Retour</a><b class="maj">Voir le communiqué précédent :</b> <a href="#" title="Communiqué précédent">Rapprochement de Change et Proximis <span class="icon-plus"></span></a></div>
 					<div class="btn"><b class="maj">Voir le communiqué précédent :</b> <a href="#" title="Communiqué précédent">Rapprochement de Change et Proximis <span class="icon-plus"></span></a></div>-->
-					<div class="btn"><a href="#" class="maj" title="Tous les communiqués de presse">Tous les communiqués de presse<span class="icon-plus"></span></a></div>
-				</div>
+					<a href="#" class="maj" title="Tous les communiqués de presse">Tous les communiqués de presse<span class="icon-plus"></span></a>
+				<!--</div>-->
 			</div>
 
 			<div class="ombrePresse"></div>
@@ -199,9 +199,7 @@
 			</div>
 
 			<div class="bandeau">
-				<div class="container small-width align-center">
-					<p>Pour tout autre demande concernant la presse, merci de bien vouloir nous envoyer un email à <nobr><a href="mailto:presse@cross-commerce.com">presse@cross-commerce.com</a></nobr></p>
-				</div>
+				<p>Pour tout autre demande concernant la presse, merci de bien vouloir nous envoyer un email à <nobr><a href="mailto:presse@cross-commerce.com">presse@cross-commerce.com</a></nobr></p>
 			</div>
 		</div>	
 
