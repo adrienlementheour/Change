@@ -144,7 +144,7 @@
 		<div class="bloc-header-club">
 			<div class="container first content">
 				<div class="club-header">
-					<h1>Le Club <br/>Cross-Commerce</h1>
+					<h1>Le Club Cross-Commerce</h1>
 					<p><b>Le marché du e-commerce est en pleine mutation. </b>Plus que jamais, les acteurs du Retail ont besoin de se rencontrer 
 					pour échanger sur les sujets relatifs au e-commerce et au cross-canal. </p>
 					<div class="macaron"></div>

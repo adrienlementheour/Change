@@ -135,6 +135,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.icon-dl:before {
+  content: "\e643";
+}
 .icon-participer:before {
   content: "\e640";
 }
@@ -1791,6 +1794,7 @@ footer{
   text-align: center;
   img{
     vertical-align: middle;
+    max-width: 108px;
   }
 }
 
@@ -2593,11 +2597,12 @@ footer{
 .presse-header{
   padding-top: 81px;
   margin-top: 94px;
-  background: url(../layoutImg/presse.jpg) no-repeat center center;
+  background: url(../layoutImg/presse2.jpg) no-repeat center center;
   background-size: auto 100%;
   background-size: cover;
   position: relative;
   &.archive{
+    background: url(../layoutImg/presse.jpg) no-repeat center center;
     margin-top: 0;
     background-attachment: fixed;
     .touch &{
@@ -2896,7 +2901,7 @@ footer{
 
 /* Page Club */
 
-.club{
+.club, .page-template-club-php{
   .liste-pictos{
     display: inline-block;
     vertical-align: top;
@@ -2937,11 +2942,6 @@ footer{
   width: 545px;
   position: relative;
   padding: 0 0 0 175px;
-  h1{
-    br{
-      display: none;
-    }
-  }
   b{
     display: block;
   }
@@ -2995,15 +2995,35 @@ footer{
     width: 360px;
     left: 50%;
     top: 50%;
+    .transform(translateY(-50%));
+    margin: 0 0 0 -163px;
     text-align: center;
-    transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
-    margin: 20px 0 20px -180px;
     -moz-box-shadow: 0 0 50px 0px #000;
     -webkit-box-shadow: 0 0 50px 0px #000;
     -o-box-shadow: 0 0 50px 0px #000;
     box-shadow: 0 0 50px 0px #000;
+    .lt-ie9 &{
+      background: @blanc;
+      top: 20%;
+    }
+  }
+  h1{
+    .proximaNovaSBold(13px);
+    padding: 12px 20px 10px;
+    background: #283946;
+    display: inline-block;
+    .transform(rotate(-90deg));
+    position: absolute;
+    left: -81px;
+    top: 90px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    .lt-ie9 &{
+      top: 0;
+      left: 0;
+    }
   }
   h2{
     padding-top: 50px;
@@ -3013,9 +3033,21 @@ footer{
       color: @rouge;
       font-size: 0.55em;
     }
+    .lt-ie9 &{
+      padding-top: 70px;
+    }
   }
   .bigBtn{
     margin-bottom: 60px;
+    span{
+      font-size: 22px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 5px;
+    }
+  }
+  p{
+    margin-top: 0;
   }
 }
 
@@ -3180,6 +3212,11 @@ footer{
 	  background-size: 600px auto;
     background-position: 100% 60%;
 	}
+
+  .dl {
+    background-position: 100% -20%;
+    background-size: 900px;
+  }
 }
 
 @media (max-width: 1500px){
@@ -3880,7 +3917,7 @@ footer{
     }
   }
 
-  .club{
+  .club, .page-template-club-php{
     .liste-pictos{
       width: 44%;
     }
@@ -4102,7 +4139,7 @@ footer{
     }
   }
 
-  .club{
+  .club, .page-template-club-php{
     .containerLeft{
       br{
         display: none;
@@ -4123,14 +4160,16 @@ footer{
     h1{
       padding-left: 175px;
       padding-bottom: 30px;
-      br{
-        display: block;
-      }
     }
   }
 
   .macaron{
     top: 25px;
+  }
+
+  .dl {
+    background-position: 100% -80%;
+    background-size: 600px;
   }
 
 }
@@ -4833,6 +4872,19 @@ footer{
     }
   }
 
+  .dl {
+    .bloc {
+      width: 250px;
+      margin-left: -108px;
+    }
+    h2{
+      padding-top: 15px;
+    }
+    .bigBtn {
+      margin-bottom: 5px;
+    }
+  }
+
   .temp{
     width: 65%;
   }
@@ -4939,7 +4991,7 @@ footer{
     background-size: auto 100%;
   }
 
-  .club{
+  .club, .page-template-club-php{
     .extraSmall{
       padding-left: 0;
     }
