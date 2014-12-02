@@ -904,6 +904,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/layoutImg\/dl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93109,
+		"inputAbbreviatedPath": "\/layoutImg\/dl.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/dl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/fd-ref.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1153,6 +1164,17 @@
 		"initialSize": 20073,
 		"inputAbbreviatedPath": "\/layoutImg\/logoVid.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoVid.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/old_logoVid.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20073,
+		"inputAbbreviatedPath": "\/layoutImg\/old_logoVid.png",
+		"outputAbbreviatedPath": "\/layoutImg\/old_logoVid.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
