@@ -3729,6 +3729,14 @@ input[type="submit"].mailjet-subscribe:active {
     height: 0;
     padding-bottom: 63%;
   }
+  .club .containerLeft,
+  .page-template-club-php .containerLeft {
+    width: 100%;
+  }
+  .club .containerLeft br,
+  .page-template-club-php .containerLeft br {
+    display: none;
+  }
 }
 @media (max-width: 979px) {
   .container.small,
@@ -4352,10 +4360,6 @@ input[type="submit"].mailjet-subscribe:active {
   .presse form,
   .page-template-presse-php form {
     width: 100%;
-  }
-  .club .containerLeft br,
-  .page-template-club-php .containerLeft br {
-    display: none;
   }
   .club .liste-pictos,
   .page-template-club-php .liste-pictos {
