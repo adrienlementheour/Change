@@ -660,7 +660,8 @@ strong, b{
   &.big-h4{
     color: @blanc;
     font-size: 1.2em;
-    margin-top: 71px;
+    //margin-top: 71px;
+    margin-top: 37px;
     clear: both;
     text-indent: 48px;
     margin-bottom: 10px;
@@ -1846,6 +1847,9 @@ footer{
 
 .solution, .page-template-solution-php{
   p{
+    font-size: 0.9em;
+  }
+  .big-p + p{
     font-size: 0.95em;
   }
   .bloc-noir-fond{
@@ -2003,17 +2007,18 @@ footer{
     li:before{
       font-size: 50px;
       color: @grisFonce;
-      top: 2px;
+      top: 17px;
     }
     .icon-tool:before{
       font-size: 25px;
-      top: 15px;
+      top: 19px;
     }
   }
 	li{
-		.bariol(1em);
-		padding: 12px 0 23px 50px;
+    font-size: 0.9em;
+		padding: 10px 0 23px 50px;
     position: relative;
+    line-height: 19px;
     &.icon-store-locator:before{
       font-size: 42px;
     }
@@ -2025,12 +2030,10 @@ footer{
       left: 0;
       text-align: center;
       width: 35px;
+      top: 20px;
     }
-		b{
-			font-size: 0.9em;
-		}
     .maj{
-      font-size: 0.8em;
+      font-size: 0.9em;
     }
 	}
 }
@@ -2041,10 +2044,9 @@ footer{
   li{
     &.icon-facebook:before{
       font-size: 25px;
-      top: 8px;
     }
     &:before{
-      top: 1px;
+      top: 11px;
       font-size: 40px;
     }
   }
@@ -2052,14 +2054,12 @@ footer{
 
 .icon-caisse{
   margin: 0;
-  .bariol(1em);
+  font-size: 0.9em;
   padding: 12px 0 12px 50px;
   position: relative;
-  b{
-    font-size: 0.9em;
-  }
+  line-height: 19px;
   .maj{
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   &:before{
     font-family: 'change';
@@ -2069,7 +2069,7 @@ footer{
     left: 0;
     text-align: center;
     width: 35px;
-    top: 7px;
+    top: 25px;
   }
 }
 
@@ -2360,7 +2360,6 @@ footer{
     li{
       line-height: 21px;
       &:before{
-        top: 20px;
         font-size: 27px;
       }
     }
@@ -2911,7 +2910,7 @@ footer{
       line-height: 21px;
       &:before{
         font-size: 50px;
-        top: 20px;
+        top: 18px;
       }
     }
   }

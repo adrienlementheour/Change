@@ -551,7 +551,7 @@ h4 {
 h4.big-h4 {
   color: #ffffff;
   font-size: 1.2em;
-  margin-top: 71px;
+  margin-top: 37px;
   clear: both;
   text-indent: 48px;
   margin-bottom: 10px;
@@ -1949,6 +1949,10 @@ input[type="submit"].mailjet-subscribe:active {
 /* @group Page Solution */
 .solution p,
 .page-template-solution-php p {
+  font-size: 0.9em;
+}
+.solution .big-p + p,
+.page-template-solution-php .big-p + p {
   font-size: 0.95em;
 }
 .solution .bloc-noir-fond,
@@ -2118,20 +2122,17 @@ input[type="submit"].mailjet-subscribe:active {
 .liste-pictos.liste-pictos-noir li:before {
   font-size: 50px;
   color: #202026;
-  top: 2px;
+  top: 17px;
 }
 .liste-pictos.liste-pictos-noir .icon-tool:before {
   font-size: 25px;
-  top: 15px;
+  top: 19px;
 }
 .liste-pictos li {
-  font-family: 'bariol', sans-serif;
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  padding: 12px 0 23px 50px;
+  font-size: 0.9em;
+  padding: 10px 0 23px 50px;
   position: relative;
+  line-height: 19px;
 }
 .liste-pictos li.icon-store-locator:before {
   font-size: 42px;
@@ -2144,12 +2145,10 @@ input[type="submit"].mailjet-subscribe:active {
   left: 0;
   text-align: center;
   width: 35px;
-}
-.liste-pictos li b {
-  font-size: 0.9em;
+  top: 20px;
 }
 .liste-pictos li .maj {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 .liste-pictos2 {
   margin: 0 0 0 160px;
@@ -2157,27 +2156,20 @@ input[type="submit"].mailjet-subscribe:active {
 }
 .liste-pictos2 li.icon-facebook:before {
   font-size: 25px;
-  top: 8px;
 }
 .liste-pictos2 li:before {
-  top: 1px;
+  top: 11px;
   font-size: 40px;
 }
 .icon-caisse {
   margin: 0;
-  font-family: 'bariol', sans-serif;
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  font-size: 0.9em;
   padding: 12px 0 12px 50px;
   position: relative;
-}
-.icon-caisse b {
-  font-size: 0.9em;
+  line-height: 19px;
 }
 .icon-caisse .maj {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 .icon-caisse:before {
   font-family: 'change';
@@ -2187,7 +2179,7 @@ input[type="submit"].mailjet-subscribe:active {
   left: 0;
   text-align: center;
   width: 35px;
-  top: 7px;
+  top: 25px;
 }
 .bloc-saas {
   background: url(../layoutImg/solution/fd-saas.png) no-repeat 50% 100%;
@@ -2528,7 +2520,6 @@ input[type="submit"].mailjet-subscribe:active {
 }
 .fonctionnalites .liste-pictos li:before,
 .page-template-fonctionnalites-php .liste-pictos li:before {
-  top: 20px;
   font-size: 27px;
 }
 .fonctionnalites .liste-pictos .icon-product-page:before,
@@ -3201,7 +3192,7 @@ input[type="submit"].mailjet-subscribe:active {
 .club .liste-pictos li:before,
 .page-template-club-php .liste-pictos li:before {
   font-size: 50px;
-  top: 20px;
+  top: 18px;
 }
 .club .extraSmall,
 .page-template-club-php .extraSmall {
