@@ -551,7 +551,7 @@ h4 {
 h4.big-h4 {
   color: #ffffff;
   font-size: 1.2em;
-  margin-top: 37px;
+  margin-top: 45px;
   clear: both;
   text-indent: 48px;
   margin-bottom: 10px;
@@ -1949,7 +1949,11 @@ input[type="submit"].mailjet-subscribe:active {
 /* @group Page Solution */
 .solution p,
 .page-template-solution-php p {
+  font-family: 'proximaNova', sans-serif;
   font-size: 0.9em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .solution .big-p + p,
 .page-template-solution-php .big-p + p {
@@ -2129,7 +2133,11 @@ input[type="submit"].mailjet-subscribe:active {
   top: 19px;
 }
 .liste-pictos li {
+  font-family: 'proximaNova', sans-serif;
   font-size: 0.9em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   padding: 10px 0 23px 50px;
   position: relative;
   line-height: 19px;
@@ -2158,7 +2166,7 @@ input[type="submit"].mailjet-subscribe:active {
   font-size: 25px;
 }
 .liste-pictos2 li:before {
-  top: 11px;
+  top: 10px;
   font-size: 40px;
 }
 .icon-caisse {
