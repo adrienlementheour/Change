@@ -982,7 +982,8 @@ header > div {
   transition: top 0.1s ease-out 0.2s;
 }
 #menu-main li .lien-contact,
-#menu-main li#menu-item-54 a {
+#menu-main li#menu-item-54 a,
+#menu-main li#menu-item-303 a {
   text-transform: none;
   font-family: 'bariolBold', sans-serif;
   font-size: 1.1em;
@@ -994,16 +995,19 @@ header > div {
   height: 94px;
 }
 .lt-ie9 #menu-main li .lien-contact,
-.lt-ie9 #menu-main li#menu-item-54 a {
+.lt-ie9 #menu-main li#menu-item-54 a,
+.lt-ie9 #menu-main li#menu-item-303 a {
   line-height: 96px;
   height: 96px;
 }
 #menu-main li .lien-contact:before,
-#menu-main li#menu-item-54 a:before {
+#menu-main li#menu-item-54 a:before,
+#menu-main li#menu-item-303 a:before {
   bottom: 0;
 }
 #menu-main li .lien-contact:after,
-#menu-main li#menu-item-54 a:after {
+#menu-main li#menu-item-54 a:after,
+#menu-main li#menu-item-303 a:after {
   font-family: 'proximaNovaBold', sans-serif;
   font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
@@ -3256,20 +3260,25 @@ input[type="submit"].mailjet-subscribe:active {
 /* @end */
 /* Plan du site */
 .plan .first ul,
-.page-id-21 .first ul {
+.page-id-21 .first ul,
+.page-id-260 .first ul {
   margin-top: 30px;
 }
 .plan .first ul a,
-.page-id-21 .first ul a {
+.page-id-21 .first ul a,
+.page-id-260 .first ul a {
   border: 0;
   color: #34343c;
 }
 .plan .first ul a:hover,
 .page-id-21 .first ul a:hover,
+.page-id-260 .first ul a:hover,
 .plan .first ul a:focus,
 .page-id-21 .first ul a:focus,
+.page-id-260 .first ul a:focus,
 .plan .first ul a:active,
-.page-id-21 .first ul a:active {
+.page-id-21 .first ul a:active,
+.page-id-260 .first ul a:active {
   color: #f04a2f;
   border-bottom: 1px solid #eecfcb;
 }
@@ -3529,7 +3538,8 @@ input[type="submit"].mailjet-subscribe:active {
     margin: 0 0 0 3px;
   }
   #menu-main li .lien-contact,
-  #menu-main li#menu-item-54 a {
+  #menu-main li#menu-item-54 a,
+  #menu-main li#menu-item-303 a {
     font-size: 1em;
   }
   #menu-main li a {
@@ -3778,6 +3788,7 @@ input[type="submit"].mailjet-subscribe:active {
     top: 0;
   }
   #menu-main li#menu-item-54 a,
+  #menu-main li#menu-item-303 a,
   #menu-main li .lien-contact {
     line-height: 50px;
     height: auto;
