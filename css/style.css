@@ -1193,6 +1193,11 @@ header > div {
 .lt-ie9 .no-js .subMenu a.actif:after {
   display: block;
 }
+.subMenu a:hover,
+.subMenu a:focus,
+.subMenu a.actif {
+  opacity: 0.7;
+}
 .social-small {
   display: inline-block;
   vertical-align: top;
@@ -3004,7 +3009,7 @@ input[type="submit"].mailjet-subscribe:active {
   background: #ffffff;
 }
 .partner-header {
-  background: url(../layoutImg/partner/fdPartner.jpg) no-repeat center center;
+  background: url(../layoutImg/partner/fdPartner.jpg) no-repeat 50% 50%;
   background-size: cover;
   margin: -41px 0 0;
   overflow: hidden;
@@ -3023,8 +3028,48 @@ input[type="submit"].mailjet-subscribe:active {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url(../layoutImg/partner/hand.png) no-repeat center center;
+  background: url(../layoutImg/partner/hand.png) no-repeat 50% 50%;
   background-size: cover;
+}
+.partner-header h1 {
+  position: absolute;
+  left: 50%;
+  margin-left: -251px;
+  top: 45px;
+}
+.rect {
+  position: relative;
+  margin: 300px 0 200px;
+}
+.touch .rect {
+  margin-top: 206px;
+}
+.no-svg .rect,
+.no-js .rect {
+  height: 213px;
+  width: 100%;
+  background: url(../layoutImg/partner/fallbackSvg.png) no-repeat 50% 2px;
+}
+.rect p {
+  position: absolute;
+}
+.rect .p1 {
+  left: 222px;
+  top: -35px;
+}
+.lt-ie9 .rect .p1 {
+  left: 150px;
+}
+.rect .p2 {
+  bottom: -25px;
+  left: 583px;
+}
+.lt-ie9 .rect .p2 {
+  bottom: -20px;
+  left: 530px;
+}
+.rect .smallSvg {
+  display: none;
 }
 .partnerSolution {
   background: url(../layoutImg/partner/fdSol.jpg) no-repeat center center;
@@ -4043,6 +4088,43 @@ input[type="submit"].mailjet-subscribe:active {
     width: 40%;
     right: -110px;
   }
+  .partner-header h1 {
+    letter-spacing: 5px;
+    margin-left: -222px;
+  }
+  .no-svg .partner-header .hand,
+  .no-js .partner-header .hand {
+    display: none;
+  }
+  .rect .bigSvg {
+    display: none;
+  }
+  .rect .smallSvg {
+    display: block;
+  }
+  .rect .p1 {
+    left: 50%;
+    margin-left: -220px;
+  }
+  .rect .p2 {
+    left: 50%;
+    margin-left: -84px;
+  }
+  .no-svg .rect,
+  .no-js .rect {
+    margin: 200px 0 100px;
+    background: none;
+  }
+  .touch .no-svg .rect,
+  .touch .no-js .rect {
+    margin-top: 100px;
+  }
+  .no-svg .rect p,
+  .no-js .rect p,
+  .no-svg .rect .smallSvg,
+  .no-js .rect .smallSvg {
+    display: none;
+  }
   .partnerTechno .container {
     padding-right: 20px;
     padding-left: 350px;
@@ -4412,6 +4494,12 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .partnerTechno .container {
     padding-left: 20px;
+  }
+  .partnerTechno .container > div {
+    padding-left: 170px;
+  }
+  .partnerTechno .logoPartner {
+    left: -17px;
   }
   .travailler .fd {
     display: none;
@@ -5238,6 +5326,25 @@ input[type="submit"].mailjet-subscribe:active {
   .partner .big-p {
     margin-top: 95px;
   }
+  .partner-header h1 {
+    position: relative;
+    margin-left: 0;
+    left: auto;
+    top: auto;
+  }
+  .partner-header .hand {
+    display: none;
+  }
+  .rect {
+    margin: 200px 0 100px;
+  }
+  .touch .rect {
+    margin-top: 100px;
+  }
+  .rect p,
+  .rect .smallSvg {
+    display: none;
+  }
   .quote {
     margin-left: 0;
   }
@@ -5254,7 +5361,7 @@ input[type="submit"].mailjet-subscribe:active {
     padding-left: 125px;
   }
   .partnerTechno .container > div {
-    padding-left: 20px;
+    padding-left: 0;
   }
   .partnerTechno h2 {
     padding-left: 125px;

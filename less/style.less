@@ -772,6 +772,9 @@ header{
         }
       }
     }
+    &:hover, &:focus, &.actif{
+      opacity: 0.7;
+    }
   }
 }
 
@@ -2347,7 +2350,7 @@ footer{
 }
 
 .partner-header{
-  background: url(../layoutImg/partner/fdPartner.jpg) no-repeat center center;
+  background: url(../layoutImg/partner/fdPartner.jpg) no-repeat 50% 50%;
   background-size: cover;
   margin: -41px 0 0;
   overflow: hidden;
@@ -2361,8 +2364,48 @@ footer{
     left: 0;
     height: 100%;
     width: 100%;
-    background: url(../layoutImg/partner/hand.png) no-repeat center center;
+    background: url(../layoutImg/partner/hand.png) no-repeat 50% 50%;
     background-size: cover;
+  }
+  h1{
+    position: absolute;
+    left: 50%;
+    margin-left: -251px;
+    top: 45px;
+  }
+}
+
+.rect{
+  position: relative;
+  margin: 300px 0 200px;
+  .touch &{
+    margin-top: 206px;
+  }
+  .no-svg &, .no-js &{
+    height: 213px;
+    width: 100%;
+    background: url(../layoutImg/partner/fallbackSvg.png) no-repeat 50% 2px;
+  }
+  p{
+    position: absolute;
+  }
+  .p1{
+    left: 222px;
+    top: -35px;
+    .lt-ie9 &{
+      left: 150px;
+    }
+  }
+  .p2{
+    bottom: -25px;
+    left: 583px;
+    .lt-ie9 &{
+      bottom: -20px;
+      left: 530px;
+    }
+  }
+  .smallSvg{
+    display: none;
   }
 }
 

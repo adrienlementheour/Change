@@ -180,27 +180,40 @@ function scroll(){
 		//Sous menu partenaires
 		if($('body').hasClass('partner') || $("body").hasClass('page-template-partner-php')){
 
+			var sectionsPartner = [$('#solution').offset().top, $('#technologiques').offset().top, $('#ensemble').offset().top, $('#partenaire').offset().top];
+			var partnerSol = sectionsPartner[1] - sectionsPartner[0];
+			var travailler = sectionsPartner[3] - sectionsPartner[2];
+
+			var scrollPage = myScroll - sectionsPartner[0] + 200;
+
 			var firstPos = $('#subMenu').find('li').eq(0).offset().left - 20;
 			var bulle = $('#subMenu').find('.bulleMenu');
 			bulle.css('left', firstPos);
 
-			var tech = $('#technologiques').offset().top;
-			var ensemble = $('#ensemble').offset().top;
-
-			var partnerSol =  tech - $('#solution').offset().top;
-			//var partnerTech =  ensemble - tech;
-			var travailler = $('#partenaire').offset().top - ensemble;
-
-			if(myScroll > 10 && myScroll < ensemble){
-				bulle.css('left', firstPos + (myScroll*152)/partnerSol);
+			if(myScroll > sectionsPartner[0] - 200 && myScroll < sectionsPartner[2]){
+				bulle.css('left', firstPos + (scrollPage*184)/partnerSol);
+			}
+			if(myScroll >= sectionsPartner[2]){
+				var nb = 50;
+				if($(window).width() < 1050) nb = 60;
+				bulle.css('left', + $('#subMenu').find('li').eq(1).offset().left + nb + (scrollPage*220)/travailler);
 			}
 
-			/*if(myScroll >= tech && myScroll < ensemble){
-				bulle.css('left', /*firstPos + 50*/ /*+ $('#subMenu').find('li').eq(0).offset().left + (myScroll*155)/partnerTech);
-			}*/
+			function activeLink(pos){
+				$('#subMenu').find('li').eq(pos).siblings('li').find('a').removeClass('actif');
+				$('#subMenu').find('li').eq(pos).find('a').addClass('actif');
+			}
 
-			if(myScroll >= ensemble){
-				bulle.css('left', + $('#subMenu').find('li').eq(1).find('a').offset().left - 10 + (myScroll*220)/travailler);
+			for(var i=0; i<sectionsPartner.length; i++){
+				if(myScroll > sectionsPartner[i] - 110 && myScroll <= sectionsPartner[i+1] - 110){
+					activeLink(i);
+				}
+			}
+			if(myScroll <= sectionsPartner[0] - 110){
+				$('#subMenu').find('a').removeClass('actif');
+			}
+			if(myScroll > sectionsPartner[3] - 110){
+				activeLink(3);
 			}
 		}
 	}
@@ -491,6 +504,17 @@ function openFormClub(){
 }
 
 
+/* Rectangle qui se dessine */
+
+function drawRect(){
+	var tlRect = new TimelineLite();
+	var path = $('.bigSvg').find('path');
+	if( $('.bigSvg').css('display') == 'none' ){
+		path = $('.smallSvg').find('path');
+	}
+	tlRect.staggerFromTo(path, 2, {drawSVG:0}, {drawSVG: "100%", ease:Power1.easeInOut}, 1.9);
+}
+
 /* Formulaire devenir partenaire */
 
 function openFormPartner(){
@@ -647,6 +671,10 @@ $(window).load(function(){
 	
 	if($('body').hasClass('solution') || $("body").hasClass('page-template-solution-php')){
 		animVisuSolution();
+	}
+
+	if($('body').hasClass('partner') || $("body").hasClass('page-template-partner-php') && !$('html').hasClass('lt-ie9')){
+		drawRect();
 	}
 });
 

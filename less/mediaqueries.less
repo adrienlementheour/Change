@@ -235,7 +235,44 @@
       }
     }
   }
-
+  
+  .partner-header{
+    h1{
+      letter-spacing: 5px;
+      margin-left: -222px;
+    }
+    .no-svg &, .no-js &{
+      .hand{
+        display: none;
+      }
+    }
+  }
+  .rect{
+    .bigSvg{
+      display: none;
+    }
+    .smallSvg{
+      display: block;
+    }
+    .p1{
+      left: 50%;
+      margin-left: -220px;
+    }
+    .p2{
+      left: 50%;
+      margin-left: -84px;
+    }
+    .no-svg &, .no-js &{
+      margin: 200px 0 100px;
+      background: none;
+      .touch &{
+        margin-top: 100px;
+      }
+      p, .smallSvg{
+        display: none;
+      }
+    }
+  }
   .partnerTechno {
     .container{
       padding-right: 20px;
@@ -659,6 +696,12 @@
     .partnerTechno {
       .container{
         padding-left: 20px;
+        > div{
+          padding-left: 170px;
+        }
+      }
+      .logoPartner{
+        left: -17px;
       }
     }
     .travailler{
@@ -1563,6 +1606,26 @@
       margin-top: 95px;
     }
   }
+  .partner-header{
+    h1{
+      position: relative;
+      margin-left: 0;
+      left: auto;
+      top: auto;
+    }
+    .hand{
+      display: none;
+    }
+  }
+  .rect{
+    margin: 200px 0 100px;
+    .touch &{
+      margin-top: 100px;
+    }
+    p, .smallSvg{
+      display: none;
+    }
+  }
   .quote{
     margin-left: 0;
   }
@@ -1585,7 +1648,7 @@
   .partnerTechno{
     .container{
       >div{
-        padding-left: 20px;
+        padding-left: 0;
       }
     }
     h2{
