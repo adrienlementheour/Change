@@ -1,7 +1,4 @@
 /* @group import */
-/* @end */
-/* @group global var */
-/* @end */
 @font-face {
   font-family: 'bariol';
   src: url('../fonts/bariol/bariol_regular-webfont.eot');
@@ -291,6 +288,9 @@
 /* @end */
 /* @group Mixins */
 /* @end */
+/* @group global var */
+/* @end */
+/* @end */
 /* @group Boilerplate */
 html,
 button,
@@ -452,6 +452,17 @@ h1.small,
 h1.extraSmall,
 .h1.extraSmall {
   font-size: 2.3em;
+}
+h1.border,
+.h1.border {
+  display: inline-block;
+  padding: 30px;
+  border: 3px solid;
+  max-width: 170px;
+  text-align: center;
+  float: left;
+  margin: -100px 25px 15px 0;
+  border-radius: 4px;
 }
 h2,
 .h2 {
@@ -660,6 +671,10 @@ form fieldset.fieldBlock {
   display: block;
   margin-right: 0;
 }
+form fieldset.fieldRadio {
+  display: block;
+  margin: 10px 0 0;
+}
 form fieldset.smallField {
   width: 585px;
   margin: 0;
@@ -717,8 +732,20 @@ form input[type="checkbox"] {
 form input[type="tel"] {
   width: 140px;
 }
+form input[type="radio"] {
+  -webkit-appearance: radio;
+  cursor: pointer;
+  width: auto;
+  height: 16px;
+}
+form input[type="radio"] + label {
+  display: inline-block;
+}
 form input.secondBox {
   margin-left: 40px;
+}
+form select {
+  cursor: pointer;
 }
 form textarea {
   height: 150px;
@@ -1100,6 +1127,71 @@ header > div {
 }
 .lt-ie9 #menu-main li {
   margin: 0;
+}
+.subMenu {
+  position: absolute;
+  width: 100%;
+  background: #f1533a;
+  z-index: -1;
+  text-align: center;
+}
+.subMenu .bulleMenu {
+  display: block;
+  position: absolute;
+}
+.subMenu .bulleMenu:after {
+  content: ' •';
+  display: block;
+  position: absolute;
+  color: #f04a2f;
+  font-size: 40px;
+  left: 0;
+  top: 0;
+}
+.no-js .subMenu .bulleMenu {
+  display: none;
+}
+.subMenu li {
+  display: inline;
+  padding: 0 27px;
+}
+.subMenu a {
+  color: #ffffff;
+  border: 0;
+  line-height: 40px;
+  position: relative;
+}
+.no-js .subMenu a:after {
+  content: ' •';
+  display: block;
+  position: absolute;
+  color: #f04a2f;
+  font-size: 40px;
+  left: 50%;
+  margin-left: -4px;
+  top: 17px;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.lt-ie9 .no-js .subMenu a:after {
+  display: none;
+}
+.no-js .subMenu a:hover:after,
+.no-js .subMenu a:focus:after,
+.no-js .subMenu a.actif:after {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.lt-ie9 .no-js .subMenu a:hover:after,
+.lt-ie9 .no-js .subMenu a:focus:after,
+.lt-ie9 .no-js .subMenu a.actif:after {
+  display: block;
 }
 .social-small {
   display: inline-block;
@@ -2852,6 +2944,241 @@ input[type="submit"].mailjet-subscribe:active {
   background-size: auto 100%;
 }
 /* @end */
+/* Partenaires */
+.partner h1 {
+  font-family: 'bariolBold', sans-serif;
+  font-size: 2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 8px;
+}
+.partner h2.maj,
+.partner .h1.maj {
+  margin: 0;
+  font-family: 'bariolBold', sans-serif;
+  font-size: 1.4em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 2px;
+  padding-bottom: 0;
+}
+.partner h2.rouge,
+.partner .h1.rouge {
+  color: #f1533a;
+}
+.partner .big-p {
+  margin-top: 0;
+  font-family: 'bariol', sans-serif;
+  font-size: 1.4em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 28px;
+}
+.partner .bandeau p,
+.partner .bandeau .maj {
+  color: #ffffff;
+  font-family: 'proximaNovaSBold', sans-serif;
+  font-size: 1.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+.partner .bandeau .maj {
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+.partner .content p {
+  padding-left: 105px;
+}
+.partner .fd {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.partner #contact {
+  background: #ffffff;
+}
+.partner-header {
+  background: url(../layoutImg/partner/fdPartner.jpg) no-repeat center center;
+  background-size: cover;
+  margin: -41px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+.partner-header p {
+  font-family: 'proximaNovaSBold', sans-serif;
+  font-size: 1.32em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+.partner-header .hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../layoutImg/partner/hand.png) no-repeat center center;
+  background-size: cover;
+}
+.partnerSolution {
+  background: url(../layoutImg/partner/fdSol.jpg) no-repeat center center;
+  background-size: cover;
+}
+.partnerSolution .logoPartner {
+  top: 50px;
+  background: url(../layoutImg/partner/partnerSol.png) no-repeat;
+}
+.partnerSolution .container {
+  padding: 95px 405px 0 180px;
+}
+.lt-ie9 .partnerSolution .container {
+  padding-right: 0;
+}
+.partnerSolution .maj {
+  color: #ffffff;
+}
+.partnerSolution .bigBtn {
+  background: #f1533a;
+  border-color: #f1533a;
+}
+.partnerSolution .bigBtn:hover,
+.partnerSolution .bigBtn:focus {
+  background: #ffffff;
+  color: #f1533a;
+}
+.partnerTechno {
+  background: url(../layoutImg/partner/fdTech.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.partnerTechno .logoPartner {
+  top: -25px;
+  background: url(../layoutImg/partner/partnerTech.png) no-repeat;
+}
+.partnerTechno .container {
+  padding: 95px 0 0 405px;
+}
+.partnerTechno .container > div {
+  position: relative;
+  padding-left: 180px;
+}
+.lt-ie9 .partnerTechno .container {
+  padding-left: 0;
+}
+.logoPartner {
+  width: 145px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+}
+.trav {
+  font-size: 1.1em;
+}
+.obj {
+  line-height: 37px;
+}
+.obj span {
+  font-size: 0.85em;
+}
+.qual {
+  font-size: 1.08em;
+}
+.travailler {
+  position: relative;
+}
+.travailler .container {
+  padding: 155px 0 125px 515px;
+  z-index: 2;
+}
+.lt-ie9 .travailler .container {
+  padding-left: 200px;
+}
+.travailler .h1 {
+  margin-top: -83px;
+}
+.travailler .fd {
+  background: url(../layoutImg/partner/fdEnsemble.jpg) no-repeat;
+  min-width: 1655px;
+}
+.lt-ie9 .travailler .fd {
+  left: -400px;
+}
+.objectif {
+  background: url(../layoutImg/partner/fdQual.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 25px 0 90px;
+}
+.objectif .container {
+  padding-left: 365px;
+}
+.lt-ie9 .objectif .container {
+  padding-left: 0;
+}
+.lt-ie9 .objectif .border {
+  margin-top: -60px;
+}
+.contrat {
+  padding: 25px 0 90px;
+  position: relative;
+}
+.contrat .container {
+  padding-right: 515px;
+  z-index: 2;
+}
+.contrat .fd {
+  background: url(../layoutImg/partner/fdContrat.jpg) no-repeat 100% 100%;
+  width: 70%;
+}
+.lt-ie9 .contrat .border {
+  margin-top: -60px;
+}
+.quote {
+  display: block;
+  font-size: 1.1em;
+  margin: 40px 0 0 105px;
+  padding: 20px 10px;
+  border-top: 3px solid #54b8e7;
+  border-bottom: 3px solid #54b8e7;
+  position: relative;
+}
+.quote:after,
+.quote:before {
+  display: block;
+  color: #54b8e7;
+  border: solid 3px;
+  font-family: 'bariol', sans-serif;
+  font-size: 45px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  width: 28px;
+  height: 28px;
+  line-height: 45px;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  position: absolute;
+}
+.quote:before {
+  content: ' “ ';
+  left: 0;
+  top: -18px;
+}
+.quote:after {
+  content: ' ” ';
+  right: 0;
+  bottom: -18px;
+}
+#partenaire .h1 {
+  margin-bottom: 10px;
+}
+/* @end */
 /* Communiqué de presse */
 .presse-header {
   padding-top: 81px;
@@ -3500,6 +3827,16 @@ input[type="submit"].mailjet-subscribe:active {
 /* @end */
 /* ==|== media queries ======================================================
    ========================================================================== */
+@media (max-width: 1700px) {
+  .contrat .fd {
+    background-position: 0 100%;
+  }
+}
+@media (max-width: 1500px) {
+  .fdClubHeader {
+    width: 64%;
+  }
+}
 @media (max-width: 1280px) {
   .fd-saas {
     background-size: 600px auto;
@@ -3508,11 +3845,6 @@ input[type="submit"].mailjet-subscribe:active {
   .dl {
     background-position: 100% -20%;
     background-size: 900px;
-  }
-}
-@media (max-width: 1500px) {
-  .fdClubHeader {
-    width: 64%;
   }
 }
 @media (max-width: 1150px) {
@@ -3710,6 +4042,26 @@ input[type="submit"].mailjet-subscribe:active {
   .page-template-fonctionnalites-php .tab.tab1 {
     width: 40%;
     right: -110px;
+  }
+  .partnerTechno .container {
+    padding-right: 20px;
+    padding-left: 350px;
+  }
+  .travailler .container {
+    padding-right: 20px;
+    padding-left: 450px;
+  }
+  .travailler .fd {
+    min-width: 1550px;
+  }
+  .objectif .container {
+    padding-right: 20px;
+  }
+  .contrat .container {
+    padding-left: 20px;
+  }
+  .contrat .fd {
+    width: 80%;
   }
   .bloc-header-club .container {
     padding: 0 25px;
@@ -4051,6 +4403,36 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .titre-fonctionnalite {
     height: 530px;
+  }
+  .subMenu {
+    display: none;
+  }
+  .partnerSolution .container {
+    padding-right: 20px;
+  }
+  .partnerTechno .container {
+    padding-left: 20px;
+  }
+  .travailler .fd {
+    display: none;
+  }
+  .travailler .container {
+    padding-left: 20px;
+  }
+  .objectif .container {
+    padding-left: 20px;
+  }
+  .contrat {
+    padding-bottom: 0;
+  }
+  .contrat .container {
+    padding-right: 20px;
+  }
+  .contrat .fd {
+    position: relative;
+    width: 100%;
+    padding-top: 57%;
+    background-size: 100%;
   }
   .presse .containerRight,
   .page-template-presse-php .containerRight {
@@ -4846,6 +5228,37 @@ input[type="submit"].mailjet-subscribe:active {
   .titre-fonctionnalite {
     height: 330px;
   }
+  .h1.border {
+    float: none;
+    margin-top: 20px;
+  }
+  .partner .content p {
+    padding-left: 0;
+  }
+  .partner .big-p {
+    margin-top: 95px;
+  }
+  .quote {
+    margin-left: 0;
+  }
+  .travailler .h1 {
+    margin-top: -100px;
+  }
+  .travailler .h1 + .maj {
+    display: block;
+  }
+  .partnerSolution .container {
+    padding-left: 20px;
+  }
+  .partnerSolution h2 {
+    padding-left: 125px;
+  }
+  .partnerTechno .container > div {
+    padding-left: 20px;
+  }
+  .partnerTechno h2 {
+    padding-left: 125px;
+  }
   .temp {
     width: 71%;
   }
@@ -4987,6 +5400,17 @@ input[type="submit"].mailjet-subscribe:active {
     width: 115%;
     left: -141px;
     background-size: 100%;
+  }
+  .partner .big-p {
+    margin-top: 20px;
+  }
+  .partnerTechno h2.maj,
+  .partnerSolution h2.maj {
+    margin-top: 130px;
+    padding-left: 0;
+  }
+  .partnerTechno .logoPartner {
+    top: -185px;
   }
   .club-header h1 br {
     display: none;

@@ -176,6 +176,33 @@ function scroll(){
 				$('#nuage2').css('margin-top', '0px');
 			}
 		}
+
+		//Sous menu partenaires
+		if($('body').hasClass('partner') || $("body").hasClass('page-template-partner-php')){
+
+			var firstPos = $('#subMenu').find('li').eq(0).offset().left - 20;
+			var bulle = $('#subMenu').find('.bulleMenu');
+			bulle.css('left', firstPos);
+
+			var tech = $('#technologiques').offset().top;
+			var ensemble = $('#ensemble').offset().top;
+
+			var partnerSol =  tech - $('#solution').offset().top;
+			//var partnerTech =  ensemble - tech;
+			var travailler = $('#partenaire').offset().top - ensemble;
+
+			if(myScroll > 10 && myScroll < ensemble){
+				bulle.css('left', firstPos + (myScroll*152)/partnerSol);
+			}
+
+			/*if(myScroll >= tech && myScroll < ensemble){
+				bulle.css('left', /*firstPos + 50*/ /*+ $('#subMenu').find('li').eq(0).offset().left + (myScroll*155)/partnerTech);
+			}*/
+
+			if(myScroll >= ensemble){
+				bulle.css('left', + $('#subMenu').find('li').eq(1).find('a').offset().left - 10 + (myScroll*220)/travailler);
+			}
+		}
 	}
 }
 
@@ -464,6 +491,47 @@ function openFormClub(){
 }
 
 
+/* Formulaire devenir partenaire */
+
+function openFormPartner(){
+	if ($('#partenaire').hasClass("opened")) {
+		$("html, body").delay(300).animate({scrollTop: $('#partenaire').offset().top - 150 }, 500);
+	}
+
+	function goToForm(){
+		$("html, body").animate({scrollTop: $('#partenaire').offset().top - 100 }, 600);
+		return false;
+	}
+	
+	$('#partnerSol').click(goToForm);
+	$('#partnerTech').click(goToForm);
+}
+
+/* Smooth scroll pour les ancres du sous-menu */
+
+function clickSubMenu(){
+	$('#subMenu').find('li').eq(0).click(function(){
+		$("html, body").animate({scrollTop: $('#solution').offset().top - 100 }, 600);
+		return false;
+	});
+
+	$('#subMenu').find('li').eq(1).click(function(){
+		$("html, body").animate({scrollTop: $('#technologiques').offset().top - 100 }, 600);
+		return false;
+	});
+
+	$('#subMenu').find('li').eq(2).click(function(){
+		$("html, body").animate({scrollTop: $('#ensemble').offset().top - 100 }, 600);
+		return false;
+	});
+
+	$('#subMenu').find('li').eq(3).click(function(){
+		$("html, body").animate({scrollTop: $('#partenaire').offset().top - 100 }, 600);
+		return false;
+	});
+}
+
+
 /// Fonction pour animer le visuel en haut de la page solution ///
 
 function animVisuSolution(){
@@ -545,8 +613,14 @@ $(function(){
 		openRef();
 	}
 
+	if($('body').hasClass('partner') || $("body").hasClass('page-template-partner-php')){
+		$('#subMenu').find('.bulleMenu').css('left', '-50px');
+		clickSubMenu();
+		openFormPartner();
+	}
+
 	$(document).scroll(function() {
-		myScroll = $(document).scrollTop();
+		myScroll = $(this).scrollTop();
 		scroll();
 		setFooter();
 	});

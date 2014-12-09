@@ -20,7 +20,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-114x114.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-120x120.png": {
 		"fileType": 32768,
@@ -31,7 +31,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-120x120.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-144x144.png": {
 		"fileType": 32768,
@@ -42,7 +42,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-144x144.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-152x152.png": {
 		"fileType": 32768,
@@ -53,7 +53,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-152x152.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-180x180.png": {
 		"fileType": 32768,
@@ -64,7 +64,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-180x180.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-57x57.png": {
 		"fileType": 32768,
@@ -75,7 +75,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-57x57.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-60x60.png": {
 		"fileType": 32768,
@@ -86,7 +86,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-60x60.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-72x72.png": {
 		"fileType": 32768,
@@ -97,7 +97,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-72x72.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-76x76.png": {
 		"fileType": 32768,
@@ -108,7 +108,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-76x76.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-precomposed.png": {
 		"fileType": 32768,
@@ -119,7 +119,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon-precomposed.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon.png": {
 		"fileType": 32768,
@@ -130,7 +130,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/club.php": {
 		"fileType": 8192,
@@ -204,7 +204,7 @@
 		"outputAbbreviatedPath": "\/favicon-160x160.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/favicon-16x16.png": {
 		"fileType": 32768,
@@ -215,7 +215,7 @@
 		"outputAbbreviatedPath": "\/favicon-16x16.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/favicon-192x192.png": {
 		"fileType": 32768,
@@ -226,7 +226,7 @@
 		"outputAbbreviatedPath": "\/favicon-192x192.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/favicon-32x32.png": {
 		"fileType": 32768,
@@ -237,7 +237,7 @@
 		"outputAbbreviatedPath": "\/favicon-32x32.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/favicon-96x96.png": {
 		"fileType": 32768,
@@ -248,7 +248,7 @@
 		"outputAbbreviatedPath": "\/favicon-96x96.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/fonctionnalites.html": {
 		"fileType": 8192,
@@ -268,7 +268,7 @@
 		"outputAbbreviatedPath": "\/img\/presse\/releve1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/presse\/releve2.jpg": {
 		"fileType": 16384,
@@ -279,7 +279,7 @@
 		"outputAbbreviatedPath": "\/img\/presse\/releve2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/presse\/releve3.jpg": {
 		"fileType": 16384,
@@ -290,7 +290,7 @@
 		"outputAbbreviatedPath": "\/img\/presse\/releve3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/presse\/releve4.jpg": {
 		"fileType": 16384,
@@ -301,7 +301,7 @@
 		"outputAbbreviatedPath": "\/img\/presse\/releve4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ref\/alain-logo.jpg": {
 		"fileType": 16384,
@@ -312,7 +312,7 @@
 		"outputAbbreviatedPath": "\/img\/ref\/alain-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ref\/aubert-logo.jpg": {
 		"fileType": 16384,
@@ -323,7 +323,7 @@
 		"outputAbbreviatedPath": "\/img\/ref\/aubert-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ref\/catimini-logo.jpg": {
 		"fileType": 16384,
@@ -334,7 +334,7 @@
 		"outputAbbreviatedPath": "\/img\/ref\/catimini-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ref\/histoire-logo.jpg": {
 		"fileType": 16384,
@@ -345,7 +345,7 @@
 		"outputAbbreviatedPath": "\/img\/ref\/histoire-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ref\/manfield-logo.jpg": {
 		"fileType": 16384,
@@ -356,7 +356,7 @@
 		"outputAbbreviatedPath": "\/img\/ref\/manfield-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ref\/rossignol-logo.jpg": {
 		"fileType": 16384,
@@ -367,7 +367,7 @@
 		"outputAbbreviatedPath": "\/img\/ref\/rossignol-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ref\/solaris-logo.jpg": {
 		"fileType": 16384,
@@ -378,7 +378,7 @@
 		"outputAbbreviatedPath": "\/img\/ref\/solaris-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ref\/tartine-logo.jpg": {
 		"fileType": 16384,
@@ -389,7 +389,7 @@
 		"outputAbbreviatedPath": "\/img\/ref\/tartine-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ref\/z-logo.jpg": {
 		"fileType": 16384,
@@ -400,7 +400,7 @@
 		"outputAbbreviatedPath": "\/img\/ref\/z-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -792,7 +792,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/accueil\/vid2.jpg": {
 		"fileType": 16384,
@@ -803,7 +803,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/accueil\/vid3.jpg": {
 		"fileType": 16384,
@@ -814,7 +814,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/accueil\/vid4.jpg": {
 		"fileType": 16384,
@@ -825,7 +825,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/accueil\/vid5.jpg": {
 		"fileType": 16384,
@@ -836,7 +836,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/accueil\/vid5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/bgPin.png": {
 		"fileType": 32768,
@@ -847,7 +847,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/bgPin.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/change.png": {
 		"fileType": 32768,
@@ -869,7 +869,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/chemise.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/club.png": {
 		"fileType": 32768,
@@ -880,7 +880,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/club.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/degRef.png": {
 		"fileType": 32768,
@@ -891,7 +891,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/degRef.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/degRef2.png": {
 		"fileType": 32768,
@@ -902,7 +902,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/degRef2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/dl.jpg": {
 		"fileType": 16384,
@@ -913,7 +913,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/dl.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fd-ref.jpg": {
 		"fileType": 16384,
@@ -924,7 +924,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fd-ref.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fdClub.jpg": {
 		"fileType": 16384,
@@ -935,7 +935,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fdClub.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fdClubHeader.jpg": {
 		"fileType": 16384,
@@ -946,18 +946,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fdClubHeader.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/layoutImg\/fdClubHeader2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 255968,
-		"inputAbbreviatedPath": "\/layoutImg\/fdClubHeader2.jpg",
-		"outputAbbreviatedPath": "\/layoutImg\/fdClubHeader2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/api.png": {
 		"fileType": 32768,
@@ -968,7 +957,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/api.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/api2.png": {
 		"fileType": 32768,
@@ -979,7 +968,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/api2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/fd-ie-com.png": {
 		"fileType": 32768,
@@ -990,7 +979,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/fd-ie-com.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/ipad1.png": {
 		"fileType": 32768,
@@ -1001,7 +990,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/ipad1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/ipad2.png": {
 		"fileType": 32768,
@@ -1012,7 +1001,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/ipad2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/visu-cms.jpg": {
 		"fileType": 16384,
@@ -1023,7 +1012,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cms.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/visu-commande.jpg": {
 		"fileType": 16384,
@@ -1034,7 +1023,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-commande.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/visu-cross.jpg": {
 		"fileType": 16384,
@@ -1045,7 +1034,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-cross.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/visu-fid.jpg": {
 		"fileType": 16384,
@@ -1056,7 +1045,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-fid.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/visu-inter.jpg": {
 		"fileType": 16384,
@@ -1067,7 +1056,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-inter.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/visu-secu.png": {
 		"fileType": 32768,
@@ -1078,7 +1067,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-secu.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/fonc\/visu-titre.jpg": {
 		"fileType": 16384,
@@ -1089,18 +1078,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/fonc\/visu-titre.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/layoutImg\/logo-change.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4146,
-		"inputAbbreviatedPath": "\/layoutImg\/logo-change.png",
-		"outputAbbreviatedPath": "\/layoutImg\/logo-change.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/logoChange.png": {
 		"fileType": 32768,
@@ -1111,7 +1089,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/logoChange.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/logoChangeIE.png": {
 		"fileType": 32768,
@@ -1122,7 +1100,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/logoChangeIE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/logoChangeTxt.png": {
 		"fileType": 32768,
@@ -1133,7 +1111,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/logoChangeTxt.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/logoChangeTxtIE.png": {
 		"fileType": 32768,
@@ -1144,7 +1122,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/logoChangeTxtIE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/logoPresse.png": {
 		"fileType": 32768,
@@ -1155,7 +1133,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/logoPresse.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/logoVid.png": {
 		"fileType": 32768,
@@ -1166,18 +1144,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/logoVid.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/layoutImg\/old_logoVid.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20073,
-		"inputAbbreviatedPath": "\/layoutImg\/old_logoVid.png",
-		"outputAbbreviatedPath": "\/layoutImg\/old_logoVid.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ombrePresse.png": {
 		"fileType": 32768,
@@ -1188,7 +1155,106 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ombrePresse.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/layoutImg\/partner\/fdContrat.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 359533,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/fdContrat.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/fdContrat.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/layoutImg\/partner\/fdEnsemble.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 187593,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/fdEnsemble.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/fdEnsemble.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/partner\/fdPartner.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 312493,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/fdPartner.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/fdPartner.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/layoutImg\/partner\/fdQual.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59787,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/fdQual.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/fdQual.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/partner\/fdSol.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77427,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/fdSol.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/fdSol.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/layoutImg\/partner\/fdTech.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 92589,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/fdTech.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/fdTech.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/layoutImg\/partner\/hand.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/hand.png",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/hand.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/layoutImg\/partner\/partnerSol.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11902,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/partnerSol.png",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/partnerSol.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/layoutImg\/partner\/partnerTech.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11859,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/partnerTech.png",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/partnerTech.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/layoutImg\/pin.png": {
 		"fileType": 32768,
@@ -1199,7 +1265,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/pin.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/pngMask.png": {
 		"fileType": 32768,
@@ -1210,7 +1276,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/pngMask.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/presse.jpg": {
 		"fileType": 16384,
@@ -1221,7 +1287,18 @@
 		"outputAbbreviatedPath": "\/layoutImg\/presse.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/layoutImg\/presse2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 121840,
+		"inputAbbreviatedPath": "\/layoutImg\/presse2.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/presse2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/layoutImg\/quote.png": {
 		"fileType": 32768,
@@ -1232,7 +1309,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/quote.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ref\/alain.jpg": {
 		"fileType": 16384,
@@ -1243,7 +1320,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ref\/alain.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ref\/aubert.jpg": {
 		"fileType": 16384,
@@ -1254,7 +1331,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ref\/aubert.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ref\/catimini.jpg": {
 		"fileType": 16384,
@@ -1265,7 +1342,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ref\/catimini.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ref\/histoire.jpg": {
 		"fileType": 16384,
@@ -1276,7 +1353,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ref\/histoire.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ref\/manfield.jpg": {
 		"fileType": 16384,
@@ -1287,7 +1364,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ref\/manfield.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ref\/rossignol.jpg": {
 		"fileType": 16384,
@@ -1298,7 +1375,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ref\/rossignol.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ref\/solaris.jpg": {
 		"fileType": 16384,
@@ -1309,7 +1386,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ref\/solaris.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ref\/tartine.jpg": {
 		"fileType": 16384,
@@ -1320,7 +1397,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ref\/tartine.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/ref\/z.jpg": {
 		"fileType": 16384,
@@ -1331,7 +1408,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/ref\/z.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/sepPresse.jpg": {
 		"fileType": 16384,
@@ -1342,7 +1419,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/sepPresse.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/bg-visu-solution.png": {
 		"fileType": 32768,
@@ -1353,7 +1430,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/bg-visu-solution.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/fd-saas.png": {
 		"fileType": 32768,
@@ -1364,7 +1441,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/fd-saas.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/fd-schema.png": {
 		"fileType": 32768,
@@ -1375,7 +1452,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/fd-schema.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/groupe.jpg": {
 		"fileType": 16384,
@@ -1386,7 +1463,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/groupe.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/nana.jpg": {
 		"fileType": 16384,
@@ -1397,7 +1474,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/nana.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/nuage1.png": {
 		"fileType": 32768,
@@ -1408,7 +1485,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/nuage1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/nuage2.png": {
 		"fileType": 32768,
@@ -1419,7 +1496,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/nuage2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/ombre-visu-solution.png": {
 		"fileType": 32768,
@@ -1430,7 +1507,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/ombre-visu-solution.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/ombre-visu-solution@2x.png": {
 		"fileType": 32768,
@@ -1441,7 +1518,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/ombre-visu-solution@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/solution-screen.png": {
 		"fileType": 32768,
@@ -1452,7 +1529,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/solution-screen.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/store.jpg": {
 		"fileType": 16384,
@@ -1463,7 +1540,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/store.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/layoutImg\/solution\/vitrine.png": {
 		"fileType": 32768,
@@ -1474,7 +1551,27 @@
 		"outputAbbreviatedPath": "\/layoutImg\/solution\/vitrine.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/less\/fonts.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/fonts.less",
+		"outputAbbreviatedPath": "\/css\/fonts.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
 		},
 	"\/less\/lesshat.less": {
 		"allowInsecureImports": 0,
@@ -1486,6 +1583,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/less\/lesshat.less",
 		"outputAbbreviatedPath": "\/css\/lesshat.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/less\/mediaqueries.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/mediaqueries.less",
+		"outputAbbreviatedPath": "\/css\/mediaqueries.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1534,7 +1651,7 @@
 		"outputAbbreviatedPath": "\/mstile-144x144.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/mstile-150x150.png": {
 		"fileType": 32768,
@@ -1545,7 +1662,7 @@
 		"outputAbbreviatedPath": "\/mstile-150x150.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/mstile-310x150.png": {
 		"fileType": 32768,
@@ -1556,7 +1673,7 @@
 		"outputAbbreviatedPath": "\/mstile-310x150.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/mstile-310x310.png": {
 		"fileType": 32768,
@@ -1567,7 +1684,7 @@
 		"outputAbbreviatedPath": "\/mstile-310x310.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/mstile-70x70.png": {
 		"fileType": 32768,
@@ -1578,13 +1695,22 @@
 		"outputAbbreviatedPath": "\/mstile-70x70.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/partenaires.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/partenaires.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/partenaires2.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partenaires2.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1607,7 +1733,7 @@
 		"outputAbbreviatedPath": "\/ploup0.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/presse.php": {
 		"fileType": 8192,
