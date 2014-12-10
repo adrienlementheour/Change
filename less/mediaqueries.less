@@ -1607,22 +1607,23 @@
     }
   }
   .partner-header{
-    h1{
-      position: relative;
-      margin-left: 0;
-      left: auto;
-      top: auto;
-    }
     .hand{
       display: none;
     }
   }
   .rect{
-    margin: 200px 0 100px;
+    margin: 250px 0 100px;
     .touch &{
-      margin-top: 100px;
+      margin-top: 150px;
     }
-    p, .smallSvg{
+    .p1, .p2{
+      width: 100%;
+      left: 0;
+      margin-left: 0;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    .smallSvg{
       display: none;
     }
   }
@@ -1822,6 +1823,14 @@
         right: -80px;
         bottom: -15%;
       }
+    }
+  }
+}
+
+@media (max-width: 445px){
+  .partner-header{
+    h1{
+      margin-top: -52px;
     }
   }
 }

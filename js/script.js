@@ -14,6 +14,8 @@ var indic;
 
 var myScroll;
 
+var sectionsPartner;
+
 
 /* Add class touch when mobile and tablet are detected, no-touch if not */
 
@@ -180,7 +182,6 @@ function scroll(){
 		//Sous menu partenaires
 		if($('body').hasClass('partner') || $("body").hasClass('page-template-partner-php')){
 
-			var sectionsPartner = [$('#solution').offset().top, $('#technologiques').offset().top, $('#ensemble').offset().top, $('#partenaire').offset().top];
 			var partnerSol = sectionsPartner[1] - sectionsPartner[0];
 			var travailler = sectionsPartner[3] - sectionsPartner[2];
 
@@ -212,7 +213,7 @@ function scroll(){
 			if(myScroll <= sectionsPartner[0] - 110){
 				$('#subMenu').find('a').removeClass('actif');
 			}
-			if(myScroll > sectionsPartner[3] - 110){
+			if(myScroll > sectionsPartner[3] - 160){
 				activeLink(3);
 			}
 		}
@@ -504,29 +505,44 @@ function openFormClub(){
 }
 
 
+/* Ajout du svg dans la page (sinon bug sous IE) */
+
+function appendSvg(){
+	if( $('.bigSvg').css('display') === 'none' ){
+		$('.smallSvg').append('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="508px" height="208px">
+									<path d="M 465 4 500 4 500 200 480 200" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
+									<path d="M 160 200 4 200 4 4 24 4" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
+								</svg>');
+	}else{
+		$('.bigSvg').append('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="768px" height="208px">
+								<path d="M 490 4 760 4 760 200 730 200" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
+								<path d="M 385 200 4 200 4 4 24 4" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
+							</svg>');
+	}
+}
+
 /* Rectangle qui se dessine */
 
 function drawRect(){
 	var tlRect = new TimelineLite();
 	var path = $('.bigSvg').find('path');
-	if( $('.bigSvg').css('display') == 'none' ){
+	if( $('.bigSvg').css('display') === 'none' ){
 		path = $('.smallSvg').find('path');
 	}
-	tlRect.staggerFromTo(path, 2, {drawSVG:0}, {drawSVG: "100%", ease:Power1.easeInOut}, 1.9);
+	tlRect.staggerFromTo(path, 0.8, {drawSVG:0}, {drawSVG: "100%", ease:Power1.easeInOut}, 0.7);
 }
 
 /* Formulaire devenir partenaire */
 
 function openFormPartner(){
 	if ($('#partenaire').hasClass("opened")) {
-		$("html, body").delay(300).animate({scrollTop: $('#partenaire').offset().top - 150 }, 500);
+		$("html, body").delay(300).animate({scrollTop: sectionsPartner[3] - 150 }, 500);
 	}
 
 	function goToForm(){
-		$("html, body").animate({scrollTop: $('#partenaire').offset().top - 100 }, 600);
+		$("html, body").animate({scrollTop: sectionsPartner[3] - 150 }, 600);
 		return false;
 	}
-	
 	$('#partnerSol').click(goToForm);
 	$('#partnerTech').click(goToForm);
 }
@@ -534,25 +550,15 @@ function openFormPartner(){
 /* Smooth scroll pour les ancres du sous-menu */
 
 function clickSubMenu(){
-	$('#subMenu').find('li').eq(0).click(function(){
-		$("html, body").animate({scrollTop: $('#solution').offset().top - 100 }, 600);
-		return false;
-	});
 
-	$('#subMenu').find('li').eq(1).click(function(){
-		$("html, body").animate({scrollTop: $('#technologiques').offset().top - 100 }, 600);
-		return false;
-	});
+	function scrollAncre(eq, top){
+		$("html, body").animate({scrollTop: sectionsPartner[eq] - top }, 600);
+	}
 
-	$('#subMenu').find('li').eq(2).click(function(){
-		$("html, body").animate({scrollTop: $('#ensemble').offset().top - 100 }, 600);
-		return false;
-	});
-
-	$('#subMenu').find('li').eq(3).click(function(){
-		$("html, body").animate({scrollTop: $('#partenaire').offset().top - 100 }, 600);
-		return false;
-	});
+	$('#subMenu').find('a').eq(0).click(function(){ scrollAncre(0, 100); return false; });
+	$('#subMenu').find('a').eq(1).click(function(){ scrollAncre(1, 100); return false; });
+	$('#subMenu').find('a').eq(2).click(function(){ scrollAncre(2, 100); return false; });
+	$('#subMenu').find('a').eq(3).click(function(){ scrollAncre(3, 150); return false; });
 }
 
 
@@ -638,9 +644,13 @@ $(function(){
 	}
 
 	if($('body').hasClass('partner') || $("body").hasClass('page-template-partner-php')){
+		sectionsPartner = [$('#solution').offset().top, $('#technologiques').offset().top, $('#ensemble').offset().top, $('#partenaire').offset().top];
 		$('#subMenu').find('.bulleMenu').css('left', '-50px');
 		clickSubMenu();
 		openFormPartner();
+		if(!$('html').hasClass('lt-ie9') && $('html').hasClass('svg')){
+			appendSvg();
+		}
 	}
 
 	$(document).scroll(function() {

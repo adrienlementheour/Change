@@ -163,20 +163,8 @@
 				<div class="rect">
 					<p class="p1">Se consacrer exclusivement à son métier</p>	
 					<h1 class="maj blanc">Travailler ensemble</h1>	
-					<div class="bigSvg">		
-						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="768px" height="208px">
-							<!--<polyline points="490 4, 760 4, 760 200, 730 200" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>-->
-							<!--<polyline points="385 200, 4 200, 4 4, 24 4" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>-->
-							<path d="M 490 4 760 4 760 200 730 200" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
-							<path d="M 385 200 4 200 4 4 24 4" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
-						</svg>
-					</div>
-					<div class="smallSvg">
-						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="508px" height="208px">
-							<path d="M 465 4 500 4 500 200 480 200" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
-							<path d="M 160 200 4 200 4 4 24 4" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
-						</svg>
-					</div>
+					<div class="bigSvg"></div>
+					<div class="smallSvg"></div>
 					<p class="p2">Être ouvert à celui des autres</p>
 				</div>
 			</div>
@@ -264,13 +252,14 @@
 				<form method="POST" action="?open=1" class="<?php if($opened) echo 'op'; ?>">
 					<fieldset class="smallField">
 						<fieldset class="fieldBlock">
-							<label for="partner">Je souhaite devenir partenaire :</label>
+							<label>Je souhaite devenir partenaire :</label>
 							<fieldset class="fieldRadio">
-								<input type="radio" name="partner" id="partnerSol" value="solution" <?php if($partner != 'technologique') echo 'checked'; ?>> 
-								<label for="partnerSol">Solution</label> 
+								<input type="radio" name="partner" id="partnerSolution" value="solution" <?php if($partner != 'technologique') echo 'checked'; ?>> 
+								<label for="partnerSolution">Solution</label> 
 							</fieldset>
 							<fieldset class="fieldBlock <?php if($erreurPartnerTech != '') echo 'error'; ?>">
-								<input type="radio" name="partner" id="partnerTech" value="technologique" <?php if($partner == 'technologique') echo 'checked'; ?>> <label for="partnerTech">Technologique :</label> 
+								<input type="radio" name="partner" id="partnerTechnologique" value="technologique" <?php if($partner == 'technologique') echo 'checked'; ?>> 
+								<label for="partnerTechnologique">Technologique :</label> 
 								<select name="tech">
 									<option value="default">—Choisir une technologie</option>
 									<option value="1" <?php if($tech == '1') echo 'selected="selected"'; ?>>Techno1</option>
@@ -309,7 +298,7 @@
 					</fieldset>
 					<fieldset class="fieldBlock">
 						<label class="facultatif" for="message">Commentaires <span>(facultatif)</span></label>
-						<textarea type="text" name="message" id="message"><?php echo $message; ?></textarea>
+						<textarea name="message" id="message"><?php echo $message; ?></textarea>
 					</fieldset>
 					<input class="maj bigBtn" type="submit" name="submitted" value="Envoyer">
 				</form>
