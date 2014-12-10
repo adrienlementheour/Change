@@ -214,7 +214,10 @@
 
 		<div class="content travailler" id="ensemble">
 			<div class="container clearfix">
-				<h2 class="bleu h1 extraSmall border"><span class="trav">Travailler</span> ensemble</h2>
+				<h2 class="bleu h1 extraSmall border">
+					<div class="titreRect titreRect1"></div>
+					<span class="trav">Travailler</span> ensemble
+				</h2>
 				<b class="maj">Se consacrer exclusivement à son métier, et être ouvert à celui des autres. </b>
 				<p>Ce principe que nous partageons tous les jours avec nos clients, nous en avons fait une <b>valeur clé</b> de notre <b>développement technologique.</b></p>
 				<p>C’est ainsi que depuis de nombreuses années, pour répondre au plus près aux attentes du marché, nous avons décidé de nous <b>spécialiser exclusivement</b> dans le domaine de l’édition de <b>solutions de commerce digital</b>, et de consacrer l’intégralité de nos ressources à cette <b>fin unique.</b></p>
@@ -225,7 +228,10 @@
 
 		<div class="content objectif">
 			<div class="container clearfix blanc">
-				<h3 class="bleu h1 extraSmall border obj"><span>Un objectif</span> commun</h3>
+				<h3 class="bleu h1 extraSmall border obj">
+					<div class="titreRect titreRect2"></div>
+					<span>Un objectif</span> commun
+				</h3>
 				<p>Participant à la réussite des projets e-commerce de nos clients, la <b>qualité de service</b> de nos partenaires fait partie des principaux <b>critères de collaboration</b> que nous observons. </p>
 				<p>Elle est toujours le <b>fruit de nombreux échanges</b> entre les équipes dédiées à l’élaboration de l’offre marketing et les équipes techniques.</p>
 			</div>
@@ -233,7 +239,10 @@
 
 		<div class="content contrat">
 			<div class="container clearfix">
-				<h3 class="bleu h1 extraSmall border">Un contrat <span class="qual">de qualité</span></h3>
+				<h3 class="bleu h1 extraSmall border">
+					<div class="titreRect titreRect3"></div>
+					Un contrat <span class="qual">de qualité</span>
+				</h3>
 				<p>Nous accordons une place de <b>premier ordre</b> à tous nos partenaires et privilégions la <b>qualité de la relation</b> que nous entretenons avec eux.</p>
 				<p>Être toujours <b>présents</b>, les <b>soutenir</b> au quotidien, dès la mise en place du projet, pendant le cycle d’exploitation, et pour assurer son renouvellement. </p>
 				<b class="quote">Le dialogue, l’ouverture et l’intelligence technologique font partie des valeurs que nous partageons avec eux.</b>

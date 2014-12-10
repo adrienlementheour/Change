@@ -457,12 +457,18 @@ h1.border,
 .h1.border {
   display: inline-block;
   padding: 30px;
-  border: 3px solid;
   max-width: 170px;
   text-align: center;
   float: left;
   margin: -100px 25px 15px 0;
   border-radius: 4px;
+  position: relative;
+}
+.no-js h1.border,
+.no-js .h1.border,
+.no-svg h1.border,
+.no-svg .h1.border {
+  border: 3px solid;
 }
 h2,
 .h2 {
@@ -1138,6 +1144,10 @@ header > div {
 .subMenu .bulleMenu {
   display: block;
   position: absolute;
+  -webkit-transition: left 0.2s ease-in-out;
+  -moz-transition: left 0.2s ease-in-out;
+  -o-transition: left 0.2s ease-in-out;
+  transition: left 0.2s ease-in-out;
 }
 .subMenu .bulleMenu:after {
   content: ' •';
@@ -2998,6 +3008,11 @@ input[type="submit"].mailjet-subscribe:active {
 }
 .partner .envoiReussi {
   margin-top: 1em;
+}
+.titreRect {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .partner-header {
   background: url(../layoutImg/partner/fdPartner.jpg) no-repeat 50% 50%;
@@ -5487,10 +5502,15 @@ input[type="submit"].mailjet-subscribe:active {
     right: -80px;
     bottom: -15%;
   }
-}
-@media (max-width: 445px) {
   .partner-header h1 {
-    margin-top: -52px;
+    margin-top: -38px;
+    width: 300px;
+    margin-left: -150px;
+  }
+  .rect .p1 {
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
   }
 }
 @media (max-width: 430px) {

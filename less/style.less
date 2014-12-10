@@ -205,12 +205,15 @@ h1, .h1{
   &.border{
     display: inline-block;
     padding: 30px;
-    border: 3px solid;
     max-width: 170px;
     text-align: center;
     float: left;
     margin: -100px 25px 15px 0;
     border-radius: 4px;
+    position: relative;
+    .no-js &, .no-svg &{
+      border: 3px solid;
+    }
   }
 }
 
@@ -724,6 +727,7 @@ header{
   .bulleMenu{
     display: block;
     position: absolute;
+    .transition(left .2s ease-in-out);
     &:after{
       content: ' •';
       display: block;
@@ -2347,6 +2351,12 @@ footer{
   .envoiReussi{
     margin-top: 1em;
   }
+}
+
+.titreRect{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .partner-header{
