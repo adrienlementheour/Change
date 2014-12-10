@@ -22,6 +22,9 @@
  if(isset($_POST['societe'])){ $societe = strip_tags($_POST['societe']); }else{ $societe = '';}
  if(isset($_POST['mail'])){ $mail = strip_tags($_POST['mail']); }else{ $mail = ''; }
  if(isset($_POST['tel'])){ $tel = strip_tags($_POST['tel']); }else{ $tel = ''; }
+ if(isset($_POST['fonction'])){ $fonction = strip_tags($_POST['fonction']); }else{ $fonction = ''; }
+ if(isset($_POST['site'])){ $site = strip_tags($_POST['site']); }else{ $site = ''; }
+ if(isset($_POST['message'])){ $message = strip_tags($_POST['message']); }else{ $message = ''; }
 
  // MAIL DE DESTINATION //////////////////////////////////////
  $mailto = 'shwarp@live.fr';
@@ -65,13 +68,23 @@
  	}
  	if($erreurTech == '' && $erreurNom == '' && $erreurPrenom == '' && $erreurSociete == '' && $erreurMail == '' && $erreurTel == ''){ 
  		$subject = "Nouvelle demande de partenariat provenant de change-commerce.com";
- 		$headers =  'Partenariat souhaité: '. $partner .' '. $tech  . "\r\n" .
- 					'De: '. $nom .' '. $prenom  . "\r\n" .
- 					'Société: '. $societe . "\r\n" .
- 					'Fonction: '. $fonction . "\r\n" .
- 					'Site internet: '. $site . "\r\n" .
- 					'Tél: '. $tel . "\r\n" .
- 					'Répondre : ' . $mail . "\r\n";
+ 		if($tech != 'default'){
+	 		$headers =  'Partenariat souhaité: '. $partner .' '. $tech  . "\r\n" .
+	 					'De: '. $nom .' '. $prenom  . "\r\n" .
+	 					'Société: '. $societe . "\r\n" .
+	 					'Fonction: '. $fonction . "\r\n" .
+	 					'Site internet: '. $site . "\r\n" .
+	 					'Tél: '. $tel . "\r\n" .
+	 					'Répondre : ' . $mail . "\r\n";
+	 	} else{
+	 		$headers =  'Partenariat souhaité: '. $partner . "\r\n" .
+	 					'De: '. $nom .' '. $prenom  . "\r\n" .
+	 					'Société: '. $societe . "\r\n" .
+	 					'Fonction: '. $fonction . "\r\n" .
+	 					'Site internet: '. $site . "\r\n" .
+	 					'Tél: '. $tel . "\r\n" .
+	 					'Répondre : ' . $mail . "\r\n";
+	 	}
  		$sent = mail( $mailto, $subject, $headers, $message);
  		if($sent) {
  			$message_status = "Demande envoyée";
@@ -230,12 +243,15 @@
 
 		<div class="largeContainer <?php if($opened) echo 'opened'; ?>" id="partenaire">
 			<div class="container small-width <?php if($message_status == 'Demande envoyée') echo 'success'; ?>">
-				<h2 class="h1">Devenir partenaire</h2>
+				<h2 class="h1"><?php if($message_status == 'Demande envoyée'){ echo "Merci !"; 
+						  }else{ echo "Devenir partenaire"; 
+					} ?></h2>
 				<b class="maj">
-					<?php if($message_status == 'Demande envoyée'){ echo "Merci !"; 
+					<?php if($message_status == 'Demande envoyée'){ echo "Nous avons bien pris en compte votre demande."; 
 						  }else{ echo "Merci de bien vouloir compléter le formulaire suivant :"; 
 					} ?>
 				</b>
+				<?php if($message_status == 'Demande envoyée') echo "<p class='envoiReussi'>Après étude de notre complémentarité, une personne responsable de l'offre commerciale va revenir vers vous pour échanger échanger au sujet de notre projet de partenariat.</p>" ; ?>
 
 				<?php if($message_status == 'Erreur'){
 					echo '<p class="error">';
@@ -262,8 +278,25 @@
 								<label for="partnerTechnologique">Technologique :</label> 
 								<select name="tech">
 									<option value="default">—Choisir une technologie</option>
-									<option value="1" <?php if($tech == '1') echo 'selected="selected"'; ?>>Techno1</option>
-									<option value="2" <?php if($tech == '2') echo 'selected="selected"'; ?>>Techno2</option>
+									<option value="Marketplace" <?php if($tech == 'Marketplace') echo 'selected="selected"'; ?>>Marketplace</option>
+									<option value="CRM" <?php if($tech == 'CRM') echo 'selected="selected"'; ?>>CRM</option>
+									<option value="PIM" <?php if($tech == 'PIM') echo 'selected="selected"'; ?>>PIM</option>
+									<option value="PSP" <?php if($tech == 'PSP') echo 'selected="selected"'; ?>>PSP</option>
+									<option value="SEO/SEM" <?php if($tech == 'SEO/SEM') echo 'selected="selected"'; ?>>SEO/SEM</option>
+									<option value="Analytic" <?php if($tech == 'Analytic') echo 'selected="selected"'; ?>>Analytic</option>
+									<option value="Emailing" <?php if($tech == 'Emailing') echo 'selected="selected"'; ?>>Emailing</option>
+									<option value="Affiliation" <?php if($tech == 'Affiliation') echo 'selected="selected"'; ?>>Affiliation</option>
+									<option value="E-reputation" <?php if($tech == 'E-reputation') echo 'selected="selected"'; ?>>E-réputation</option>
+									<option value="Multichannel-marketing" <?php if($tech == 'Multichannel-marketing') echo 'selected="selected"'; ?>>Multichannel marketing</option>
+									<option value="Mobile-marketing" <?php if($tech == 'Mobile-marketing') echo 'selected="selected"'; ?>>Mobile marketing</option>
+									<option value="RTB" <?php if($tech == 'RTB') echo 'selected="selected"'; ?>>RTB</option>
+									<option value="Social-Marketing" <?php if($tech == 'Social-Marketing') echo 'selected="selected"'; ?>>Social Marketing</option>
+									<option value="Targeting-Retargeting" <?php if($tech == 'Targeting-Retargeting') echo 'selected="selected"'; ?>>Targeting - Retargeting</option>
+									<option value="E-merchandising" <?php if($tech == 'E-merchandising') echo 'selected="selected"'; ?>>E-merchandising</option>
+									<option value="Ergonomie" <?php if($tech == 'Ergonomie') echo 'selected="selected"'; ?>>Ergonomie</option>
+									<option value="Predictive-sales" <?php if($tech == 'Predictive-sales') echo 'selected="selected"'; ?>>Predictive sales</option>
+									<option value="Logistique" <?php if($tech == 'Logistique') echo 'selected="selected"'; ?>>Logistique</option>
+									<option value="Financial-service" <?php if($tech == 'Financial-service') echo 'selected="selected"'; ?>>Financial service</option>
 								</select>
 							</fieldset>
 						</fieldset>

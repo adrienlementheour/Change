@@ -604,7 +604,7 @@ header{
   float: left;
   width: 44px;
   height: 39px;
-  background: url('../layoutImg/logoChange.png') no-repeat;
+  background: url(../layoutImg/logoChange.png) no-repeat;
   .background-size(100% 100%);
   margin-top: 27px;
   &:after{
@@ -614,14 +614,14 @@ header{
     left: 60px;
     width: 134px;
     height: 36px;
-    background: url('../layoutImg/logoChangeTxt.png') no-repeat;
+    background: url(../layoutImg/logoChangeTxt.png) no-repeat;
     .background-size(100% 100%);
     .lt-ie9 &{
-      background: url('../layoutImg/logoChangeTxtIE.png') no-repeat;
+      background: url(../layoutImg/logoChangeTxtIE.png) no-repeat;
     }
   }
   .lt-ie9 &{
-    background: url('../layoutImg/logoChangeIE.png') no-repeat;
+    background: url(../layoutImg/logoChangeIE.png) no-repeat;
   }
 }
 #menu-main{
@@ -1284,7 +1284,7 @@ footer{
   height: 95%;
   right: 1px;
   bottom: 0;
-  background: url('../layoutImg/pngMask.png') no-repeat right bottom;
+  background: url(../layoutImg/pngMask.png) no-repeat 100% 100%;
   z-index: 5;
 }
 
@@ -1308,7 +1308,7 @@ footer{
       width: 100%;
       height: 100%;
       top: -150px;
-      background: url(../layoutImg/accueil/vid1.jpg) no-repeat center center;
+      background: url(../layoutImg/accueil/vid1.jpg) no-repeat 50% 50%;
       .background-size(cover);
       &:before{
         display: none;
@@ -1385,7 +1385,7 @@ footer{
       }
       .img{
         opacity: 0.7;
-        background: url(../layoutImg/ref/aubert.jpg) no-repeat center center;
+        background: url(../layoutImg/ref/aubert.jpg) no-repeat 50% 50%;
         .background-size(cover);
       }
       .fd{
@@ -1409,7 +1409,7 @@ footer{
 }
 
 .ref-header{
-  background: url(../layoutImg/fd-ref.jpg) no-repeat center bottom;
+  background: url(../layoutImg/fd-ref.jpg) no-repeat 50% 100%;
   background-size: 100% auto;
   padding-top: 135px;
   padding-bottom: 70px;
@@ -1555,7 +1555,7 @@ footer{
     font-size: 0.95em;
   }
   .bloc-noir-fond{
-    background: @grisFonce url(../layoutImg/solution/nana.jpg) no-repeat right bottom;
+    background: @grisFonce url(../layoutImg/solution/nana.jpg) no-repeat 100% 100%;
   }
   .bloc-padding-left{
     width: 43%;
@@ -1577,7 +1577,7 @@ footer{
   width: 100%;
   height: 535px;
   position: relative;
-  background: url('../layoutImg/solution/bg-visu-solution.png') no-repeat center bottom;
+  background: url(../layoutImg/solution/bg-visu-solution.png) no-repeat 50% 100%;
   margin: -100px 0 0 0;
   z-index: -1;
 }
@@ -1585,7 +1585,7 @@ footer{
   display: block;
   width: 867px;
   height: 488px;
-  background: url('../layoutImg/solution/solution-screen.png') no-repeat center bottom;
+  background: url(../layoutImg/solution/solution-screen.png) no-repeat 50% 100%;
   position: absolute;
   bottom: -100px;
   left: 50%;
@@ -1595,7 +1595,7 @@ footer{
   display: block;
   width: 100%;
   height: 401px;
-  background: url('../layoutImg/solution/ombre-visu-solution.png') no-repeat center center;
+  background: url(../layoutImg/solution/ombre-visu-solution.png) no-repeat 50% 50%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1806,7 +1806,7 @@ footer{
     display: block;
     height: 66px;
     width: 66px;
-    background: @rouge url(../layoutImg/change.png) no-repeat center center;
+    background: @rouge url(../layoutImg/change.png) no-repeat 50% 50%;
     border-radius: 5px;
     position: absolute;
     left: 413px;
@@ -1993,7 +1993,7 @@ footer{
     position: absolute;
     top: 280px;
     margin-top: 100%;
-    background: url(../layoutImg/solution/nuage1.png) no-repeat right bottom;
+    background: url(../layoutImg/solution/nuage1.png) no-repeat 100% 100%;
   }
   .nuage2{
     width: 100%;
@@ -2001,7 +2001,7 @@ footer{
     position: absolute;
     top: 420px;
     margin-top: 100%;
-    background: url(../layoutImg/solution/nuage2.png) no-repeat right bottom;
+    background: url(../layoutImg/solution/nuage2.png) no-repeat 100% 100%;
   }
 }
 
@@ -2011,7 +2011,7 @@ footer{
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../layoutImg/solution/fd-saas.png) no-repeat right bottom;
+  background: url(../layoutImg/solution/fd-saas.png) no-repeat 100% 100%;
   background-size: 100%;
   z-index: -1;
 }
@@ -2122,12 +2122,11 @@ footer{
   .cms{
     height: 550px;
     background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat 30% 0 fixed;
-    .background-size(100% auto);
     .background-size(cover);
     z-index: 2;
     position: relative;
     .lt-ie9 &{
-      background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat center center fixed;
+      background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat 50% 50% fixed;
     }
     .touch &{
       background-attachment: scroll;
@@ -2141,7 +2140,6 @@ footer{
     position: relative;
     height: 870px;
     background: url(../layoutImg/fonc/visu-commande.jpg) no-repeat bottom fixed;
-    .background-size(100% auto);
     .background-size(cover);
     .touch &{
       background-attachment: scroll;
@@ -2213,8 +2211,7 @@ footer{
   }
   .inter{
     height: 575px;
-    background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
-    .background-size(100% auto);
+    background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat 50% 50% fixed;
     .background-size(cover);
     .touch &{
       background-attachment: scroll;
@@ -2275,14 +2272,13 @@ footer{
     position: absolute;
     right: 0;
     bottom: 0;
-    background-position: right bottom;
+    background-position: 100% 100%;
   }
 }
 
 .titre-fonctionnalite{
   height: 630px;
-  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center bottom;
-  .background-size(auto 100%);
+  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat 50% 100%;
   .background-size(cover);
   margin: -41px 0 0;
   .touch &{
@@ -2346,6 +2342,10 @@ footer{
 
   #contact{
     background: @blanc;
+  }
+
+  .envoiReussi{
+    margin-top: 1em;
   }
 }
 
@@ -2411,7 +2411,7 @@ footer{
 }
 
 .partnerSolution{
-  background: url(../layoutImg/partner/fdSol.jpg) no-repeat center center;
+  background: url(../layoutImg/partner/fdSol.jpg) no-repeat 50% 50%;
   background-size: cover;
   .logoPartner{
     top: 50px;
@@ -2437,7 +2437,7 @@ footer{
 }
 
 .partnerTechno{
-  background: url(../layoutImg/partner/fdTech.jpg) no-repeat center center;
+  background: url(../layoutImg/partner/fdTech.jpg) no-repeat 10% 50%;
   background-size: cover;
   overflow: hidden;
   .logoPartner{
@@ -2497,9 +2497,12 @@ footer{
   }
 }
 .objectif{
-  background: url(../layoutImg/partner/fdQual.jpg) no-repeat center center;
+  background: url(../layoutImg/partner/fdQual.jpg) no-repeat 50% 100% fixed;
   background-size: cover;
   padding: 25px 0 90px;
+  .touch &{
+    background-attachment: scroll;
+  }
   .container{
     padding-left: 365px;
     .lt-ie9 &{
@@ -2577,12 +2580,12 @@ footer{
 .presse-header{
   padding-top: 81px;
   margin-top: 94px;
-  background: url(../layoutImg/presse2.jpg) no-repeat center center;
+  background: url(../layoutImg/presse2.jpg) no-repeat 50% 50%;
   background-size: auto 100%;
   background-size: cover;
   position: relative;
   &.archive{
-    background: url(../layoutImg/presse.jpg) no-repeat center center;
+    background: url(../layoutImg/presse.jpg) no-repeat 50% 50%;
     margin-top: 0;
     background-attachment: fixed;
     .touch &{

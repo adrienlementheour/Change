@@ -951,7 +951,7 @@ header > div {
   float: left;
   width: 44px;
   height: 39px;
-  background: url('../layoutImg/logoChange.png') no-repeat;
+  background: url(../layoutImg/logoChange.png) no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
@@ -964,16 +964,16 @@ header > div {
   left: 60px;
   width: 134px;
   height: 36px;
-  background: url('../layoutImg/logoChangeTxt.png') no-repeat;
+  background: url(../layoutImg/logoChangeTxt.png) no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 .lt-ie9 #logo:after {
-  background: url('../layoutImg/logoChangeTxtIE.png') no-repeat;
+  background: url(../layoutImg/logoChangeTxtIE.png) no-repeat;
 }
 .lt-ie9 #logo {
-  background: url('../layoutImg/logoChangeIE.png') no-repeat;
+  background: url(../layoutImg/logoChangeIE.png) no-repeat;
 }
 #menu-main li {
   display: inline-block;
@@ -1770,7 +1770,7 @@ input[type="submit"].mailjet-subscribe:active {
   height: 95%;
   right: 1px;
   bottom: 0;
-  background: url('../layoutImg/pngMask.png') no-repeat right bottom;
+  background: url(../layoutImg/pngMask.png) no-repeat 100% 100%;
   z-index: 5;
 }
 #sliderVid {
@@ -1796,7 +1796,7 @@ input[type="submit"].mailjet-subscribe:active {
   width: 100%;
   height: 100%;
   top: -150px;
-  background: url(../layoutImg/accueil/vid1.jpg) no-repeat center center;
+  background: url(../layoutImg/accueil/vid1.jpg) no-repeat 50% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1878,7 +1878,7 @@ input[type="submit"].mailjet-subscribe:active {
 }
 #slider .slides li .img {
   opacity: 0.7;
-  background: url(../layoutImg/ref/aubert.jpg) no-repeat center center;
+  background: url(../layoutImg/ref/aubert.jpg) no-repeat 50% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1896,7 +1896,7 @@ input[type="submit"].mailjet-subscribe:active {
   margin: 0;
 }
 .ref-header {
-  background: url(../layoutImg/fd-ref.jpg) no-repeat center bottom;
+  background: url(../layoutImg/fd-ref.jpg) no-repeat 50% 100%;
   background-size: 100% auto;
   padding-top: 135px;
   padding-bottom: 70px;
@@ -2062,7 +2062,7 @@ input[type="submit"].mailjet-subscribe:active {
 }
 .solution .bloc-noir-fond,
 .page-template-solution-php .bloc-noir-fond {
-  background: #202026 url(../layoutImg/solution/nana.jpg) no-repeat right bottom;
+  background: #202026 url(../layoutImg/solution/nana.jpg) no-repeat 100% 100%;
 }
 .solution .bloc-padding-left,
 .page-template-solution-php .bloc-padding-left {
@@ -2083,7 +2083,7 @@ input[type="submit"].mailjet-subscribe:active {
   width: 100%;
   height: 535px;
   position: relative;
-  background: url('../layoutImg/solution/bg-visu-solution.png') no-repeat center bottom;
+  background: url(../layoutImg/solution/bg-visu-solution.png) no-repeat 50% 100%;
   margin: -100px 0 0 0;
   z-index: -1;
 }
@@ -2091,7 +2091,7 @@ input[type="submit"].mailjet-subscribe:active {
   display: block;
   width: 867px;
   height: 488px;
-  background: url('../layoutImg/solution/solution-screen.png') no-repeat center bottom;
+  background: url(../layoutImg/solution/solution-screen.png) no-repeat 50% 100%;
   position: absolute;
   bottom: -100px;
   left: 50%;
@@ -2101,7 +2101,7 @@ input[type="submit"].mailjet-subscribe:active {
   display: block;
   width: 100%;
   height: 401px;
-  background: url('../layoutImg/solution/ombre-visu-solution.png') no-repeat center center;
+  background: url(../layoutImg/solution/ombre-visu-solution.png) no-repeat 50% 50%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2321,7 +2321,7 @@ input[type="submit"].mailjet-subscribe:active {
   display: block;
   height: 66px;
   width: 66px;
-  background: #f04a2f url(../layoutImg/change.png) no-repeat center center;
+  background: #f04a2f url(../layoutImg/change.png) no-repeat 50% 50%;
   border-radius: 5px;
   position: absolute;
   left: 413px;
@@ -2560,7 +2560,7 @@ input[type="submit"].mailjet-subscribe:active {
   position: absolute;
   top: 280px;
   margin-top: 100%;
-  background: url(../layoutImg/solution/nuage1.png) no-repeat right bottom;
+  background: url(../layoutImg/solution/nuage1.png) no-repeat 100% 100%;
 }
 .fd-saas .nuage2 {
   width: 100%;
@@ -2568,7 +2568,7 @@ input[type="submit"].mailjet-subscribe:active {
   position: absolute;
   top: 420px;
   margin-top: 100%;
-  background: url(../layoutImg/solution/nuage2.png) no-repeat right bottom;
+  background: url(../layoutImg/solution/nuage2.png) no-repeat 100% 100%;
 }
 .fd-api {
   width: 100%;
@@ -2576,7 +2576,7 @@ input[type="submit"].mailjet-subscribe:active {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../layoutImg/solution/fd-saas.png) no-repeat right bottom;
+  background: url(../layoutImg/solution/fd-saas.png) no-repeat 100% 100%;
   background-size: 100%;
   z-index: -1;
 }
@@ -2710,9 +2710,6 @@ input[type="submit"].mailjet-subscribe:active {
 .page-template-fonctionnalites-php .cms {
   height: 550px;
   background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat 30% 0 fixed;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  background-size: 100% auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -2721,7 +2718,7 @@ input[type="submit"].mailjet-subscribe:active {
 }
 .lt-ie9 .fonctionnalites .cms,
 .lt-ie9 .page-template-fonctionnalites-php .cms {
-  background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat center center fixed;
+  background: url(../layoutImg/fonc/visu-cms.jpg) no-repeat 50% 50% fixed;
 }
 .touch .fonctionnalites .cms,
 .touch .page-template-fonctionnalites-php .cms {
@@ -2739,9 +2736,6 @@ input[type="submit"].mailjet-subscribe:active {
   position: relative;
   height: 870px;
   background: url(../layoutImg/fonc/visu-commande.jpg) no-repeat bottom fixed;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  background-size: 100% auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -2835,10 +2829,7 @@ input[type="submit"].mailjet-subscribe:active {
 .fonctionnalites .inter,
 .page-template-fonctionnalites-php .inter {
   height: 575px;
-  background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat center center fixed;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  background-size: 100% auto;
+  background: url(../layoutImg/fonc/visu-inter.jpg) no-repeat 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -2930,14 +2921,11 @@ input[type="submit"].mailjet-subscribe:active {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-position: right bottom;
+  background-position: 100% 100%;
 }
 .titre-fonctionnalite {
   height: 630px;
-  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat center bottom;
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  background-size: auto 100%;
+  background: url(../layoutImg/fonc/visu-titre.jpg) no-repeat 50% 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -3008,6 +2996,9 @@ input[type="submit"].mailjet-subscribe:active {
 .partner #contact {
   background: #ffffff;
 }
+.partner .envoiReussi {
+  margin-top: 1em;
+}
 .partner-header {
   background: url(../layoutImg/partner/fdPartner.jpg) no-repeat 50% 50%;
   background-size: cover;
@@ -3073,7 +3064,7 @@ input[type="submit"].mailjet-subscribe:active {
   display: none;
 }
 .partnerSolution {
-  background: url(../layoutImg/partner/fdSol.jpg) no-repeat center center;
+  background: url(../layoutImg/partner/fdSol.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 .partnerSolution .logoPartner {
@@ -3099,7 +3090,7 @@ input[type="submit"].mailjet-subscribe:active {
   color: #f1533a;
 }
 .partnerTechno {
-  background: url(../layoutImg/partner/fdTech.jpg) no-repeat center center;
+  background: url(../layoutImg/partner/fdTech.jpg) no-repeat 10% 50%;
   background-size: cover;
   overflow: hidden;
 }
@@ -3156,9 +3147,12 @@ input[type="submit"].mailjet-subscribe:active {
   left: -400px;
 }
 .objectif {
-  background: url(../layoutImg/partner/fdQual.jpg) no-repeat center center;
+  background: url(../layoutImg/partner/fdQual.jpg) no-repeat 50% 100% fixed;
   background-size: cover;
   padding: 25px 0 90px;
+}
+.touch .objectif {
+  background-attachment: scroll;
 }
 .objectif .container {
   padding-left: 365px;
@@ -3229,13 +3223,13 @@ input[type="submit"].mailjet-subscribe:active {
 .presse-header {
   padding-top: 81px;
   margin-top: 94px;
-  background: url(../layoutImg/presse2.jpg) no-repeat center center;
+  background: url(../layoutImg/presse2.jpg) no-repeat 50% 50%;
   background-size: auto 100%;
   background-size: cover;
   position: relative;
 }
 .presse-header.archive {
-  background: url(../layoutImg/presse.jpg) no-repeat center center;
+  background: url(../layoutImg/presse.jpg) no-repeat 50% 50%;
   margin-top: 0;
   background-attachment: fixed;
 }
@@ -4003,7 +3997,7 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .solution .bloc-noir-fond,
   .page-template-solution-php .bloc-noir-fond {
-    background-position: 280px bottom;
+    background-position: 280px 100%;
     background-size: 80%;
   }
   .solution .bloc-padding-left,
@@ -4044,7 +4038,7 @@ input[type="submit"].mailjet-subscribe:active {
   .fd-saas .nuage1,
   .fd-saas .nuage2 {
     left: 0;
-    background-position: 0 bottom;
+    background-position: 0 100%;
   }
   .liste-pictos.liste-pictos-noir {
     padding-left: 0;
@@ -4937,7 +4931,7 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .solution .bloc-noir-fond,
   .page-template-solution-php .bloc-noir-fond {
-    background-position: right bottom;
+    background-position: 100% 100%;
     background-size: 100%;
     padding-bottom: 200px;
   }

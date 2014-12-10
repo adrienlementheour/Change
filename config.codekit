@@ -1243,7 +1243,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/partner\/fdTech.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/layoutImg\/partner\/hand.png": {
 		"fileType": 32768,
@@ -1728,11 +1728,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/partenaires2.php": {
+	"\/partenaires_temp.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partenaires2.php",
+		"inputAbbreviatedPath": "\/partenaires_temp.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
