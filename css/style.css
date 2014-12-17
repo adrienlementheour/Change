@@ -2128,10 +2128,10 @@ input[type="submit"].mailjet-subscribe:active {
 #bloc-visu-solution {
   display: block;
   width: 100%;
-  height: 610px;
+  height: 720px;
   position: relative;
   background: url(../layoutImg/solution/bg-visu-solution.png) no-repeat 50% 100%;
-  margin: -200px 0 0 0;
+  margin: -320px 0 0 0;
   z-index: -1;
 }
 #screen-solution {
@@ -4616,7 +4616,7 @@ input[type="submit"].mailjet-subscribe:active {
     clear: both;
   }
   #bloc-visu-solution {
-    height: 550px;
+    height: 640px;
   }
   .ref li {
     height: auto;
@@ -5711,6 +5711,9 @@ input[type="submit"].mailjet-subscribe:active {
   }
   #sliderVid .slides {
     height: 335px;
+  }
+  #bloc-visu-solution {
+    margin: -360px 0 0;
   }
   #screen-solution {
     width: 120%;
