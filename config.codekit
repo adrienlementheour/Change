@@ -1232,7 +1232,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/partner\/fdSol.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/layoutImg\/partner\/fdTech.jpg": {
 		"fileType": 16384,
@@ -1431,6 +1431,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/layoutImg\/select.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1090,
+		"inputAbbreviatedPath": "\/layoutImg\/select.png",
+		"outputAbbreviatedPath": "\/layoutImg\/select.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/layoutImg\/sepPresse.jpg": {
 		"fileType": 16384,

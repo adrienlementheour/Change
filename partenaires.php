@@ -282,31 +282,33 @@
 								<input type="radio" name="partner" id="partnerSolution" value="solution" <?php if($partner != 'technologique') echo 'checked'; ?>> 
 								<label for="partnerSolution">Solution</label> 
 							</fieldset>
-							<fieldset class="fieldBlock <?php if($erreurPartnerTech != '') echo 'error'; ?>">
+							<fieldset class="fieldBlock <?php if($erreurTech != '') echo 'error'; ?>">
 								<input type="radio" name="partner" id="partnerTechnologique" value="technologique" <?php if($partner == 'technologique') echo 'checked'; ?>> 
 								<label for="partnerTechnologique">Technologique :</label> 
-								<select name="tech">
-									<option value="default">—Choisir une technologie</option>
-									<option value="Marketplace" <?php if($tech == 'Marketplace') echo 'selected="selected"'; ?>>Marketplace</option>
-									<option value="CRM" <?php if($tech == 'CRM') echo 'selected="selected"'; ?>>CRM</option>
-									<option value="PIM" <?php if($tech == 'PIM') echo 'selected="selected"'; ?>>PIM</option>
-									<option value="PSP" <?php if($tech == 'PSP') echo 'selected="selected"'; ?>>PSP</option>
-									<option value="SEO/SEM" <?php if($tech == 'SEO/SEM') echo 'selected="selected"'; ?>>SEO/SEM</option>
-									<option value="Analytic" <?php if($tech == 'Analytic') echo 'selected="selected"'; ?>>Analytic</option>
-									<option value="Emailing" <?php if($tech == 'Emailing') echo 'selected="selected"'; ?>>Emailing</option>
-									<option value="Affiliation" <?php if($tech == 'Affiliation') echo 'selected="selected"'; ?>>Affiliation</option>
-									<option value="E-reputation" <?php if($tech == 'E-reputation') echo 'selected="selected"'; ?>>E-réputation</option>
-									<option value="Multichannel-marketing" <?php if($tech == 'Multichannel-marketing') echo 'selected="selected"'; ?>>Multichannel marketing</option>
-									<option value="Mobile-marketing" <?php if($tech == 'Mobile-marketing') echo 'selected="selected"'; ?>>Mobile marketing</option>
-									<option value="RTB" <?php if($tech == 'RTB') echo 'selected="selected"'; ?>>RTB</option>
-									<option value="Social-Marketing" <?php if($tech == 'Social-Marketing') echo 'selected="selected"'; ?>>Social Marketing</option>
-									<option value="Targeting-Retargeting" <?php if($tech == 'Targeting-Retargeting') echo 'selected="selected"'; ?>>Targeting - Retargeting</option>
-									<option value="E-merchandising" <?php if($tech == 'E-merchandising') echo 'selected="selected"'; ?>>E-merchandising</option>
-									<option value="Ergonomie" <?php if($tech == 'Ergonomie') echo 'selected="selected"'; ?>>Ergonomie</option>
-									<option value="Predictive-sales" <?php if($tech == 'Predictive-sales') echo 'selected="selected"'; ?>>Predictive sales</option>
-									<option value="Logistique" <?php if($tech == 'Logistique') echo 'selected="selected"'; ?>>Logistique</option>
-									<option value="Financial-service" <?php if($tech == 'Financial-service') echo 'selected="selected"'; ?>>Financial service</option>
-								</select>
+								<div class="select">
+									<select name="tech">
+										<option value="default">—Choisir une technologie</option>
+										<option value="Marketplace" <?php if($tech == 'Marketplace') echo 'selected="selected"'; ?>>Marketplace</option>
+										<option value="CRM" <?php if($tech == 'CRM') echo 'selected="selected"'; ?>>CRM</option>
+										<option value="PIM" <?php if($tech == 'PIM') echo 'selected="selected"'; ?>>PIM</option>
+										<option value="PSP" <?php if($tech == 'PSP') echo 'selected="selected"'; ?>>PSP</option>
+										<option value="SEO/SEM" <?php if($tech == 'SEO/SEM') echo 'selected="selected"'; ?>>SEO/SEM</option>
+										<option value="Analytic" <?php if($tech == 'Analytic') echo 'selected="selected"'; ?>>Analytic</option>
+										<option value="Emailing" <?php if($tech == 'Emailing') echo 'selected="selected"'; ?>>Emailing</option>
+										<option value="Affiliation" <?php if($tech == 'Affiliation') echo 'selected="selected"'; ?>>Affiliation</option>
+										<option value="E-reputation" <?php if($tech == 'E-reputation') echo 'selected="selected"'; ?>>E-réputation</option>
+										<option value="Multichannel-marketing" <?php if($tech == 'Multichannel-marketing') echo 'selected="selected"'; ?>>Multichannel marketing</option>
+										<option value="Mobile-marketing" <?php if($tech == 'Mobile-marketing') echo 'selected="selected"'; ?>>Mobile marketing</option>
+										<option value="RTB" <?php if($tech == 'RTB') echo 'selected="selected"'; ?>>RTB</option>
+										<option value="Social-Marketing" <?php if($tech == 'Social-Marketing') echo 'selected="selected"'; ?>>Social Marketing</option>
+										<option value="Targeting-Retargeting" <?php if($tech == 'Targeting-Retargeting') echo 'selected="selected"'; ?>>Targeting - Retargeting</option>
+										<option value="E-merchandising" <?php if($tech == 'E-merchandising') echo 'selected="selected"'; ?>>E-merchandising</option>
+										<option value="Ergonomie" <?php if($tech == 'Ergonomie') echo 'selected="selected"'; ?>>Ergonomie</option>
+										<option value="Predictive-sales" <?php if($tech == 'Predictive-sales') echo 'selected="selected"'; ?>>Predictive sales</option>
+										<option value="Logistique" <?php if($tech == 'Logistique') echo 'selected="selected"'; ?>>Logistique</option>
+										<option value="Financial-service" <?php if($tech == 'Financial-service') echo 'selected="selected"'; ?>>Financial service</option>
+									</select>
+								</div>
 							</fieldset>
 						</fieldset>
 						<fieldset class="<?php if($erreurNom != '') echo 'error'; ?>">
