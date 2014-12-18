@@ -1110,16 +1110,19 @@ footer{
         color: @blanc;
       }
     }
+    .first-ul{
+      p{
+        width: 100%;
+      }
+    }
   }
   .home-ul{
-    overflow: hidden;
     margin: 60px 0;
     p{
       width: auto;
       margin: 0;
     }
     li{
-      float: left;
       &:before{
         display: none;
       }
@@ -1135,49 +1138,67 @@ footer{
   }
   .first-ul{
     li{
-      width: 230px;
-      margin: 0 70px 0 0;
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+    }
+    li li{
       font-size: 0.85em;
-      &.liSmall{
-        width: 205px
+      padding: 0 35px;
+      .box-sizing(border-box);
+    }
+    span{
+      &:before{
+        font-size: 165px;
+        width: 175px;
+        line-height: 175px;
+        margin: 0 auto;
       }
-      &.liBig{
-        width: 245px;
+      &.icon-cloud:before{
+          font-size: 210px;
       }
-      &.last{
-        margin: 0;
+      &.icon-tshirt:before{
+          font-size: 135px;
       }
-      .lt-ie9 &{
-        width: 192px;
-        &.liBig, &.liSmall{
-          width: 192px;
-        }
-      }
-      span{
+    }
+    h3{
+      padding: 35px 0 5px;
+      font-size: 1em;
+    }
+    b{
+      &.h3{
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 0;
         &:before{
-          font-size: 165px;
-          width: 175px;
-          line-height: 175px;
-          margin: 0 auto;
+          content: ' ';
+          display: block;
+          width: 2px;
+          height: 25px;
+          background: @rouge;
+          margin: 0 auto 10px;
         }
-        &.icon-cloud:before{
-            font-size: 210px;
-        }
-        &.icon-tshirt:before{
-            font-size: 135px;
+        &.bleu{
+          &:before{
+            background: @bleu;
+          }
         }
       }
-      h3{
-        padding: 35px 0 5px;
-        font-size: 1em;
-      }
+    }
+    h2{
+      text-transform: uppercase;
+      .bariolBold(1.2em);
+      letter-spacing: 1px;
     }
   }
   .last-ul{
+    overflow: hidden;
     li{
       text-align: left;
       width: 49%;
       margin: 0 0 35px;
+      float: left;
       span{
         display: block;
         &:before{

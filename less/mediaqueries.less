@@ -101,20 +101,25 @@
   
   .home{
     .home-ul{
-      margin: 60px auto;
+      margin-left: auto;
+      margin-right: auto;
     }
     .first-ul{
       width: 940px;
-      li{
-        width: 40%;
-        margin: 5% 5% 0;
-        &.liSmall{
-          width: 40%;
+      margin-bottom: 0; 
+      > li{
+        width: 100%;
+        margin: 0 0 50px;
+      }
+      b{
+        &.h3{
+          &:before{
+            display: none;
+          }
         }
-        &.liBig, &.last{
-         width: 40%;
-          margin: 5% 5% 0;
-        }
+      }
+      h2{
+        margin: 10px 0 20px;
       }
     }
     .last-ul{
@@ -445,6 +450,12 @@
   }
 
   .home{
+    h1{
+      margin: 0 20px;
+      br{
+        display: none;
+      }
+    }
     .content{
       p{
         width: 95%;
@@ -871,14 +882,6 @@
           width: 86%;
         }
       }
-      .first-ul{
-        width: 92%;
-        li, li.liSmall, li.liBig, li.last{
-          width: 100%;
-          margin: 50px 0 0;
-          float: none;
-        }
-      }
     }
 
     #containerVid{
@@ -1272,6 +1275,17 @@
     height: 470px;
     .slides{
       height: 470px;
+    }
+  }
+
+  .home{
+    .first-ul{
+      li{
+        width: 100%;
+        li{
+          margin: 0 0 50px;
+        }
+      }
     }
   }
 
