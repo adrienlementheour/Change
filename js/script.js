@@ -153,7 +153,7 @@ function setFirstStrong(){
 
 function scroll(){
 	var factor = 1.9;
-	var factor2 = 10;
+	var factor2 = 9;
 	var myScrollH2 = Math.ceil(myScroll/factor2);
 
 	if (!$("html").hasClass("lt-ie9")) {
@@ -176,7 +176,7 @@ function scroll(){
 				$("#screen-solution").css("margin-bottom",myScrollH2+"px");
 
 				if(myScroll > 600){
-					$('#shop').css('top', -myScrollH2/1.05+'px');
+					$('#shop').css('top', -myScrollH2+'px');
 				}
 
 				if(myScroll > 2470){

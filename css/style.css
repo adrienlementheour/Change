@@ -66,6 +66,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-brush:before {
+  content: "\e644";
+}
+.icon-star:before {
+  content: "\e645";
+}
 .icon-dl:before {
   content: "\e643";
 }
@@ -2197,7 +2203,7 @@ input[type="submit"].mailjet-subscribe:active {
 .fd-shop .shop {
   width: 99%;
   position: relative;
-  top: -100px;
+  top: -68px;
   left: 5px;
   margin-top: 135px;
 }
@@ -2247,7 +2253,8 @@ input[type="submit"].mailjet-subscribe:active {
 .encadre .bloc-icon-encadre .icon-tshirt {
   font-size: 100px;
 }
-.encadre .bloc-icon-encadre .icon-cloud {
+.encadre .bloc-icon-encadre .icon-cloud,
+.encadre .bloc-icon-encadre .icon-star {
   font-size: 150px;
 }
 .encadre .bloc-icon-encadre .icon-plug {
