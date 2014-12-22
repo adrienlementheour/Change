@@ -66,11 +66,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-brush:before {
-  content: "\e644";
-}
 .icon-star:before {
   content: "\e645";
+}
+.icon-brush:before {
+  content: "\e644";
 }
 .icon-dl:before {
   content: "\e643";
@@ -86,6 +86,9 @@
 }
 .icon-prev:before {
   content: "\e63f";
+}
+.icon-h24:before {
+  content: "\e61c";
 }
 .icon-access-management:before {
   content: "\e61d";
@@ -188,9 +191,6 @@
 }
 .icon-worldwide:before {
   content: "\e63e";
-}
-.icon-h24:before {
-  content: "\e61c";
 }
 .icon-bulle:before {
   content: "\e617";
@@ -1619,9 +1619,6 @@ input[type="submit"].mailjet-subscribe:active {
 .home .content .first-ul p {
   width: 100%;
 }
-.home .home-ul {
-  margin: 60px 0;
-}
 .home .home-ul p {
   width: auto;
   margin: 0;
@@ -1634,6 +1631,9 @@ input[type="submit"].mailjet-subscribe:active {
   color: #ffffff;
   border-radius: 4px;
   text-align: center;
+}
+.home .first-ul {
+  margin: 40px 0;
 }
 .home .first-ul li {
   display: inline-block;
@@ -1656,26 +1656,23 @@ input[type="submit"].mailjet-subscribe:active {
 .home .first-ul span.icon-cloud:before {
   font-size: 210px;
 }
-.home .first-ul span.icon-tshirt:before {
-  font-size: 135px;
+.home .first-ul span.icon-star:before {
+  font-size: 195px;
 }
 .home .first-ul h3 {
   padding: 35px 0 5px;
   font-size: 1em;
 }
+.home .first-ul .maj {
+  text-transform: none;
+}
 .home .first-ul b.h3 {
-  width: 100px;
+  width: 130px;
   display: block;
   margin: 0 auto;
   padding-top: 0;
-}
-.home .first-ul b.h3:before {
-  content: ' ';
-  display: block;
-  width: 2px;
-  height: 25px;
-  background: #f04a2f;
-  margin: 0 auto 10px;
+  font-size: 1.5em;
+  line-height: 22px;
 }
 .home .first-ul b.h3.bleu:before {
   background: #54b8e7;
@@ -1690,6 +1687,7 @@ input[type="submit"].mailjet-subscribe:active {
   letter-spacing: 1px;
 }
 .home .last-ul {
+  margin: 60px 0;
   overflow: hidden;
 }
 .home .last-ul li {
@@ -2249,9 +2247,6 @@ input[type="submit"].mailjet-subscribe:active {
 }
 .encadre .bloc-icon-encadre .icon-cross {
   font-size: 120px;
-}
-.encadre .bloc-icon-encadre .icon-tshirt {
-  font-size: 100px;
 }
 .encadre .bloc-icon-encadre .icon-cloud,
 .encadre .bloc-icon-encadre .icon-star {
@@ -4042,9 +4037,6 @@ input[type="submit"].mailjet-subscribe:active {
     width: 100%;
     margin: 0 0 50px;
   }
-  .home .first-ul b.h3:before {
-    display: none;
-  }
   .home .first-ul h2 {
     margin: 10px 0 20px;
   }
@@ -5111,9 +5103,6 @@ input[type="submit"].mailjet-subscribe:active {
   .encadre .bloc-icon-encadre .icon-cross,
   .fonctionnalites .encadre .bloc-icon-encadre .icon-cross,
   .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-cross,
-  .encadre .bloc-icon-encadre .icon-tshirt,
-  .fonctionnalites .encadre .bloc-icon-encadre .icon-tshirt,
-  .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-tshirt,
   .encadre .bloc-icon-encadre .icon-plug,
   .fonctionnalites .encadre .bloc-icon-encadre .icon-plug,
   .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-plug {
@@ -5121,7 +5110,10 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .encadre .bloc-icon-encadre .icon-cloud,
   .fonctionnalites .encadre .bloc-icon-encadre .icon-cloud,
-  .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-cloud {
+  .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-cloud,
+  .encadre .bloc-icon-encadre .icon-star,
+  .fonctionnalites .encadre .bloc-icon-encadre .icon-star,
+  .page-template-fonctionnalites-php .encadre .bloc-icon-encadre .icon-star {
     font-size: 110px;
   }
   .encadre .bloc-txt-encadre,
@@ -5701,11 +5693,11 @@ input[type="submit"].mailjet-subscribe:active {
     height: 50px;
   }
   .encadre .bloc-icon-encadre .icon-cross,
-  .encadre .bloc-icon-encadre .icon-tshirt,
   .encadre .bloc-icon-encadre .icon-plug {
     font-size: 55px;
   }
-  .encadre .bloc-icon-encadre .icon-cloud {
+  .encadre .bloc-icon-encadre .icon-cloud,
+  .encadre .bloc-icon-encadre .icon-star {
     font-size: 65px;
   }
   .presse .containerRight,

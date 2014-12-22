@@ -646,10 +646,13 @@ $(function(){
 	setFooter();
 	setSizeBugerMenu();
 	setBurgerMenu();
-	setFirstStrong();
+
+	if(!$('body').hasClass('home')){
+		setFirstStrong();
+	}
+	
 
 	valOffset = [100, 150, 140, 70, 120, 80, 160, 190, 200];
-
 
 	if($('html').hasClass('touch')){
 		for(var i=0; i<valOffset.length; i++){
