@@ -3708,26 +3708,16 @@ input[type="submit"].mailjet-subscribe:active {
 }
 /* @end */
 /* Plan du site */
-.plan .first ul,
-.page-id-21 .first ul,
-.page-id-260 .first ul {
+.sitemap {
   margin-top: 30px;
 }
-.plan .first ul a,
-.page-id-21 .first ul a,
-.page-id-260 .first ul a {
+.sitemap a {
   border: 0;
   color: #34343c;
 }
-.plan .first ul a:hover,
-.page-id-21 .first ul a:hover,
-.page-id-260 .first ul a:hover,
-.plan .first ul a:focus,
-.page-id-21 .first ul a:focus,
-.page-id-260 .first ul a:focus,
-.plan .first ul a:active,
-.page-id-21 .first ul a:active,
-.page-id-260 .first ul a:active {
+.sitemap a:hover,
+.sitemap a:focus,
+.sitemap a:active {
   color: #f04a2f;
   border-bottom: 1px solid #eecfcb;
 }
