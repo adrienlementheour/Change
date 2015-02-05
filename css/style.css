@@ -1484,6 +1484,19 @@ footer .col-left a:focus,
 footer .col-mid a:focus {
   color: #d4d1cb;
 }
+footer p.error {
+  width: 236px;
+}
+footer .response .success {
+  margin: 10px 0 0;
+  padding: 10px 20px;
+  color: #47acdc;
+  border: 2px dotted;
+  border-radius: 5px;
+  width: 236px;
+  font-family: 'proximaNovaSBold', sans-serif;
+  font-size: 1em;
+}
 #email {
   width: 140px;
   background: none;
