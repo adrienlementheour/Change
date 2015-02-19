@@ -897,6 +897,60 @@ header > div {
   position: relative;
   background: #202026;
 }
+.top-header {
+  height: auto;
+  background: #54b8e7;
+}
+.top-header .container {
+  text-align: right;
+}
+.top-header .social-small li .lien-social {
+  font-size: 0.9em;
+  line-height: 16px;
+  padding: 6px 0 0;
+}
+.top-header .social-small li .lien-social:hover,
+.top-header .social-small li .lien-social:focus {
+  color: #202026;
+}
+#blog-header {
+  display: inline-block;
+}
+#blog-header p {
+  margin: 0;
+  display: inline-block;
+  line-height: 28px;
+}
+#blog-header p a {
+  font-family: 'proximaNova', sans-serif;
+  font-size: 0.8em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+#blog-header p span {
+  max-width: 326px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+}
+#blog-header a {
+  border: 0;
+  color: #34343c;
+}
+#blog-header .icon-plus {
+  font-size: 24px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px 0 0;
+}
+#blog-header .icon-plus:hover,
+#blog-header .icon-plus:focus {
+  color: #ffffff;
+}
 .bottom-header {
   text-align: right;
 }
