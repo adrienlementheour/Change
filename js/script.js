@@ -7,7 +7,7 @@ var countSlide = 0, slides, timerSlide = 5, pagination, vignettes,
 	tlRect, path, tlTitre1, titre1, drawTitre1 = false, tlTitre2, titre2, drawTitre2 = false, tlTitre3, titre3, drawTitre3 = false,
 	valOffset,
 	body = $('body'), html = $('html'), burger = $('.hamburger'), header = $('header'), masque = $('#masque'), menuMain = $('#menu-main'), 
-	subMenu = $('#subMenu'), containerVid = $('#containerVid'), htmlBody = $('html, body'),
+	subMenu = $('#subMenu'), containerVid = $('#containerVid'), htmlBody = $('html, body'), topHeader = $('.top-header'),
 	windowHeight = $(window).height(), windowWidth = $(window).width();
 
 
@@ -70,10 +70,20 @@ function setSizeBugerMenu(){
 	if(windowWidth < 979){
 		var height = windowHeight + 100;
 		menuMain.css('height', height+'px');
-	}
-	else{
+	}else{
 		menuMain.css('height', 'auto');
 	}
+}
+
+
+/* Top header au hover */
+
+function hoverHeader(){
+	header.on('mouseenter', function(){
+		topHeader.removeClass('on');
+	}).on('mouseleave', function(){
+		topHeader.addClass('on');
+	});
 }
 
 
@@ -126,6 +136,14 @@ function scroll(){
 	var factor = 1.9;
 	var factor2 = 9;
 	var myScrollH2 = Math.ceil(myScroll/factor2);
+
+	if(!body.hasClass('home')){
+		myScroll > 100 ? topHeader.addClass('on') : topHeader.removeClass('on');
+	}
+
+	if(topHeader.hasClass('on')){
+		hoverHeader();
+	}
 
 	if (!html.hasClass("lt-ie9")) {
 
@@ -608,6 +626,16 @@ function openRef(){
 	}
 }
 
+function openSearchInput(e){
+	e.preventDefault();
+
+	var input = $('#searchInput'),
+		query = input.val(),
+		queryLength = query.length;
+
+	queryLength === 0 || !input.hasClass('open') ? input.toggleClass('open').focus() : $('#searchform').submit();
+}
+
 
 $(function(){
 	detectTouchDevice();
@@ -634,6 +662,7 @@ $(function(){
 	}
 
 	if(body.hasClass('home')){
+		hoverHeader();
 		indic = containerVid.find('.rejouer');
 		html.hasClass("lt-ie9") ? containerVid.find('.container').css('height', '700px') : setVideoContainer();
 	}
@@ -668,6 +697,11 @@ $(function(){
 		clickSubMenu();
 		openFormPartner();
 	}
+
+	$('#search').on('click', openSearchInput);
+	$('#btnCat').on('click', function(){
+		$('#cats').slideToggle(300);
+	});
 
 	$(document).scroll(function() {
 		myScroll = $(this).scrollTop();
@@ -705,6 +739,9 @@ $(window).load(function(){
 });
 
 $(window).resize(function() {
+
+	windowHeight = $(window).height();
+	windowWidth = $(window).width();
 
 	if(body.hasClass('home')){
 		setVideoContainer();

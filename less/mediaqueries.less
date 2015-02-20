@@ -55,6 +55,12 @@
     display: block;
   }
 
+  .top-header{
+    .container{
+      padding: 0 20px 0 25px;
+    }
+  }
+
   #menu-main {
     li{
       margin: 0 0 0 3px;
@@ -867,6 +873,14 @@
 
     .containerLeft, .containerRight{
       width: 100%;
+    }
+
+    #blog-header{
+      p{
+        span{
+          display: none;
+        }
+      }
     }
 
     .home{
@@ -1715,6 +1729,12 @@
     }
   }
 
+  #blog-header{
+    .icon-plus{
+      margin: 0;
+    }
+  }
+
   #footer-bottom {
     nav, .copyright{
       float: none;
@@ -2036,6 +2056,10 @@
 }
 
 @media (max-width: 360px){
+
+  #blog-header{
+    display: none;
+  }
 
   footer{
     .col-mid{
