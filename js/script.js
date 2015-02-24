@@ -8,6 +8,7 @@ var countSlide = 0, slides, timerSlide = 5, pagination, vignettes,
 	valOffset,
 	body = $('body'), html = $('html'), burger = $('.hamburger'), header = $('header'), masque = $('#masque'), menuMain, 
 	subMenu = $('#subMenu'), containerVid = $('#containerVid'), htmlBody = $('html, body'), topHeader = $('.top-header'),
+	t1 = $('.titreRect1'), t2 = $('.titreRect2'), t3 = $('.titreRect3'),
 	windowHeight = $(window).height(), windowWidth = $(window).width();
 
 
@@ -27,31 +28,30 @@ function detectTouchDevice(){
 /* Burger menu */
 function moveBurgerMenu(elt, action){
 	var mvt = 0;
-	if(action === 'open'){
-		mvt = 200;
-	}
-	elt.animate({ "margin-left": -mvt, "margin-right": mvt}, "ease-in-out" );
+	if(action === 'open'){ mvt = 200; }
+	elt.animate({ marginLeft: -mvt, marginRight: mvt}, "ease-in-out" );
 }
 
 function setBurgerMenu(){
 	burger.find("a").click(function(){
 		if(burger.hasClass("burgerOn") ) {  
-			html.hasClass('no-touch') ? moveBurgerMenu(header, 'close') : menuMain.animate({ "right": "-200px"}, "ease-in-out" );
+			html.hasClass('no-touch') ? moveBurgerMenu(header, 'close') : menuMain.animate({ right: "-200px"}, "ease-in-out" );
 			moveBurgerMenu(body, 'close');
 			masque.fadeOut();
 			burger.removeClass("burgerOn");
 		} else {
-			html.hasClass('no-touch') ? moveBurgerMenu(header, 'open') : menuMain.animate({ "right": "0"}, "ease-in-out" );
+			html.hasClass('no-touch') ? moveBurgerMenu(header, 'open') : menuMain.animate({ right: 0}, "ease-in-out" );
 			moveBurgerMenu(body, 'open');
 			masque.fadeIn(); 
 			burger.addClass("burgerOn");	
 		}
 		return false;
 	});
+
 	masque.click(function(){
 		moveBurgerMenu(header, 'close');
 		moveBurgerMenu(body, 'close'); 
-		menuMain.animate({ "right": "-200px"}, "ease-in-out" );
+		menuMain.animate({ right: "-200px"}, "ease-in-out" );
 		$(this).fadeOut();
 		burger.removeClass("burgerOn");
 	});
@@ -66,8 +66,8 @@ function adjustBurgerMenu(){
 	}
 }
 
-function setSizeBugerMenu(){
-	if(windowWidth < 979){
+function setSizeBugerMenu(size){
+	if(windowWidth < size){
 		var height = windowHeight + 100;
 		menuMain.css('height', height+'px');
 	}else{
@@ -108,23 +108,24 @@ function setFooter(){
 
 function setFirstStrong(){
 	var allP = $('.content').find('p');
-	if (allP.length) {
+
+	function setMaj(first, type){
+		var firstB = first.eq(0);
+		var posB = firstB.closest('p').html().indexOf(type);
+		if(posB === 0){
+			firstB.addClass('maj');
+		}
+	}
+
+	if(allP.length) {
 		var firstP = allP.eq(0);
 		var strong = firstP.find('strong');
 		var b = firstP.find('b');
-		if (strong.length) {
-			var firstStrong = strong.eq(0);
-			var posStrong = firstStrong.closest('p').html().indexOf('<strong>');
-			if(posStrong === 0){
-				firstStrong.addClass('maj');
-			}
+		if(strong.length){
+			setMaj(strong, '<strong>');
 		}
-		if (b.length) {
-			var firstB = b.eq(0);
-			var posB = firstB.closest('p').html().indexOf('<b>');
-			if(posB === 0){
-				firstB.addClass('maj');
-			}
+		if(b.length){
+			setMaj(b, '<b>');
 		}
 	}
 }
@@ -159,7 +160,7 @@ function scroll(){
 		}
 
 		//Parallaxe solution
-		if(body.hasClass('solution') || body.hasClass('page-template-solution-php')){
+		if($('#shop').length){
 
 			if(windowWidth > 978){
 				$("#screen-solution").css("margin-bottom",myScrollH2+"px");
@@ -192,7 +193,7 @@ function scroll(){
 
 			function activeLink(pos){
 				var thisLi = subMenu.find('li').eq(pos);
-				thisLi.siblings('li').find('a').removeClass('actif');
+				thisLi.siblings().find('a').removeClass('actif');
 				thisLi.find('a').addClass('actif');
 				bulle.css('left', thisLi.offset().left + (thisLi.width()/2) + 15);
 			}
@@ -212,15 +213,15 @@ function scroll(){
 
 			// Titres qui se dessinent
 			var heightScreen = windowHeight - 150;
-			if(myScroll >= $('.titreRect1').offset().top - heightScreen && drawTitre1 === false){
+			if(myScroll >= t1.offset().top - heightScreen && !drawTitre1){
 				drawTitre1 = true;
 				tlTitre1.staggerTo(titre1, 0.8, {drawSVG: "100%", ease:Power1.easeInOut});
 			}
-			if(myScroll >= $('.titreRect2').offset().top - heightScreen && drawTitre2 === false){
+			if(myScroll >= t2.offset().top - heightScreen && !drawTitre2){
 				drawTitre2 = true;
 				tlTitre2.staggerTo(titre2, 0.8, {drawSVG: "100%", ease:Power1.easeInOut});
 			}
-			if(myScroll >= $('.titreRect3').offset().top - heightScreen && drawTitre3 === false){
+			if(myScroll >= t3.offset().top - heightScreen && !drawTitre3){
 				drawTitre3 = true;
 				tlTitre3.staggerTo(titre3, 0.8, {drawSVG: "100%", ease:Power1.easeInOut});
 			}
@@ -467,7 +468,7 @@ function openForm(){
 		return false;
 	});
 
-	setSizeBugerMenu();
+	setSizeBugerMenu(979);
 }
 
 
@@ -491,7 +492,7 @@ function openFormDossier(){
 		return false;
 	});
 
-	setSizeBugerMenu();
+	setSizeBugerMenu(979);
 }
 
 
@@ -509,41 +510,39 @@ function openFormClub(){
 }
 
 
-/* Rectangles qui se dessinent à 0 */
-
-function setRect(){
-	tlRect = new TimelineLite();
-	path = $('.bigSvg').find('path');
-	if( $('.bigSvg').css('display') === 'none' ){
-		path = $('.smallSvg').find('path');
-	}
-	tlRect.set(path, {drawSVG:0});
-
-
-	tlTitre1 = new TimelineLite();
-	titre1 = $('.titreRect1').find('rect');
-	tlTitre1.set(titre1, {drawSVG:0});
-
-	tlTitre2 = new TimelineLite();
-	titre2 = $('.titreRect2').find('rect');
-	tlTitre2.set(titre2, {drawSVG:0});
-
-	tlTitre3 = new TimelineLite();
-	titre3 = $('.titreRect3').find('rect');
-	tlTitre1.set(titre3, {drawSVG:0});
-}
-
-
 /* Ajout du svg dans la page (sinon bug sous IE) */
 
 function appendSvg(){
-	if( $('.bigSvg').css('display') === 'none' ){
-		$('.smallSvg').append('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="508px" height="208px">
+	var bigSvg = $('.bigSvg'),
+		smallSvg = $('.smallSvg');
+
+	/* Rectangles qui se dessinent à 0 */
+	function setRect(){
+		tlRect = new TimelineLite();
+		bigSvg.css('display') !== 'none' ? path = bigSvg.find('path') : path = smallSvg.find('path');
+
+		tlRect.set(path, {drawSVG:0});
+
+		tlTitre1 = new TimelineLite();
+		titre1 = t1.find('rect');
+		tlTitre1.set(titre1, {drawSVG:0});
+
+		tlTitre2 = new TimelineLite();
+		titre2 = t2.find('rect');
+		tlTitre2.set(titre2, {drawSVG:0});
+
+		tlTitre3 = new TimelineLite();
+		titre3 = t3.find('rect');
+		tlTitre1.set(titre3, {drawSVG:0});
+	}
+
+	if( bigSvg.css('display') === 'none' ){
+		smallSvg.append('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="508px" height="208px">
 									<path d="M 465 4 500 4 500 200 480 200" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
 									<path d="M 160 200 4 200 4 4 24 4" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
 								</svg>');
 	}else{
-		$('.bigSvg').append('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="768px" height="208px">
+		bigSvg.append('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="768px" height="208px">
 								<path d="M 490 4 760 4 760 200 730 200" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
 								<path d="M 385 200 4 200 4 4 24 4" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>
 							</svg>');
@@ -552,9 +551,9 @@ function appendSvg(){
 	var rectTitre = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="233px" height="144px">
 						<rect x="3" y="3" stroke="#47acdc" stroke-width="3" width="227" height="138" fill="none" stroke-linejoin="round"/>
 					</svg>'
-	$('.titreRect1').append(rectTitre);
-	$('.titreRect2').append(rectTitre);
-	$('.titreRect3').append(rectTitre);
+	t1.append(rectTitre);
+	t2.append(rectTitre);
+	t3.append(rectTitre);
 
 	setRect();
 }
@@ -642,7 +641,8 @@ $(function(){
 
 	$('#menu-main').length ? menuMain = $('#menu-main') : menuMain = $('.menuBlog');
 
-	setSizeBugerMenu();
+	body.hasClass('blog') ? setSizeBugerMenu(768) : setSizeBugerMenu(979);
+	
 	setBurgerMenu();
 
 	if(!body.hasClass('home')){
@@ -657,9 +657,7 @@ $(function(){
 		}
 
 		menuMain.find('a').on('click touchend', function(e) {
-		    var el = $(this);
-		    var link = el.attr('href');
-		    window.location = link;
+			window.location = $(this).attr('href');
 		});
 	}
 
@@ -713,12 +711,17 @@ $(function(){
 		});
 	}
 
-	$('#share').on('click', function(){
-		$('#socialm').slideToggle(300);
-		if($(this).hasClass('close')){
+	$('.share').on('click', function(){
+		var ul = $(this).siblings('.socialm');
+		ul.toggleClass('open');
+
+		if(ul.hasClass('open')){
+			windowWidth > 610 ? ul.animate({height: '109px', overflow: 'visible'}, 300) : ul.animate({width: '91px', overflow: 'visible'}, 300);
+		}else{
+			windowWidth > 610 ? ul.animate({height: 0, overflow: 'hidden'}, 300) : ul.animate({width: 0, overflow: 'hidden'}, 300);
 			$(this).blur();
 		}
-		$(this).toggleClass('close');
+		
 		return false;
 	});
 
@@ -738,7 +741,7 @@ $(function(){
 		}
 
 		setFooter();
-		setSizeBugerMenu();
+		body.hasClass('blog') ? setSizeBugerMenu(768) : setSizeBugerMenu(979);
 		adjustBurgerMenu();
 
 	});

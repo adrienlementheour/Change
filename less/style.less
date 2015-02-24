@@ -2,6 +2,7 @@
 
 @import "lesshat.less";
 @import "fonts.less";
+@import "norm.less";
 
 /* @end */
 
@@ -579,8 +580,9 @@ header{
         font-size: 0.9em;
         line-height: 16px;
         padding: 6px 0 0;
+        color: @grisFonceTexte;
         &:hover, &:focus{
-          color: @grisFonceTexte;
+          color: @blanc;
         }
       }
     }
@@ -640,7 +642,7 @@ header{
     }
     .b3{
       .transform(rotate(-45deg), translate(0, -5px));
-      margin: 1px 0 0 7px;
+      margin: 0 0 0 4px;
       .transition(.2s ease-in-out);
     }
   }
@@ -655,7 +657,6 @@ header{
     text-transform: uppercase;
     letter-spacing: 1px;
     .symbole-burger{
-      margin: 2px 0 0;
       width: 21px;
       height: 25px;
       display: inline-block;
@@ -721,7 +722,7 @@ header{
         .lienMenuActif();
       }
     }
-    .lien-contact, &#menu-item-3414 a, &#menu-item-303 a{
+    .lien-contact, &#menu-item-54 a, &#menu-item-303 a{
       text-transform: none;
       .bariolBold(1.1em);
       letter-spacing: 0;
@@ -922,8 +923,6 @@ header{
         font-size: 75px;
         width: 61px;
         left: -72px;
-        line-height: 72px;
-        height: 61px;
         .lt-ie9 &{
           width: 56px;
           left: -62px;
@@ -952,8 +951,7 @@ header{
       padding: 20px 0 0;
       &:before{
         border-radius: 4px;
-        line-height: 112px;
-        height: 100px;
+        line-height: 100px;
         top: 0;
       }
       .lt-ie9 &{
@@ -1783,12 +1781,12 @@ footer{
     }
     .container-icon-encadre{
       width: 100%;
-      line-height: 110px;
       position: absolute;
       top: 50%;
       margin-top: -50px;
       left: 0;
       font-size: 100px;
+      line-height: 95px;
     }
     .icon-cross{
       font-size: 120px;
@@ -2718,7 +2716,7 @@ footer{
 
 .presse-header{
   padding-top: 81px;
-  margin-top: 75px;
+  margin-top: 95px;
   background: url(../layoutImg/presse2.jpg) no-repeat 50% 50%;
   background-size: auto 100%;
   background-size: cover;
@@ -3197,7 +3195,6 @@ footer{
     display: inline-block;
     vertical-align: middle;
     margin: 0 20px 0 0;
-    padding: 4px 0 0;
     &:hover, &:focus{
       color: @blanc;
     }
@@ -3215,7 +3212,7 @@ footer{
     font-size: 22px;
     position: absolute;
     left: 0;
-    top: -2px;
+    top: -4px;
   }
   &:hover, &:focus{
     color: @blanc;
@@ -3229,7 +3226,7 @@ footer{
   + .social-small{
     vertical-align: middle;
     .lien-social{
-      width: 16px;
+      width: 17px;
     }
   }
 }
@@ -3239,27 +3236,36 @@ footer{
   > li{
     display: inline-block;
     vertical-align: top;
+    &:first-child{
+      &:hover, &:focus{
+        .no-js &{
+          #cats{
+            display: inline-block;
+          }
+        }
+      }
+    }
   }
   ul{
     display: none;
     text-align: left;
-    background: @grisFonce;
-    padding: 45px 20px 15px;
-    border: 3px solid @blanc;
+    background: @bleu;
+    padding: 12px 20px 15px;
+    border: 3px solid @bleu;
     border-radius: 4px;
-    margin: -38px 0 0;
-    .no-js &{
-      display: inline-block;
-    }
+    margin: -5px 0 0;
+    width: 170px;
+    overflow: hidden;
   }
   h2{
     text-align: left;
     color: @blanc;
-    border: 3px solid;
+    border: @bleu 3px solid;
     border-radius: 4px;
     padding: 3px 10px 6px;
     margin: 25px 0 0;
     font-size: 1.2em;
+    .transition(.3s ease-in-out);
   }
 }
 
@@ -3270,21 +3276,30 @@ footer{
     color: @blanc;
     border-color: @blanc;
     &:hover, &:focus{
-      color: @bleu;
+      color: @grisFonceTexte;
     }
   }
-  li:last-child a{
-    border: 0;
+  li{
+    &.current-cat a{
+      color: @grisFonceTexte;
+    }
+    &:last-child a{
+      border: 0;
+    }
   }
 }
 
 #btnCat{
   position: relative;
-  background: @grisFonce;
+  background: @bleu;
   cursor: pointer;
-  width: 215px;
-  &:hover a{
-    color: @bleu;
+  width: 216px;
+  border-radius: 4px;
+  &:hover{
+    a{
+      color: @bleu;
+      background: @blanc;
+    }
   }
   a{
     color: @blanc;
@@ -3294,13 +3309,14 @@ footer{
     right: 0;
     height: 32px;
     width: 32px;
-    border: solid 3px;
+    border: solid 3px @bleu;
     border-radius: 4px;
     &:hover, &:focus{
       color: @bleu;
+      background: @blanc;
     }
     &.close{
-      .transform(rotate(90deg));
+      .transform(rotate(90deg) translateZ(1px));
       span{
         .transition(top .2s ease-in-out, opacity .2s ease-in-out);
       }
@@ -3338,20 +3354,23 @@ footer{
   .searchSubmit{
     width: 38px;
     height: 38px;
-    background: none;
+    background: @rouge;
+    border-color: @rouge;
     color: @blanc;
     font-size: 16px;
-    vertical-align: middle;
+    vertical-align: top;
+    z-index: 1;
+    position: relative;
     .transition(.3s ease-in-out);
-    &:hover, &:focus{
-      color: @bleu;
-      border-color: @bleu;
+    &:hover{
+      color: @rouge;
+      background: @blanc;
       .transition(.3s ease-in-out);
     }
   }
   .searchInput{
     background: none;
-    color: @blanc;
+    color: @grisFonceTexte;
     margin-right: -38px;
     width: 0;
     opacity: 0;
@@ -3361,10 +3380,12 @@ footer{
       opacity: 1;
       .transition(.3s ease-in-out);
     }
+    &.open, &:focus{
+      border-color: @rouge;
+      background: @blanc;
+    }
     &.open + .searchSubmit{
-      color: @bleu;
-      border-color: @bleu;
-      .transform(rotate(90deg));
+      .transform(rotate(90deg) translateZ(1px));
     }
   }
 }
@@ -3399,6 +3420,9 @@ footer{
     .proximaNovaBold(35px);
     background: @rouge;
     border-color: @rouge;
+    &.left{
+      font-size: 13px;
+    }
     &:hover, &:focus{
       color: @rouge;
     }
@@ -3441,11 +3465,15 @@ footer{
       background: @grisFonce;
       width: 38px;
       top: 129px;
-      padding: 10px 0 0;
       border-radius: 4px;
-      display: none;
-      .no-js &{
-        display: block;
+      height: 0;
+      overflow: hidden;
+      .no-js &, .lt-ie9 &.open{
+        height: 109px;
+        overflow: visible;
+      }
+      li:first-child{
+        margin: 10px 0 0;
       }
       a{
         border: 0;
@@ -3461,6 +3489,10 @@ footer{
 }
 .section{
   margin: 0 0 70px 100px;
+  img{
+    max-width: 100%;
+    height: auto;
+  }
 }
 .meta{
   margin: 0;
@@ -3471,6 +3503,22 @@ footer{
 .suite{
   &:after{
     content: ' +';
+  }
+}
+
+.cat{
+  margin: 0 0 40px;
+}
+
+
+.navBlog{
+  .icon-next, .icon-prev{
+    font-size: 23px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  a + a{
+    float: right;
   }
 }
 
