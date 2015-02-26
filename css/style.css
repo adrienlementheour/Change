@@ -4487,6 +4487,15 @@ input[type="submit"].mailjet-subscribe:active {
 .section img {
   max-width: 100%;
   height: auto;
+  float: left;
+  margin-bottom: 22px;
+  margin-right: 22px;
+  width: auto;
+}
+.section img.aligncenter {
+  margin: 0 auto 20px;
+  display: block;
+  float: none;
 }
 .meta {
   margin: 0;
