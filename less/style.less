@@ -3685,6 +3685,9 @@ footer{
 #histoire{
   background: url(../layoutImg/ent/logos.png) no-repeat 50% 50%;
   background-size: cover;
+  .container{
+    padding: 40px 0 140px;
+  }
 }
 #partenaires{
   li{
@@ -3718,24 +3721,44 @@ footer{
 .vignettesEnt{
   width: 375px;
   display: inline-block;
+  margin: 50px 0 0 15px;
+  position: relative;
   li{
-    margin: 0 0 25px 25px;
-    display: inline-block;
     text-align: center;
     color: @blanc;
     .size(148px);
-    position: relative;
+    position: absolute;
     cursor: pointer;
+    .transition(.3s ease-in-out);
     &:hover, &:focus{
+      outline: 0;
       p{
         margin-top: 85px;
         opacity: 0.7;
         .transition(.3s ease-in-out);
       }
       div{
+        background: @bleu;
         background: rgba(84, 184, 231, 0.2);
+        overflow: hidden;
         .transition(.3s ease-in-out);
       }
+    }
+    &.on{
+      cursor: auto;
+      p{
+        margin-top: 150px;
+      }
+      div{
+        opacity: 0;
+        .lt-ie9 &{
+          display: none;
+        }
+      }
+    }
+    &.middle{
+      top: 88px;
+      left: 108px;
     }
   }
   div{
@@ -3754,6 +3777,44 @@ footer{
     display: block;
     font-size: 0.8em;
     line-height: 1em;
+  }
+}
+
+.v4{
+  top: 0;
+  left: 20px;
+}
+.v1{
+  top: 0;
+  left: 188px;
+}
+.v3{
+  top: 168px;
+  left: 20px;
+}
+.v2{
+  top: 168px;
+  left: 188px;
+}
+
+.sliderEnt{
+  width: 700px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 50px;
+  margin: 50px 0 0;
+  .box-sizing(border-box);
+  position: relative;
+  min-height: 650px;
+  li{
+    position: absolute;
+    display: none;
+    &.on, .no-js &{
+      display: block;
+    }
+  }
+  h3{
+    padding: 0;
   }
 }
 

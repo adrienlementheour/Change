@@ -4680,6 +4680,9 @@ input[type="submit"].mailjet-subscribe:active {
   background: url(../layoutImg/ent/logos.png) no-repeat 50% 50%;
   background-size: cover;
 }
+#histoire .container {
+  padding: 40px 0 140px;
+}
 #partenaires li {
   width: 170px;
   display: inline-block;
@@ -4703,16 +4706,24 @@ input[type="submit"].mailjet-subscribe:active {
 .vignettesEnt {
   width: 375px;
   display: inline-block;
+  margin: 50px 0 0 15px;
+  position: relative;
 }
 .vignettesEnt li {
-  margin: 0 0 25px 25px;
-  display: inline-block;
   text-align: center;
   color: #ffffff;
   width: 148px;
   height: 148px;
-  position: relative;
+  position: absolute;
   cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.vignettesEnt li:hover,
+.vignettesEnt li:focus {
+  outline: 0;
 }
 .vignettesEnt li:hover p,
 .vignettesEnt li:focus p {
@@ -4725,11 +4736,29 @@ input[type="submit"].mailjet-subscribe:active {
 }
 .vignettesEnt li:hover div,
 .vignettesEnt li:focus div {
+  background: #54b8e7;
   background: rgba(84, 184, 231, 0.2);
+  overflow: hidden;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+.vignettesEnt li.on {
+  cursor: auto;
+}
+.vignettesEnt li.on p {
+  margin-top: 150px;
+}
+.vignettesEnt li.on div {
+  opacity: 0;
+}
+.lt-ie9 .vignettesEnt li.on div {
+  display: none;
+}
+.vignettesEnt li.middle {
+  top: 88px;
+  left: 108px;
 }
 .vignettesEnt div {
   position: absolute;
@@ -4754,6 +4783,45 @@ input[type="submit"].mailjet-subscribe:active {
   display: block;
   font-size: 0.8em;
   line-height: 1em;
+}
+.v4 {
+  top: 0;
+  left: 20px;
+}
+.v1 {
+  top: 0;
+  left: 188px;
+}
+.v3 {
+  top: 168px;
+  left: 20px;
+}
+.v2 {
+  top: 168px;
+  left: 188px;
+}
+.sliderEnt {
+  width: 700px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 50px;
+  margin: 50px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 650px;
+}
+.sliderEnt li {
+  position: absolute;
+  display: none;
+}
+.sliderEnt li.on,
+.no-js .sliderEnt li {
+  display: block;
+}
+.sliderEnt h3 {
+  padding: 0;
 }
 /* @end */
 /* @group Non semantic Boilerplate */
@@ -5085,14 +5153,17 @@ input[type="submit"].mailjet-subscribe:active {
   .fdClubHeader {
     width: 70%;
   }
-  .temp {
+  #histoire .container {
+    padding: 40px 20px 140px;
+  }
+  /*.temp{
     float: none;
     margin-left: 55px;
   }
-  .temp-contact {
+  .temp-contact{
     float: none;
     margin: 20px 0 0 55px;
-  }
+  }*/
   .searchform {
     margin-right: 20px;
   }
@@ -5477,6 +5548,19 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .presseLogo {
     left: -30px;
+  }
+  #vision {
+    margin: 94px 0 0;
+  }
+  .containerEnt {
+    width: 100%;
+    float: none;
+  }
+  .containerEnt > div {
+    float: right;
+  }
+  .containerEnt > div.right {
+    float: none;
   }
 }
 @media (max-width: 850px) {
@@ -6125,9 +6209,19 @@ input[type="submit"].mailjet-subscribe:active {
   .navBlog .icon-next {
     font-size: 40px;
   }
-  .temp {
-    width: 74%;
+  .containerEnt {
+    padding: 75px 20px;
   }
+  .containerEnt > div {
+    float: none;
+    max-width: 100%;
+  }
+  .containerEnt.right.beige > div {
+    max-width: 100%;
+  }
+  /*.temp{
+    width: 74%;
+  }*/
 }
 @media (max-width: 520px) {
   h1,

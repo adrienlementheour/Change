@@ -8,7 +8,7 @@ var countSlide = 0, slides, timerSlide = 5, pagination, vignettes,
 	valOffset,
 	body = $('body'), html = $('html'), burger = $('.hamburger'), header = $('header'), masque = $('#masque'), menuMain, 
 	subMenu = $('#subMenu'), containerVid = $('#containerVid'), htmlBody = $('html, body'), topHeader = $('.top-header'),
-	t1 = $('.titreRect1'), t2 = $('.titreRect2'), t3 = $('.titreRect3'),
+	t1 = $('.titreRect1'), t2 = $('.titreRect2'), t3 = $('.titreRect3'), equipe = $('#equipe'),
 	windowHeight = $(window).height(), windowWidth = $(window).width();
 
 
@@ -24,6 +24,7 @@ function detectTouchDevice(){
 		}
 	}
 }
+
 
 /* Burger menu */
 function moveBurgerMenu(elt, action){
@@ -77,7 +78,6 @@ function setSizeBugerMenu(size){
 
 
 /* Top header au hover */
-
 function hoverHeader(){
 	header.on('mouseenter', function(){
 		topHeader.removeClass('on');
@@ -88,7 +88,6 @@ function hoverHeader(){
 
 
 /* Footer toujours en bas de page */
-
 function setFooter(){
 	var docHeight = html.height();
 	var footer = $('footer');
@@ -105,7 +104,6 @@ function setFooter(){
 
 
 /* Premier strong en maj */
-
 function setFirstStrong(){
 	var allP = $('.content').find('p');
 
@@ -134,9 +132,7 @@ function setFirstStrong(){
 /* Eléments animés au scroll: header, video accueil */
 
 function scroll(){
-	var factor = 1.9;
-	var factor2 = 9;
-	var myScrollH2 = Math.ceil(myScroll/factor2);
+	var factor = 1.9, factor2 = 9, myScrollH2 = Math.ceil(myScroll/factor2);
 
 	if(!body.hasClass('home')){
 		myScroll > 50 ? topHeader.addClass('on') : topHeader.removeClass('on');
@@ -242,6 +238,7 @@ function gonePlayAgainIndic(){
 	indic.fadeOut();
 }
 
+
 /* Video accueil */
 
 function onVideoEnd(video){
@@ -337,7 +334,6 @@ function setSliderVid(){
 
 	TweenMax.delayedCall(timerSlideVid, slideshowVid);
 }
-
 
 
 /* Slider accueil references */
@@ -510,7 +506,7 @@ function openFormClub(){
 }
 
 
-/* Ajout du svg dans la page (sinon bug sous IE) */
+/* Ajout du svg dans la page partenaire (sinon bug sous IE) */
 
 function appendSvg(){
 	var bigSvg = $('.bigSvg'),
@@ -558,6 +554,7 @@ function appendSvg(){
 	setRect();
 }
 
+
 /* Formulaire devenir partenaire */
 
 function openFormPartner(){
@@ -572,6 +569,7 @@ function openFormPartner(){
 	$('#partnerSol').click(goToForm);
 	$('#partnerTech').click(goToForm);
 }
+
 
 /* Smooth scroll pour les ancres du sous-menu */
 
@@ -597,6 +595,7 @@ function animVisuSolution(){
 function visuSolution(){
 	TweenMax.set($("#screen-solution"), {y: 50, opacity: 0});
 }
+
 
 // Schéma clignotant page solution //
 
@@ -624,6 +623,9 @@ function openRef(){
 	}
 }
 
+
+/* Blog */
+
 function openSearchInput(e){
 	e.preventDefault();
 
@@ -632,6 +634,53 @@ function openSearchInput(e){
 		queryLength = query.length;
 
 	queryLength === 0 || !input.hasClass('open') ? input.toggleClass('open').focus() : $('#searchform').submit();
+}
+
+
+/* Entreprise */
+
+function setSliderEntreprise(){
+
+	var vignettesEnt = equipe.find('.vignettesEnt').find('li');
+
+	function slideVignettes(idSlide){
+		vignettesEnt.removeClass().addClass('middle');
+		$('[data-slide="' + idSlide + '"]').addClass('on v1');
+		var indexV1 = $('[data-slide="' + idSlide + '"]').index() + 1;
+		console.log(indexV1);
+
+		function boucle(i, nb, count){
+			for(i; i<nb; i++){
+				count ++;
+				//console.log(vignettesEnt.eq(next).index());
+				if(vignettesEnt.eq(i).index() == -1){
+					vignettesEnt.eq(0).addClass('v'+ count);
+					var nbVignettes = nb - count;
+					boucle(1, nbVignettes, count);
+				}else{
+					vignettesEnt.eq(i).addClass('v'+ count);
+				}
+			}
+		}
+		boucle(indexV1, vignettesEnt.length, 1);
+
+		//var i = 1, nbVignettes = vignettesEnt.length, count = 0;
+		
+
+		setTimeout(function(){
+			vignettesEnt.removeClass('middle');
+		}, 300);
+	}
+
+	function slideText(idSlide){
+
+	}
+
+	vignettesEnt.on('click', function(){
+		var dataSlide = $(this).attr('data-slide');
+		slideVignettes(dataSlide);
+		slideText(dataSlide);
+	});
 }
 
 
@@ -698,6 +747,10 @@ $(function(){
 		openFormPartner();
 	}
 
+	if(equipe.length){
+		setSliderEntreprise();
+	}
+
 	if(windowWidth > 767){
 		$('#search').on('click', openSearchInput);
 		$('#btnCat').on('click', function(){
@@ -746,31 +799,31 @@ $(function(){
 
 	});
 
-});
+	$(window).load(function(){
+		if(body.hasClass('home')){
 
-$(window).load(function(){
-	if(body.hasClass('home')){
+			// Slider a la place de la vidéo
+			if(html.hasClass('lt-ie9') || html.hasClass('touch') || html.width() < 979){
+				slidesVid = $('#sliderVid').find('.slides').find('li');
+				setSliderVid();
+			}else{
+				playVideo();
+			}
 
-		// Slider a la place de la vidéo
-		if(html.hasClass('lt-ie9') || html.hasClass('touch') || html.width() < 979){
-			slidesVid = $('#sliderVid').find('.slides').find('li');
-			setSliderVid();
-		}else{
-			playVideo();
+			// Slider références
+			slides = $('#slider').find('.slides').find('li');
+			vignettes = $('#slider').find('.vignettes').find('li');
+			pagination = $('#bulle');
+			setSlider();
+		}
+		
+		if(body.hasClass('solution') || body.hasClass('page-template-solution-php')){
+			animVisuSolution();
 		}
 
-		// Slider références
-		slides = $('#slider').find('.slides').find('li');
-		vignettes = $('#slider').find('.vignettes').find('li');
-		pagination = $('#bulle');
-		setSlider();
-	}
-	
-	if(body.hasClass('solution') || body.hasClass('page-template-solution-php')){
-		animVisuSolution();
-	}
+		if(body.hasClass('partner') && !html.hasClass('lt-ie9')){
+			tlRect.staggerFromTo(path, 0.8, {drawSVG:0}, {drawSVG: "100%", ease:Power1.easeInOut}, 0.7);
+		}
+	});
 
-	if(body.hasClass('partner') && !html.hasClass('lt-ie9')){
-		tlRect.staggerFromTo(path, 0.8, {drawSVG:0}, {drawSVG: "100%", ease:Power1.easeInOut}, 0.7);
-	}
 });
