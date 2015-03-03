@@ -4715,6 +4715,7 @@ input[type="submit"].mailjet-subscribe:active {
   width: 148px;
   height: 148px;
   position: absolute;
+  z-index: 1;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -4746,6 +4747,7 @@ input[type="submit"].mailjet-subscribe:active {
 }
 .vignettesEnt li.on {
   cursor: auto;
+  z-index: 2;
 }
 .vignettesEnt li.on p {
   margin-top: 150px;
@@ -4804,24 +4806,62 @@ input[type="submit"].mailjet-subscribe:active {
   width: 700px;
   display: inline-block;
   vertical-align: top;
-  padding: 0 0 0 50px;
   margin: 50px 0 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   position: relative;
   min-height: 650px;
+  overflow: hidden;
 }
 .sliderEnt li {
   position: absolute;
   display: none;
+  width: 650px;
 }
-.sliderEnt li.on,
 .no-js .sliderEnt li {
-  display: block;
+  position: relative;
+  display: block !important;
+  left: 50px !important;
+  opacity: 1 !important;
 }
 .sliderEnt h3 {
   padding: 0;
+}
+.navSlideEnt {
+  position: absolute;
+  top: 210px;
+  left: 395px;
+}
+.navSlideEnt button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  text-indent: -999em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.navSlideEnt button:focus {
+  outline: 0;
+  opacity: 0.7;
+}
+.navSlideEnt .next {
+  left: 350px;
+  top: 0;
+  background: url(../layoutImg/next.png) no-repeat;
+}
+.navSlideEnt .next:hover {
+  left: 353px;
+}
+.navSlideEnt .prev {
+  left: 0;
+  background: url(../layoutImg/prev.png) no-repeat;
+}
+.navSlideEnt .prev:hover {
+  left: -3px;
 }
 /* @end */
 /* @group Non semantic Boilerplate */
@@ -5155,6 +5195,17 @@ input[type="submit"].mailjet-subscribe:active {
   }
   #histoire .container {
     padding: 40px 20px 140px;
+  }
+  #equipe {
+    text-align: center;
+  }
+  .sliderEnt {
+    width: 500px;
+    min-height: 710px;
+    text-align: left;
+  }
+  .sliderEnt li {
+    width: 450px;
   }
   /*.temp{
     float: none;
@@ -5561,6 +5612,13 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .containerEnt > div.right {
     float: none;
+  }
+  .sliderEnt {
+    width: 100%;
+    margin: 400px 0 0;
+  }
+  .sliderEnt li {
+    width: 90%;
   }
 }
 @media (max-width: 850px) {

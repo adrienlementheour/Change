@@ -3728,6 +3728,7 @@ footer{
     color: @blanc;
     .size(148px);
     position: absolute;
+    z-index: 1;
     cursor: pointer;
     .transition(.3s ease-in-out);
     &:hover, &:focus{
@@ -3746,6 +3747,7 @@ footer{
     }
     &.on{
       cursor: auto;
+      z-index: 2;
       p{
         margin-top: 150px;
       }
@@ -3801,20 +3803,58 @@ footer{
   width: 700px;
   display: inline-block;
   vertical-align: top;
-  padding: 0 0 0 50px;
   margin: 50px 0 0;
-  .box-sizing(border-box);
   position: relative;
   min-height: 650px;
+  overflow: hidden;
   li{
     position: absolute;
     display: none;
-    &.on, .no-js &{
-      display: block;
+    width: 650px;
+    .no-js &{
+      position: relative;
+      display: block !important;
+      left: 50px !important;
+      opacity: 1 !important;
     }
   }
   h3{
     padding: 0;
+  }
+}
+
+.navSlideEnt{
+  position: absolute;
+  top: 210px;
+  left: 395px;
+  button{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    text-indent: -999em;
+    position: absolute;
+    .size(20px);
+    .transition(.1s ease-in-out);
+    &:focus{
+      outline: 0;
+      opacity: 0.7;
+    }
+  }
+  .next{
+    left: 350px;
+    top: 0;
+    background: url(../layoutImg/next.png) no-repeat;
+    &:hover{
+      left: 353px;
+    }
+  }
+  .prev{
+    left: 0;
+    background: url(../layoutImg/prev.png) no-repeat;
+    &:hover{
+      left: -3px;
+    }
   }
 }
 

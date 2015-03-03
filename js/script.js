@@ -644,42 +644,56 @@ function setSliderEntreprise(){
 	var vignettesEnt = equipe.find('.vignettesEnt').find('li');
 
 	function slideVignettes(idSlide){
-		vignettesEnt.removeClass().addClass('middle');
-		$('[data-slide="' + idSlide + '"]').addClass('on v1');
 		var indexV1 = $('[data-slide="' + idSlide + '"]').index() + 1;
-		console.log(indexV1);
-
 		function boucle(i, nb, count){
 			for(i; i<nb; i++){
 				count ++;
-				//console.log(vignettesEnt.eq(next).index());
 				if(vignettesEnt.eq(i).index() == -1){
 					vignettesEnt.eq(0).addClass('v'+ count);
-					var nbVignettes = nb - count;
-					boucle(1, nbVignettes, count);
+					var nbVignettesRestantes = nb - count;
+					boucle(1, nbVignettesRestantes, count);
 				}else{
 					vignettesEnt.eq(i).addClass('v'+ count);
 				}
 			}
 		}
-		boucle(indexV1, vignettesEnt.length, 1);
 
-		//var i = 1, nbVignettes = vignettesEnt.length, count = 0;
-		
-
-		setTimeout(function(){
-			vignettesEnt.removeClass('middle');
-		}, 300);
+		vignettesEnt.removeClass().addClass('middle');
+		$('[data-slide="' + idSlide + '"]').addClass('on v1');
+		boucle(indexV1, vignettesEnt.length+1, 1);		
+		setTimeout(function(){ vignettesEnt.removeClass('middle'); }, 300);
 	}
 
-	function slideText(idSlide){
-
+	function slideText(idSlide, right){
+		if(right){
+			$('#'+idSlide).css({'display': 'block', 'right': 'auto', 'left': '-600px'}).animate({left: '50px', opacity: 1}, 600).siblings().css('right', 'auto').animate({left: '1200px', opacity: 0}, 600, function(){
+				$('#'+idSlide).siblings().css({right: 'auto', left: '-600px', display: 'none'});
+			});
+		}else{
+			$('#'+idSlide).css({'display': 'block', 'left': 'auto', 'right': '-600px'}).animate({right: 0, opacity: 1}, 600).siblings().css('left', 'auto').animate({right: '1200px', opacity: 0}, 600, function(){
+				$('#'+idSlide).siblings().css({left: 'auto', right: '-600px', display: 'none'});
+			});
+		}
 	}
 
-	vignettesEnt.on('click', function(){
-		var dataSlide = $(this).attr('data-slide');
+	vignettesEnt.on('click keypress', function(){
+		if(event.which === 13 || event.type === 'click'){
+			var dataSlide = $(this).attr('data-slide');
+			slideVignettes(dataSlide);
+			slideText(dataSlide, true);
+		}
+	});
+
+	$('#navEnt').find('button').on('click', function(){
+		var dataNb = equipe.find('.vignettesEnt').find('.on').index(), dataSlide;
+		if($(this).hasClass('next')){
+			dataSlide = dataNb == 3 ? vignettesEnt.eq(0).attr('data-slide') : vignettesEnt.eq(dataNb).next().attr('data-slide');
+			slideText(dataSlide, true);
+		}else{
+			dataSlide = dataNb == 0 ? vignettesEnt.eq(3).attr('data-slide') : vignettesEnt.eq(dataNb).prev().attr('data-slide');
+			slideText(dataSlide, false);
+		}
 		slideVignettes(dataSlide);
-		slideText(dataSlide);
 	});
 }
 
