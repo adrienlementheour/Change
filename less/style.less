@@ -558,6 +558,7 @@ header{
 .top-header{
   background: @bleu;
   margin-top: 0;
+  height: auto;
   .transition(margin .3s ease-in-out);
   &.on{
     margin-top: -30px;
@@ -1272,8 +1273,8 @@ footer{
         &.icon-fleche:before{
             font-size: 105px;
         }
-        &.icon-cible:before{
-            font-size: 125px;
+        &.icon-target:before{
+            font-size: 60px;
         }
       }
       h3{
@@ -3621,6 +3622,8 @@ footer{
   .box-sizing(border-box);
   background: @grisFonce;
   background: rgba(32, 32, 38, 0.55);
+  position: relative;
+  z-index: 1;
   &.right{
     float: right;
     background: @blanc;
@@ -3642,21 +3645,116 @@ footer{
 }
 
 .entShop{
-  background: url(../layoutImg/ent/nanas.jpg);
+  background: url(../layoutImg/ent/nanas.jpg) 50% 50% no-repeat;
 }
+#svgShop{
+  width: 450px;
+  height: 400px;
+  background: url(../layoutImg/ent/triangle.png);
+  top: 30px;
+  position: absolute; 
+}
+
 .entWorld{
-  background: url(../layoutImg/ent/nasa.png) 40% 50%;
+  background: #060629;
 }
+.smallWorld{
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  right: -5%;
+}
+#svgWorld{
+  width: 700px;
+  height: 260px;
+  background: url(../layoutImg/ent/world.png);
+  right: 17%;
+  top: 180px;
+  position: absolute; 
+}
+
 .entSchema{
-  background: url(../layoutImg/ent/colors.jpg);
+  background: url(../layoutImg/ent/colors.jpg) 50% 50% no-repeat;
+}
+.svgSchemaContainer{
+  top: 50%;
+  margin-top: -275px;
+  left: 25%;
+  position: absolute; 
+  span{
+    display: block;
+    width: 180px;
+    position: absolute;
+    .proximaNovaSBold(0.8em);
+    opacity: 0;
+    .no-js &{
+      opacity: 1;
+      display: block;
+    }
+    .lt-ie9 &{
+      display: none;
+    }
+  }
+  .txtRight{
+    text-align: right;
+    i{
+      left: auto;
+      right: -45px;
+    }
+  }
+  i{
+    font-style: normal;
+    position: absolute;
+    left: -42px;
+    font-size: 32px;
+    top: 50%;
+    margin-top: -17px;
+  }
+}
+#svgSchema{
+  width: 130px;
+  height: 570px;
+  background: url(../layoutImg/ent/schema.png);
+}
+#txt1{
+  top: 5px;
+  left: -185px;
+}
+#txt2{
+  top: 114px;
+  left: 130px;
+}
+#txt3{
+  top: 209px;
+  left: -185px;
+}
+#txt4{
+  top: 320px;
+  left: 130px;
+  i{
+    font-size: 25px;
+    margin-top: -12px;
+    left: -50px;
+  }
+}
+#txt5{
+  top: 413px;
+  left: -185px;
+}
+#txt6{
+  top: 522px;
+  left: 130px;
+  i{
+    left: -34px;
+  }
 }
 
 #vision{
   margin: 130px 0 0;
   > div{
     background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
   }
   h2{
     padding-top: 0;
@@ -3805,7 +3903,7 @@ footer{
   vertical-align: top;
   margin: 50px 0 0;
   position: relative;
-  min-height: 650px;
+  height: 650px;
   overflow: hidden;
   li{
     position: absolute;

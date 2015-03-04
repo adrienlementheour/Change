@@ -67,6 +67,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-clock:before {
+  content: "\e609";
+}
+.icon-pin:before {
+  content: "\e64e";
+}
+.icon-terminaux:before {
+  content: "\e64f";
+}
 .icon-next:before {
   content: "\e64d";
 }
@@ -261,9 +270,6 @@
 }
 .icon-web:before {
   content: "\e611";
-}
-.icon-cible:before {
-  content: "\e609";
 }
 .icon-euro:before {
   content: "\e60a";
@@ -1150,6 +1156,7 @@ header > div {
 .top-header {
   background: #54b8e7;
   margin-top: 0;
+  height: auto;
   -webkit-transition: margin 0.3s ease-in-out;
   -moz-transition: margin 0.3s ease-in-out;
   -o-transition: margin 0.3s ease-in-out;
@@ -2029,8 +2036,8 @@ input[type="submit"].mailjet-subscribe:active {
 .home .last-ul li span.icon-fleche:before {
   font-size: 105px;
 }
-.home .last-ul li span.icon-cible:before {
-  font-size: 125px;
+.home .last-ul li span.icon-target:before {
+  font-size: 60px;
 }
 .home .last-ul li h3 {
   padding: 12px 0 0;
@@ -4609,6 +4616,8 @@ input[type="submit"].mailjet-subscribe:active {
   box-sizing: border-box;
   background: #202026;
   background: rgba(32, 32, 38, 0.55);
+  position: relative;
+  z-index: 1;
 }
 .containerEnt.right {
   float: right;
@@ -4629,21 +4638,118 @@ input[type="submit"].mailjet-subscribe:active {
   float: right;
 }
 .entShop {
-  background: url(../layoutImg/ent/nanas.jpg);
+  background: url(../layoutImg/ent/nanas.jpg) 50% 50% no-repeat;
+}
+#svgShop {
+  width: 450px;
+  height: 400px;
+  background: url(../layoutImg/ent/triangle.png);
+  top: 30px;
+  position: absolute;
 }
 .entWorld {
-  background: url(../layoutImg/ent/nasa.png) 40% 50%;
+  background: #060629;
+}
+.smallWorld {
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  right: -5%;
+}
+#svgWorld {
+  width: 700px;
+  height: 260px;
+  background: url(../layoutImg/ent/world.png);
+  right: 17%;
+  top: 180px;
+  position: absolute;
 }
 .entSchema {
-  background: url(../layoutImg/ent/colors.jpg);
+  background: url(../layoutImg/ent/colors.jpg) 50% 50% no-repeat;
+}
+.svgSchemaContainer {
+  top: 50%;
+  margin-top: -275px;
+  left: 25%;
+  position: absolute;
+}
+.svgSchemaContainer span {
+  display: block;
+  width: 180px;
+  position: absolute;
+  font-family: 'proximaNovaSBold', sans-serif;
+  font-size: 0.8em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  opacity: 0;
+}
+.no-js .svgSchemaContainer span {
+  opacity: 1;
+  display: block;
+}
+.lt-ie9 .svgSchemaContainer span {
+  display: none;
+}
+.svgSchemaContainer .txtRight {
+  text-align: right;
+}
+.svgSchemaContainer .txtRight i {
+  left: auto;
+  right: -45px;
+}
+.svgSchemaContainer i {
+  font-style: normal;
+  position: absolute;
+  left: -42px;
+  font-size: 32px;
+  top: 50%;
+  margin-top: -17px;
+}
+#svgSchema {
+  width: 130px;
+  height: 570px;
+  background: url(../layoutImg/ent/schema.png);
+}
+#txt1 {
+  top: 5px;
+  left: -185px;
+}
+#txt2 {
+  top: 114px;
+  left: 130px;
+}
+#txt3 {
+  top: 209px;
+  left: -185px;
+}
+#txt4 {
+  top: 320px;
+  left: 130px;
+}
+#txt4 i {
+  font-size: 25px;
+  margin-top: -12px;
+  left: -50px;
+}
+#txt5 {
+  top: 413px;
+  left: -185px;
+}
+#txt6 {
+  top: 522px;
+  left: 130px;
+}
+#txt6 i {
+  left: -34px;
 }
 #vision {
   margin: 130px 0 0;
 }
 #vision > div {
   background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 #vision h2 {
   padding-top: 0;
@@ -4808,7 +4914,7 @@ input[type="submit"].mailjet-subscribe:active {
   vertical-align: top;
   margin: 50px 0 0;
   position: relative;
-  min-height: 650px;
+  height: 650px;
   overflow: hidden;
 }
 .sliderEnt li {
@@ -4922,6 +5028,9 @@ input[type="submit"].mailjet-subscribe:active {
 @media (max-width: 1500px) {
   .fdClubHeader {
     width: 64%;
+  }
+  .smallWorld {
+    right: -12%;
   }
 }
 @media (max-width: 1280px) {
@@ -5206,6 +5315,9 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .sliderEnt li {
     width: 450px;
+  }
+  .smallWorld {
+    right: -20%;
   }
   /*.temp{
     float: none;
@@ -6619,12 +6731,14 @@ input[type="submit"].mailjet-subscribe:active {
     width: 54px;
     line-height: 54px;
   }
-  .home .last-ul li span.icon-fleche:before,
-  .home .last-ul li span.icon-cible:before {
+  .home .last-ul li span.icon-fleche:before {
     font-size: 70px;
   }
   .home .last-ul li span.icon-horloge:before {
     font-size: 55px;
+  }
+  .home .last-ul li span.icon-target:before {
+    font-size: 35px;
   }
   .adresses p,
   .adresses strong,
