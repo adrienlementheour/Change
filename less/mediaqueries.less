@@ -31,9 +31,13 @@
     background-position: 100% 60%;
   }
 
-  .dl {
+  .dl{
     background-position: 100% -20%;
     background-size: 900px;
+  }
+
+  .svgSchemaContainer{
+    left: 20%;
   }
 }
 
@@ -332,11 +336,15 @@
 
   .sliderEnt{
     width: 500px;
-    min-height: 710px;
+    height: 710px;
     text-align: left;
     li{
       width: 450px;
     }
+  }
+
+  .navSlideEnt{
+    left: 45%;
   }
 
   .smallWorld{
@@ -382,6 +390,10 @@
         display: none;
       }
     }
+  }
+
+  .svgSchemaContainer{
+    left: 19%;
   }
 
 }
@@ -810,6 +822,17 @@
       }
     }
 
+    .navSlideEnt{
+      left: 370px;
+      top: 610px;
+      .next{
+        left: 40px;
+        &:hover{
+          left: 43px;
+        }
+      }
+    }
+
 }
 
 @media (max-width: 850px) {
@@ -918,6 +941,10 @@
     .liste-pictos{
       width: 44%;
     }
+  }
+
+  .sliderEnt li {
+    width: 80%;
   }
 
 }

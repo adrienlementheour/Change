@@ -237,8 +237,14 @@ function scroll(){
 		if(myScroll > $('#svgSchema').offset().top - valOffset[9] && !animSchema){
 			animSchema = true;
 			animSvgEnt($('#svgSchema'), 130, 570);
-			$('#txt1').animate({opacity: 1}, 300);
-			$('#txt2').animate({opacity: 1}, 300);
+
+			var txt = $('#blockSchema').find('span'),
+				txtLength = txt.length, i = 0, count = 0;
+
+			for(i; i<txtLength; i++){
+				txt.eq(i).delay(count).animate({opacity: 1}, 300);
+				count += 430;
+			}
 		}		
 	}
 }
@@ -385,15 +391,13 @@ function slideshow(){
 
 function setSlider(){
 	for(var i = 0; i < slides.length; i++){
-		var src = slides.eq(i).data('img');
-		slides.eq(i).find('.img').css('background-image', 'url(' + src + ')');
+		slides.eq(i).find('.img').css('background-image', 'url(' + slides.eq(i).data('img') + ')');
 	}
 
 	for(var j = 0; j < vignettes.length-1; j++){
 		vignettes.eq(j).mouseover(function(){
 			TweenMax.killTweensOf(slideshow);
-			var index = $(this).index();
-			setSlide(index);
+			setSlide($(this).index());
 		}).mouseout(function(){
 			countSlide = $(this).index();
 			TweenMax.delayedCall(timerSlide, slideshow);
@@ -699,21 +703,19 @@ function setSliderEntreprise(){
 		}
 	}
 
-	vignettesEnt.on('click keypress', function(){
-		if(event.which === 13 || event.type === 'click'){
+	vignettesEnt.on('click keypress', function(event){
+		if(event.which === 13 || event.type === 'click' && !currentAnim){
 			var dataSlide = $(this).attr('data-slide');
-			if(!currentAnim){
-				slideVignettes(dataSlide);
-				slideText(dataSlide, true);
-			}
+			slideVignettes(dataSlide);
+			slideText(dataSlide, true);
 		}
 	});
 
 	$('#navEnt').find('button').on('click', function(){
-		var dataNb = equipe.find('.vignettesEnt').find('.on').index(), 
-			dataSlide;
-
 		if(!currentAnim){
+			var dataNb = equipe.find('.vignettesEnt').find('.on').index(), 
+				dataSlide;
+
 			if($(this).hasClass('next')){
 				dataSlide = dataNb == 3 ? vignettesEnt.eq(0).attr('data-slide') : vignettesEnt.eq(dataNb).next().attr('data-slide');
 				slideText(dataSlide, true);
@@ -721,6 +723,7 @@ function setSliderEntreprise(){
 				dataSlide = dataNb == 0 ? vignettesEnt.eq(3).attr('data-slide') : vignettesEnt.eq(dataNb).prev().attr('data-slide');
 				slideText(dataSlide, false);
 			}
+
 			slideVignettes(dataSlide);
 		}
 	});

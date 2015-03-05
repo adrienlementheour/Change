@@ -5042,6 +5042,9 @@ input[type="submit"].mailjet-subscribe:active {
     background-position: 100% -20%;
     background-size: 900px;
   }
+  .svgSchemaContainer {
+    left: 20%;
+  }
 }
 @media (max-width: 1150px) {
   .container {
@@ -5310,11 +5313,14 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .sliderEnt {
     width: 500px;
-    min-height: 710px;
+    height: 710px;
     text-align: left;
   }
   .sliderEnt li {
     width: 450px;
+  }
+  .navSlideEnt {
+    left: 45%;
   }
   .smallWorld {
     right: -20%;
@@ -5350,6 +5356,9 @@ input[type="submit"].mailjet-subscribe:active {
   .club .containerLeft br,
   .page-template-club-php .containerLeft br {
     display: none;
+  }
+  .svgSchemaContainer {
+    left: 19%;
   }
 }
 @media (max-width: 979px) {
@@ -5732,6 +5741,16 @@ input[type="submit"].mailjet-subscribe:active {
   .sliderEnt li {
     width: 90%;
   }
+  .navSlideEnt {
+    left: 370px;
+    top: 610px;
+  }
+  .navSlideEnt .next {
+    left: 40px;
+  }
+  .navSlideEnt .next:hover {
+    left: 43px;
+  }
 }
 @media (max-width: 850px) {
   form {
@@ -5812,6 +5831,9 @@ input[type="submit"].mailjet-subscribe:active {
   .club .liste-pictos,
   .page-template-club-php .liste-pictos {
     width: 44%;
+  }
+  .sliderEnt li {
+    width: 80%;
   }
 }
 @media (max-width: 767px) {
