@@ -3631,6 +3631,7 @@ footer{
     &.beige{
       background: @grisTresClairFond;
       background: rgba(239, 235, 226, 0.85);
+      position: static;
       > div{
         max-width: 410px;
       }
@@ -3645,14 +3646,28 @@ footer{
 }
 
 .entShop{
-  background: url(../layoutImg/ent/nanas.jpg) 50% 50% no-repeat;
+  background: url(../layoutImg/ent/fdNanas.jpg) 50% 50% no-repeat;
+  .containerEnt{
+    max-height: 483px;
+    .lt-ie9 &{
+      height: 470px;
+    }
+  }
+}
+.smallShop{
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+  left: 0;
 }
 #svgShop{
   width: 450px;
   height: 400px;
   background: url(../layoutImg/ent/triangle.png);
-  top: 30px;
+  top: 73px;
+  left: 321px;
   position: absolute; 
+  opacity: 0;
 }
 
 .entWorld{
@@ -3671,6 +3686,7 @@ footer{
   right: 17%;
   top: 180px;
   position: absolute; 
+  opacity: 0;
 }
 
 .entSchema{
@@ -3681,18 +3697,17 @@ footer{
   margin-top: -275px;
   left: 25%;
   position: absolute; 
-  span{
+  li{
     display: block;
     width: 180px;
     position: absolute;
     .proximaNovaSBold(0.8em);
     opacity: 0;
+    &:before{
+      display: none;
+    }
     .no-js &{
       opacity: 1;
-      display: block;
-    }
-    .lt-ie9 &{
-      display: none;
     }
   }
   .txtRight{
@@ -3715,6 +3730,7 @@ footer{
   width: 130px;
   height: 570px;
   background: url(../layoutImg/ent/schema.png);
+  opacity: 0;
 }
 #txt1{
   top: 5px;
@@ -3783,6 +3799,9 @@ footer{
 #histoire{
   background: url(../layoutImg/ent/logos.png) no-repeat 50% 50%;
   background-size: cover;
+  .lt-ie9 &{
+    background: url(../layoutImg/ent/logos.png) no-repeat 0 50%;
+  }
   .container{
     padding: 40px 0 140px;
   }
@@ -3863,7 +3882,7 @@ footer{
   }
   div{
     position: absolute;
-    .size(148px);
+    .size(100%);
     background: @bleu;
     background: rgba(84, 184, 231, 0.95);
     top: 0;
@@ -3877,6 +3896,9 @@ footer{
     display: block;
     font-size: 0.8em;
     line-height: 1em;
+  }
+  img{
+    .size(100%);
   }
 }
 
@@ -3905,6 +3927,9 @@ footer{
   position: relative;
   height: 650px;
   overflow: hidden;
+  .lt-ie9 &{
+    width: 500px;
+  }
   li{
     position: absolute;
     display: none;

@@ -23,6 +23,10 @@
     right: -12%;
   }
 
+  .smallShop{
+    left: -100px;
+  }
+
 }
 
 @media (max-width: 1280px) {
@@ -38,6 +42,10 @@
 
   .svgSchemaContainer{
     left: 20%;
+  }
+
+  .smallShop{
+    left: -200px;
   }
 }
 
@@ -803,6 +811,10 @@
       margin: 94px 0 0;
     }
 
+    #svgWorld, #svgShop{
+      display: none;
+    }
+
     .containerEnt{
       width: 100%;
       float: none;
@@ -812,25 +824,80 @@
           float: none;
         }
       }
+      &.right.beige{
+        > div{
+          float: none;
+          max-width: 100%;
+        }
+      }
+    }
+
+    #vision{
+      blockquote{
+        margin: 40px 0 0;
+      }
+    }
+
+    .svgSchemaContainer{
+      position: relative;
+      margin: 65px auto 0;
+      top: 0;
+      left: 0;
+      width: 470px;
+    }
+
+    #svgSchema{
+      margin: 0 auto;
+    }
+
+    #txt1, #txt3, #txt5{
+      left: 0;
+    }
+    #txt2, #txt4, #txt6{
+      left: auto;
+      right: 0;
     }
 
     .sliderEnt{
       width: 100%;
-      margin: 400px 0 0;
+      margin: 50px 0 0;
       li{
         width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
       }
     }
 
     .navSlideEnt{
       left: 370px;
-      top: 610px;
+      top: 420px;
       .next{
         left: 40px;
         &:hover{
           left: 43px;
         }
       }
+    }
+
+    .vignettesEnt{
+      width: auto;
+      .box-sizing(border-box);
+      overflow: hidden;
+      padding: 50px 3% 0 5%;
+      margin: 0;
+      li{
+        position: relative;
+        margin: 0 20px 20px 0;
+        float: left;
+        &.middle{
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .v1, .v2, .v3, .v4{
+      top: 0;
+      left: 0;
     }
 
 }
@@ -943,8 +1010,9 @@
     }
   }
 
-  .sliderEnt li {
-    width: 80%;
+  .containerEnt > div {
+    float: none;
+    max-width: 100%;
   }
 
 }
@@ -1237,6 +1305,23 @@
     }
   }
 
+}
+
+@media (max-width: 730px){
+  .navSlideEnt{
+    top: 591px;
+  }
+
+  .vignettesEnt{
+    width: 100%;
+  }
+
+  #equipe{
+    h2{
+      text-align: left;
+      padding-left: 5%;
+    }
+  }
 }
 
 @media (max-width: 630px) {
@@ -1540,10 +1625,6 @@
 
   .containerEnt{
     padding: 75px 20px;
-    > div{
-      float: none;
-      max-width: 100%;
-    }
     &.right.beige{
       > div{
         max-width: 100%;
@@ -1907,6 +1988,38 @@
   .macaron{
     top: 38px;
   }
+  
+  .svgSchemaContainer{
+    width: 100%;
+    li{
+      position: relative;
+      opacity: 1;
+      margin: 0 0 40px;
+      width: 100%;
+      padding: 0 0 0 50px;
+      .box-sizing(border-box);
+    }
+    i{
+      left: 0;
+    }
+    .txtRight{
+      text-align: left;
+      i{
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+  #svgSchema{
+    display: none;
+  }
+  #txt1, #txt2, #txt3, #txt4, #txt5, #txt6{
+    top: 0;
+    left: 0;
+  }
+  #txt4 i, #txt6 i{
+    left: 0;
+  }
 
 }
 
@@ -2026,6 +2139,28 @@
     }
   }
 
+  .vignettesEnt{
+    li{
+      .size(110px);
+      &:hover, &:focus{
+        p{
+          margin-top: 60px;
+        }
+      }
+    }
+    span{
+      display: none;
+    }
+    p{
+      margin: 35px 5px;
+    }
+  }
+
+  .navSlideEnt{
+    top: 470px;
+    left: 5%;
+  }
+
 }
 
 @media (max-width: 465px){
@@ -2128,9 +2263,9 @@
     }
   }
 
-  .temp{
+  /*.temp{
     width: 65%;
-  }
+  }*/
 
   .titleRsBlog{
     display: none;
@@ -2244,7 +2379,7 @@
     }
   } 
 
-  .temp{
+  /*.temp{
     margin-left: 15px;
     width: 73%;
     form{
@@ -2252,7 +2387,7 @@
         width: 100%;
       }
     }
-  }  
+  }  */
 
 }
 

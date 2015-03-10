@@ -941,28 +941,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/layoutImg\/ent\/entr-3-@1x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 219802,
-		"inputAbbreviatedPath": "\/layoutImg\/ent\/entr-3-@1x.png",
-		"outputAbbreviatedPath": "\/layoutImg\/ent\/entr-3-@1x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/layoutImg\/ent\/entr-3-@2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 219802,
-		"inputAbbreviatedPath": "\/layoutImg\/ent\/entr-3-@2x.png",
-		"outputAbbreviatedPath": "\/layoutImg\/ent\/entr-3-@2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/layoutImg\/ent\/eric.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -970,6 +948,17 @@
 		"initialSize": 12353,
 		"inputAbbreviatedPath": "\/layoutImg\/ent\/eric.jpg",
 		"outputAbbreviatedPath": "\/layoutImg\/ent\/eric.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/ent\/fdNanas.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 402620,
+		"inputAbbreviatedPath": "\/layoutImg\/ent\/fdNanas.jpg",
+		"outputAbbreviatedPath": "\/layoutImg\/ent\/fdNanas.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1029,13 +1018,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/layoutImg\/ent\/nanas.jpg": {
-		"fileType": 16384,
+	"\/layoutImg\/ent\/nanas.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 372539,
-		"inputAbbreviatedPath": "\/layoutImg\/ent\/nanas.jpg",
-		"outputAbbreviatedPath": "\/layoutImg\/ent\/nanas.jpg",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/layoutImg\/ent\/nanas.png",
+		"outputAbbreviatedPath": "\/layoutImg\/ent\/nanas.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1099,7 +1088,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 221731,
+		"initialSize": 219802,
 		"inputAbbreviatedPath": "\/layoutImg\/ent\/schema@2x.png",
 		"outputAbbreviatedPath": "\/layoutImg\/ent\/schema@2x.png",
 		"outputPathIsOutsideProject": 0,

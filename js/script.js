@@ -238,7 +238,7 @@ function scroll(){
 			animSchema = true;
 			animSvgEnt($('#svgSchema'), 130, 570);
 
-			var txt = $('#blockSchema').find('span'),
+			var txt = $('#blockSchema').find('li'),
 				txtLength = txt.length, i = 0, count = 0;
 
 			for(i; i<txtLength; i++){
@@ -661,7 +661,7 @@ function openSearchInput(e){
 
 /* Entreprise */
 
-function setSliderEntreprise(){
+function setSliderEntreprise(leftVal){
 
 	var vignettesEnt = equipe.find('.vignettesEnt').find('li'),
 		currentAnim = false;
@@ -683,7 +683,7 @@ function setSliderEntreprise(){
 
 		vignettesEnt.removeClass().addClass('middle');
 		$('[data-slide="' + idSlide + '"]').addClass('on v1');
-		boucle(indexV1, vignettesEnt.length+1, 1);		
+		boucle(indexV1, vignettesEnt.length+1, 1);
 		setTimeout(function(){ vignettesEnt.removeClass('middle'); }, 300);
 	}
 
@@ -691,7 +691,7 @@ function setSliderEntreprise(){
 		currentAnim = true;
 		equipe.find('.sliderEnt').css('height', $('#'+idSlide).height());
 		if(right){
-			$('#'+idSlide).css({'display': 'block', 'right': 'auto', 'left': '-600px'}).animate({left: '50px', opacity: 1}, 600).siblings().css('right', 'auto').animate({left: '1200px', opacity: 0}, 600, function(){
+			$('#'+idSlide).css({'display': 'block', 'right': 'auto', 'left': '-600px'}).animate({left: leftVal + 'px', opacity: 1}, 600).siblings().css('right', 'auto').animate({left: '1200px', opacity: 0}, 600, function(){
 				$('#'+idSlide).siblings().css({right: 'auto', left: '-600px', display: 'none'});
 				currentAnim = false;
 			});
@@ -733,6 +733,8 @@ function animSvgEnt(svg, frameWidth, frameHeight){
 	var col = 6, row = 6, i = 0,
 		steppedEase = new SteppedEase(col-1),
 		tlaze = new TimelineMax();
+
+	svg.animate({opacity: 1}, 300);
 
 	for(i; i<row; i++){
 		tlaze.add(TweenMax.fromTo(svg, 0.4, { backgroundPosition:'0 -'+(frameHeight*i)+'px'}, { backgroundPosition: '-'+(frameWidth*(col-1))+'px -'+(frameHeight*i)+'px', ease:steppedEase}));
@@ -809,7 +811,12 @@ $(function(){
 		clickSubMenu(sectionsEnt);
 
 		equipe.find('.sliderEnt').css('height', equipe.find('.firstSlide').height());
-		setSliderEntreprise();
+		if(windowWidth > 979){
+			setSliderEntreprise(50);
+		}else{
+			setSliderEntreprise(0);
+			$('#philip').css('left', 0);
+		}	
 	}
 
 	if(windowWidth > 767){
@@ -888,6 +895,10 @@ $(function(){
 
 		if($('#svgShop').length){
 			animSvgEnt($('#svgShop'), 450, 400);
+			if(html.hasClass('lt-ie9')){
+				animSvgEnt($('#svgWorld'), 700, 260);
+				animSvgEnt($('#svgSchema'), 130, 570);
+			}
 		}
 	});
 
