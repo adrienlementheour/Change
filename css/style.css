@@ -4642,7 +4642,7 @@ input[type="submit"].mailjet-subscribe:active {
   background: url(../layoutImg/ent/fdNanas.jpg) 50% 50% no-repeat;
 }
 .entShop .containerEnt {
-  max-height: 483px;
+  max-height: 520px;
 }
 .lt-ie9 .entShop .containerEnt {
   height: 470px;
@@ -4773,6 +4773,9 @@ input[type="submit"].mailjet-subscribe:active {
 }
 #vision {
   margin: 130px 0 0;
+}
+.touch #vision {
+  margin: 0;
 }
 #vision > div {
   background-size: cover;
@@ -6548,6 +6551,9 @@ input[type="submit"].mailjet-subscribe:active {
   }
   .containerEnt.right.beige > div {
     max-width: 100%;
+  }
+  #vision blockquote:before {
+    display: none;
   }
   /*.temp{
     width: 74%;
