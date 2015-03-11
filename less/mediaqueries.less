@@ -865,6 +865,9 @@
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+        .no-js &{
+          left: 0 !important;
+        }
       }
     }
 
@@ -2147,12 +2150,22 @@
           margin-top: 60px;
         }
       }
+      &.on{
+        p{
+          .no-js &{
+            margin-top: 60px;
+          }
+        }
+      }
     }
     span{
       display: none;
     }
     p{
       margin: 35px 5px;
+      .no-js &{
+        margin-top: 60px;
+      }
     }
   }
 

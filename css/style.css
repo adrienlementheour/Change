@@ -4662,6 +4662,10 @@ input[type="submit"].mailjet-subscribe:active {
   position: absolute;
   opacity: 0;
 }
+.no-js #svgShop {
+  opacity: 1;
+  background-position: -2250px -2000px;
+}
 .entWorld {
   background: #060629;
 }
@@ -4679,6 +4683,10 @@ input[type="submit"].mailjet-subscribe:active {
   top: 180px;
   position: absolute;
   opacity: 0;
+}
+.no-js #svgWorld {
+  opacity: 1;
+  background-position: -3500px -1300px;
 }
 .entSchema {
   background: url(../layoutImg/ent/colors.jpg) 50% 50% no-repeat;
@@ -4726,6 +4734,10 @@ input[type="submit"].mailjet-subscribe:active {
   height: 570px;
   background: url(../layoutImg/ent/schema.png);
   opacity: 0;
+}
+.no-js #svgSchema {
+  opacity: 1;
+  background-position: -650px -2850px;
 }
 #txt1 {
   top: 5px;
@@ -4803,7 +4815,7 @@ input[type="submit"].mailjet-subscribe:active {
   background-size: cover;
 }
 .lt-ie9 #histoire {
-  background: url(../layoutImg/ent/logos.png) no-repeat 0 50%;
+  background: url(../layoutImg/ent/logos.png) no-repeat;
 }
 #histoire .container {
   padding: 40px 0 140px;
@@ -4877,8 +4889,15 @@ input[type="submit"].mailjet-subscribe:active {
 .vignettesEnt li.on p {
   margin-top: 150px;
 }
+.no-js .vignettesEnt li.on p {
+  margin-top: 85px;
+}
 .vignettesEnt li.on div {
   opacity: 0;
+}
+.no-js .vignettesEnt li.on div {
+  background: rgba(84, 184, 231, 0.3);
+  opacity: 1;
 }
 .lt-ie9 .vignettesEnt li.on div {
   display: none;
@@ -4886,6 +4905,9 @@ input[type="submit"].mailjet-subscribe:active {
 .vignettesEnt li.middle {
   top: 88px;
   left: 108px;
+}
+.no-js .vignettesEnt li {
+  cursor: default;
 }
 .vignettesEnt div {
   position: absolute;
@@ -4899,12 +4921,18 @@ input[type="submit"].mailjet-subscribe:active {
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+.no-js .vignettesEnt div {
+  background: rgba(84, 184, 231, 0.3);
+}
 .vignettesEnt p {
   margin: 50px 0;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+.no-js .vignettesEnt p {
+  margin-top: 85px;
 }
 .vignettesEnt span {
   display: block;
@@ -4943,6 +4971,9 @@ input[type="submit"].mailjet-subscribe:active {
 .lt-ie9 .sliderEnt {
   width: 500px;
 }
+.no-js .sliderEnt {
+  height: auto;
+}
 .sliderEnt li {
   position: absolute;
   display: none;
@@ -4953,6 +4984,7 @@ input[type="submit"].mailjet-subscribe:active {
   display: block !important;
   left: 50px !important;
   opacity: 1 !important;
+  margin-bottom: 30px;
 }
 .sliderEnt h3 {
   padding: 0;
@@ -4961,6 +4993,9 @@ input[type="submit"].mailjet-subscribe:active {
   position: absolute;
   top: 210px;
   left: 395px;
+}
+.no-js .navSlideEnt {
+  display: none;
 }
 .navSlideEnt button {
   appearance: none;
@@ -5806,6 +5841,9 @@ input[type="submit"].mailjet-subscribe:active {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .no-js .sliderEnt li {
+    left: 0 !important;
   }
   .navSlideEnt {
     left: 370px;
@@ -6951,11 +6989,17 @@ input[type="submit"].mailjet-subscribe:active {
   .vignettesEnt li:focus p {
     margin-top: 60px;
   }
+  .no-js .vignettesEnt li.on p {
+    margin-top: 60px;
+  }
   .vignettesEnt span {
     display: none;
   }
   .vignettesEnt p {
     margin: 35px 5px;
+  }
+  .no-js .vignettesEnt p {
+    margin-top: 60px;
   }
   .navSlideEnt {
     top: 470px;
