@@ -134,9 +134,8 @@ function setFirstStrong(){
 function scroll(){
 	var factor = 1.9, factor2 = 9, myScrollH2 = Math.ceil(myScroll/factor2);
 
-	if(!body.hasClass('home')){
-		myScroll > 50 ? topHeader.addClass('on') : topHeader.removeClass('on');
-	}
+	
+	myScroll > 50 ? topHeader.addClass('on') : topHeader.removeClass('on');
 
 	if(topHeader.hasClass('on')){
 		hoverHeader();
@@ -769,7 +768,6 @@ $(function(){
 	}
 
 	if(body.hasClass('home')){
-		hoverHeader();
 		indic = containerVid.find('.rejouer');
 		html.hasClass("lt-ie9") ? containerVid.find('.container').css('height', '700px') : setVideoContainer();
 	}
