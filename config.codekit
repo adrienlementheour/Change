@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18493",
+"creatorBuild": "19033",
 "files": {
 	"\/404.html": {
 		"fileType": 8192,
@@ -10,6 +10,72 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/android-chrome-144x144.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1336,
+		"inputAbbreviatedPath": "\/android-chrome-144x144.png",
+		"outputAbbreviatedPath": "\/android-chrome-144x144.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/android-chrome-192x192.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1745,
+		"inputAbbreviatedPath": "\/android-chrome-192x192.png",
+		"outputAbbreviatedPath": "\/android-chrome-192x192.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/android-chrome-36x36.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 486,
+		"inputAbbreviatedPath": "\/android-chrome-36x36.png",
+		"outputAbbreviatedPath": "\/android-chrome-36x36.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/android-chrome-48x48.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 595,
+		"inputAbbreviatedPath": "\/android-chrome-48x48.png",
+		"outputAbbreviatedPath": "\/android-chrome-48x48.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/android-chrome-72x72.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 799,
+		"inputAbbreviatedPath": "\/android-chrome-72x72.png",
+		"outputAbbreviatedPath": "\/android-chrome-72x72.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/android-chrome-96x96.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 984,
+		"inputAbbreviatedPath": "\/android-chrome-96x96.png",
+		"outputAbbreviatedPath": "\/android-chrome-96x96.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/apple-touch-icon-114x114.png": {
 		"fileType": 32768,
@@ -177,17 +243,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/favicon-160x160.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 7665,
-		"inputAbbreviatedPath": "\/favicon-160x160.png",
-		"outputAbbreviatedPath": "\/favicon-160x160.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
 	"\/favicon-16x16.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -199,16 +254,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/favicon-192x192.png": {
+	"\/favicon-194x194.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9244,
-		"inputAbbreviatedPath": "\/favicon-192x192.png",
-		"outputAbbreviatedPath": "\/favicon-192x192.png",
+		"initialSize": 2397,
+		"inputAbbreviatedPath": "\/favicon-194x194.png",
+		"outputAbbreviatedPath": "\/favicon-194x194.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/favicon-32x32.png": {
 		"fileType": 32768,
@@ -831,11 +886,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/layoutImg\/bgPin-saved.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18516,
+		"inputAbbreviatedPath": "\/layoutImg\/bgPin-saved.png",
+		"outputAbbreviatedPath": "\/layoutImg\/bgPin-saved.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/bgPin.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5649,
+		"initialSize": 3636,
 		"inputAbbreviatedPath": "\/layoutImg\/bgPin.png",
 		"outputAbbreviatedPath": "\/layoutImg\/bgPin.png",
 		"outputPathIsOutsideProject": 0,
@@ -1308,42 +1374,53 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3219,
+		"initialSize": 1190,
 		"inputAbbreviatedPath": "\/layoutImg\/logoChange.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoChange.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/layoutImg\/logoChangeIE.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2606,
+		"initialSize": 623,
 		"inputAbbreviatedPath": "\/layoutImg\/logoChangeIE.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoChangeIE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/layoutImg\/logoChangeTxt.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5792,
+		"initialSize": 1336,
 		"inputAbbreviatedPath": "\/layoutImg\/logoChangeTxt.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoChangeTxt.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/layoutImg\/logoChangeTxtIE.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4345,
+		"initialSize": 1527,
 		"inputAbbreviatedPath": "\/layoutImg\/logoChangeTxtIE.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoChangeTxtIE.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/logoPresse-saved.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30830,
+		"inputAbbreviatedPath": "\/layoutImg\/logoPresse-saved.png",
+		"outputAbbreviatedPath": "\/layoutImg\/logoPresse-saved.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -1352,7 +1429,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 30830,
+		"initialSize": 20670,
 		"inputAbbreviatedPath": "\/layoutImg\/logoPresse.png",
 		"outputAbbreviatedPath": "\/layoutImg\/logoPresse.png",
 		"outputPathIsOutsideProject": 0,
@@ -1368,7 +1445,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/logoVid.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/layoutImg\/next.png": {
 		"fileType": 32768,
@@ -1480,35 +1557,79 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/layoutImg\/partner\/partnerSol-saved.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9740,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/partnerSol-saved.png",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/partnerSol-saved.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/layoutImg\/partner\/partnerSol.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 11902,
+		"initialSize": 11814,
 		"inputAbbreviatedPath": "\/layoutImg\/partner\/partnerSol.png",
 		"outputAbbreviatedPath": "\/layoutImg\/partner\/partnerSol.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
+		},
+	"\/layoutImg\/partner\/partnerTech-saved.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9733,
+		"inputAbbreviatedPath": "\/layoutImg\/partner\/partnerTech-saved.png",
+		"outputAbbreviatedPath": "\/layoutImg\/partner\/partnerTech-saved.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/layoutImg\/partner\/partnerTech.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 11859,
+		"initialSize": 9878,
 		"inputAbbreviatedPath": "\/layoutImg\/partner\/partnerTech.png",
 		"outputAbbreviatedPath": "\/layoutImg\/partner\/partnerTech.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
+		},
+	"\/layoutImg\/pin-saved.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15453,
+		"inputAbbreviatedPath": "\/layoutImg\/pin-saved.png",
+		"outputAbbreviatedPath": "\/layoutImg\/pin-saved.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/layoutImg\/pin.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2264,
+		"initialSize": 2298,
 		"inputAbbreviatedPath": "\/layoutImg\/pin.png",
 		"outputAbbreviatedPath": "\/layoutImg\/pin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/layoutImg\/pngMask-saved.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/layoutImg\/pngMask-saved.png",
+		"outputAbbreviatedPath": "\/layoutImg\/pngMask-saved.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -1522,7 +1643,7 @@
 		"outputAbbreviatedPath": "\/layoutImg\/pngMask.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/layoutImg\/presse.jpg": {
 		"fileType": 16384,
@@ -1835,7 +1956,7 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
@@ -1855,7 +1976,7 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
@@ -1875,7 +1996,7 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
@@ -1895,7 +2016,7 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
@@ -1915,11 +2036,22 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/manifest.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/manifest.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/manifest-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/mentions.html": {
 		"fileType": 8192,
@@ -2033,16 +2165,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/references.html": {
 		"fileType": 8192,
@@ -2336,6 +2477,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"globalstrict": {
 			"active": 0,
 			"flagValue": -1
@@ -2422,6 +2567,10 @@
 			},
 		"noarg": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"node": {
@@ -2522,6 +2671,10 @@
 			},
 		"unused": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"withstmt": {
@@ -2647,6 +2800,14 @@
 			"flagValue": -1
 			}
 		},
+	"jsonAutoOutputPathEnabled": 0,
+	"jsonAutoOutputPathFilenamePattern": "*-min.json",
+	"jsonAutoOutputPathRelativePath": "",
+	"jsonAutoOutputPathReplace1": "",
+	"jsonAutoOutputPathReplace2": "",
+	"jsonAutoOutputPathStyle": 0,
+	"jsonOrderOutput": 0,
+	"jsonOutputStyle": 1,
 	"kitAutoOutputPathEnabled": 1,
 	"kitAutoOutputPathFilenamePattern": "*.html",
 	"kitAutoOutputPathRelativePath": "",
@@ -2674,9 +2835,18 @@
 	"markdownAutoOutputPathReplace1": "",
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
+	"markdownCriticStyle": 0,
 	"markdownEnableFootnotes": 0,
-	"markdownEnableSmartyPants": 1,
-	"markdownExpandTabs": 1,
+	"markdownEnableLabels": 1,
+	"markdownEnableSmartQuotes": 1,
+	"markdownEscapeLineBreaks": 0,
+	"markdownMaskEmailAddresses": 1,
+	"markdownOutputFormat": 0,
+	"markdownOutputStyle": 0,
+	"markdownParseMetadata": 1,
+	"markdownProcessHTML": 0,
+	"markdownRandomFootnoteNumbers": 0,
+	"markdownUseCompatibilityMode": 0,
 	"reloadFileURLs": 0,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
@@ -2689,7 +2859,7 @@
 	"sassDecimalPrecision": 10,
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
-	"shouldRunAutoprefixer": 0,
+	"shouldRunAutoprefixer": 1,
 	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules",
 	"slimAutoOutputPathEnabled": 1,
@@ -2732,6 +2902,10 @@
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -2812,6 +2986,10 @@
 			"flagValue": -1
 			},
 		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
 			"active": 0,
 			"flagValue": -1
 			},

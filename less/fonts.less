@@ -84,6 +84,17 @@
 }
 
 @font-face {
+    font-family: 'museo';
+    src: url('../fonts/museo/museoslab-500.eot');
+    src: url('../fonts/museo/museoslab-500.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo/museoslab-500.woff2') format('woff2'),
+         url('../fonts/museo/museoslab-500.woff') format('woff'),
+         url('../fonts/museo/museoslab-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
   font-family: 'change';
   src: url('../fonts/change.eot?jik4xg');
   src: url('../fonts/change.eot?#iefixjik4xg') format('embedded-opentype'),
@@ -105,6 +116,9 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-tel2:before {
+  content: "\e650";
 }
 .icon-clock:before {
   content: "\e609";
@@ -360,7 +374,7 @@
 }
 .fd-rouge:before{
   background: @rouge;
-} 
+}
 
 /* @end */
 
@@ -416,6 +430,14 @@
 
 .proximaNovaBold(@size){
   font-family: 'proximaNovaBold', sans-serif;
+  font-size: @size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.museo(@size){
+  font-family: 'museo', sans-serif;
   font-size: @size;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

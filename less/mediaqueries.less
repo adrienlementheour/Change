@@ -418,8 +418,19 @@
     margin: 0;
   }
 
+  header{
+    .home &{
+      &.on, .no-js &{
+        .hamburger{
+          display: block;
+        }
+      }
+    }
+  }
+
   .hamburger{
     display: block;
+    right: 80px;
     &.burgerBlog{
       display: none;
     }
@@ -442,6 +453,7 @@
       overflow: hidden;
       &.active, &.current-menu-item {
         a{
+          color: #fff;
           padding-top: 0;
           &:before{
             height: 51px;
@@ -449,14 +461,15 @@
           }
         }
       }
-      &#menu-item-54 a, &#menu-item-303 a, &#menu-item-3838 a, .lien-contact{
+      /*&#menu-item-54, &#menu-item-303, &#menu-item-3838{
         line-height: 50px;
         height: auto;
-      }
+      }*/
       a{
         text-align: left;
         line-height: 50px;
         &:focus, &:hover, &:active{
+          color: #fff;
           &:before{
             height: 51px;
           }
@@ -2302,9 +2315,9 @@
     }
   }
 
-  .hamburger{
+  /*.hamburger{
     right: 15px;
-  }
+  }*/
   #logo{
     height: 27px;
     width: 31px;
@@ -2482,6 +2495,22 @@
 
   .schema{
     margin-left: -20px;
+  }
+  
+  .contactMailHeader{
+    right: 35px;
+    &:before{
+      font-size: 12px;
+    }
+  }
+  .contactTelHeader{
+    &:before{
+      font-size: 36px;
+    }
+  }
+
+  .hamburger{
+    right: 65px;
   }
 
 }

@@ -40,11 +40,21 @@ function setBurgerMenu(){
 			moveBurgerMenu(body, 'close');
 			masque.fadeOut();
 			burger.removeClass("burgerOn");
+			header.removeClass('on');
+			if(html.hasClass('no-touch')){
+				header.on('mouseleave', disappearHeader);
+			}
+
 		} else {
 			html.hasClass('no-touch') ? moveBurgerMenu(header, 'open') : menuMain.animate({ right: 0}, "ease-in-out" );
 			moveBurgerMenu(body, 'open');
 			masque.fadeIn(); 
 			burger.addClass("burgerOn");	
+			header.addClass('on');
+			if(html.hasClass('no-touch')){
+				header.off('mouseleave', disappearHeader);
+				hoverHeader();
+			}
 		}
 		return false;
 	});
@@ -80,17 +90,19 @@ function setSizeBugerMenu(size){
 /* Top header au hover */
 function hoverHeader(){
 	header.on('mouseenter', function(){
-		topHeader.removeClass('on');
+		if(topHeader.hasClass('on'))
+			topHeader.removeClass('on');
 	}).on('mouseleave', function(){
-		topHeader.addClass('on');
+		if(!topHeader.hasClass('on'))
+			topHeader.addClass('on');
 	});
 }
 
 
 /* Footer toujours en bas de page */
 function setFooter(){
-	var docHeight = html.height();
-	var footer = $('footer');
+	var docHeight = html.height(),
+		footer = $('footer');
 	if(footer.hasClass('bottom')){
 		docHeight += footer.height();
 		if (docHeight >= windowHeight) {
@@ -116,9 +128,9 @@ function setFirstStrong(){
 	}
 
 	if(allP.length) {
-		var firstP = allP.eq(0);
-		var strong = firstP.find('strong');
-		var b = firstP.find('b');
+		var firstP = allP.eq(0),
+			strong = firstP.find('strong'),
+			b = firstP.find('b');
 		if(strong.length){
 			setMaj(strong, '<strong>');
 		}
@@ -133,11 +145,27 @@ function setFirstStrong(){
 
 function scroll(){
 	var factor = 1.9, factor2 = 9, myScrollH2 = Math.ceil(myScroll/factor2);
-
 	
-	myScroll > 50 ? topHeader.addClass('on') : topHeader.removeClass('on');
+	if(myScroll > 50){
+		if(!topHeader.hasClass('on'))
+			topHeader.addClass('on')
+	}else{
+		if(topHeader.hasClass('on'))
+			topHeader.removeClass('on');
+	}
 
-	if(topHeader.hasClass('on')){
+	if(body.hasClass('home')){
+		if(myScroll > 50){
+			header.addClass('on');
+			header.off('mouseleave', disappearHeader);
+			hoverHeader();
+		}else{
+			disappearHeader();
+			header.on('mouseleave', disappearHeader);
+		} 
+	}
+
+	if(topHeader.hasClass('on') && !body.hasClass('home')){
 		hoverHeader();
 	}
 
@@ -740,6 +768,10 @@ function animSvgEnt(svg, frameWidth, frameHeight){
 	}
 }
 
+function disappearHeader(){
+	header.removeClass('on');
+}
+
 
 $(function(){
 	detectTouchDevice();
@@ -770,6 +802,13 @@ $(function(){
 	if(body.hasClass('home')){
 		indic = containerVid.find('.rejouer');
 		html.hasClass("lt-ie9") ? containerVid.find('.container').css('height', '700px') : setVideoContainer();
+
+		if(windowWidth > 978 && html.hasClass('no-touch')){
+			burger.on('mouseenter', function(){
+				header.addClass('on');
+			});
+			header.on('mouseleave', disappearHeader);
+		}
 	}
 
 	if (body.hasClass("solution") || body.hasClass('page-template-solution-php')){
@@ -857,6 +896,16 @@ $(function(){
 
 		if(body.hasClass('home')){
 			setVideoContainer();
+
+			if(html.hasClass('no-touch')){
+				if(windowWidth < 978){
+					burger.off('mouseenter');
+				}else{
+					burger.on('mouseenter', function(){
+						header.addClass('on');
+					});
+				}
+			}
 		}
 
 		setFooter();
