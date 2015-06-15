@@ -36,22 +36,22 @@ function moveBurgerMenu(elt, action){
 function setBurgerMenu(){
 	burger.find("a").click(function(){
 		if(burger.hasClass("burgerOn") ) {  
-			html.hasClass('no-touch') ? moveBurgerMenu(header, 'close') : menuMain.animate({ right: "-200px"}, "ease-in-out" );
+			menuMain.css('position') != 'fixed' ? moveBurgerMenu(header, 'close') : menuMain.animate({ right: "-200px"}, "ease-in-out" );
 			moveBurgerMenu(body, 'close');
 			masque.fadeOut();
 			burger.removeClass("burgerOn");
 			header.removeClass('on');
-			if(html.hasClass('no-touch')){
+			if(html.hasClass('no-touch') && menuMain.css('position') != 'fixed'){
 				header.on('mouseleave', disappearHeader);
 			}
 
 		} else {
-			html.hasClass('no-touch') ? moveBurgerMenu(header, 'open') : menuMain.animate({ right: 0}, "ease-in-out" );
+			menuMain.css('position') != 'fixed' ? moveBurgerMenu(header, 'open') : menuMain.animate({ right: 0}, "ease-in-out" );
 			moveBurgerMenu(body, 'open');
 			masque.fadeIn(); 
 			burger.addClass("burgerOn");	
 			header.addClass('on');
-			if(html.hasClass('no-touch')){
+			if(html.hasClass('no-touch') && menuMain.css('position') != 'fixed'){
 				header.off('mouseleave', disappearHeader);
 				hoverHeader();
 			}
@@ -146,27 +146,29 @@ function setFirstStrong(){
 function scroll(){
 	var factor = 1.9, factor2 = 9, myScrollH2 = Math.ceil(myScroll/factor2);
 	
-	if(myScroll > 50){
-		if(!topHeader.hasClass('on'))
-			topHeader.addClass('on')
-	}else{
-		if(topHeader.hasClass('on'))
-			topHeader.removeClass('on');
-	}
-
-	if(body.hasClass('home')){
+	if(menuMain.css('position') != 'fixed'){
 		if(myScroll > 50){
-			header.addClass('on');
-			header.off('mouseleave', disappearHeader);
-			hoverHeader();
+			if(!topHeader.hasClass('on'))
+				topHeader.addClass('on')
 		}else{
-			disappearHeader();
-			header.on('mouseleave', disappearHeader);
-		} 
-	}
+			if(topHeader.hasClass('on'))
+				topHeader.removeClass('on');
+		}
 
-	if(topHeader.hasClass('on') && !body.hasClass('home')){
-		hoverHeader();
+		if(body.hasClass('home')){
+			if(myScroll > 50){
+				header.addClass('on');
+				header.off('mouseleave', disappearHeader);
+				hoverHeader();
+			}else{
+				disappearHeader();
+				header.on('mouseleave', disappearHeader);
+			} 
+		}
+
+		if(topHeader.hasClass('on') && !body.hasClass('home')){
+			hoverHeader();
+		}
 	}
 
 	if (!html.hasClass("lt-ie9")) {
@@ -803,7 +805,7 @@ $(function(){
 		indic = containerVid.find('.rejouer');
 		html.hasClass("lt-ie9") ? containerVid.find('.container').css('height', '700px') : setVideoContainer();
 
-		if(windowWidth > 978 && html.hasClass('no-touch')){
+		if(windowWidth > 978 && html.hasClass('no-touch') && menuMain.css('position') != 'fixed'){
 			burger.on('mouseenter', function(){
 				header.addClass('on');
 			});
@@ -897,7 +899,7 @@ $(function(){
 		if(body.hasClass('home')){
 			setVideoContainer();
 
-			if(html.hasClass('no-touch')){
+			if(html.hasClass('no-touch') && menuMain.css('position') != 'fixed'){
 				if(windowWidth < 978){
 					burger.off('mouseenter');
 				}else{

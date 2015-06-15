@@ -727,14 +727,14 @@ header{
   height: 39px;
   background: url(../layoutImg/logoChange.png) no-repeat;
   .background-size(100% 100%);
-  margin-top: 27px;
+  margin-top: 34px;
   &:after{
     content: ' ';
     position: absolute;
-    top: 28px;
+    top: 35px;
     left: 60px;
-    width: 134px;
-    height: 36px;
+    width: 145px;
+    height: 39px;
     background: url(../layoutImg/logoChangeTxt.png) no-repeat;
     .background-size(100% 100%);
     .lt-ie9 &{
@@ -846,13 +846,14 @@ header{
   }
 }
 .contactMailHeader{
-  right: 40px;
+  right: 35px;
   &:before{
     font-size: 15px;
   }
 }
 .contactTelHeader{
   right: 0;
+  width: 30px;
   &:before{
     font-size: 42px;
     line-height: 10px;
@@ -865,7 +866,11 @@ header{
   //background: @rouge;
   background: @grisFonce;
   z-index: -1;
-  text-align: center;
+  text-align: right;
+  height: 40px;
+  .container{
+    position: static;
+  }
   .bulleMenu{
     display: block;
     position: absolute;
@@ -887,6 +892,9 @@ header{
   li{
     display: inline;
     padding: 0 27px;
+    &.last{
+      padding-right: 0;
+    }
   }
   a{
     color: @grisTresClairFond;
@@ -2426,7 +2434,7 @@ footer{
     &.tab2{
       background: url(../layoutImg/fonc/ipad2.png) no-repeat;
       right: -165px;
-      bottom: 100px;
+      bottom: 75px;
       width: 542px;
       height: 443px;
       .transform(rotate(5deg));

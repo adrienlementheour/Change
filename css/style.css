@@ -1323,15 +1323,15 @@ header > div {
   height: 39px;
   background: url(../layoutImg/logoChange.png) no-repeat;
   background-size: 100% 100%;
-  margin-top: 27px;
+  margin-top: 34px;
 }
 #logo:after {
   content: ' ';
   position: absolute;
-  top: 28px;
+  top: 35px;
   left: 60px;
-  width: 134px;
-  height: 36px;
+  width: 145px;
+  height: 39px;
   background: url(../layoutImg/logoChangeTxt.png) no-repeat;
   background-size: 100% 100%;
 }
@@ -1452,13 +1452,14 @@ header > div {
   color: #54b8e7;
 }
 .contactMailHeader {
-  right: 40px;
+  right: 35px;
 }
 .contactMailHeader:before {
   font-size: 15px;
 }
 .contactTelHeader {
   right: 0;
+  width: 30px;
 }
 .contactTelHeader:before {
   font-size: 42px;
@@ -1469,7 +1470,11 @@ header > div {
   width: 100%;
   background: #08334a;
   z-index: -1;
-  text-align: center;
+  text-align: right;
+  height: 40px;
+}
+.subMenu .container {
+  position: static;
 }
 .subMenu .bulleMenu {
   display: block;
@@ -1492,6 +1497,9 @@ header > div {
 .subMenu li {
   display: inline;
   padding: 0 27px;
+}
+.subMenu li.last {
+  padding-right: 0;
 }
 .subMenu a {
   color: #ecf2f5;
@@ -3161,7 +3169,7 @@ input[type="submit"].mailjet-subscribe:active {
 .page-template-fonctionnalites-php .tab.tab2 {
   background: url(../layoutImg/fonc/ipad2.png) no-repeat;
   right: -165px;
-  bottom: 100px;
+  bottom: 75px;
   width: 542px;
   height: 443px;
   -webkit-transform: rotate(5deg);
@@ -4924,10 +4932,19 @@ input[type="submit"].mailjet-subscribe:active {
     font-size: 0.7em;
   }
   #logo {
-    margin: 28px 0 0 25px;
+    margin-left: 25px;
   }
   #logo:after {
     left: 80px;
+  }
+  .subMenu li.last {
+    padding-right: 20px;
+  }
+  .contactTelHeader {
+    right: 18px;
+  }
+  .contactMailHeader {
+    right: 45px;
   }
   #contact p {
     line-height: 56px;
@@ -5086,6 +5103,7 @@ input[type="submit"].mailjet-subscribe:active {
   .partner-header h1 {
     letter-spacing: 5px;
     margin-left: -222px;
+    font-size: 29px;
   }
   .no-svg .partner-header .hand,
   .no-js .partner-header .hand {
@@ -5211,7 +5229,8 @@ input[type="submit"].mailjet-subscribe:active {
     margin: 0;
   }
   .home header.on .hamburger,
-  .no-js .home header .hamburger {
+  .no-js .home header .hamburger,
+  .no-touch .home header .hamburger {
     display: block;
   }
   .hamburger {
@@ -6852,7 +6871,7 @@ input[type="submit"].mailjet-subscribe:active {
     width: 94px;
     height: 25px;
     top: 35px;
-    left: 60px;
+    left: 55px;
   }
   #containerVid img {
     width: 92%;
@@ -6987,7 +7006,7 @@ input[type="submit"].mailjet-subscribe:active {
     margin-left: -20px;
   }
   .contactMailHeader {
-    right: 35px;
+    right: 40px;
   }
   .contactMailHeader:before {
     font-size: 12px;
@@ -7010,6 +7029,45 @@ input[type="submit"].mailjet-subscribe:active {
   }
   #containerVid p {
     font-size: 1.1em;
+  }
+}
+@media (max-height: 850px) {
+  header {
+    position: relative;
+  }
+  .no-touch .home header .top-header {
+    opacity: 1;
+    background: #fff;
+  }
+  .no-touch .home header > div {
+    background: #4584a5;
+  }
+  .no-touch .home header #menu-main {
+    opacity: 1;
+  }
+  .no-touch .home header .hamburger {
+    display: none;
+  }
+  .container.first {
+    margin-top: 30px;
+  }
+  #vision,
+  .presse-header {
+    margin-top: 0;
+  }
+  .ref-header {
+    padding-top: 30px;
+  }
+  .rect {
+    margin-top: 200px;
+  }
+}
+@media (max-height: 850px) and (max-width: 979px) {
+  .no-touch .home header .hamburger {
+    display: block;
+  }
+  #menu-main {
+    position: fixed;
   }
 }
 /* retina */
